@@ -1,0 +1,33 @@
+
+		{
+			"tags":  "430-DU;Gross Amount Due",
+			"elementName" : "430-DU",
+			"description" "Gross Amount Due",
+			"collection": "ncpdp"
+        },
+        {
+   			"tags":  "409-D9;Ingredient Cost Submitted",
+			"elementName" : "409-D9",
+			"description" : "Ingredient Cost Submitted",
+			"collection": "ncpdp"        
+		},
+        {
+  			"tags":  "267;Insurance Code",
+  			"elementName" : "267",
+			"description": "Insurance Code",			
+			"collection": "ncpdp"
+		},
+		{
+			"name":  "CLM01;Patient Control Number",
+			"elementName" : "CLM01",
+			"description" :"Patient Control Number",
+			"collection": "x12"
+		},
+		{
+			"name":  "CLP01;Patient Control Number",
+			"elementName" : "CLP01",
+			"description" :"Patient Control Number",
+			"collection": "x12"
+		 }       
+	]
+

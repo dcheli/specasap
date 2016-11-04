@@ -1,0 +1,253 @@
+{
+	"name":  "430-DU",
+	"tags" : "430-DU;Gross Amount Due",
+	"attributes":  [
+	{
+		"segmentId":  "AM10",
+		"segmentName" : "Pricing Segment",			    
+		"elementName" : "Gross Amount Due",
+		"transactions":  ["B1", "B2"],
+		"version":  "D.0",
+		"usage" : "R",
+		"dataType" : "D",                        
+		"fieldFormat" : ["s9(6)v99"],
+		"length": ["1/8"],
+		"codeSet": null,
+		"standardFormats": ["T","A","Z","W"],
+		"definition" : "Total price claimed from all sources."
+	}]
+}
+
+
+{
+	"name":  "526-FQ",
+	"tags" : "526-FQ;Additional Message Information",
+	"attributes":  [
+	{
+		"segmentId":  "AM21",
+		"segmentName" : "Response Status Segment",			    
+		"elementName" : "Additional Message Information",
+		"transactions":  ["B1", "B2"],
+		"version":  "D.0",
+		"usage" : "RW",
+		"dataType" : "A/N",                        
+		"fieldFormat" : ["x(1)-x(40)","x(100)","x(200)"],
+		"length": ["1/40"],
+		"codeSet": null,
+		"standardFormats": ["T","F","N","V","X"],
+		"definition" : "Free text message."
+	}]
+}
+
+{
+	"name":  "409-D9",
+	"tags" : "409-D9;Ingredient Cost Submitted",
+	"attributes":  [{
+		"segmentId":  "AM10",
+		"segmentName" : "Pricing Segment",			    
+		"elementName" : "Ingredient Cost Submitted",
+		"transactions":  ["B1"],
+		"version":  "D.0",
+		"usage" : "R",
+		"dataType" : "D",            
+		"fieldFormat" : ["s9(6)v99"],
+		"length": ["1/8"],
+		"codeSet": null,
+		"standardFormats": ["T", "A", "Z", "W"],
+		"definition" : "Submitted product component cost of dispensed prescription."
+	}]
+}
+        
+{
+	"name":  "507-F7",
+	"tags" : "507-F7;Dispensing Fee Paid",
+	"attributes":  [{
+		"segmentId":  "AM23",
+		"segmentName" : "Response Pricing Segment",
+		"elementName" : "Dispensing Fee Paid",
+		"transactions":  ["B1"],
+		"version":  "D.0",
+		"usage" : "RW",
+		"dataType" : "D",            
+		"fieldFormat" : ["s9(6)v99"],
+		"length": ["1/8"],
+		"codeSet": null,
+		"standardFormats": ["P", "T","A"],
+		"definition" : "Dispensing Fee paid included in the 'Total Amount Paid'"
+	}]
+}
+
+{
+	"name":  "559-AX",
+	"tags" : "559-AX;Percentage Sales Tax Amount Paid",
+	"attributes":  [{
+		"segmentId":  "AM23",
+		"segmentName" : "Response Pricing Segment",
+		"elementName" : "Percentage Sales Tax Amount Paid",
+		"transactions":  ["B1"],
+		"version":  "D.0",
+		"usage" : "RW",
+		"dataType" : "D",            
+		"fieldFormat" : ["s9(6)v99"],
+		"length": ["1/8"],
+		"codeSet": null,
+		"standardFormats": ["T", "A"],
+		"definition": "Amount of percentage sales tax paid which is included in the 'Total Amount Paid'"
+	}]
+}
+
+
+{
+	"name":  "509-F9",
+	"tags" : "509-F9;Total Amount Paid",
+	"attributes":  [{
+		"segmentId":  "AM23",
+		"segmentName" : "Response Pricing Segment",
+		"elementName" : "Total Amount Paid",
+		"transactions":  ["B1"],
+		"version":  "D.0",
+		"usage" : "R",
+		"dataType" : "D",            
+		"fieldFormat" : ["s9(6)v99"],
+		"length": ["1/8"],
+		"codeSet": null,
+		"standardFormats": ["P","T", "E"],
+		"definition" : "Total Amount Paid by the claims processor."
+	}]
+}
+        
+{
+	"name":  "267",
+	"tags" : "267;Insurance Code",
+	"attributes":  [{
+		"segmentId":  "O",
+		"segmentName" : "Not Sure",
+		"elementName" : "Insurance Code",
+		"transactions":  ["B1"],
+		"version":  "D.0",
+		"usage" : "Situational",
+		"dataType" : "A/N",
+		"fieldFormat" : ["x(20)"],
+		"length": ["1/20"],
+		"codeSet": null,
+		"standardFormats": ["A"],
+		"definition" : "Special group/member data as supplied on eligibility record when supplied by client."
+	}]
+}        
+
+{
+ 	"name":  "XX",
+	"tags" : "XXX-XX;Junk",
+	"attributes":  [{
+		"segmentId":  "",
+		"segmentName" : null,			    
+		"elementName" : "",
+		"transactions":  null,
+		"version":  "D.0",
+		"usage" : "",
+		"dataType" : "D",            
+		"fieldFormat" : "[s9(6)v99]",
+		"length": ["1/8"],
+		"codeSet": null,
+		"standardFormats": ["T"],
+		"definition": ""
+	}]
+}
+        
+             
+{
+	"name":  "312-CC",
+	"tags" : "312-CC;Cardholder First Name",
+	"attributes":  [{
+		"segmentId":  "AM04",
+		"segmentName" : "Insurance Segment",
+		"elementName" : "Cardholder First Name",
+		"transactions":  ["B1"],
+		"version":  "D.0",
+		"usage" : "RW",
+		"dataType" : "A\N",            
+		"fieldFormat" : ["x(12)","X(35)"],
+		"length": ["1/12","1/35"],
+		"codeSet": null,
+		"standardFormats": ["C","D","T","Z", "V"],
+		"definition" : "Individual first name"
+	}]
+}
+
+{
+	"name":  "302-C2",
+	"tags" : "302-C2;Cardholder ID",
+	"attributes":  [{
+		"segmentId":  "AM04",
+		"segmentName" : "Insurance Segment",
+		"elementName" : "Cardholder ID",
+		"transactions":  ["B1"],
+		"version":  "D.0",
+		"usage" : "M",
+		"dataType" : "",            
+		"fieldFormat" : ["x(20)"],
+		"length": ["1/20"],
+		"codeSet": null,
+		"standardFormats": ["C","D","M","T","A","N","Z","V", "X"],
+		"definition" : "Insurance ID assigned to the cardholder or identification number used by the plan."
+	}]
+}
+  
+{
+	"name":  "313-CD",
+	"tags" : "313-CD;Cardholder Last Name",
+	"attributes":  [{
+		"segmentId":  "AM04",
+		"segmentName" : "Insurance Segment",
+		"elementName" : "Cardholder Last Name",
+		"transactions":  ["B1"],
+		"version":  "D.0",
+		"usage" : "RW",
+		"dataType" : "A\N",            
+		"fieldFormat" : ["x(15)"],
+		"length": ["1/15"],
+		"codeSet": null,
+		"standardFormats": ["C","D","T","Z"],
+		"definition" : "Individual Last Name."
+	}]
+}
+        
+ {
+ 	"name":  "301-C1",
+	"tags" : "301-C1;Group ID",
+	"attributes":  [{
+		"segmentId":  "AM04",
+		"segmentName" : "Insurance Segment",
+		"elementName" : "Group ID",
+		"transactions":  ["B1"],
+		"version":  "D.0",
+		"usage" : "M",
+		"dataType" : "",            
+		"fieldFormat" : ["x(15)"],
+		"length": ["1/15"],
+		"codeSet": null,
+		"standardFormats": ["C","D","M","P","R","T","A","N","V","Z","X","E"],
+		"definition" : "Id assigned to the cardholder group or employer number."
+	}]
+}
+
+{
+ 	"name":  "501-F1",
+	"tags" : "501-F1;Header Response Status",
+	"attributes":  [{
+		"segmentId":  "",
+		"segmentName" : "Response Header",
+		"elementName" : "Header Response Status",
+		"transactions":  ["B1"],
+		"version":  "D.0",
+		"usage" : "M",
+		"dataType" : "A\N",            
+		"fieldFormat" : ["x(1)"],
+		"length": ["1/1"],
+		"codeSet": "ECL",
+		"standardFormats": ["T","N"],
+		"definition" : "Code indicating the status of the transmission."
+	}]
+}
+        
+  
