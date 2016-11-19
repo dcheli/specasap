@@ -60,14 +60,11 @@ public class NCPDPElementService {
 					String segmentId =  "";
 					String segmentName = "";
 					String elementName = "";
-					String version = "";
 					String dataType = "";
 					String usage = "";
-					String fieldFormat = "";
 					String codeSet = "";
 					String definition = "";
-					//Integer minimumLength = 0;
-					//Integer maximumLength = 0;
+					List<Document> versionList = null;
 					List<Document> lengthList = null;
 					List<Document> transactionList = null;
 					List<Document> standardFormatsList = null;
@@ -75,7 +72,8 @@ public class NCPDPElementService {
 					String[] transactions = null;
 					String[] standardFormats = null;
 					String[] fieldFormats = null;
-					String[] length = null;
+					String[] lengths = null;
+					String[] versions = null;
 					
 					List<Document> attributes = document.containsKey("attributes") ? (List<Document>)document.get("attributes") : null;
 					if(attributes != null){
@@ -83,21 +81,20 @@ public class NCPDPElementService {
 							elementName = attributes.get(0).containsKey("elementName") ? attributes.get(0).getString("elementName") : "";
 							segmentId = attributes.get(0).containsKey("segmentId") ? attributes.get(0).getString("segmentId") : "";
 							segmentName = attributes.get(0).containsKey("segmentName") ? attributes.get(0).getString("segmentName") : "";
-							version = attributes.get(0).containsKey("version") ? attributes.get(0).getString("version")  : "";
 							dataType = attributes.get(0).containsKey("dataType") ? attributes.get(0).getString("dataType") : "";
 							usage = attributes.get(0).containsKey("usage") ? attributes.get(0).getString("usage") : "";
-							definition = attributes.get(0).containsKey("definition") ? attributes.get(0).getString("definition") : "";
-							//fieldFormat = attributes.get(0).containsKey("fieldFormat") ? attributes.get(0).getString("fieldFormat") : "";							
-							//minimumLength = attributes.get(0).containsKey("minimumLength") ? attributes.get(0).getInteger("minimumLength") : 0;
-							//maximumLength = attributes.get(0).containsKey("maximumLength") ? attributes.get(0).getInteger("maximumLength") : 0;
-							
-							lengthList = attributes.get(0).containsKey("length") ? (List<Document>) attributes.get(0).get("length") : null;
+							definition = attributes.get(0).containsKey("definition") ? attributes.get(0).getString("definition") : "";							
+							versionList = attributes.get(0).containsKey("versions") ? (List<Document>) attributes.get(0).get("versions") : null;
+							lengthList = attributes.get(0).containsKey("lengths") ? (List<Document>) attributes.get(0).get("lengths") : null;
 							fieldFormatList = attributes.get(0).containsKey("fieldFormats") ? (List<Document>) attributes.get(0).get("fieldFormats") : null;
 							transactionList = attributes.get(0).containsKey("transactions") ?(List<Document>) attributes.get(0).get("transactions") : null;
 							standardFormatsList = attributes.get(0).containsKey("standardFormats") ? (List<Document>) attributes.get(0).get("standardFormats") : null;
 							
+							if(versionList != null){
+								versions = versionList.stream().toArray(String[]::new);
+							}
 							if(lengthList != null){
-								length = lengthList.stream().toArray(String[]::new);
+								lengths = lengthList.stream().toArray(String[]::new);
 							}
 							if(transactionList != null)
 								transactions = transactionList.stream().toArray(String[]::new);
@@ -109,8 +106,8 @@ public class NCPDPElementService {
 						}
 					}
 					
-					element = new NCPDPElement(name, segmentId, segmentName, elementName, version, dataType, 
-							transactions, usage, fieldFormats, codeSet, length,	standardFormats, definition);
+					element = new NCPDPElement(name, segmentId, segmentName, elementName, versions, dataType, 
+							transactions, usage, fieldFormats, codeSet, lengths,	standardFormats, definition);
 			
 						elementList.add(element);
 				}

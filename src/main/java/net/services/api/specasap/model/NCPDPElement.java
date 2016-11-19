@@ -12,7 +12,7 @@ public class NCPDPElement extends Element{
 	String segmentId;
 	String segmentName;
 	String elementName;
-	String version;
+	String[] versions;
 	String dataType;
 	String[] transactions;
 	String[] standardFormats;
@@ -23,7 +23,7 @@ public class NCPDPElement extends Element{
 	@XmlElement(nillable = true) String codeSet;
 	String definition;
 	
-	String[] length;
+	String[] lengths;
 	Integer minimumLength;
 	Integer maximumLength;	
     
@@ -32,20 +32,20 @@ public class NCPDPElement extends Element{
 		
 	}
 
-	public NCPDPElement(String name, String segmentId, String segmentName, String elementName, String version, String dataType,
+	public NCPDPElement(String name, String segmentId, String segmentName, String elementName, String[] versions, String dataType,
 			String[] transactions, String usage, String[] fieldFormats, String codeSet, String[] length, String[] standardFormats,String definition) {
 		super();
 		this.name = name;
 		this.segmentId = segmentId;
 		this.segmentName = segmentName;
 		this.elementName = elementName;
-		this.version = version;
+		this.versions = versions;
 		this.dataType = dataType;
 		this.transactions = transactions;
 		this.usage = usage;
 		this.fieldFormats = fieldFormats;
 		this.codeSet = codeSet;
-		this.length = length;
+		this.lengths = length;
 		//this.minimumLength = minimumLength;
 		//this.maximumLength = maximumLength;
 		this.standardFormats = standardFormats;
@@ -81,16 +81,13 @@ public class NCPDPElement extends Element{
 		this.elementName = elementName;
 	}
 
-
-	public String getVersion() {
-		return version;
+	public String[] getLengths() {
+		return lengths;
 	}
 
-
-	public void setVersion(String version) {
-		this.version = version;
+	public void setLengths(String[] lengths) {
+		this.lengths = lengths;
 	}
-
 
 	public String getDataType() {
 		return dataType;
@@ -143,16 +140,6 @@ public class NCPDPElement extends Element{
 	}
 
 
-	public String[] getLength() {
-		return length;
-	}
-
-
-	public void setLength(String[] length) {
-		this.length = length;
-	}
-
-
 	public Integer getMinimumLength() {
 		return minimumLength;
 	}
@@ -202,6 +189,14 @@ public class NCPDPElement extends Element{
 
 	public void setDefinition(String definition) {
 		this.definition = definition;
+	}
+
+	public String[] getVersions() {
+		return versions;
+	}
+
+	public void setVersions(String[] versions) {
+		this.versions = versions;
 	}
 
 }

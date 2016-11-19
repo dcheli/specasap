@@ -94,7 +94,7 @@ public class X12ElementService {
 								attributes.get(0).getString("version"), attributes.get(0).getString("dataType"),
 								transactions, attributes.get(0).getString("requirementDesignator"), attributes.get(0).getInteger("dataElementNumber"),
 								attributes.get(0).getString("implementationName"), attributes.get(0).getInteger("elementRepeat"), 
-								codeSet, attributes.get(0).getString("loop"), attributes.get(0).getString("length"), 
+								codeSet, attributes.get(0).getString("loop"), attributes.get(0).getString("lengths"), 
 								attributes.get(0).getInteger("minimumLength"),attributes.get(0).getInteger("maximumLength"));
 				
 						elementList.add(element);

@@ -48,7 +48,7 @@ public class ElementResource  {
 			@Context UriInfo uriInfo,
 			@Context HttpServletRequest request) throws IOException{
 		
-		List<NCPDPElement> elementList = new ArrayList<>();
+		final List<NCPDPElement> elementList = new ArrayList<>();
 		NCPDPElementService ncpdpElementService = new NCPDPElementService(request.getServletContext());
 		List<NCPDPElement> returnList = ncpdpElementService.getElement(searchParam, collectionVersion);
 		returnList.forEach(element -> elementList.add(element));		
@@ -68,4 +68,5 @@ public class ElementResource  {
 		returnList.forEach(element -> elementList.add(element));		
 		return (ArrayList<X12Element>) elementList;
 	}
+	
 }
