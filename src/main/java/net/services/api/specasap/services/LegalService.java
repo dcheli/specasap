@@ -99,10 +99,10 @@ public class LegalService {
 				
 				String introduction = ""; 
 				String accountTerms = "";
-				String paymentRefundsUpgradingandDowngrading = ""; 
+				String paymentRefundsUpgradingAndDowngrading = ""; 
 				String cancellationAndTermination = "";
-				String modificationsToThServiceAndPrices = "";
-				String copyrightAndCOntentOwnership = "";
+				String modificationsToTheServiceAndPrices = "";
+				String copyrightAndContentOwnership = "";
 				String generalConditions = "";
 				String lastReviewedOrUpdated = "";
 				
@@ -111,16 +111,16 @@ public class LegalService {
 					if(!attributes.isEmpty()){
 						introduction = attributes.get(0).containsKey("introduction") ? attributes.get(0).getString("introduction") : "";
 						accountTerms = attributes.get(0).containsKey("accountTerms") ? attributes.get(0).getString("accountTerms") : "";
-						paymentRefundsUpgradingandDowngrading = attributes.get(0).containsKey("paymentRefundsUpgradingandDowngrading") ? attributes.get(0).getString("paymentRefundsUpgradingandDowngrading") : "";
+						paymentRefundsUpgradingAndDowngrading = attributes.get(0).containsKey("paymentRefundsUpgradingAndDowngrading") ? attributes.get(0).getString("paymentRefundsUpgradingAndDowngrading") : "";
 						cancellationAndTermination = attributes.get(0).containsKey("cancellationAndTermination") ? attributes.get(0).getString("cancellationAndTermination") : "";
-						modificationsToThServiceAndPrices = attributes.get(0).containsKey("modificationsToThServiceAndPrices") ? attributes.get(0).getString("modificationsToThServiceAndPrices") : "";
-						copyrightAndCOntentOwnership = attributes.get(0).containsKey("copyrightAndCOntentOwnership") ? attributes.get(0).getString("copyrightAndCOntentOwnership") : "";
+						modificationsToTheServiceAndPrices = attributes.get(0).containsKey("modificationsToTheServiceAndPrices") ? attributes.get(0).getString("modificationsToTheServiceAndPrices") : "";
+						copyrightAndContentOwnership = attributes.get(0).containsKey("copyrightAndContentOwnership") ? attributes.get(0).getString("copyrightAndContentOwnership") : "";
 						generalConditions = attributes.get(0).containsKey("generalConditions") ? attributes.get(0).getString("generalConditions") : "";
 						lastReviewedOrUpdated = attributes.get(0).containsKey("lastReviewedOrUpdated") ? attributes.get(0).getString("lastReviewedOrUpdated") : "";
 					}
 				}
-				termsOfService = new TermsOfService(introduction, accountTerms, paymentRefundsUpgradingandDowngrading,
-						cancellationAndTermination, modificationsToThServiceAndPrices, copyrightAndCOntentOwnership, 
+				termsOfService = new TermsOfService(introduction, accountTerms, paymentRefundsUpgradingAndDowngrading,
+						cancellationAndTermination, modificationsToTheServiceAndPrices, copyrightAndContentOwnership, 
 						generalConditions,lastReviewedOrUpdated);
 				
 			}

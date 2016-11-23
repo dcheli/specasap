@@ -3,10 +3,10 @@ package net.services.api.specasap.model;
 public class TermsOfService {
 		String introduction; 
 		String accountTerms;
-		String paymentRefundsUpgradingandDowngrading; 
+		String paymentRefundsUpgradingAndDowngrading; 
 		String cancellationAndTermination;
-		String modificationsToThServiceAndPrices;
-		String copyrightAndCOntentOwnership;
+		String modificationsToTheServiceAndPrices;
+		String copyrightAndContentOwnership;
 		String generalConditions; 
 		String lastReviewedOrUpdated;
 		
@@ -14,16 +14,16 @@ public class TermsOfService {
 			super();
 			// TODO Auto-generated constructor stub
 		}
-		public TermsOfService(String introduction, String accountTerms, String paymentRefundsUpgradingandDowngrading,
-				String cancellationAndTermination, String modificationsToThServiceAndPrices,
-				String copyrightAndCOntentOwnership, String generalConditions, String lastReviewedOrUpdated) {
+		public TermsOfService(String introduction, String accountTerms, String paymentRefundsUpgradingAndDowngrading,
+				String cancellationAndTermination, String modificationsToTheServiceAndPrices,
+				String copyrightAndContentOwnership, String generalConditions, String lastReviewedOrUpdated) {
 			super();
 			this.introduction = introduction;
 			this.accountTerms = accountTerms;
-			this.paymentRefundsUpgradingandDowngrading = paymentRefundsUpgradingandDowngrading;
+			this.paymentRefundsUpgradingAndDowngrading = paymentRefundsUpgradingAndDowngrading;
 			this.cancellationAndTermination = cancellationAndTermination;
-			this.modificationsToThServiceAndPrices = modificationsToThServiceAndPrices;
-			this.copyrightAndCOntentOwnership = copyrightAndCOntentOwnership;
+			this.modificationsToTheServiceAndPrices = modificationsToTheServiceAndPrices;
+			this.copyrightAndContentOwnership = copyrightAndContentOwnership;
 			this.generalConditions = generalConditions;
 			this.lastReviewedOrUpdated = lastReviewedOrUpdated;
 		}
@@ -39,24 +39,7 @@ public class TermsOfService {
 		public void setAccountTerms(String accountTerms) {
 			this.accountTerms = accountTerms;
 		}
-		public String getPaymentRefundsUpgradingandDowngrading() {
-			return paymentRefundsUpgradingandDowngrading;
-		}
-		public void setPaymentRefundsUpgradingandDowngrading(String paymentRefundsUpgradingandDowngrading) {
-			this.paymentRefundsUpgradingandDowngrading = paymentRefundsUpgradingandDowngrading;
-		}
-		public String getModificationsToThServiceAndPrices() {
-			return modificationsToThServiceAndPrices;
-		}
-		public void setModificationsToThServiceAndPrices(String modificationsToThServiceAndPrices) {
-			this.modificationsToThServiceAndPrices = modificationsToThServiceAndPrices;
-		}
-		public String getCopyrightAndCOntentOwnership() {
-			return copyrightAndCOntentOwnership;
-		}
-		public void setCopyrightAndCOntentOwnership(String copyrightAndCOntentOwnership) {
-			this.copyrightAndCOntentOwnership = copyrightAndCOntentOwnership;
-		}
+
 		public String getGeneralConditions() {
 			return generalConditions;
 		}
@@ -74,5 +57,23 @@ public class TermsOfService {
 		}
 		public void setCancellationAndTermination(String cancellationAndTermination) {
 			this.cancellationAndTermination = cancellationAndTermination;
+		}
+		public String getPaymentRefundsUpgradingAndDowngrading() {
+			return paymentRefundsUpgradingAndDowngrading;
+		}
+		public void setPaymentRefundsUpgradingAndDowngrading(String paymentRefundsUpgradingAndDowngrading) {
+			this.paymentRefundsUpgradingAndDowngrading = paymentRefundsUpgradingAndDowngrading;
+		}
+		public String getModificationsToTheServiceAndPrices() {
+			return modificationsToTheServiceAndPrices;
+		}
+		public void setModificationsToTheServiceAndPrices(String modificationsToTheServiceAndPrices) {
+			this.modificationsToTheServiceAndPrices = modificationsToTheServiceAndPrices;
+		}
+		public String getCopyrightAndContentOwnership() {
+			return copyrightAndContentOwnership;
+		}
+		public void setCopyrightAndContentOwnership(String copyrightAndContentOwnership) {
+			this.copyrightAndContentOwnership = copyrightAndContentOwnership;
 		}
 }
