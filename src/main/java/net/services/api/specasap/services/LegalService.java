@@ -56,18 +56,18 @@ public class LegalService {
 				String changes = "";
 				String questions = "";
 				String lastReviewedOrUpdated = "";
-				List<Document> attributes = document.containsKey("components") ? (List<Document>)document.get("components") : null;
-				if(attributes != null){
-					if(!attributes.isEmpty()){
-						generalInformation = attributes.get(0).containsKey("generalInformation") ? attributes.get(0).getString("generalInformation") : "";
-						informationGatheringAndUsage = attributes.get(0).containsKey("informationGatheringAndUsage") ? attributes.get(0).getString("informationGatheringAndUsage") : "";
-						cookies = attributes.get(0).containsKey("cookies") ? attributes.get(0).getString("cookies") : "";
-						dataStorage = attributes.get(0).containsKey("dataStorage") ? attributes.get(0).getString("dataStorage") : "";
-						disclosure = attributes.get(0).containsKey("disclosure") ? attributes.get(0).getString("disclosure") : "";
-						euAndSwissSafeHarbor = attributes.get(0).containsKey("euAndSwissSafeHarbor") ? attributes.get(0).getString("euAndSwissSafeHarbor") : "";
-						changes = attributes.get(0).containsKey("changes") ? attributes.get(0).getString("changes") : "";
-						questions = attributes.get(0).containsKey("questions") ? attributes.get(0).getString("questions") : "";
-						lastReviewedOrUpdated = attributes.get(0).containsKey("lastReviewedOrUpdated") ? attributes.get(0).getString("lastReviewedOrUpdated") : "";
+				List<Document> components = document.containsKey("components") ? (List<Document>)document.get("components") : null;
+				if(components != null){
+					if(!components.isEmpty()){
+						generalInformation = components.get(0).containsKey("generalInformation") ? components.get(0).getString("generalInformation") : "";
+						informationGatheringAndUsage = components.get(0).containsKey("informationGatheringAndUsage") ? components.get(0).getString("informationGatheringAndUsage") : "";
+						cookies = components.get(0).containsKey("cookies") ? components.get(0).getString("cookies") : "";
+						dataStorage = components.get(0).containsKey("dataStorage") ? components.get(0).getString("dataStorage") : "";
+						disclosure = components.get(0).containsKey("disclosure") ? components.get(0).getString("disclosure") : "";
+						euAndSwissSafeHarbor = components.get(0).containsKey("euAndSwissSafeHarbor") ? components.get(0).getString("euAndSwissSafeHarbor") : "";
+						changes = components.get(0).containsKey("changes") ? components.get(0).getString("changes") : "";
+						questions = components.get(0).containsKey("questions") ? components.get(0).getString("questions") : "";
+						lastReviewedOrUpdated = components.get(0).containsKey("lastReviewedOrUpdated") ? components.get(0).getString("lastReviewedOrUpdated") : "";
 					}
 				}
 				privacyPolicy = new PrivacyPolicy(generalInformation, informationGatheringAndUsage, cookies,
@@ -106,17 +106,17 @@ public class LegalService {
 				String generalConditions = "";
 				String lastReviewedOrUpdated = "";
 				
-				List<Document> attributes = document.containsKey("components") ? (List<Document>)document.get("components") : null;
-				if(attributes != null){
-					if(!attributes.isEmpty()){
-						introduction = attributes.get(0).containsKey("introduction") ? attributes.get(0).getString("introduction") : "";
-						accountTerms = attributes.get(0).containsKey("accountTerms") ? attributes.get(0).getString("accountTerms") : "";
-						paymentRefundsUpgradingAndDowngrading = attributes.get(0).containsKey("paymentRefundsUpgradingAndDowngrading") ? attributes.get(0).getString("paymentRefundsUpgradingAndDowngrading") : "";
-						cancellationAndTermination = attributes.get(0).containsKey("cancellationAndTermination") ? attributes.get(0).getString("cancellationAndTermination") : "";
-						modificationsToTheServiceAndPrices = attributes.get(0).containsKey("modificationsToTheServiceAndPrices") ? attributes.get(0).getString("modificationsToTheServiceAndPrices") : "";
-						copyrightAndContentOwnership = attributes.get(0).containsKey("copyrightAndContentOwnership") ? attributes.get(0).getString("copyrightAndContentOwnership") : "";
-						generalConditions = attributes.get(0).containsKey("generalConditions") ? attributes.get(0).getString("generalConditions") : "";
-						lastReviewedOrUpdated = attributes.get(0).containsKey("lastReviewedOrUpdated") ? attributes.get(0).getString("lastReviewedOrUpdated") : "";
+				List<Document> components = document.containsKey("components") ? (List<Document>)document.get("components") : null;
+				if(components != null){
+					if(!components.isEmpty()){
+						introduction = components.get(0).containsKey("introduction") ? components.get(0).getString("introduction") : "";
+						accountTerms = components.get(0).containsKey("accountTerms") ? components.get(0).getString("accountTerms") : "";
+						paymentRefundsUpgradingAndDowngrading = components.get(0).containsKey("paymentRefundsUpgradingAndDowngrading") ? components.get(0).getString("paymentRefundsUpgradingAndDowngrading") : "";
+						cancellationAndTermination = components.get(0).containsKey("cancellationAndTermination") ? components.get(0).getString("cancellationAndTermination") : "";
+						modificationsToTheServiceAndPrices = components.get(0).containsKey("modificationsToTheServiceAndPrices") ? components.get(0).getString("modificationsToTheServiceAndPrices") : "";
+						copyrightAndContentOwnership = components.get(0).containsKey("copyrightAndContentOwnership") ? components.get(0).getString("copyrightAndContentOwnership") : "";
+						generalConditions = components.get(0).containsKey("generalConditions") ? components.get(0).getString("generalConditions") : "";
+						lastReviewedOrUpdated = components.get(0).containsKey("lastReviewedOrUpdated") ? components.get(0).getString("lastReviewedOrUpdated") : "";
 					}
 				}
 				termsOfService = new TermsOfService(introduction, accountTerms, paymentRefundsUpgradingAndDowngrading,

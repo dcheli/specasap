@@ -1,0 +1,17 @@
+{
+    productId : "com.dataasap.x12asap",
+    operatingSystem : "ios",
+    version: "1.0"
+}
+
+{
+    productId : "com.dataasap.ncpdpasap",
+    operatingSystem : "ios",
+    version: "1.0"
+}
+
+{
+    productId : "com.dataasap.hl7asap",
+    operatingSystem : "ios",
+    version: "1.0"
+}

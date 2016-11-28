@@ -1,7 +1,6 @@
 package net.services.api.specasap.resources;
 
 import java.io.IOException;
-import java.util.List;
 
 import javax.inject.Singleton;
 import javax.servlet.ServletContext;
