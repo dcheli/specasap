@@ -20,7 +20,7 @@ import org.apache.log4j.Logger;
 import net.services.api.specasap.model.Product;
 import net.services.api.specasap.services.ProductService;
 
-@Path("/")
+@Path("/{version}/products")
 @Singleton // not sure if this should be a singleton vs. having a new instance per request; 
 public class ProductResource {
 	Logger logger = Logger.getLogger(ElementResource.class);	

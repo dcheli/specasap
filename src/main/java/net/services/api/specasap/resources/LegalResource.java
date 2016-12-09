@@ -18,7 +18,7 @@ import net.services.api.specasap.model.TermsOfService;
 import net.services.api.specasap.services.LegalService;
 
 
-@Path("/")
+@Path("/{version}/legal")
 @Singleton // not sure if this should be a singleton vs. having a new instance per request; 
 public class LegalResource {
 	

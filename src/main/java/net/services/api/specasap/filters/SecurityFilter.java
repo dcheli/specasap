@@ -27,7 +27,9 @@ public class SecurityFilter implements ContainerRequestFilter{
 
 	private static final String AUTHORIZATION_HEADER_KEY = "Authorization";
 	private static final String AUTHORIZATION_HEADER_PREFIX = "Basic ";	 //keep the space
-	private static final String SECURED_URI_PREFIX = "v1/elements";
+	private static final String SECURED_ELEMENT_URI_PREFIX = "v1/elements";
+	private static final String SECURED_PRODUCTLIST_URI_PREFIX = "v1/product";
+	private static final String SECURED_LEGAL_URI_PREFIX = "v1/legal";
 	private static final String UNAUTHORIZED_ERROR_MESSAGE = "User cannot access this resource.";
 	
 	final static Logger logger = Logger.getLogger(SecurityFilter.class);
@@ -39,7 +41,9 @@ public class SecurityFilter implements ContainerRequestFilter{
 	@Override
 	public void filter(ContainerRequestContext requestContext) throws IOException {
 			
-		if(requestContext.getUriInfo().getPath().contains(SECURED_URI_PREFIX)){
+		if(requestContext.getUriInfo().getPath().contains(SECURED_ELEMENT_URI_PREFIX) ||
+				requestContext.getUriInfo().getPath().contains(SECURED_PRODUCTLIST_URI_PREFIX) ||
+				requestContext.getUriInfo().getPath().contains(SECURED_LEGAL_URI_PREFIX)){
 			List<String> authHeader = requestContext.getHeaders().get(AUTHORIZATION_HEADER_KEY);
 			if(authHeader != null && authHeader.size() > 0){
 				authToken = authHeader.get(0);
