@@ -79,22 +79,32 @@ public class X12ElementService {
 							}
 						}
 						
-						String[] codeSet = null;
-						if(attributes.get(0).containsKey("codeSet")) {						
-							if(attributes.get(0).get("codeSet") == null){			
-								codeSet = new String[]{};
+						String[] codes = null;
+						if(attributes.get(0).containsKey("codes")) {						
+							if(attributes.get(0).get("codes") == null){			
+								codes = new String[]{};
 							} else {
-								List<Document> codes = (List<Document>) attributes.get(0).get("codeSet");
-								codeSet = codes.stream().toArray(String[]::new);
+								List<Document> c = (List<Document>) attributes.get(0).get("codes");
+								codes = c.stream().toArray(String[]::new);
+							}
+						}
+						
+						String[] versions = null;
+						if(attributes.get(0).containsKey("versions")) {
+							if(attributes.get(0).get("versions") == null) {
+								versions = new String[]{};
+							} else {
+								List<Document> v = (List<Document>) attributes.get(0).get("versions");
+								versions = v.stream().toArray(String[]::new);
 							}
 						}
 	
 						element =  new X12Element(document.getString("name"), attributes.get(0).getString("segmentId"), 
 								attributes.get(0).getString("segmentName"), attributes.get(0).getString("elementName"), 
-								attributes.get(0).getString("version"), attributes.get(0).getString("dataType"),
-								transactions, attributes.get(0).getString("requirementDesignator"), attributes.get(0).getInteger("dataElementNumber"),
-								attributes.get(0).getString("implementationName"), attributes.get(0).getInteger("elementRepeat"), 
-								codeSet, attributes.get(0).getString("loop"), attributes.get(0).getString("lengths"), 
+								versions, attributes.get(0).getString("dataType"),transactions, attributes.get(0).getString("requirementDesignator"), 
+								attributes.get(0).getInteger("dataElementNumber"),attributes.get(0).getString("implementationName"), 
+								attributes.get(0).getInteger("elementRepeat"), 
+								codes, attributes.get(0).getString("loop"), attributes.get(0).getString("lengths"), 
 								attributes.get(0).getInteger("minimumLength"),attributes.get(0).getInteger("maximumLength"));
 				
 						elementList.add(element);

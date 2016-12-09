@@ -1,124 +1,115 @@
 {
-	"Data Elements":  [
-		{
-		"name":  "CLM01",
-		"tags" : "CLM01;Claim Submitter's Identifier;Patient Control Number",
-		"attributes":  [
-		    {
-			    "segmentId":  "CLM",
-			    "segmentName" : "Claim Submitter's Identifier",
-			    "elementName" : "Patient Control Number",
-			    "implementationName" : "Patient Control Number",
-			    "transactions":  ["837 P,I,D"],
-			    "version":  "5010",
-			    "usage" : "M",
-                "dataType" : "AN",                        
-			    "length": "1/38",
-                "minimumLength": 1,
-                "maximumLength": 38,
-                "codeSet": null,
-                "collection": "x125010",
-                "elementRepeat" : 1,
-                "position" : "1028",
-                "loop": "2300"
-		    }]
-        },
-		{
-		"name":  "REF01",
-		"tags" : "REF01;Reference Identification Qualifier;Medical Record Identification Number",
-		"attributes":  [
-		    {
-			    "segmentId":  "REF",
-			    "segmentName" : "Medical Record Number",
-			    "elementName" : "Reference Identification Qualifier",
-			    "implementationName" : "Medical Record Identification Number",
-			    "transactions":  ["837 P,I,D"],
-			    "version":  "5010",
-			    "usage" : "M",
-                "dataType" : "ID",                        
-			    "length": "2/3",
-                "minimumLength": 2,
-                "maximumLength": 3,
-                "codeSet": ["EA"],
-                "collection": "x125010",
-                "elementRepeat" : 1,
-                "position" : "128",
-                "loop": "2300"
-		    }]
-        },
-        
-		{
-		"name":  "REF02",
-		"tags" : "REF02;Reference Identification;Medical Record Number",
-		"attributes":  [
-		    {
-			    "segmentId":  "REF",
-			    "segmentName" : "Medical Record Number",
-			    "elementName" : "Reference Identification",
-			    "implementationName" : "Medical Record Number",
-			    "transactions":  ["837 P,I,D"],
-			    "version":  "5010",
-			    "usage" : "X",
-                "dataType" : "AN",                        
-			    "length": "1/50",
-                "minimumLength": 1,
-                "maximumLength": 50,
-                "codeSet": null,
-                "collection": "x125010",
-                "elementRepeat" : 1,
-                "position" : "127",
-                "loop": "2300"
-		    }]
-        },
+	"name":  "CLM01",
+	"tags" : "CLM01;Claim Submitter's Identifier;Patient Control Number",
+	"attributes":  [
+	    {
+		    "segmentId":  "CLM",
+		    "segmentName" : "Claim Submitter's Identifier",
+		    "elementName" : "Patient Control Number",
+		    "implementationName" : "Patient Control Number",
+		    "transactions":  ["837 P,I,D"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "AN",                        
+		    "length": "1/38",
+            "minimumLength": 1,
+            "maximumLength": 38,
+            "codes": null,
+            "elementRepeat" : 1,
+            "position" : "1028",
+            "loop": "2300"
+	    }]
+}
 
-		{
-		"name":  "REF01",
-		"tags" : "REF01;Reference Identification Qualifier;Original Reference Number",
-		"attributes":  [
-		    {
-			    "segmentId":  "REF",
-			    "segmentName" : "Payer Claim Control Number",
-			    "elementName" : "Reference Identification Qualifier",
-			    "implementationName" : "Original Reference Number",
-			    "transactions":  ["837 P,I,D"],
-			    "version":  "5010",
-			    "usage" : "M",
-                "dataType" : "ID",                        
-			    "length": "2/3",
-                "minimumLength": 2,
-                "maximumLength": 3,
-                "codeSet": ["F8"],
-                "collection": "x125010",
-                "elementRepeat" : 1,
-                "position" : "128",
-                "loop": "2300"
-		    }]
-        },
-        
-		{
-		"name":  "REF02",
-		"tags" : "REF02;Reference Identification;Payer Claim Control Number",
-		"attributes":  [
-		    {
-			    "segmentId":  "REF",
-			    "segmentName" : "Payer Claim Control Number",
-			    "elementName" : "Reference Identification",
-			    "implementationName" : "Payer Claim Control Number",
-			    "transactions":  ["837 P,I,D"],
-			    "version":  "5010",
-			    "usage" : "X",
-                "dataType" : "AN",                        
-			    "length": "1/50",
-                "minimumLength": 1,
-                "maximumLength": 50,
-                "codeSet": null,
-                "collection": "x125010",
-                "elementRepeat" : 1,
-                "position" : "127",
-                "loop": "2300"
-		    }]
-        },
 
+{
+	"name":  "REF01",
+	"tags" : "REF01;Reference Identification Qualifier;Medical Record Identification Number",
+	"attributes":  [
+	    {
+		    "segmentId":  "REF",
+		    "segmentName" : "Medical Record Number",
+		    "elementName" : "Reference Identification Qualifier",
+		    "implementationName" : "Medical Record Identification Number",
+		    "transactions":  ["837 P,I,D"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "ID",                        
+		    "length": "2/3",
+            "minimumLength": 2,
+            "maximumLength": 3,
+            "codes": ["EA"],
+            "elementRepeat" : 1,
+            "position" : "128",
+            "loop": "2300"
+	    }]
+}
         
-	]
+{
+	"name":  "REF02",
+	"tags" : "REF02;Reference Identification;Medical Record Number",
+	"attributes":  [
+	    {
+		    "segmentId":  "REF",
+		    "segmentName" : "Medical Record Number",
+		    "elementName" : "Reference Identification",
+		    "implementationName" : "Medical Record Number",
+		    "transactions":  ["837 P,I,D"],
+		    "versions":  ["5010"],
+		    "usage" : "X",
+            "dataType" : "AN",                        
+		    "length": "1/50",
+            "minimumLength": 1,
+            "maximumLength": 50,
+            "codes": null,
+            "elementRepeat" : 1,
+            "position" : "127",
+            "loop": "2300"
+	    }]
+}
+
+{
+	"name":  "REF01",
+	"tags" : "REF01;Reference Identification Qualifier;Original Reference Number",
+	"attributes":  [
+	    {
+		    "segmentId":  "REF",
+		    "segmentName" : "Payer Claim Control Number",
+		    "elementName" : "Reference Identification Qualifier",
+		    "implementationName" : "Original Reference Number",
+		    "transactions":  ["837 P,I,D"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "ID",                        
+		    "length": "2/3",
+            "minimumLength": 2,
+            "maximumLength": 3,
+            "codes": ["F8"],
+            "elementRepeat" : 1,
+            "position" : "128",
+            "loop": "2300"
+	    }]
+}
+        
+{
+	"name":  "REF02",
+	"tags" : "REF02;Reference Identification;Payer Claim Control Number",
+	"attributes":  [
+	    {
+		    "segmentId":  "REF",
+		    "segmentName" : "Payer Claim Control Number",
+		    "elementName" : "Reference Identification",
+		    "implementationName" : "Payer Claim Control Number",
+		    "transactions":  ["837 P,I,D"],
+		    "versions":  ["5010"],
+		    "usage" : "X",
+            "dataType" : "AN",                        
+		    "length": "1/50",
+            "minimumLength": 1,
+            "maximumLength": 50,
+            "codes": null,
+            "elementRepeat" : 1,
+            "position" : "127",
+            "loop": "2300"
+	    }]
 }

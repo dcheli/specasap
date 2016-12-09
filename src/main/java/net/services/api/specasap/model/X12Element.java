@@ -6,7 +6,7 @@ public class X12Element extends Element{
 	String segmentId;
 	String segmentName;
 	String elementName;
-	String version;
+	String[] versions;
 	String dataType;
 	String[] transactions;
 	
@@ -14,7 +14,7 @@ public class X12Element extends Element{
 	Integer dataElementNumber;
 	String implementationName;  
 	Integer elementRepeat;
-	String[] codeSet;
+	String[] codes;
 	String usage;
 	String loop;
 
@@ -26,23 +26,23 @@ public class X12Element extends Element{
 		
 	}
 
-	public X12Element(String name, String segmentId, String segmentName, String elementName, String version,
+	public X12Element(String name, String segmentId, String segmentName, String elementName, String[] versions,
 			String dataType, String[] transactions,   String requirementDesignator, Integer dataElementNumber,
-			String implementationName, Integer elementRepeat, String[] codeSet, 
+			String implementationName, Integer elementRepeat, String[] codes, 
 			String loop, String length, Integer minimumLength, Integer maximumLength) {
 		super();
 		this.name = name;
 		this.segmentId = segmentId;
 		this.segmentName = segmentName;
 		this.elementName = elementName;
-		this.version = version;
+		this.versions = versions;
 		this.dataType = dataType;
 		this.transactions = transactions;
 		this.requirementDesignator = requirementDesignator;
 		this.dataElementNumber = dataElementNumber;
 		this.implementationName = implementationName;
 		this.elementRepeat = elementRepeat;
-		this.codeSet = codeSet;
+		this.codes = codes;
 		this.loop = loop;
 		this.length = length;
 		this.minimumLength = minimumLength;
@@ -79,14 +79,6 @@ public class X12Element extends Element{
 
 	public void setElementName(String elementName) {
 		this.elementName = elementName;
-	}
-
-	public String getVersion() {
-		return version;
-	}
-
-	public void setVersion(String version) {
-		this.version = version;
 	}
 
 	public String getDataType() {
@@ -137,14 +129,6 @@ public class X12Element extends Element{
 		this.elementRepeat = elementRepeat;
 	}
 
-	public String[] getCodeSet() {
-		return codeSet;
-	}
-
-	public void setCodeSet(String[] codeSet) {
-		this.codeSet = codeSet;
-	}
-
 	public String getUsage() {
 		return usage;
 	}
@@ -184,6 +168,22 @@ public class X12Element extends Element{
 
 	public void setMaximumLength(Integer maximumLength) {
 		this.maximumLength = maximumLength;
+	}
+
+	public String[] getVersions() {
+		return versions;
+	}
+
+	public void setVersions(String[] versions) {
+		this.versions = versions;
+	}
+
+	public String[] getCodes() {
+		return codes;
+	}
+
+	public void setCodes(String[] codes) {
+		this.codes = codes;
 	}
 	
 	
