@@ -80,6 +80,7 @@ public class NCPDPElementService {
 							dataType = attributes.get(0).containsKey("dataType") ? attributes.get(0).getString("dataType") : "";
 							usage = attributes.get(0).containsKey("usage") ? attributes.get(0).getString("usage") : "";
 							definition = attributes.get(0).containsKey("definition") ? attributes.get(0).getString("definition") : "";	
+							System.out.print(attributes);
 														
 							if(attributes.get(0).containsKey("codes")) {						
 								if(attributes.get(0).get("codes") == null){			
