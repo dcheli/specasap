@@ -20,7 +20,8 @@ public class NCPDPElement extends Element{
 	String usage;
 	String fieldFormat;
 	String[] fieldFormats;
-	@XmlElement(nillable = true) String codeSet;
+	//@XmlElement(nillable = true) String codeSet;
+	String[] codes;
 	String definition;
 	
 	String[] lengths;
@@ -33,7 +34,7 @@ public class NCPDPElement extends Element{
 	}
 
 	public NCPDPElement(String name, String segmentId, String segmentName, String elementName, String[] versions, String dataType,
-			String[] transactions, String usage, String[] fieldFormats, String codeSet, String[] length, String[] standardFormats,String definition) {
+			String[] transactions, String usage, String[] fieldFormats, String[] codes, String[] length, String[] standardFormats,String definition) {
 		super();
 		this.name = name;
 		this.segmentId = segmentId;
@@ -44,10 +45,8 @@ public class NCPDPElement extends Element{
 		this.transactions = transactions;
 		this.usage = usage;
 		this.fieldFormats = fieldFormats;
-		this.codeSet = codeSet;
+		this.codes = codes;
 		this.lengths = length;
-		//this.minimumLength = minimumLength;
-		//this.maximumLength = maximumLength;
 		this.standardFormats = standardFormats;
 		this.definition = definition;
 	}
@@ -130,16 +129,6 @@ public class NCPDPElement extends Element{
 	}
 
 
-	public String getCodeSet() {
-		return codeSet;
-	}
-
-
-	public void setCodeSet(String codeSet) {
-		this.codeSet = codeSet;
-	}
-
-
 	public Integer getMinimumLength() {
 		return minimumLength;
 	}
@@ -197,6 +186,14 @@ public class NCPDPElement extends Element{
 
 	public void setVersions(String[] versions) {
 		this.versions = versions;
+	}
+
+	public String[] getCodes() {
+		return codes;
+	}
+
+	public void setCodes(String[] codes) {
+		this.codes = codes;
 	}
 
 }

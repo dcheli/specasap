@@ -62,13 +62,9 @@ public class NCPDPElementService {
 					String elementName = "";
 					String dataType = "";
 					String usage = "";
-					String codeSet = "";
 					String definition = "";
-					List<Document> versionList = null;
-					List<Document> lengthList = null;
-					List<Document> transactionList = null;
-					List<Document> standardFormatsList = null;
-					List<Document> fieldFormatList = null;
+
+					String[] codes = null;
 					String[] transactions = null;
 					String[] standardFormats = null;
 					String[] fieldFormats = null;
@@ -83,31 +79,66 @@ public class NCPDPElementService {
 							segmentName = attributes.get(0).containsKey("segmentName") ? attributes.get(0).getString("segmentName") : "";
 							dataType = attributes.get(0).containsKey("dataType") ? attributes.get(0).getString("dataType") : "";
 							usage = attributes.get(0).containsKey("usage") ? attributes.get(0).getString("usage") : "";
-							definition = attributes.get(0).containsKey("definition") ? attributes.get(0).getString("definition") : "";							
-							versionList = attributes.get(0).containsKey("versions") ? (List<Document>) attributes.get(0).get("versions") : null;
-							lengthList = attributes.get(0).containsKey("lengths") ? (List<Document>) attributes.get(0).get("lengths") : null;
-							fieldFormatList = attributes.get(0).containsKey("fieldFormats") ? (List<Document>) attributes.get(0).get("fieldFormats") : null;
-							transactionList = attributes.get(0).containsKey("transactions") ?(List<Document>) attributes.get(0).get("transactions") : null;
-							standardFormatsList = attributes.get(0).containsKey("standardFormats") ? (List<Document>) attributes.get(0).get("standardFormats") : null;
+							definition = attributes.get(0).containsKey("definition") ? attributes.get(0).getString("definition") : "";	
+														
+							if(attributes.get(0).containsKey("codes")) {						
+								if(attributes.get(0).get("codes") == null){			
+									codes = new String[]{};
+								} else {
+									List<Document> c = (List<Document>) attributes.get(0).get("codes");
+									codes = c.stream().toArray(String[]::new);
+								}
+							}
+
+							if(attributes.get(0).containsKey("versions")) {						
+								if(attributes.get(0).get("versions") == null){			
+									versions = new String[]{};
+								} else {
+									List<Document> c = (List<Document>) attributes.get(0).get("versions");
+									versions = c.stream().toArray(String[]::new);
+								}
+							}
+
+							if(attributes.get(0).containsKey("lengths")) {						
+								if(attributes.get(0).get("lengths") == null){			
+									lengths = new String[]{};
+								} else {
+									List<Document> c = (List<Document>) attributes.get(0).get("lengths");
+									lengths = c.stream().toArray(String[]::new);
+								}
+							}
 							
-							if(versionList != null){
-								versions = versionList.stream().toArray(String[]::new);
+							if(attributes.get(0).containsKey("transactions")) {						
+								if(attributes.get(0).get("transactions") == null){			
+									transactions = new String[]{};
+								} else {
+									List<Document> c = (List<Document>) attributes.get(0).get("transactions");
+									transactions = c.stream().toArray(String[]::new);
+								}
 							}
-							if(lengthList != null){
-								lengths = lengthList.stream().toArray(String[]::new);
+							
+							if(attributes.get(0).containsKey("standardFormats")) {						
+								if(attributes.get(0).get("standardFormats") == null){			
+									standardFormats = new String[]{};
+								} else {
+									List<Document> c = (List<Document>) attributes.get(0).get("standardFormats");
+									standardFormats = c.stream().toArray(String[]::new);
+								}
 							}
-							if(transactionList != null)
-								transactions = transactionList.stream().toArray(String[]::new);
-							if(standardFormatsList != null)
-								standardFormats = standardFormatsList.stream().toArray(String[]::new);
-							if(fieldFormatList != null) {
-								fieldFormats = fieldFormatList.stream().toArray(String[]::new);
+
+							if(attributes.get(0).containsKey("fieldFormats")) {						
+								if(attributes.get(0).get("fieldFormats") == null){			
+									fieldFormats = new String[]{};
+								} else {
+									List<Document> c = (List<Document>) attributes.get(0).get("fieldFormats");
+									fieldFormats = c.stream().toArray(String[]::new);
+								}
 							}
 						}
 					}
 					
 					element = new NCPDPElement(name, segmentId, segmentName, elementName, versions, dataType, 
-							transactions, usage, fieldFormats, codeSet, lengths,	standardFormats, definition);
+							transactions, usage, fieldFormats, codes, lengths,	standardFormats, definition);
 			
 						elementList.add(element);
 				}
