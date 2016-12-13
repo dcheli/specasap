@@ -59,7 +59,7 @@ public class NCPDPElementService {
 					
 					String name = document.containsKey("name") ? document.getString("name") : "";
 					String elementName = "";
-					String segmentId =  "";
+					String segmentId = "";
 					String segmentName = "";
 					String dataType = "";
 					String usage = "";

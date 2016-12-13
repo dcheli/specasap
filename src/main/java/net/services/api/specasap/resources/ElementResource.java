@@ -20,10 +20,12 @@ import javax.ws.rs.core.UriInfo;
 
 import org.apache.log4j.Logger;
 
+import net.services.api.specasap.model.HL7Element;
 import net.services.api.specasap.model.NCPDPElement;
 import net.services.api.specasap.model.X12Element;
 import net.services.api.specasap.services.NCPDPElementService;
 import net.services.api.specasap.services.X12ElementService;
+import net.services.api.specasap.services.HL7ElementService;
 
 @Path("/{version}/elements")
 @Singleton // not sure if this should be a singleton vs. having a new instance per request; 
@@ -68,5 +70,21 @@ public class ElementResource  {
 		returnList.forEach(element -> elementList.add(element));		
 		return (ArrayList<X12Element>) elementList;
 	}
+	
+	
+	@GET
+	@Path("/hl7/{searchParam}")
+	@Produces(MediaType.APPLICATION_JSON) 
+	
+	public ArrayList<HL7Element> getHL7Element(@PathParam("searchParam") String searchParam,
+				@DefaultValue("2") @QueryParam("v") String collectionVersion) throws IOException{
+		
+		List<HL7Element> elementList = new ArrayList<>();
+		HL7ElementService hl7ElementService = new HL7ElementService(servletContext);
+		List<HL7Element> returnList = hl7ElementService.getElement(searchParam, collectionVersion);
+		returnList.forEach(element -> elementList.add(element));		
+		return (ArrayList<HL7Element>) elementList;
+	}
+
 	
 }

@@ -85,12 +85,9 @@ public class X12ElementService {
 						int maximumLength;
 						int dataElement;
 								
-						//String definition = "";
-
 						String[] codes = null;
 						String[] transactions = null;
 						String[] versions = null;
-
 
 						List<Document> attributes = document.containsKey("attributes") ? (List<Document>)document.get("attributes") : null;
 						if((attributes != null) && !attributes.isEmpty()){
@@ -106,7 +103,6 @@ public class X12ElementService {
 							minimumLength = attributes.get(0).containsKey("minimumLength") ? attributes.get(0).getInteger("minimumLength") : 0;
 							maximumLength = attributes.get(0).containsKey("maximumLength") ? attributes.get(0).getInteger("maximumLength") : 0;
 							dataElement = attributes.get(0).containsKey("dataElement") ? attributes.get(0).getInteger("dataElement") : 0;
-							System.out.print("so far so good");
 
 							if(attributes.get(0).containsKey("codes")) {						
 								if(attributes.get(0).get("codes") == null){			

@@ -1,0 +1,106 @@
+{
+	"name":  "PSL-1",
+	"tags" : "PSL-1;Provider Product/Service Line Item Number",
+	"attributes":  [
+	    {
+		    "segmentId":  "PSL",
+		    "segmentName" : "Product/Service Line Item Segment",
+		    "elementName" : "Provider Product/Service Line Item Number",
+		    "sequence" : 1,
+		    "length": "",
+            "conformanceLength": "",
+            "dataType" : "EI",                        
+		    "optionality" : "R",
+		    "repetition": "",
+            "tableNumber": "",
+            "itemNumber" : "01955",
+		    "transactions":  ["Claims and Reimbursement"],
+		    "versions":  ["2.8.2"]
+	    }]
+}
+
+{
+	"name":  "PSL-3",
+	"tags" : "PSL-3;Product/Service Line Item Sequence Number",
+	"attributes":  [
+	    {
+		    "segmentId":  "PSL",
+		    "segmentName" : "Product/Service Line Item Segment",
+		    "elementName" : "Product/Service Line Item Sequence Number",
+		    "sequence" : 3,
+		    "length": "1..4",
+            "conformanceLength": "",
+            "dataType" : "EI",		    
+		    "optionality" : "R",
+            "repetition": "",
+            "tableNumber": "",
+            "itemNumber" : "01955",
+            "transactions":  ["Claims and Reimbursement"],
+		    "versions":  ["2.8.2"]
+	    }]
+}
+
+{
+	"name":  "PSL-8",
+	"tags" : "PSL-8;Product/Service Code Modifier",
+	"attributes":  [
+	    {
+		    "segmentId":  "PSL",
+		    "segmentName" : "Product/Service Line Item Segment",
+		    "elementName" : "Product/Service Code Modifier",
+		    "sequence" : 8,
+		    "length": "",
+            "conformanceLength": "",
+            "dataType" : "CWE",		    
+		    "optionality" : "O",
+            "repetition": "0-5",
+            "tableNumber": "0880",
+            "itemNumber" : "01962",
+            "transactions":  ["Claims and Reimbursement"],
+		    "versions":  ["2.8.2"]
+	    }]
+}
+
+
+{
+	"name":  "PMT-9",
+	"tags" : "PMT-9;Payee Transit Number",
+	"attributes":  [
+	    {
+		    "segmentId":  "PMT",
+		    "segmentName" : "Payment Information Segment",
+		    "elementName" : "Payee Transit Number",
+		    "sequence" : 9,
+		    "length": "",
+            "conformanceLength": "4=",
+            "dataType" : "ST",		    
+		    "optionality" : "O",
+            "repetition": "",
+            "tableNumber": "",
+            "itemNumber" : "02026",
+            "transactions":  ["Claims and Reimbursement"],
+		    "versions":  ["2.8.2"]
+	    }]
+}
+
+
+{
+	"name":  "CON-5",
+	"tags" : "CON-5;Consent Text",
+	"attributes":  [
+	    {
+		    "segmentId":  "CON",
+		    "segmentName" : "Consent Segment",
+		    "elementName" : "Consent Text",
+		    "sequence" : 5,
+		    "length": "",
+            "conformanceLength": "",
+            "dataType" : "FT",		    
+		    "optionality" : "O",
+            "repetition": "Y",
+            "tableNumber": "",
+            "itemNumber" : "01780",
+            "transactions":  ["Medical Records"],
+		    "versions":  ["2.8.2"]
+	    }]
+}
