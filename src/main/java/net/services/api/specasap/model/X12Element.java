@@ -6,28 +6,26 @@ public class X12Element extends Element{
 	String segmentId;
 	String segmentName;
 	String elementName;
-	String[] versions;
 	String dataType;
-	String[] transactions;
-	
-	String requirementDesignator;
-	Integer dataElementNumber;
-	String implementationName;  
-	Integer elementRepeat;
-	String[] codes;
-	String usage;
-	String loop;
-
+	String usage;	
 	String length;
+	String implementationName;
+	Integer elementRepeat;	
+	String loop;
 	Integer minimumLength;
 	Integer maximumLength;	
+	Integer dataElement;
+	
+	String[] codes;	
+	String[] transactions;
+	String[] versions;
 	
 	public X12Element() {
 		
 	}
 
 	public X12Element(String name, String segmentId, String segmentName, String elementName, String[] versions,
-			String dataType, String[] transactions,   String requirementDesignator, Integer dataElementNumber,
+			String dataType, String usage, String[] transactions, Integer dataElement,
 			String implementationName, Integer elementRepeat, String[] codes, 
 			String loop, String length, Integer minimumLength, Integer maximumLength) {
 		super();
@@ -37,9 +35,9 @@ public class X12Element extends Element{
 		this.elementName = elementName;
 		this.versions = versions;
 		this.dataType = dataType;
+		this.usage = usage;
 		this.transactions = transactions;
-		this.requirementDesignator = requirementDesignator;
-		this.dataElementNumber = dataElementNumber;
+		this.dataElement = dataElement;
 		this.implementationName = implementationName;
 		this.elementRepeat = elementRepeat;
 		this.codes = codes;
@@ -95,22 +93,6 @@ public class X12Element extends Element{
 
 	public void setTransactions(String[] transactions) {
 		this.transactions = transactions;
-	}
-
-	public String getRequirementDesignator() {
-		return requirementDesignator;
-	}
-
-	public void setRequirementDesignator(String requirementDesignator) {
-		this.requirementDesignator = requirementDesignator;
-	}
-
-	public Integer getDataElementNumber() {
-		return dataElementNumber;
-	}
-
-	public void setDataElementNumber(Integer dataElementNumber) {
-		this.dataElementNumber = dataElementNumber;
 	}
 
 	public String getImplementationName() {
@@ -184,6 +166,14 @@ public class X12Element extends Element{
 
 	public void setCodes(String[] codes) {
 		this.codes = codes;
+	}
+
+	public Integer getDataElement() {
+		return dataElement;
+	}
+
+	public void setDataElement(Integer dataElement) {
+		this.dataElement = dataElement;
 	}
 	
 	

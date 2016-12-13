@@ -21,10 +21,11 @@ import net.services.api.specasap.model.NCPDPElement;
 public class NCPDPElementService {
 
 	HashMap<String, NCPDPElement> elementMap = new HashMap<>();
-	NCPDPElement element = null;
 	MongoDatabase db = null;
-	Logger logger = Logger.getLogger(NCPDPElementService.class);
 	MongoClient mongoClient = null;
+	
+	NCPDPElement element = null;
+	Logger logger = Logger.getLogger(NCPDPElementService.class);
 	
 	public NCPDPElementService(ServletContext servletContext) throws IOException {
 
@@ -57,9 +58,9 @@ public class NCPDPElementService {
 				public void apply(final Document document) {
 					
 					String name = document.containsKey("name") ? document.getString("name") : "";
+					String elementName = "";
 					String segmentId =  "";
 					String segmentName = "";
-					String elementName = "";
 					String dataType = "";
 					String usage = "";
 					String definition = "";
@@ -80,7 +81,6 @@ public class NCPDPElementService {
 							dataType = attributes.get(0).containsKey("dataType") ? attributes.get(0).getString("dataType") : "";
 							usage = attributes.get(0).containsKey("usage") ? attributes.get(0).getString("usage") : "";
 							definition = attributes.get(0).containsKey("definition") ? attributes.get(0).getString("definition") : "";	
-							System.out.print(attributes);
 														
 							if(attributes.get(0).containsKey("codes")) {						
 								if(attributes.get(0).get("codes") == null){			

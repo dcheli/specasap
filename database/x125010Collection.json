@@ -16,7 +16,7 @@
             "maximumLength": 38,
             "codes": null,
             "elementRepeat" : 1,
-            "position" : "1028",
+            "dataElement" : 1028,
             "loop": "2300"
 	    }]
 }
@@ -40,7 +40,7 @@
             "maximumLength": 3,
             "codes": ["EA"],
             "elementRepeat" : 1,
-            "position" : "128",
+            "dataElement" : 128,
             "loop": "2300"
 	    }]
 }
@@ -63,7 +63,7 @@
             "maximumLength": 50,
             "codes": null,
             "elementRepeat" : 1,
-            "position" : "127",
+            "dataElement" : 127,
             "loop": "2300"
 	    }]
 }
@@ -86,7 +86,7 @@
             "maximumLength": 3,
             "codes": ["F8"],
             "elementRepeat" : 1,
-            "position" : "128",
+            "dataElement" : 128,
             "loop": "2300"
 	    }]
 }
@@ -109,7 +109,7 @@
             "maximumLength": 50,
             "codes": null,
             "elementRepeat" : 1,
-            "position" : "127",
+            "dataElement" : 127,
             "loop": "2300"
 	    }]
 }
