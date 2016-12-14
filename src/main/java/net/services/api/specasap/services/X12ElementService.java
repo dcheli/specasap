@@ -2,9 +2,7 @@ package net.services.api.specasap.services;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.regex.Pattern;
 
 import javax.servlet.ServletContext;
@@ -15,7 +13,6 @@ import org.bson.Document;
 import com.mongodb.Block;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
-import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
 import net.services.api.specasap.exceptions.DataNotFoundException;
@@ -23,17 +20,14 @@ import net.services.api.specasap.model.X12Element;
 
 public class X12ElementService {
 	
-	HashMap<String, X12Element> elementMap = new HashMap<>();
 	MongoDatabase db = null;
 	MongoClient mongoClient = null;
-	MongoCollection<Document> collection = null; // do I still need this?
 	X12Element element = null;
 	Logger logger = Logger.getLogger(X12ElementService.class);
 	
 	public X12ElementService(ServletContext servletContext) throws IOException {
 
 		try{
-
 			mongoClient = (MongoClient) servletContext.getAttribute("MONGODB_CLIENT");
 			db = mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DATABASE"));
 			System.out.println("User credentials are: " + mongoClient.getCredentialsList());			
@@ -45,17 +39,17 @@ public class X12ElementService {
 	}
 	
 	// not sure I need or want this method
-	public List<X12Element> getAllElements() {
-		List<X12Element> X12ElementList = new ArrayList<X12Element>();
-		if(elementMap.isEmpty())
-			System.out.println("Map is empty");
+//	public List<X12Element> getAllElements() {
+//		List<X12Element> X12ElementList = new ArrayList<X12Element>();
+//		if(elementMap.isEmpty())
+//			System.out.println("Map is empty");
 		
-		for(Map.Entry<String, X12Element> entry : elementMap.entrySet()){ 
-			X12ElementList.add(entry.getValue()); 
-			}
+//		for(Map.Entry<String, X12Element> entry : elementMap.entrySet()){ 
+//			X12ElementList.add(entry.getValue()); 
+//			}
 
-		return X12ElementList;	
-	}
+//		return X12ElementList;	
+//	}
 	
 	public List<X12Element> getElement(String searchParam, String collectionVersion) {	
 		List<X12Element> elementList = new ArrayList<X12Element>();

@@ -1,6 +1,9 @@
 package net.services.api.specasap.model;
 
-public class HL7Element {
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement()
+public class HL7Element extends Element{
 	
 	String name;	           		    
 	String segmentId;

@@ -2,7 +2,6 @@ package net.services.api.specasap.services;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -21,12 +20,10 @@ import net.services.api.specasap.model.HL7Element;
 
 public class HL7ElementService {
 	
-	HashMap<String, HL7Element> elementMap = new HashMap<>();
 	MongoDatabase db = null;
 	MongoClient mongoClient = null;
-	
 	HL7Element element = null;
-	Logger logger = Logger.getLogger(NCPDPElementService.class);
+	Logger logger = Logger.getLogger(HL7ElementService.class);
 	
 	public HL7ElementService(ServletContext servletContext) throws IOException {
 

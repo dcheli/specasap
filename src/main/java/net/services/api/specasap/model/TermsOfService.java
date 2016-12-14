@@ -1,5 +1,8 @@
 package net.services.api.specasap.model;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class TermsOfService {
 		String introduction; 
 		String accountTerms;

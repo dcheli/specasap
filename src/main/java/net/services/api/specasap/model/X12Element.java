@@ -1,5 +1,8 @@
 package net.services.api.specasap.model;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement()
 public class X12Element extends Element{
 
 	String name;    

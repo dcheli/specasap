@@ -1,7 +1,6 @@
 package net.services.api.specasap.services;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -20,10 +19,8 @@ import net.services.api.specasap.model.NCPDPElement;
 
 public class NCPDPElementService {
 
-	HashMap<String, NCPDPElement> elementMap = new HashMap<>();
 	MongoDatabase db = null;
 	MongoClient mongoClient = null;
-	
 	NCPDPElement element = null;
 	Logger logger = Logger.getLogger(NCPDPElementService.class);
 	
@@ -40,8 +37,6 @@ public class NCPDPElementService {
 		}
 	}
 	
-
-	// this needs to expand to include searching for a name, not just and ID and include wild cards
 	public List<NCPDPElement> getElement(String searchParam, String collectionVersion) {
 		List<NCPDPElement> elementList = new ArrayList<NCPDPElement>();
 
@@ -140,7 +135,7 @@ public class NCPDPElementService {
 					
 					element = new NCPDPElement(name, segmentId, segmentName, elementName, versions, dataType, 
 							transactions, usage, fieldFormats, codes, lengths,	standardFormats, definition);
-			
+					
 						elementList.add(element);
 				}
 			});

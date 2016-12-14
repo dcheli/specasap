@@ -34,16 +34,17 @@ public class ElementResource  {
 	
 	private @Context ServletContext servletContext; 
 
-	@GET
-	@Path("/ncpdp/{searchParam}")
-	@Produces(MediaType.APPLICATION_JSON) 
+
 	
 	/* enforcing a regular expression @Path("users/{username: [a-zA-Z][a-zA-Z_0-9]*}")
-	 * In this type of example the username variable will only match user names that begin with one upper or lower case letter and zero or 
+	 * In this type of example the searchParam variable will only match user names that begin with one upper or lower case letter and zero or 
 	 * more alpha numeric characters and the underscore character. If a user name does not match that a 404 (Not Found) response will occur.
 	 *  
 	 */
 	
+	@GET
+	@Path("/ncpdp/{searchParam}")
+	@Produces(MediaType.APPLICATION_JSON) 	
 	public ArrayList<NCPDPElement> getNCPDPElement(@PathParam("searchParam") 
 			@Pattern(regexp = "[a-zA-Z0-9-]+", message="The search parameter contains invalid characters.") String searchParam,
 			@DefaultValue("D0") @QueryParam("v") String collectionVersion,
@@ -60,12 +61,14 @@ public class ElementResource  {
 	@GET
 	@Path("/x12/{searchParam}")
 	@Produces(MediaType.APPLICATION_JSON) 
-	
-	public ArrayList<X12Element> getX12Element(@PathParam("searchParam") String searchParam,
-				@DefaultValue("5010") @QueryParam("v") String collectionVersion) throws IOException{
+	public ArrayList<X12Element> getX12Element(@PathParam("searchParam")
+			@Pattern(regexp = "[a-zA-Z0-9-]+", message="The search parameter contains invalid characters.") String searchParam,
+			@DefaultValue("5010") @QueryParam("v") String collectionVersion,
+			@Context UriInfo uriInfo,
+			@Context HttpServletRequest request) throws IOException{
 		
-		List<X12Element> elementList = new ArrayList<>();
-		X12ElementService x12ElementService = new X12ElementService(servletContext);
+		final List<X12Element> elementList = new ArrayList<>();
+		X12ElementService x12ElementService = new X12ElementService(request.getServletContext());
 		List<X12Element> returnList = x12ElementService.getElement(searchParam, collectionVersion);
 		returnList.forEach(element -> elementList.add(element));		
 		return (ArrayList<X12Element>) elementList;
@@ -75,16 +78,16 @@ public class ElementResource  {
 	@GET
 	@Path("/hl7/{searchParam}")
 	@Produces(MediaType.APPLICATION_JSON) 
-	
-	public ArrayList<HL7Element> getHL7Element(@PathParam("searchParam") String searchParam,
-				@DefaultValue("2") @QueryParam("v") String collectionVersion) throws IOException{
+	public ArrayList<HL7Element> getHL7Element(@PathParam("searchParam") 
+			@Pattern(regexp = "[a-zA-Z0-9-]+", message="The search parameter contains invalid characters.") String searchParam,
+			@DefaultValue("2") @QueryParam("v") String collectionVersion,
+			@Context UriInfo uriInfo,
+			@Context HttpServletRequest request) throws IOException{
 		
-		List<HL7Element> elementList = new ArrayList<>();
-		HL7ElementService hl7ElementService = new HL7ElementService(servletContext);
+		final List<HL7Element> elementList = new ArrayList<>();
+		HL7ElementService hl7ElementService = new HL7ElementService(request.getServletContext());
 		List<HL7Element> returnList = hl7ElementService.getElement(searchParam, collectionVersion);
-		returnList.forEach(element -> elementList.add(element));		
+		returnList.forEach(element -> elementList.add(element));
 		return (ArrayList<HL7Element>) elementList;
 	}
-
-	
 }
