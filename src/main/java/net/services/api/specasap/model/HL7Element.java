@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement()
 public class HL7Element extends Element{
 	
-	String name;	           		    
+	String elementId;
 	String segmentId;
 	String segmentName;
 	String elementName;
@@ -24,11 +24,11 @@ public class HL7Element extends Element{
 	public HL7Element() {
 	}
 
-	public HL7Element(String name, String segmentId, String segmentName, String elementName, Integer sequence,
+	public HL7Element(String elementId, String segmentId, String segmentName, String elementName, Integer sequence,
 			String length, String conformanceLength, String dataType, String optionality, String repetition,
 			String tableNumber, String itemNumber, String[] versions, String[] transactions) {
 		super();
-		this.name = name;
+		this.elementId = elementId;
 		this.segmentId = segmentId;
 		this.segmentName = segmentName;
 		this.elementName = elementName;
@@ -42,14 +42,6 @@ public class HL7Element extends Element{
 		this.itemNumber = itemNumber;
 		this.versions = versions;
 		this.transactions = transactions;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	public String getSegmentId() {
@@ -154,6 +146,14 @@ public class HL7Element extends Element{
 
 	public void setTransactions(String[] transactions) {
 		this.transactions = transactions;
+	}
+
+	public String getElementId() {
+		return elementId;
+	}
+
+	public void setElementId(String elementId) {
+		this.elementId = elementId;
 	}
 	
 

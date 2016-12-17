@@ -1,5 +1,5 @@
 {
-	"name":  "430-DU",
+	"elementId":  "430-DU",
 	"tags" : "430-DU;Gross Amount Due",
 	"attributes":  [
 	{
@@ -20,7 +20,7 @@
 
 
 {
-	"name":  "526-FQ",
+	"elementId":  "526-FQ",
 	"tags" : "526-FQ;Additional Message Information",
 	"attributes":  [
 	{
@@ -40,7 +40,7 @@
 }
 
 {
-	"name":  "409-D9",
+	"elementId":  "409-D9",
 	"tags" : "409-D9;Ingredient Cost Submitted",
 	"attributes":  [{
 		"segmentId":  "AM10",
@@ -59,7 +59,7 @@
 }
         
 {
-	"name":  "507-F7",
+	"elementId":  "507-F7",
 	"tags" : "507-F7;Dispensing Fee Paid",
 	"attributes":  [{
 		"segmentId":  "AM23",
@@ -78,7 +78,7 @@
 }
 
 {
-	"name":  "559-AX",
+	"elementId":  "559-AX",
 	"tags" : "559-AX;Percentage Sales Tax Amount Paid",
 	"attributes":  [{
 		"segmentId":  "AM23",
@@ -98,7 +98,7 @@
 
 
 {
-	"name":  "509-F9",
+	"elementId":  "509-F9",
 	"tags" : "509-F9;Total Amount Paid",
 	"attributes":  [{
 		"segmentId":  "AM23",
@@ -117,7 +117,7 @@
 }
         
 {
-	"name":  "267",
+	"elementId":  "267",
 	"tags" : "267;Insurance Code",
 	"attributes":  [{
 		"segmentId":  "O",
@@ -136,7 +136,7 @@
 }        
 
 {
- 	"name":  "XX",
+ 	"elementId":  "XX",
 	"tags" : "XXX-XX;Junk",
 	"attributes":  [{
 		"segmentId":  "",
@@ -156,7 +156,7 @@
         
              
 {
-	"name":  "312-CC",
+	"elementId":  "312-CC",
 	"tags" : "312-CC;Cardholder First Name",
 	"attributes":  [{
 		"segmentId":  "AM04",
@@ -175,7 +175,7 @@
 }
 
 {
-	"name":  "302-C2",
+	"elementId":  "302-C2",
 	"tags" : "302-C2;Cardholder ID",
 	"attributes":  [{
 		"segmentId":  "AM04",
@@ -194,7 +194,7 @@
 }
   
 {
-	"name":  "313-CD",
+	"elementId":  "313-CD",
 	"tags" : "313-CD;Cardholder Last Name",
 	"attributes":  [{
 		"segmentId":  "AM04",
@@ -213,7 +213,7 @@
 }
         
  {
- 	"name":  "301-C1",
+ 	"elementId":  "301-C1",
 	"tags" : "301-C1;Group ID",
 	"attributes":  [{
 		"segmentId":  "AM04",
@@ -232,7 +232,7 @@
 }
 
 {
- 	"name":  "501-F1",
+ 	"elementId":  "501-F1",
 	"tags" : "501-F1;Header Response Status",
 	"attributes":  [{
 		"segmentId":  "",

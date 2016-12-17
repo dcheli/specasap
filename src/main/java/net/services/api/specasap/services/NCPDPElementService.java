@@ -52,7 +52,7 @@ public class NCPDPElementService {
 				@Override
 				public void apply(final Document document) {
 					
-					String name = document.containsKey("name") ? document.getString("name") : "";
+					String elementId = document.containsKey("elementId") ? document.getString("elementId") : "";
 					String elementName = "";
 					String segmentId = "";
 					String segmentName = "";
@@ -133,7 +133,7 @@ public class NCPDPElementService {
 						}
 					}
 					
-					element = new NCPDPElement(name, segmentId, segmentName, elementName, versions, dataType, 
+					element = new NCPDPElement(elementId, segmentId, segmentName, elementName, versions, dataType, 
 							transactions, usage, fieldFormats, codes, lengths,	standardFormats, definition);
 					
 						elementList.add(element);

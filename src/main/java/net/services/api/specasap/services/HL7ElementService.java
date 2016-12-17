@@ -53,7 +53,7 @@ public class HL7ElementService {
 				@Override
 				public void apply(final Document document) {
 
-					String name = document.containsKey("name") ? document.getString("name") : "";           		    
+					String elementId = document.containsKey("elementId") ? document.getString("elementId") : "";           		    
 					String segmentId = "";
 					String segmentName = "";
 					String elementName = "";
@@ -101,7 +101,7 @@ public class HL7ElementService {
 							}
 						}
 						
-						element =  new HL7Element(name, segmentId, segmentName, elementName, sequence, 
+						element =  new HL7Element(elementId, segmentId, segmentName, elementName, sequence, 
 								length, conformanceLength, dataType, optionality, repetition, tableNumber, 
 								itemNumber, versions, transactions);
 						elementList.add(element);

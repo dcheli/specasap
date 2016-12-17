@@ -1,5 +1,5 @@
 {
-	"name":  "CLM01",
+	"elementId":  "CLM01",
 	"tags" : "CLM01;Claim Submitter's Identifier;Patient Control Number",
 	"attributes":  [
 	    {
@@ -8,6 +8,7 @@
 		    "elementName" : "Patient Control Number",
 		    "implementationName" : "Patient Control Number",
 		    "transactions":  ["837 P,I,D"],
+		    "displayVersion" : "5010",
 		    "versions":  ["5010"],
 		    "usage" : "M",
             "dataType" : "AN",                        
@@ -23,7 +24,7 @@
 
 
 {
-	"name":  "REF01",
+	"elementId":  "REF01",
 	"tags" : "REF01;Reference Identification Qualifier;Medical Record Identification Number",
 	"attributes":  [
 	    {
@@ -32,6 +33,7 @@
 		    "elementName" : "Reference Identification Qualifier",
 		    "implementationName" : "Medical Record Identification Number",
 		    "transactions":  ["837 P,I,D"],
+		    "displayVersion" : "5010",
 		    "versions":  ["5010"],
 		    "usage" : "M",
             "dataType" : "ID",                        
@@ -46,7 +48,7 @@
 }
         
 {
-	"name":  "REF02",
+	"elementId":  "REF02",
 	"tags" : "REF02;Reference Identification;Medical Record Number",
 	"attributes":  [
 	    {
@@ -55,6 +57,7 @@
 		    "elementName" : "Reference Identification",
 		    "implementationName" : "Medical Record Number",
 		    "transactions":  ["837 P,I,D"],
+		    "displayVersion" : "5010",
 		    "versions":  ["5010"],
 		    "usage" : "X",
             "dataType" : "AN",                        
@@ -69,7 +72,7 @@
 }
 
 {
-	"name":  "REF01",
+	"elementId":  "REF01",
 	"tags" : "REF01;Reference Identification Qualifier;Original Reference Number",
 	"attributes":  [
 	    {
@@ -78,6 +81,7 @@
 		    "elementName" : "Reference Identification Qualifier",
 		    "implementationName" : "Original Reference Number",
 		    "transactions":  ["837 P,I,D"],
+		    "displayVersion" : "5010",
 		    "versions":  ["5010"],
 		    "usage" : "M",
             "dataType" : "ID",                        
@@ -92,7 +96,7 @@
 }
         
 {
-	"name":  "REF02",
+	"elementId":  "REF02",
 	"tags" : "REF02;Reference Identification;Payer Claim Control Number",
 	"attributes":  [
 	    {
@@ -101,6 +105,7 @@
 		    "elementName" : "Reference Identification",
 		    "implementationName" : "Payer Claim Control Number",
 		    "transactions":  ["837 P,I,D"],
+		    "displayVersion" : "5010",
 		    "versions":  ["5010"],
 		    "usage" : "X",
             "dataType" : "AN",                        

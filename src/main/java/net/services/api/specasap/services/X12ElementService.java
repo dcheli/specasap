@@ -65,7 +65,7 @@ public class X12ElementService {
 					@Override
 					public void apply(final Document document) {
 						
-						String name = document.containsKey("name") ? document.getString("name") : "";
+						String elementId = document.containsKey("elementId") ? document.getString("elementId") : "";
 						String elementName = "";
 						String segmentId =  "";
 						String segmentName = "";
@@ -125,7 +125,7 @@ public class X12ElementService {
 								}
 							}
 						
-							element =  new X12Element(name, segmentId,segmentName,elementName, versions, 
+							element =  new X12Element(elementId, segmentId,segmentName,elementName, versions, 
 									dataType, usage, transactions, dataElement, implementationName, 
 									elementRepeat, codes, loop, length, minimumLength, maximumLength);
 				

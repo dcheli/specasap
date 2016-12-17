@@ -4,8 +4,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement()
 public class NCPDPElement extends Element{
-	
-	String name;        		    
+	  
+	String elementId;
 	String segmentId;
 	String segmentName;
 	String elementName;
@@ -27,13 +27,13 @@ public class NCPDPElement extends Element{
     
 	
 	public NCPDPElement() {
-		
+		// This is needed for JAXB
 	}
 
-	public NCPDPElement(String name, String segmentId, String segmentName, String elementName, String[] versions, String dataType,
+	public NCPDPElement(String elementId, String segmentId, String segmentName, String elementName, String[] versions, String dataType,
 			String[] transactions, String usage, String[] fieldFormats, String[] codes, String[] length, String[] standardFormats,String definition) {
 		super();
-		this.name = name;
+		this.elementId = elementId;
 		this.segmentId = segmentId;
 		this.segmentName = segmentName;
 		this.elementName = elementName;
@@ -47,16 +47,6 @@ public class NCPDPElement extends Element{
 		this.standardFormats = standardFormats;
 		this.definition = definition;
 	}
-
-	public String getName() {
-		return name;
-	}
-
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
 
 	public String getSegmentId() {
 		return segmentId;
@@ -191,6 +181,14 @@ public class NCPDPElement extends Element{
 
 	public void setCodes(String[] codes) {
 		this.codes = codes;
+	}
+
+	public String getElementId() {
+		return elementId;
+	}
+
+	public void setElementId(String elementId) {
+		this.elementId = elementId;
 	}
 
 }

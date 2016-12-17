@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement()
 public class X12Element extends Element{
 
-	String name;    
+	String elementId;
 	String segmentId;
 	String segmentName;
 	String elementName;
@@ -27,12 +27,12 @@ public class X12Element extends Element{
 		
 	}
 
-	public X12Element(String name, String segmentId, String segmentName, String elementName, String[] versions,
+	public X12Element(String elementId, String segmentId, String segmentName, String elementName, String[] versions,
 			String dataType, String usage, String[] transactions, Integer dataElement,
 			String implementationName, Integer elementRepeat, String[] codes, 
 			String loop, String length, Integer minimumLength, Integer maximumLength) {
 		super();
-		this.name = name;
+		this.elementId = elementId;
 		this.segmentId = segmentId;
 		this.segmentName = segmentName;
 		this.elementName = elementName;
@@ -48,14 +48,6 @@ public class X12Element extends Element{
 		this.length = length;
 		this.minimumLength = minimumLength;
 		this.maximumLength = maximumLength;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	public String getSegmentId() {
@@ -177,6 +169,14 @@ public class X12Element extends Element{
 
 	public void setDataElement(Integer dataElement) {
 		this.dataElement = dataElement;
+	}
+
+	public String getElementId() {
+		return elementId;
+	}
+
+	public void setElementId(String elementId) {
+		this.elementId = elementId;
 	}
 	
 	

@@ -1,5 +1,5 @@
 {
-	"name":  "PSL-1",
+	"elementId":  "PSL-1",
 	"tags" : "PSL-1;Provider Product/Service Line Item Number",
 	"attributes":  [
 	    {
@@ -20,7 +20,7 @@
 }
 
 {
-	"name":  "PSL-3",
+	"elementId":  "PSL-3",
 	"tags" : "PSL-3;Product/Service Line Item Sequence Number",
 	"attributes":  [
 	    {
@@ -41,7 +41,7 @@
 }
 
 {
-	"name":  "PSL-8",
+	"elementId":  "PSL-8",
 	"tags" : "PSL-8;Product/Service Code Modifier",
 	"attributes":  [
 	    {
@@ -63,7 +63,7 @@
 
 
 {
-	"name":  "PMT-9",
+	"elementId":  "PMT-9",
 	"tags" : "PMT-9;Payee Transit Number",
 	"attributes":  [
 	    {
@@ -85,7 +85,7 @@
 
 
 {
-	"name":  "CON-5",
+	"elementId":  "CON-5",
 	"tags" : "CON-5;Consent Text",
 	"attributes":  [
 	    {
