@@ -30,9 +30,8 @@ public class HL7ElementService {
 		try{
 			mongoClient = (MongoClient) servletContext.getAttribute("MONGODB_CLIENT");
 			db = mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DATABASE"));
-			System.out.println("User credentials are: " + mongoClient.getCredentialsList());
 		} catch(Exception e) {
-			e.printStackTrace();
+			logger.error("HL7ElementService: " + e);
 			logger.error("Mongo error " + e.getMessage());
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
 		}
@@ -43,8 +42,6 @@ public class HL7ElementService {
 		
 		if(!("").equals(searchParam)) {
 			String collection = "hl7" + collectionVersion;
-			System.out.println("database is " + db.getCollection(collection).toString());
-			
 			FindIterable<Document> iterable = db.getCollection(collection).find(
 					new Document("tags", java.util.regex.Pattern.compile(searchParam, Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE)));
 			
@@ -54,17 +51,18 @@ public class HL7ElementService {
 				public void apply(final Document document) {
 
 					String elementId = document.containsKey("elementId") ? document.getString("elementId") : "";           		    
-					String segmentId = "";
-					String segmentName = "";
-					String elementName = "";
-					Integer sequence = 0;
-					String length = "";
-					String conformanceLength = "";
-					String dataType = "";
-					String optionality = "";
-					String repetition = "";
-					String tableNumber = "";
-					String itemNumber = "";
+					String segmentId;
+					String segmentName;
+					String elementName;
+					Integer sequence;
+					String length;
+					String conformanceLength;
+					String dataType;
+					String optionality;
+					String repetition;
+					String tableNumber;
+					String itemNumber;
+					String definition;
 
 					String[] versions = null;
 					String[] transactions = null;
@@ -82,7 +80,8 @@ public class HL7ElementService {
 						repetition = attributes.get(0).containsKey("repetition") ? attributes.get(0).getString("repetition") : "";
 						tableNumber = attributes.get(0).containsKey("tableNumber") ? attributes.get(0).getString("tableNumber") : "";
 						itemNumber = attributes.get(0).containsKey("itemNumber") ? attributes.get(0).getString("itemNumber") : "";
-						
+						definition = attributes.get(0).containsKey("definition") ? attributes.get(0).getString("definition") : "";
+							
 						if(attributes.get(0).containsKey("versions")) {
 							if(attributes.get(0).get("versions") == null) {
 								versions = new String[]{};
@@ -103,19 +102,20 @@ public class HL7ElementService {
 						
 						element =  new HL7Element(elementId, segmentId, segmentName, elementName, sequence, 
 								length, conformanceLength, dataType, optionality, repetition, tableNumber, 
-								itemNumber, versions, transactions);
+								itemNumber, versions, transactions, definition);
 						elementList.add(element);
 					}	
 				}
 			});
 		
-
 		} else {
-			System.out.println(searchParam + "; is Missing"); 
+
+			logger.error("HL7ElementService: getList: "+ searchParam + "; is Missing");
 			throw new DataNotFoundException("A search parameter of one or more characters is required.");
 		}
-		if(elementList.isEmpty() || elementList == null) {
-			System.out.println("Emtpy List");
+		
+		if(elementList.isEmpty()) {
+			logger.error("HL7ElementService: getList: EmptyList");
 			throw new DataNotFoundException("Nothing was found for Search Parameter " + searchParam + ".");
 		} else {
 			return elementList;

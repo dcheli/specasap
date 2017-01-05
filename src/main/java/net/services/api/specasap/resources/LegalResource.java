@@ -22,7 +22,7 @@ import net.services.api.specasap.services.LegalService;
 @Singleton // not sure if this should be a singleton vs. having a new instance per request; 
 public class LegalResource {
 	
-	Logger logger = Logger.getLogger(ElementResource.class);	
+	Logger logger = Logger.getLogger(LegalResource.class);	
 	private @Context ServletContext servletContext; 
 	
 	@GET

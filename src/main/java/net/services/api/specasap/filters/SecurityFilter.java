@@ -25,19 +25,22 @@ import com.mongodb.client.MongoDatabase;
 @Provider
 public class SecurityFilter implements ContainerRequestFilter{
 
+	@Context private ServletContext servletContext;
+
+	MongoDatabase db = null;
+	String authToken = null;
+	MongoClient mongoClient;
+
 	private static final String AUTHORIZATION_HEADER_KEY = "Authorization";
 	private static final String AUTHORIZATION_HEADER_PREFIX = "Basic ";	 //keep the space
 	private static final String SECURED_ELEMENT_URI_PREFIX = "v1/elements";
 	private static final String SECURED_PRODUCTLIST_URI_PREFIX = "v1/product";
 	private static final String SECURED_LEGAL_URI_PREFIX = "v1/legal";
 	private static final String UNAUTHORIZED_ERROR_MESSAGE = "User cannot access this resource.";
-	
-	final static Logger logger = Logger.getLogger(SecurityFilter.class);
-	MongoDatabase db = null;
-	String authToken = null;
 	private Boolean isAuthorized = false;
-	MongoClient mongoClient;
-	@Context private ServletContext servletContext;
+	
+	static final Logger logger = Logger.getLogger(SecurityFilter.class);
+	
 	@Override
 	public void filter(ContainerRequestContext requestContext) throws IOException {
 			
@@ -45,25 +48,22 @@ public class SecurityFilter implements ContainerRequestFilter{
 				requestContext.getUriInfo().getPath().contains(SECURED_PRODUCTLIST_URI_PREFIX) ||
 				requestContext.getUriInfo().getPath().contains(SECURED_LEGAL_URI_PREFIX)){
 			List<String> authHeader = requestContext.getHeaders().get(AUTHORIZATION_HEADER_KEY);
-			if(authHeader != null && authHeader.size() > 0){
+			if(authHeader != null && !authHeader.isEmpty()){
 				authToken = authHeader.get(0);
 				authToken = authToken.replace(AUTHORIZATION_HEADER_PREFIX, "");
 
 				mongoClient = (MongoClient) servletContext.getAttribute("MONGODB_CLIENT");
-				System.out.println("User credentials are: " + mongoClient.getCredentialsList());
+				logger.error("SecurityFilter: filter: User credentials are: "+  mongoClient.getCredentialsList());
 				
-				FindIterable<Document> iterable = null;
+				FindIterable<Document> iterable;
 				try{
 
 					db = mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DATABASE"));
-					System.out.println("Security - db collection names :" + db);
-
+					logger.error("SecurityFilter: filter: db collection names :" + db);
 			
 				} catch (MongoException e) {
-					e.printStackTrace();
-					logger.error("Mongo Exception Error");
-					System.err.println(e.getClass().getName() + ": " + e.getMessage());
-			
+					logger.error("filter: " + e);
+					logger.error("Mongo Exception Error");			
 				}
 
 				iterable = db.getCollection("credentials").find(

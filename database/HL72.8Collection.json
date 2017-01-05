@@ -15,7 +15,8 @@
             "tableNumber": "",
             "itemNumber" : "01955",
 		    "transactions":  ["Claims and Reimbursement"],
-		    "versions":  ["2.8.2"]
+		    "versions":  ["2.8.2"],
+		    "definition" : "Unique Product/Service Line Item Number assigned by the Provider Application."
 	    }]
 }
 
@@ -36,7 +37,8 @@
             "tableNumber": "",
             "itemNumber" : "01955",
             "transactions":  ["Claims and Reimbursement"],
-		    "versions":  ["2.8.2"]
+		    "versions":  ["2.8.2"],
+		    "definition" : "Unique sequence number for the Product/Service Line Item – starts with 1, then 2, etc. for each unique Product/Service Line Item in this Invoice."
 	    }]
 }
 
@@ -57,7 +59,8 @@
             "tableNumber": "0880",
             "itemNumber" : "01962",
             "transactions":  ["Claims and Reimbursement"],
-		    "versions":  ["2.8.2"]
+		    "versions":  ["2.8.2"],
+		    "definition" : "Additional optional modifier(s) for the Product/Service Code (e.g., after hours – evening, after hours – weekend); repeats up to 5 times. Refer to User-defined Table 0880 – Product/Service Code Modifier in Chapter 2C, Code Tables, for suggested values."
 	    }]
 }
 
@@ -80,7 +83,8 @@
             "itemNumber" : "02026",
             "transactions":  ["Claims and Reimbursement"],
 		    "versions":  ["2.8.2"]
-	    }]
+	    }],
+	    "definition" : "Personal ID of the payee used in financial transaction."
 }
 
 
@@ -101,6 +105,55 @@
             "tableNumber": "",
             "itemNumber" : "01780",
             "transactions":  ["Medical Records"],
-		    "versions":  ["2.8.2"]
+		    "versions":  ["2.8.2"],
+		    "definition" : "Describes the specific procedures/information releases/events the subject is consenting to."
 	    }]
 }
+
+{
+	"elementId":  "PV2-32",
+	"tags" : "PV2-32;Billing Media Code",
+	"attributes":  [
+	    {
+		    "segmentId":  "PV2",
+		    "segmentName" : "Patient Visit- Additional Information Segment",
+		    "elementName" : "Billing Media Code",
+		    "sequence" : 32,
+		    "length": "1..1",
+            "conformanceLength": "",
+            "dataType" : "ID",		    
+		    "optionality" : "O",
+            "repetition": "Y",
+            "tableNumber": "0136",
+            "itemNumber" : "00733",
+            "transactions":  ["Patient Administration"],
+		    "versions":  ["2.8.2", "2.8.1", "2.8", "2.7"," 2.6", "2.5.1"],
+		    "definition" : "This field indicates if the account is to be rejected from tape billing. Refer to HL7 Table 0136 - Yes/No Indicator in Chapter 2C, Code Tables, for valid values. 'Y' reject account from tape billing  'N' normal processing"
+	    }]
+}
+
+{
+	"elementId":  "IAM-18",
+	"tags" : "IAM-18;Statused by Person",
+	"attributes":  [
+	    {
+		    "segmentId":  "IAM",
+		    "segmentName" : "Patient Adverse Reaction Information Segment",
+		    "elementName" : "Statused by Person",
+		    "sequence" : 18,
+		    "length": "",
+            "conformanceLength": "",
+            "dataType" : "XCN",		    
+		    "optionality" : "O",
+            "repetition": "Y",
+            "tableNumber": "0136",
+            "itemNumber" : "01563",
+            "transactions":  ["Patient Administration"],
+		    "versions":  ["2.8.2", "2.8.1" ,"2.8", "2.7", "2.6", "2.5.1"],
+		    "definition" : "Patient Adverse Reaction Information Segment		O	2.8.2	2.8.1	2.8	2.7	2.6	2.5.1	This field identifies the provider who assigned the clinical status to the allergy (e.g., ...| S12345^EVERYMAN^ADAM^J^III^DR^MD|...)."
+	    }]
+}
+
+
+IAM-18	Statused by Person	01563	IAM	18	..		XCN			3.4.7.18	Patient Adverse Reaction Information Segment		O	2.8.2	2.8.1	2.8	2.7	2.6	2.5.1	This field identifies the provider who assigned the clinical status to the allergy (e.g., ...| S12345^EVERYMAN^ADAM^J^III^DR^MD|...).
+

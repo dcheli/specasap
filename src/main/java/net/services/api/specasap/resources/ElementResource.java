@@ -46,7 +46,7 @@ public class ElementResource  {
 	@Path("/ncpdp/{searchParam}")
 	@Produces(MediaType.APPLICATION_JSON) 	
 	public ArrayList<NCPDPElement> getNCPDPElement(@PathParam("searchParam") 
-			@Pattern(regexp = "[a-zA-Z0-9-]+", message="The search parameter contains invalid characters.") String searchParam,
+			@Pattern(regexp = "[a-zA-Z0-9-\\s]+", message="The search parameter contains invalid characters.") String searchParam,
 			@DefaultValue("D0") @QueryParam("v") String collectionVersion,
 			@Context UriInfo uriInfo,
 			@Context HttpServletRequest request) throws IOException{
@@ -62,7 +62,7 @@ public class ElementResource  {
 	@Path("/x12/{searchParam}")
 	@Produces(MediaType.APPLICATION_JSON) 
 	public ArrayList<X12Element> getX12Element(@PathParam("searchParam")
-			@Pattern(regexp = "[a-zA-Z0-9-]+", message="The search parameter contains invalid characters.") String searchParam,
+			@Pattern(regexp = "[a-zA-Z0-9-\\s]+", message="The search parameter contains invalid characters.") String searchParam,
 			@DefaultValue("5010") @QueryParam("v") String collectionVersion,
 			@Context UriInfo uriInfo,
 			@Context HttpServletRequest request) throws IOException{
@@ -79,8 +79,8 @@ public class ElementResource  {
 	@Path("/hl7/{searchParam}")
 	@Produces(MediaType.APPLICATION_JSON) 
 	public ArrayList<HL7Element> getHL7Element(@PathParam("searchParam") 
-			@Pattern(regexp = "[a-zA-Z0-9-]+", message="The search parameter contains invalid characters.") String searchParam,
-			@DefaultValue("2") @QueryParam("v") String collectionVersion,
+			@Pattern(regexp = "[a-zA-Z0-9-\\s]+", message="The search parameter contains invalid characters.") String searchParam,
+			@DefaultValue("282") @QueryParam("v") String collectionVersion,
 			@Context UriInfo uriInfo,
 			@Context HttpServletRequest request) throws IOException{
 		

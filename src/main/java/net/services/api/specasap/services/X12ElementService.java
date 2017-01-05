@@ -32,24 +32,10 @@ public class X12ElementService {
 			db = mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DATABASE"));
 			System.out.println("User credentials are: " + mongoClient.getCredentialsList());			
 		} catch(Exception e) {
-			e.printStackTrace();
+			logger.error("X1ElementService:" + e);
 			logger.error("Mongo error " + e.getMessage());
-			System.err.println(e.getClass().getName() + ": " + e.getMessage());
 		} 
 	}
-	
-	// not sure I need or want this method
-//	public List<X12Element> getAllElements() {
-//		List<X12Element> X12ElementList = new ArrayList<X12Element>();
-//		if(elementMap.isEmpty())
-//			System.out.println("Map is empty");
-		
-//		for(Map.Entry<String, X12Element> entry : elementMap.entrySet()){ 
-//			X12ElementList.add(entry.getValue()); 
-//			}
-
-//		return X12ElementList;	
-//	}
 	
 	public List<X12Element> getElement(String searchParam, String collectionVersion) {	
 		List<X12Element> elementList = new ArrayList<X12Element>();
@@ -66,18 +52,19 @@ public class X12ElementService {
 					public void apply(final Document document) {
 						
 						String elementId = document.containsKey("elementId") ? document.getString("elementId") : "";
-						String elementName = "";
-						String segmentId =  "";
-						String segmentName = "";
-						String dataType = "";
-						String usage = "";
-						String length = "";
-						String implementationName = "";
+						String elementName;
+						String segmentId;
+						String segmentName;
+						String dataType;
+						String usage;
+						String length;
+						String implementationName;
 						int elementRepeat;
 						String loop;
 						int minimumLength;
 						int maximumLength;
 						int dataElement;
+						String definition;
 								
 						String[] codes = null;
 						String[] transactions = null;
@@ -97,7 +84,8 @@ public class X12ElementService {
 							minimumLength = attributes.get(0).containsKey("minimumLength") ? attributes.get(0).getInteger("minimumLength") : 0;
 							maximumLength = attributes.get(0).containsKey("maximumLength") ? attributes.get(0).getInteger("maximumLength") : 0;
 							dataElement = attributes.get(0).containsKey("dataElement") ? attributes.get(0).getInteger("dataElement") : 0;
-
+							definition = attributes.get(0).containsKey("definition") ? attributes.get(0).getString("definition") : "";
+							
 							if(attributes.get(0).containsKey("codes")) {						
 								if(attributes.get(0).get("codes") == null){			
 									codes = new String[]{};
@@ -127,7 +115,7 @@ public class X12ElementService {
 						
 							element =  new X12Element(elementId, segmentId,segmentName,elementName, versions, 
 									dataType, usage, transactions, dataElement, implementationName, 
-									elementRepeat, codes, loop, length, minimumLength, maximumLength);
+									elementRepeat, codes, loop, length, minimumLength, maximumLength, definition);
 				
 							elementList.add(element);
 						}

@@ -19,10 +19,11 @@ import com.mongodb.ServerAddress;
 import net.services.api.specasap.exceptions.MongoDBException;
 
 public class MongoDBContextListener implements ServletContextListener {
-	final static Logger logger = Logger.getLogger(MongoDBContextListener.class);
+	
 	MongoClient mongoClient = null;
-	List<ServerAddress> seeds = new ArrayList<ServerAddress>();
-
+	List<ServerAddress> seeds = new ArrayList<>();
+	final static Logger logger = Logger.getLogger(MongoDBContextListener.class);
+	
 	@Override
 	public void contextInitialized(ServletContextEvent servletContextEvent) {
 		ServletContext servletContext = servletContextEvent.getServletContext();
@@ -38,16 +39,10 @@ public class MongoDBContextListener implements ServletContextListener {
 				servletContext.getInitParameter("MONGODB_HOST"), 
 					Integer.parseInt(servletContext.getInitParameter("MONGODB_PORT1")))));
 	
-//			mongoClient = new MongoClient(Arrays.asList(
-//					//   new ServerAddress("192.168.99.100", 30001),
-//					   new ServerAddress("192.168.99.100", 30001)));
-			// The below does work
-			//mongoClient = new MongoClient("192.168.99.100",30001);
 			mongoClient = new MongoClient(seeds, Arrays.asList(credential));
-//			mongoClient = new MongoClient(seeds, Arrays.asList(credential));
 						
 			// This is my test to see if Mongo is up or down.
-			System.out.println("MongoAddress is: " + mongoClient.getAddress());
+			System.err.println("MongoAddress is: " + mongoClient.getAddress());
 			
 		} catch (MongoException e) {
 			
@@ -55,7 +50,7 @@ public class MongoDBContextListener implements ServletContextListener {
 			throw new MongoDBException("Invalid Connection");
 			
 		} finally{
-			System.out.println("MongoClient initialized successfully");
+			System.err.println("MongoClient initialized successfully");
 			logger.info("MongoClient initialized successfully " + mongoClient);
 			servletContextEvent.getServletContext().setAttribute("MONGODB_CLIENT", mongoClient);
 		}
@@ -67,7 +62,7 @@ public class MongoDBContextListener implements ServletContextListener {
 							.getAttribute("MONGODB_CLIENT");
 		mongoClient.close();
 		logger.info("MongoClient closed successfully");
-		System.out.println("MongoClient closed successfully");
+		System.err.println("MongoClient closed successfully");
 	}
 
 }

@@ -17,6 +17,7 @@ public class HL7Element extends Element{
 	String repetition;
 	String tableNumber;	
 	String itemNumber;
+	String definition;
 
 	String[] versions;
 	String[] transactions;
@@ -26,7 +27,7 @@ public class HL7Element extends Element{
 
 	public HL7Element(String elementId, String segmentId, String segmentName, String elementName, Integer sequence,
 			String length, String conformanceLength, String dataType, String optionality, String repetition,
-			String tableNumber, String itemNumber, String[] versions, String[] transactions) {
+			String tableNumber, String itemNumber, String[] versions, String[] transactions, String definition) {
 		super();
 		this.elementId = elementId;
 		this.segmentId = segmentId;
@@ -42,6 +43,7 @@ public class HL7Element extends Element{
 		this.itemNumber = itemNumber;
 		this.versions = versions;
 		this.transactions = transactions;
+		this.definition = definition;
 	}
 
 	public String getSegmentId() {
@@ -154,6 +156,14 @@ public class HL7Element extends Element{
 
 	public void setElementId(String elementId) {
 		this.elementId = elementId;
+	}
+
+	public String getDefinition() {
+		return definition;
+	}
+
+	public void setDefinition(String definition) {
+		this.definition = definition;
 	}
 	
 

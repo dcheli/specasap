@@ -18,7 +18,8 @@
             "codes": null,
             "elementRepeat" : 1,
             "dataElement" : 1028,
-            "loop": "2300"
+            "loop": "2300",
+            "definition" : ""
 	    }]
 }
 
@@ -43,7 +44,8 @@
             "codes": ["EA"],
             "elementRepeat" : 1,
             "dataElement" : 128,
-            "loop": "2300"
+            "loop": "2300",
+            "definition" : ""
 	    }]
 }
         
@@ -57,7 +59,6 @@
 		    "elementName" : "Reference Identification",
 		    "implementationName" : "Medical Record Number",
 		    "transactions":  ["837 P,I,D"],
-		    "displayVersion" : "5010",
 		    "versions":  ["5010"],
 		    "usage" : "X",
             "dataType" : "AN",                        
@@ -67,7 +68,8 @@
             "codes": null,
             "elementRepeat" : 1,
             "dataElement" : 127,
-            "loop": "2300"
+            "loop": "2300",
+            "definition" : ""
 	    }]
 }
 
@@ -81,7 +83,6 @@
 		    "elementName" : "Reference Identification Qualifier",
 		    "implementationName" : "Original Reference Number",
 		    "transactions":  ["837 P,I,D"],
-		    "displayVersion" : "5010",
 		    "versions":  ["5010"],
 		    "usage" : "M",
             "dataType" : "ID",                        
@@ -91,7 +92,8 @@
             "codes": ["F8"],
             "elementRepeat" : 1,
             "dataElement" : 128,
-            "loop": "2300"
+            "loop": "2300",
+            "definition" : ""
 	    }]
 }
         
@@ -105,7 +107,6 @@
 		    "elementName" : "Reference Identification",
 		    "implementationName" : "Payer Claim Control Number",
 		    "transactions":  ["837 P,I,D"],
-		    "displayVersion" : "5010",
 		    "versions":  ["5010"],
 		    "usage" : "X",
             "dataType" : "AN",                        
@@ -115,6 +116,7 @@
             "codes": null,
             "elementRepeat" : 1,
             "dataElement" : 127,
-            "loop": "2300"
+            "loop": "2300",
+            "definition" : ""
 	    }]
 }

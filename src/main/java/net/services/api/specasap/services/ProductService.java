@@ -34,7 +34,7 @@ public class ProductService {
 			db = mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DATABASE"));
 			System.out.println("User credentials are: " + mongoClient.getCredentialsList());
 		} catch(Exception e) {
-			e.printStackTrace();
+			logger.error("ProductService: " + e);
 			logger.error("Mongo error " + e.getMessage());
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
 		}
@@ -54,9 +54,9 @@ public class ProductService {
 			@SuppressWarnings("unchecked")
 			@Override
 			public void apply(final Document document) {
-				String productId = "";
-				String operatingSystem = "";
-				String version = "";
+				String productId;
+				String operatingSystem;
+				String version;
 				System.out.println(document);
 				if(!document.isEmpty()) {
 					productId = document.containsKey("productId") ? document.getString("productId") : "";

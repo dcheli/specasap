@@ -1,6 +1,10 @@
 package net.services.api.specasap.exceptions;
 
+import org.apache.log4j.Logger;
+
 public class MongoDBException extends RuntimeException {
+	
+	final transient Logger logger = Logger.getLogger(MongoDBException.class);
 
 	/**
 	 * 
@@ -19,10 +23,10 @@ public class MongoDBException extends RuntimeException {
 	
 	public  MongoDBException(String message) {
 		this.message = message;
-		System.out.println(message);
+		logger.error("MongoDBException error " + message);
 	}
 	
-	
+	@Override
 	public String getMessage() {
 		return message;
 	}

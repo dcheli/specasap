@@ -8,21 +8,22 @@ import javax.ws.rs.container.ContainerResponseContext;
 import javax.ws.rs.container.ContainerResponseFilter;
 import javax.ws.rs.ext.Provider;
 
+import org.apache.log4j.Logger;
+
 @Provider
 public class LoggingFilter implements ContainerRequestFilter, ContainerResponseFilter{
+	
+
+	Logger logger = Logger.getLogger(LoggingFilter.class);
 
 	@Override
 	public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext) throws IOException {
-		System.out.println("Response Filter");
-		System.out.println("Response Headers" + responseContext.getHeaders());
-		
+		logger.error("LoggingFilter: ResponseContext: "  + responseContext.getHeaders());
 	}
 
 	@Override
 	public void filter(ContainerRequestContext requestContext) throws IOException {
-		System.out.println("Request Filter");
-		System.out.println("Headers" + requestContext.getHeaders());
-		
+		logger.error("LoggingFilter: RequestContext: "  + requestContext.getHeaders());		
 	}
 
 }

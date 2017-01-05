@@ -9,7 +9,6 @@ public class Product {
 	String version;
 	public Product() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Product(String productId, String operatingSystem, String version) {
 		super();

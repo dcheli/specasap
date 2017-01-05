@@ -31,7 +31,7 @@ public class LegalService {
 			db = mongoClient.getDatabase(servletContext.getInitParameter("MONGODB_DATABASE"));
 			System.out.println("User credentials are: " + mongoClient.getCredentialsList());
 		} catch(Exception e) {
-			e.printStackTrace();
+			logger.error("LegalService: " + e);
 			logger.error("Mongo error " + e.getMessage());
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
 		}

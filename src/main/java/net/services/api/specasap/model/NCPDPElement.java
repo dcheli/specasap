@@ -15,7 +15,6 @@ public class NCPDPElement extends Element{
 	String[] standardFormats;
 	
 	String usage;
-	String fieldFormat;
 	String[] fieldFormats;
 	//@XmlElement(nillable = true) String codeSet;
 	String[] codes;
@@ -103,16 +102,6 @@ public class NCPDPElement extends Element{
 
 	public void setUsage(String usage) {
 		this.usage = usage;
-	}
-
-
-	public String getFieldFormat() {
-		return fieldFormat;
-	}
-
-
-	public void setFieldFormat(String fieldFormat) {
-		this.fieldFormat = fieldFormat;
 	}
 
 

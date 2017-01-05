@@ -18,6 +18,7 @@ public class X12Element extends Element{
 	Integer minimumLength;
 	Integer maximumLength;	
 	Integer dataElement;
+	String definition;
 	
 	String[] codes;	
 	String[] transactions;
@@ -30,7 +31,7 @@ public class X12Element extends Element{
 	public X12Element(String elementId, String segmentId, String segmentName, String elementName, String[] versions,
 			String dataType, String usage, String[] transactions, Integer dataElement,
 			String implementationName, Integer elementRepeat, String[] codes, 
-			String loop, String length, Integer minimumLength, Integer maximumLength) {
+			String loop, String length, Integer minimumLength, Integer maximumLength, String definition) {
 		super();
 		this.elementId = elementId;
 		this.segmentId = segmentId;
@@ -48,6 +49,7 @@ public class X12Element extends Element{
 		this.length = length;
 		this.minimumLength = minimumLength;
 		this.maximumLength = maximumLength;
+		this.definition = definition;
 	}
 
 	public String getSegmentId() {
@@ -177,6 +179,14 @@ public class X12Element extends Element{
 
 	public void setElementId(String elementId) {
 		this.elementId = elementId;
+	}
+
+	public String getDefinition() {
+		return definition;
+	}
+
+	public void setDefinition(String definition) {
+		this.definition = definition;
 	}
 	
 	
