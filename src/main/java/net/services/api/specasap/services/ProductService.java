@@ -2,7 +2,7 @@ package net.services.api.specasap.services;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
+
 
 import javax.servlet.ServletContext;
 
@@ -14,11 +14,7 @@ import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
 
-import net.services.api.specasap.exceptions.DataNotFoundException;
-import net.services.api.specasap.model.PrivacyPolicy;
 import net.services.api.specasap.model.Product;
-import net.services.api.specasap.model.X12Element;
-
 
 public class ProductService {
 	
@@ -27,6 +23,11 @@ public class ProductService {
 	Logger logger = Logger.getLogger(ProductService.class);
 	MongoClient mongoClient = null;
 	
+	
+	public ProductService() {
+		super();
+	}
+
 	public ProductService(ServletContext servletContext) throws IOException {
 
 		try{
