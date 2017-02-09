@@ -6,15 +6,16 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class EnabledProduct {
 	String productId;
 	Boolean isEnabled;
+	String enabled;
 	public EnabledProduct() {
 		super();
 	}
 	
 	
-	public EnabledProduct(String productId, Boolean isEnabled) {
+	public EnabledProduct(String productId, String enabled) {
 		super();
 		this.productId = productId;
-		this.isEnabled = isEnabled;
+		this.enabled = enabled;
 	}
 
 
@@ -24,11 +25,13 @@ public class EnabledProduct {
 	public void setProductId(String productId) {
 		this.productId = productId;
 	}
-	public Boolean getIsEnabled() {
-		return isEnabled;
+
+	public String getEnabled() {
+		return enabled;
 	}
-	public void setIsEnabled(Boolean isEnabled) {
-		this.isEnabled = isEnabled;
+
+	public void setEnabled(String enabled) {
+		this.enabled = enabled;
 	}
 	
 }

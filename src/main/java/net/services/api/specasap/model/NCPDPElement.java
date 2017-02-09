@@ -6,12 +6,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class NCPDPElement extends Element{
 	  
 	String elementId;
-	String segmentId;
-	String segmentName;
+	String[] segmentIds;
+	String[] segmentNames;
 	String elementName;
 	String[] versions;
 	String dataType;
-	String[] transactions;
+	String[] requestTransactions;
+	String[] responseTransactions;
 	String[] standardFormats;
 	
 	String usage;
@@ -29,31 +30,22 @@ public class NCPDPElement extends Element{
 		// This is needed for JAXB
 	}
 
-	public NCPDPElement(String elementId, String segmentId, String segmentName, String elementName, String[] versions, String dataType,
-			String[] transactions, String usage, String[] fieldFormats, String[] codes, String[] length, String[] standardFormats,String definition) {
+	public NCPDPElement(String elementId, String[] segmentIds, String[] segmentNames, String elementName, String[] versions, String dataType,
+			String[] transactions, String usage, String[] fieldFormats, String[] codes, String[] length, String[] standardFormats,String definition,
+			String[] requestTransactions, String[] responseTransactions) {
 		super();
 		this.elementId = elementId;
-		this.segmentId = segmentId;
-		this.segmentName = segmentName;
 		this.elementName = elementName;
 		this.versions = versions;
 		this.dataType = dataType;
-		this.transactions = transactions;
+		this.requestTransactions = requestTransactions;
+		this.responseTransactions = responseTransactions;
 		this.usage = usage;
 		this.fieldFormats = fieldFormats;
 		this.codes = codes;
 		this.lengths = length;
 		this.standardFormats = standardFormats;
 		this.definition = definition;
-	}
-
-	public String getSegmentId() {
-		return segmentId;
-	}
-
-
-	public void setSegmentId(String segmentId) {
-		this.segmentId = segmentId;
 	}
 
 
@@ -82,18 +74,6 @@ public class NCPDPElement extends Element{
 	public void setDataType(String dataType) {
 		this.dataType = dataType;
 	}
-
-    //@XmlElementWrapper(name = "transactions")
-    //@XmlElement(name = "transaction")
-	public String[] getTransactions() {
-		return transactions;
-	}
-
-
-	public void setTransactions(String[] transactions) {
-		this.transactions = transactions;
-	}
-
 
 	public String getUsage() {
 		return usage;
@@ -124,13 +104,6 @@ public class NCPDPElement extends Element{
 		this.maximumLength = maximumLength;
 	}
 
-	public String getSegmentName() {
-		return segmentName;
-	}
-
-	public void setSegmentName(String segmentName) {
-		this.segmentName = segmentName;
-	}
 	
 	public String[] getStandardFormats() {
 		return standardFormats;
@@ -178,6 +151,38 @@ public class NCPDPElement extends Element{
 
 	public void setElementId(String elementId) {
 		this.elementId = elementId;
+	}
+
+	public String[] getRequestTransactions() {
+		return requestTransactions;
+	}
+
+	public void setRequestTransactions(String[] requestTransactions) {
+		this.requestTransactions = requestTransactions;
+	}
+
+	public String[] getResponseTransactions() {
+		return responseTransactions;
+	}
+
+	public void setResponseTransactions(String[] responseTransactions) {
+		this.responseTransactions = responseTransactions;
+	}
+
+	public String[] getSegmentIds() {
+		return segmentIds;
+	}
+
+	public void setSegmentIds(String[] segmentIds) {
+		this.segmentIds = segmentIds;
+	}
+
+	public String[] getSegmentNames() {
+		return segmentNames;
+	}
+
+	public void setSegmentNames(String[] segmentNames) {
+		this.segmentNames = segmentNames;
 	}
 
 }

@@ -5,9 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.io.IOException;
 
 import java.io.UnsupportedEncodingException;
@@ -22,7 +20,6 @@ import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.Response;
-import javax.xml.bind.annotation.XmlRootElement;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.log4j.Logger;
@@ -30,7 +27,7 @@ import org.apache.log4j.Logger;
 import net.services.api.specasap.model.EnabledProduct;
 import net.services.api.specasap.model.IAPReceipt;
 import net.services.api.specasap.model.LatestReceiptInfo;
-import net.services.api.specasap.model.Product;
+
 
 
 public class IAPReceiptService {
@@ -88,19 +85,22 @@ public class IAPReceiptService {
 				if(pList.size() > 0){
 					Comparator<String> comparator = Collections.reverseOrder();
 					Collections.sort(pList,comparator);
-				//	DateFormat df;
-					//df = new SimpleDateFormat("MM/dd/yyyy");
-					//Date startDate = df.parse(pList.get(0).substring(0, 9));
-					System.out.println("Date is " + pList.get(0));
-					enabledProducts.add(new EnabledProduct(product, true));
-
-					//System.out.println("For product " + product + "Expiration List includes: " + pList);
-				} else {
-					EnabledProduct enabledProduct = new EnabledProduct(product, true);
-					enabledProducts.add(new EnabledProduct(product, false));
+					DateFormat df;
+					df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss 'Etc/GMT'");
+					Date expirationDate = df.parse(pList.get(0));
+					Date currentDate = new Date();
+					if (expirationDate.after(currentDate) || expirationDate.equals(currentDate)){
+						logger.error("Expiration Date is after current Date so subsription is valid");
+						logger.error("Expiration Date is " + expirationDate + " and current Date is " + df.format(currentDate));
+						enabledProducts.add(new EnabledProduct(product, "true"));
+					} else {
+						logger.error("Expiration Date is " + expirationDate + " and current Date is " + df.format(currentDate));
+						logger.error("Expiration Date is before current Date so subscription is expired");
+						enabledProducts.add(new EnabledProduct(product, "false"));
+					}
 				}
-
 			}
+			logger.error("Enabled Products are: " + enabledProducts);
 			System.out.println("Enabled Products are: " + enabledProducts);
 			
 		} else {

@@ -60,8 +60,12 @@ public class NCPDPElementService {
 					String usage = "";
 					String definition = "";
 
+					String[] segmentIds = null;
+					String[] segmentNames = null;
 					String[] codes = null;
 					String[] transactions = null;
+					String[] requestTransactions = null;
+					String[] responseTransactions = null;
 					String[] standardFormats = null;
 					String[] fieldFormats = null;
 					String[] lengths = null;
@@ -76,7 +80,26 @@ public class NCPDPElementService {
 							dataType = attributes.get(0).containsKey("dataType") ? attributes.get(0).getString("dataType") : "";
 							usage = attributes.get(0).containsKey("usage") ? attributes.get(0).getString("usage") : "";
 							definition = attributes.get(0).containsKey("definition") ? attributes.get(0).getString("definition") : "";	
-														
+
+							if(attributes.get(0).containsKey("segmentIds")) {						
+								if(attributes.get(0).get("segmentIds") == null){			
+									segmentIds = new String[]{};
+								} else {
+									List<Document> c = (List<Document>) attributes.get(0).get("segmentIds");
+									segmentIds = c.stream().toArray(String[]::new);
+								}
+							}
+
+							if(attributes.get(0).containsKey("segmentNames")) {						
+								if(attributes.get(0).get("segmentNames") == null){			
+									segmentNames = new String[]{};
+								} else {
+									List<Document> c = (List<Document>) attributes.get(0).get("segmentNames");
+									segmentNames = c.stream().toArray(String[]::new);
+								}
+							}
+
+							
 							if(attributes.get(0).containsKey("codes")) {						
 								if(attributes.get(0).get("codes") == null){			
 									codes = new String[]{};
@@ -112,6 +135,25 @@ public class NCPDPElementService {
 									transactions = c.stream().toArray(String[]::new);
 								}
 							}
+
+							if(attributes.get(0).containsKey("requestTransactions")) {						
+								if(attributes.get(0).get("requestTransactions") == null){			
+									requestTransactions = new String[]{};
+								} else {
+									List<Document> c = (List<Document>) attributes.get(0).get("requestTransactions");
+									requestTransactions = c.stream().toArray(String[]::new);
+								}
+							}
+
+							if(attributes.get(0).containsKey("responseTransactions")) {						
+								if(attributes.get(0).get("responseTransactions") == null){			
+									responseTransactions = new String[]{};
+								} else {
+									List<Document> c = (List<Document>) attributes.get(0).get("responseTransactions");
+									responseTransactions = c.stream().toArray(String[]::new);
+								}
+							}
+
 							
 							if(attributes.get(0).containsKey("standardFormats")) {						
 								if(attributes.get(0).get("standardFormats") == null){			
@@ -133,8 +175,9 @@ public class NCPDPElementService {
 						}
 					}
 					
-					element = new NCPDPElement(elementId, segmentId, segmentName, elementName, versions, dataType, 
-							transactions, usage, fieldFormats, codes, lengths,	standardFormats, definition);
+					element = new NCPDPElement(elementId, segmentIds, segmentNames, elementName, versions, dataType, 
+							transactions, usage, fieldFormats, codes, lengths,	standardFormats, definition, 
+							requestTransactions, responseTransactions);
 					
 						elementList.add(element);
 				}
