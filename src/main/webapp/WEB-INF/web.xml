@@ -7,9 +7,9 @@
    	<context-param>
 		<param-name>MONGODB_HOST</param-name>
 		<!-- For Local Docker Container -->
-		<param-value>192.168.99.100</param-value>
+		<!--<param-value>192.168.99.100</param-value>-->
 		<!-- For Amazon AWS Docker Container this may create a problem if the EC2 ip changes-->
-		<!--<param-value>172.30.3.182</param-value>-->
+		<param-value>172.30.3.182</param-value>
 	</context-param>
 	<context-param>
 		<param-name>MONGODB_PORT1</param-name>

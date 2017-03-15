@@ -7,14 +7,17 @@ public class Product {
 	String productId;
 	String operatingSystem;
 	String version;
+	String displayName;
+	
 	public Product() {
 		super();
 	}
-	public Product(String productId, String operatingSystem, String version) {
+	public Product(String productId, String operatingSystem, String version, String displayName) {
 		super();
 		this.productId = productId;
 		this.operatingSystem = operatingSystem;
 		this.version = version;
+		this.displayName = displayName;
 	}
 	public String getProductId() {
 		return productId;
@@ -33,6 +36,12 @@ public class Product {
 	}
 	public void setVersion(String version) {
 		this.version = version;
+	}
+	public String getDisplayName() {
+		return displayName;
+	}
+	public void setDisplayName(String displayName) {
+		this.displayName = displayName;
 	}
 	
 	

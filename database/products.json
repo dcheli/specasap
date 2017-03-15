@@ -1,17 +1,20 @@
 {
     productId : "com.dataasap.x12asap",
     operatingSystem : "ios",
-    version: "1.0"
+    version: "1.0",
+    displayName : "X12 5010"
 }
 
 {
     productId : "com.dataasap.ncpdpasap",
     operatingSystem : "ios",
-    version: "1.0"
+    version: "1.0",
+    displayName : "NCPDP D.0"
 }
 
 {
     productId : "com.dataasap.hl7asap",
     operatingSystem : "ios",
-    version: "1.0"
+    version: "1.0",
+    displayName : "HL7 v2"
 }

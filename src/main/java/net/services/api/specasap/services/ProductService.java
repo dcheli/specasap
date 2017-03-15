@@ -58,13 +58,14 @@ public class ProductService {
 				String productId;
 				String operatingSystem;
 				String version;
+				String displayName;
 				System.out.println(document);
 				if(!document.isEmpty()) {
 					productId = document.containsKey("productId") ? document.getString("productId") : "";
 					operatingSystem = document.containsKey("operatingSystem") ? document.getString("operatingSystem") : "";
 					version = document.containsKey("version") ? document.getString("version") : "";
-					
-					product = new Product(productId, operatingSystem, version);
+					displayName = document.containsKey("displayName") ? document.getString("displayName") : "";
+					product = new Product(productId, operatingSystem, version, displayName);
 					productList.add(product);
 				}
 			}

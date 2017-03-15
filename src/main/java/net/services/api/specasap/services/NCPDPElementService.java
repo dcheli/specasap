@@ -54,12 +54,8 @@ public class NCPDPElementService {
 					
 					String elementId = document.containsKey("elementId") ? document.getString("elementId") : "";
 					String elementName = "";
-					String segmentId = "";
-					String segmentName = "";
-					String dataType = "";
-					String usage = "";
 					String definition = "";
-
+					String comments = "";
 					String[] segmentIds = null;
 					String[] segmentNames = null;
 					String[] codes = null;
@@ -75,10 +71,7 @@ public class NCPDPElementService {
 					if(attributes != null){
 						if(!attributes.isEmpty()){
 							elementName = attributes.get(0).containsKey("elementName") ? attributes.get(0).getString("elementName") : "";
-							segmentId = attributes.get(0).containsKey("segmentId") ? attributes.get(0).getString("segmentId") : "";
-							segmentName = attributes.get(0).containsKey("segmentName") ? attributes.get(0).getString("segmentName") : "";
-							dataType = attributes.get(0).containsKey("dataType") ? attributes.get(0).getString("dataType") : "";
-							usage = attributes.get(0).containsKey("usage") ? attributes.get(0).getString("usage") : "";
+							comments = attributes.get(0).containsKey("comments") ? attributes.get(0).getString("comments") : "";
 							definition = attributes.get(0).containsKey("definition") ? attributes.get(0).getString("definition") : "";	
 
 							if(attributes.get(0).containsKey("segmentIds")) {						
@@ -175,9 +168,9 @@ public class NCPDPElementService {
 						}
 					}
 					
-					element = new NCPDPElement(elementId, segmentIds, segmentNames, elementName, versions, dataType, 
-							transactions, usage, fieldFormats, codes, lengths,	standardFormats, definition, 
-							requestTransactions, responseTransactions);
+					element = new NCPDPElement(elementId, segmentIds, segmentNames, elementName, versions, 
+							transactions, fieldFormats, codes, lengths,	standardFormats, definition, 
+							requestTransactions, responseTransactions, comments);
 					
 						elementList.add(element);
 				}

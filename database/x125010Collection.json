@@ -120,3 +120,1431 @@
             "definition" : ""
 	    }]
 }
+
+{
+	"elementId":  "ST01",
+	"tags" : "ST01;Transaction Set Identifier Code;Transaction Set Header",
+	"attributes":  [
+	    {
+		    "segmentId":  "ST",
+		    "segmentName" : "Transaction Set Header",
+		    "elementName" : "Transaction Set Identifier Code",
+		    "implementationName" : "Transaction Set Identifier Code",
+		    "transactions":  ["837 P,I,D", "835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "ID",                        
+		    "length": "3/3",
+            "minimumLength": 3,
+            "maximumLength": 3,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 143,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "ST02",
+	"tags" : "ST02;Transaction Set Control Number;Transaction Set Header",
+	"attributes":  [
+	    {
+		    "segmentId":  "ST",
+		    "segmentName" : "Transaction Set Header",
+		    "elementName" : "Transaction Set Control Number",
+		    "implementationName" : "Transaction Set Control Number",
+		    "transactions":  ["837 P,I,D", "835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "AN",                        
+		    "length": "4/9",
+            "minimumLength": 4,
+            "maximumLength": 9,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 329,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "BPR01",
+	"tags" : "BPR01;Transaction Handling Code;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "Transaction Set Control Number",
+		    "implementationName" : "Transaction Handling Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "ID",                        
+		    "length": "1/2",
+            "minimumLength": 1,
+            "maximumLength": 2,
+            "codes": ["C - Payment Accompanies Remittance Advice", "D - Make Payment Only", "H - Notification Only", "I - Remittance Information Only","P - Prenotification of Future Transfers", "U - Split Payment and Remittance", "X - Handling Party's Option to Split Payment and Remittance"], 
+            "elementRepeat" : 1,
+            "dataElement" : 305,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "BPR02",
+	"tags" : "BPR02;Total Actual Provider Payment Amount;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "Monetary Amount",
+		    "implementationName" : "Total Actual Provider Payment Amount",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "R",                        
+		    "length": "1/18",
+            "minimumLength": 1,
+            "maximumLength": 18,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 782,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "BPR03",
+	"tags" : "BPR03;Credit/Debit Flag Code;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "Credit/Debit Flag Code",
+		    "implementationName" : "Credit/Debit Flag Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "ID",                        
+		    "length": "1/1",
+            "minimumLength": 1,
+            "maximumLength": 1,
+            "codes": ["C - Credit", "D - Debit"],
+            "elementRepeat" : 1,
+            "dataElement" : 478,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+
+{
+	"elementId":  "BPR04",
+	"tags" : "BPR04;Payment Method Code;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "Payment Method Code",
+		    "implementationName" : "Payment Method Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "ID",                        
+		    "length": "3/3",
+            "minimumLength": 3,
+            "maximumLength": 3,
+            "codes": ["ACH - Automated Clearinghouse", "BOP - Financial Institution Option", "CHK - Check", "FWT - Federal Reserve Funds/Wire Transfer - Nonrepetitive", "NON - Non-Payment Data"],
+            "elementRepeat" : 1,
+            "dataElement" : 591,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+
+{
+	"elementId":  "BPR05",
+	"tags" : "BPR05;Payment Format Code;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "Payment Format Code",
+		    "implementationName" : "Payment Format Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "ID",                        
+		    "length": "1/10",
+            "minimumLength": 1,
+            "maximumLength": 10,
+            "codes": ["CCP - Cash Concentration/Disbursement plus Addenda (CCD+)(ACH)", "CTX - Corporate Trade Exchange (CTX)(ACH)"],
+            "elementRepeat" : 1,
+            "dataElement" : 812,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "BPR06",
+	"tags" : "BPR06;Depository Financial Institution DFI Identification Number Qualifier;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "(DFI) ID Number Qualifier",
+		    "implementationName" : "Depository Financial Institution DFI Identification Number Qualifier",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "X",
+            "dataType" : "ID",                        
+		    "length": "2/2",
+            "minimumLength": 2,
+            "maximumLength": 2,
+            "codes": ["01 - ABA Transit Routing Number Including Check Digits (9 digits)", "04 - Canadian Bank Branch and Institution Number"],
+            "elementRepeat" : 1,
+            "dataElement" : 506,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "BPR07",
+	"tags" : "BPR07;Sender DFI Identifier;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "(DFI) ID Number",
+		    "implementationName" : "Sender DFI Identifier",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "X",
+            "dataType" : "AN",                        
+		    "length": "3/12",
+            "minimumLength": 3,
+            "maximumLength": 12,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 507,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "BPR08",
+	"tags" : "BPR08;Account Number Qualifier;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "Account Number Qualifier",
+		    "implementationName" : "Account Number Qualifier",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "ID",                        
+		    "length": "1/3",
+            "minimumLength": 1,
+            "maximumLength": 3,
+            "codes": ["DA - Demand Deposit"],
+            "elementRepeat" : 1,
+            "dataElement" : 569,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "BPR09",
+	"tags" : "BPR09;Sender Bank Account Number;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "Account Number",
+		    "implementationName" : "Sender Bank Account Number",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "X",
+            "dataType" : "AN",                        
+		    "length": "1/35",
+            "minimumLength": 1,
+            "maximumLength": 35,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 508,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+
+{
+	"elementId":  "BPR10",
+	"tags" : "BPR10;Payer Identifier;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "Originating Company Identifier",
+		    "implementationName" : "Payer Identifier",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "0",
+            "dataType" : "AN",                        
+		    "length": "10/10",
+            "minimumLength": 10,
+            "maximumLength": 10,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 509,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "BPR11",
+	"tags" : "BPR11;Originating Company Supplemental Code;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "Originating Company Supplemental Code",
+		    "implementationName" : "Originating Company Supplemental Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "0",
+            "dataType" : "AN",                        
+		    "length": "9/9",
+            "minimumLength": 9,
+            "maximumLength": 9,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 510,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "BPR12",
+	"tags" : "BPR12;Depository Financial Institution DFI Identification Number Qualifier;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "(DFI) ID Number Qualifier",
+		    "implementationName" : "Depository Financial Institution DFI Identification Number Qualifier",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "X",
+            "dataType" : "ID",                        
+		    "length": "2/2",
+            "minimumLength": 2,
+            "maximumLength": 2,
+            "codes": ["01 - ABA Transit Routing Number Including Check Digits (9 digits)", "04 - Canadian Bank Branch and Institution Number"],
+            "elementRepeat" : 1,
+            "dataElement" : 506,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "BPR13",
+	"tags" : "BPR13;Receiver or Provider Bank ID Number;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "(DFI) ID Number",
+		    "implementationName" : "Receiver or Provider Bank ID Number",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "X",
+            "dataType" : "AN",                        
+		    "length": "3/12",
+            "minimumLength": 3,
+            "maximumLength": 12,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 507,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+
+{
+	"elementId":  "BPR14",
+	"tags" : "BPR14;Account Number Qualifier;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "Account Number Qualifier",
+		    "implementationName" : "Account Number Qualifier",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "ID",                        
+		    "length": "1/3",
+            "minimumLength": 1,
+            "maximumLength": 3,
+            "codes": ["DA - Demand Deposit", "SG - Savings"],
+            "elementRepeat" : 1,
+            "dataElement" : 569,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "BPR15",
+	"tags" : "BPR15;Receiver of Provider Account Number;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "Account Number",
+		    "implementationName" : "Receiver of Provider Account Number",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "X",
+            "dataType" : "AN",                        
+		    "length": "1/35",
+            "minimumLength": 1,
+            "maximumLength": 35,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 508,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "BPR16",
+	"tags" : "BPR16;Check Issue or EFT Effective Date;Financial Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "BPR",
+		    "segmentName" : "Financial Information",
+		    "elementName" : "Date",
+		    "implementationName" : "Check Issue or EFT Effective Date",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "DT",                        
+		    "length": "8/8",
+            "minimumLength": 8,
+            "maximumLength": 8,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 373,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+
+
+
+{
+	"elementId":  "TRN01",
+	"tags" : "TRN01;Trace Type Code;Reassociation Trace Number",
+	"attributes":  [
+	    {
+		    "segmentId":  "TRN",
+		    "segmentName" : "Reassociation Trace Number",
+		    "elementName" : "Trace Type Code",
+		    "implementationName" : "Trace Type Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "ID",                        
+		    "length": "1/2",
+            "minimumLength": 1,
+            "maximumLength": 2,
+            "codes": ["1 - Current Transaction Trace Numbers"],
+            "elementRepeat" : 1,
+            "dataElement" : 481,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "TRN02",
+	"tags" : "TRN02;Check or EFT Trace Number;Reassociation Trace Number",
+	"attributes":  [
+	    {
+		    "segmentId":  "TRN",
+		    "segmentName" : "Reassociation Trace Number",
+		    "elementName" : "Reference Identification",
+		    "implementationName" : "Check or EFT Trace Number",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "ID",                        
+		    "length": "1/50",
+            "minimumLength": 1,
+            "maximumLength": 50,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 127,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "TRN03",
+	"tags" : "TRN03;Payer Identifier;Reassociation Trace Number",
+	"attributes":  [
+	    {
+		    "segmentId":  "TRN",
+		    "segmentName" : "Reassociation Trace Number",
+		    "elementName" : "Originating Company Identifier",
+		    "implementationName" : "Payer Identifier",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "AN",                        
+		    "length": "10/10",
+            "minimumLength": 10,
+            "maximumLength": 10,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 509,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+
+{
+	"elementId":  "TRN04",
+	"tags" : "TRN04;Reference Identifier;Reassociation Trace Number",
+	"attributes":  [
+	    {
+		    "segmentId":  "TRN",
+		    "segmentName" : "Reassociation Trace Number",
+		    "elementName" : "Reference Identifier",
+		    "implementationName" : "Origination Company Supplemental Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "AN",                        
+		    "length": "1/50",
+            "minimumLength": 1,
+            "maximumLength": 50,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 127,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+
+{
+	"elementId":  "PLB01",
+	"tags" : "PLB01;Provider Identifier;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Reference Identifier",
+		    "implementationName" : "Provider Identifier",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "AN",                        
+		    "length": "1/50",
+            "minimumLength": 1,
+            "maximumLength": 50,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 127,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB02",
+	"tags" : "PLB02;Fiscal Period Date;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Date",
+		    "implementationName" : "Fiscal Period Date",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "DT",                        
+		    "length": "8/8",
+            "minimumLength": 8,
+            "maximumLength": 8,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 373,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB03",
+	"tags" : "PLB03;Adjustment Identifier;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Adjustment Identifier",
+		    "implementationName" : "Adjustment Identifier",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "",         
+		    "length": "",
+            "minimumLength": null,
+            "maximumLength": null,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : "C042",
+            "loop": "",
+            "definition" : "This identifier is a composite data structure."
+	    }]
+}
+
+{
+	"elementId":  "PLB03-1",
+	"tags" : "PLB03-1;Adjustment Reason Code;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Adjustment Reason Code",
+		    "implementationName" : "Adjustment Reason Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "ID",         
+		    "length": "2/2",
+            "minimumLength": 2,
+            "maximumLength": 2,
+            "codes": ["You need to list these"],
+            "elementRepeat" : 1,
+            "dataElement" : 426,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB03-2",
+	"tags" : "PLB03-2;Provider Adjustment Identifier;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Reference Identification",
+		    "implementationName" : "Provider Adjustment Identifier",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "AN",         
+		    "length": "1/50",
+            "minimumLength": 1,
+            "maximumLength": 50,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 127,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB04",
+	"tags" : "PLB04;Provider Adjustment Amount;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Monetary Amount",
+		    "implementationName" : "Provider Adjustment Amount",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "R",         
+		    "length": "1/18",
+            "minimumLength": 1,
+            "maximumLength": 18,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 782,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB05-1",
+	"tags" : "PLB05-1;Adjustment Reason Code;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Adjustment Reason Code",
+		    "implementationName" : "Adjustment Reason Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "ID",         
+		    "length": "2/2",
+            "minimumLength": 2,
+            "maximumLength": 2,
+            "codes": ["You need to list these"],
+            "elementRepeat" : 1,
+            "dataElement" : 426,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB05-2",
+	"tags" : "PLB05-2;Provider Adjustment Identifier;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Reference Identification",
+		    "implementationName" : "Provider Adjustment Identifier",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "AN",         
+		    "length": "1/50",
+            "minimumLength": 1,
+            "maximumLength": 50,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 127,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB06",
+	"tags" : "PLB06;Provider Adjustment Amount;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Monetary Amount",
+		    "implementationName" : "Provider Adjustment Amount",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "R",         
+		    "length": "1/18",
+            "minimumLength": 1,
+            "maximumLength": 18,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 782,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB07-1",
+	"tags" : "PLB07-1;Adjustment Reason Code;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Adjustment Reason Code",
+		    "implementationName" : "Adjustment Reason Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "ID",         
+		    "length": "2/2",
+            "minimumLength": 2,
+            "maximumLength": 2,
+            "codes": ["You need to list these"],
+            "elementRepeat" : 1,
+            "dataElement" : 426,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB07-2",
+	"tags" : "PLB07-2;Provider Adjustment Identifier;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Reference Identification",
+		    "implementationName" : "Provider Adjustment Identifier",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "AN",         
+		    "length": "1/50",
+            "minimumLength": 1,
+            "maximumLength": 50,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 127,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB08",
+	"tags" : "PLB08;Provider Adjustment Amount;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Monetary Amount",
+		    "implementationName" : "Provider Adjustment Amount",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "R",         
+		    "length": "1/18",
+            "minimumLength": 1,
+            "maximumLength": 18,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 782,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB09-1",
+	"tags" : "PLB09-1;Adjustment Reason Code;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Adjustment Reason Code",
+		    "implementationName" : "Adjustment Reason Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "ID",         
+		    "length": "2/2",
+            "minimumLength": 2,
+            "maximumLength": 2,
+            "codes": ["You need to list these"],
+            "elementRepeat" : 1,
+            "dataElement" : 426,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB09-2",
+	"tags" : "PLB09-2;Provider Adjustment Identifier;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Reference Identification",
+		    "implementationName" : "Provider Adjustment Identifier",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "AN",         
+		    "length": "1/50",
+            "minimumLength": 1,
+            "maximumLength": 50,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 127,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB10",
+	"tags" : "PLB10;Provider Adjustment Amount;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Monetary Amount",
+		    "implementationName" : "Provider Adjustment Amount",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "R",         
+		    "length": "1/18",
+            "minimumLength": 1,
+            "maximumLength": 18,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 782,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB11-1",
+	"tags" : "PLB11-1;Adjustment Reason Code;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Adjustment Reason Code",
+		    "implementationName" : "Adjustment Reason Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "ID",         
+		    "length": "2/2",
+            "minimumLength": 2,
+            "maximumLength": 2,
+            "codes": ["You need to list these"],
+            "elementRepeat" : 1,
+            "dataElement" : 426,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB11-2",
+	"tags" : "PLB11-2;Provider Adjustment Identifier;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Reference Identification",
+		    "implementationName" : "Provider Adjustment Identifier",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "AN",         
+		    "length": "1/50",
+            "minimumLength": 1,
+            "maximumLength": 50,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 127,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB12",
+	"tags" : "PLB06;Provider Adjustment Amount;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Monetary Amount",
+		    "implementationName" : "Provider Adjustment Amount",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "R",         
+		    "length": "1/18",
+            "minimumLength": 1,
+            "maximumLength": 18,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 782,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB13-1",
+	"tags" : "PLB13-1;Adjustment Reason Code;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Adjustment Reason Code",
+		    "implementationName" : "Adjustment Reason Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "ID",         
+		    "length": "2/2",
+            "minimumLength": 2,
+            "maximumLength": 2,
+            "codes": ["You need to list these"],
+            "elementRepeat" : 1,
+            "dataElement" : 426,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB13-2",
+	"tags" : "PLB13-2;Provider Adjustment Identifier;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Reference Identification",
+		    "implementationName" : "Provider Adjustment Identifier",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "AN",         
+		    "length": "1/50",
+            "minimumLength": 1,
+            "maximumLength": 50,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 127,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "PLB14",
+	"tags" : "PLB14;Provider Adjustment Amount;Provider Adjustment",
+	"attributes":  [
+	    {
+		    "segmentId":  "PLB",
+		    "segmentName" : "Provider Adjustment",
+		    "elementName" : "Monetary Amount",
+		    "implementationName" : "Provider Adjustment Amount",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "R",         
+		    "length": "1/18",
+            "minimumLength": 1,
+            "maximumLength": 18,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 782,
+            "loop": "",
+            "definition" : ""
+	    }]
+}
+
+
+{
+	"elementId":  "TS302",
+	"tags" : "TS302;Facility Type Code;Provider Summary Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "TS3",
+		    "segmentName" : "Provider Summary Information",
+		    "elementName" : "Facility Code Value",
+		    "implementationName" : "Facility Type Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "AN",         
+		    "length": "1/2",
+            "minimumLength": 1,
+            "maximumLength": 2,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 1331,
+            "loop": "2000",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "TS303",
+	"tags" : "TS303;Fiscal Period Date;Provider Summary Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "TS3",
+		    "segmentName" : "Provider Summary Information",
+		    "elementName" : "Date",
+		    "implementationName" : "Fiscal Period Date",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "DT",         
+		    "length": "8/8",
+            "minimumLength": 8,
+            "maximumLength": 8,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 373,
+            "loop": "2000",
+            "definition" : "Use this date for the last day of the provider's fiscal year. If the end of the provider's fiscal year is not known, use December 31st of the current year."
+	    }]
+}
+
+{
+	"elementId":  "TS304",
+	"tags" : "TS304;Total Claim Count;Provider Summary Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "TS3",
+		    "segmentName" : "Provider Summary Information",
+		    "elementName" : "Quantity",
+		    "implementationName" : "Total Claim Count",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "R",         
+		    "length": "1/15",
+            "minimumLength": 1,
+            "maximumLength": 15,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 380,
+            "loop": "2000",
+            "definition" : "This is the total number of claims."
+	    }]
+}
+
+{
+	"elementId":  "TS305",
+	"tags" : "TS305;Total Claim Charge Amount;Provider Summary Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "TS3",
+		    "segmentName" : "Provider Summary Information",
+		    "elementName" : "Monetary Amount",
+		    "implementationName" : "Total Claim Charge Amount",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "R",         
+		    "length": "1/18",
+            "minimumLength": 1,
+            "maximumLength": 18,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 782,
+            "loop": "2000",
+            "definition" : "This is the total reported charges for all claims."
+	    }]
+}
+
+
+{
+	"elementId":  "CLP01",
+	"tags" : "CLP01;Patient Control Number;Claim Payment Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "CLP",
+		    "segmentName" : "Claim Payment Information",
+		    "elementName" : "Claim Submitter's Identifier",
+		    "implementationName" : "Patient Control Number",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "AN",         
+		    "length": "1/38",
+            "minimumLength": 1,
+            "maximumLength": 38,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 1028,
+            "loop": "2100",
+            "definition" : ""
+	    }]
+}
+
+
+{
+	"elementId":  "CLP02",
+	"tags" : "CLP02;Claim Status Code;Claim Payment Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "CLP",
+		    "segmentName" : "Claim Payment Information",
+		    "elementName" : "Claim Submitter's Identifier",
+		    "implementationName" : "Claim Status Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "ID",         
+		    "length": "1/2",
+            "minimumLength": 1,
+            "maximumLength": 2,
+            "codes": ["1 - Processed as Primary", "2 - Processed as Secondary", "3 - Processed as Tertiary", "4 - Denied", "19 - Processed as Primary, Forwarded to Additional Payer(s)", "20 - Processed as Secondary, Forwarded to Additional Payer(s)", "21 - Processed as Tertiary, Forwarded to Additional Payer(s)", "22 - Reversal of Previous Payment","23 - Not our Claim, Forwarded to Additional Payer(s)", "25 - Predetermination Pricing Only - No Payment" ],
+            "elementRepeat" : 1,
+            "dataElement" : 1029,
+            "loop": "2100",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "CLP03",
+	"tags" : "CLP03;Total Claim Charge Amount;Claim Payment Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "CLP",
+		    "segmentName" : "Claim Payment Information",
+		    "elementName" : "Monetary Amount",
+		    "implementationName" : "Total Claim Charge Amount",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "R",         
+		    "length": "1/18",
+            "minimumLength": 1,
+            "maximumLength": 18,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 782,
+            "loop": "2100",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "CLP04",
+	"tags" : "CLP04;Claim Payment Amount;Claim Payment Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "CLP",
+		    "segmentName" : "Claim Payment Information",
+		    "elementName" : "Monetary Amount",
+		    "implementationName" : "Claim Payment Amount",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "M",
+            "dataType" : "R",         
+		    "length": "1/18",
+            "minimumLength": 1,
+            "maximumLength": 18,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 782,
+            "loop": "2100",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "CLP05",
+	"tags" : "CLP05;Patient Responsibility Amount;Claim Payment Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "CLP",
+		    "segmentName" : "Claim Payment Information",
+		    "elementName" : "Monetary Amount",
+		    "implementationName" : "Patient Responsibility Amount",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "R",         
+		    "length": "1/18",
+            "minimumLength": 1,
+            "maximumLength": 18,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 782,
+            "loop": "2100",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "CLP06",
+	"tags" : "CLP06;Claim Filing Indicator Code;Claim Payment Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "CLP",
+		    "segmentName" : "Claim Payment Information",
+		    "elementName" : "Claim Filing Indicator Code",
+		    "implementationName" : "Claim Filing Indicator Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "ID",         
+		    "length": "1/2",
+            "minimumLength": 1,
+            "maximumLength": 2,
+            "codes": ["12 - Preferred Provider Organization (PPO)","13 - Point of Service (POS)", "14 - Exclusive Provider Organization (EPO)","15 - Indemnity Amount", "16 - Health Maintenance Organization (HMO) Medicare Risk", "17 - Dental Maintenance Organization", "AM - Automobile Medical", "CH - Champus", "DS - Disability", "HM - Health Maintenance Organization", "LM - Liability Medical", "MA - Medicare Part A", "MB - Medicare Part B", "MC - Medicaid","OF - Other Federal Program", "TV - Title V", "VA - Veterans Affairs Plan", "WC - Worker's Compensation Health Claims", "ZZ - Mutually Defined"],
+            "elementRepeat" : 1,
+            "dataElement" : 1032,
+            "loop": "2100",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "CLP07",
+	"tags" : "CLP07;Payer Claim Control Number;Claim Payment Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "CLP",
+		    "segmentName" : "Claim Payment Information",
+		    "elementName" : "Reference Identification",
+		    "implementationName" : "Payer Claim Control Number",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "AN",         
+		    "length": "1/50",
+            "minimumLength": 1,
+            "maximumLength": 50,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 127,
+            "loop": "2100",
+            "definition" : "Use this number for the payer's internal control number. This number must apply to the entire claim."
+	    }]
+}
+
+{
+	"elementId":  "CLP08",
+	"tags" : "CLP08;Facility Type Code;Claim Payment Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "CLP",
+		    "segmentName" : "Claim Payment Information",
+		    "elementName" : "Facility Code Value",
+		    "implementationName" : "Facility Type Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "AN",         
+		    "length": "1/2",
+            "minimumLength": 1,
+            "maximumLength": 2,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 1331,
+            "loop": "2100",
+            "definition" : "The number was received in the CLM05-1 of the 837 claim."
+	    }]
+}
+
+{
+	"elementId":  "CLP09",
+	"tags" : "CLP09;Claim Frequency Code;Claim Payment Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "CLP",
+		    "segmentName" : "Claim Payment Information",
+		    "elementName" : "Claim Frequency Type Code",
+		    "implementationName" : "Claim Frequency Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "ID",         
+		    "length": "1/1",
+            "minimumLength": 1,
+            "maximumLength": 1,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 1325,
+            "loop": "2100",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "CLP11",
+	"tags" : "CLP11;Diagnosis Related Group (DRG) Code;Claim Payment Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "CLP",
+		    "segmentName" : "Claim Payment Information",
+		    "elementName" : "Diagnosis Related Group (DRG) Code",
+		    "implementationName" : "Diagnosis Related Group (DRG) Code",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "ID",         
+		    "length": "1/4",
+            "minimumLength": 1,
+            "maximumLength": 4,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 1354,
+            "loop": "2100",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "CLP12",
+	"tags" : "CLP12;Diagnosis Related Group (DRG) Weight;Claim Payment Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "CLP",
+		    "segmentName" : "Claim Payment Information",
+		    "elementName" : "Quantity",
+		    "implementationName" : "Diagnosis Related Group (DRG) Weight",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "R",         
+		    "length": "1/15",
+            "minimumLength": 1,
+            "maximumLength": 15,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 380,
+            "loop": "2100",
+            "definition" : ""
+	    }]
+}
+
+{
+	"elementId":  "CLP13",
+	"tags" : "CLP13;Discharge Fraction;Claim Payment Information",
+	"attributes":  [
+	    {
+		    "segmentId":  "CLP",
+		    "segmentName" : "Claim Payment Information",
+		    "elementName" : "Percentage as Decimal",
+		    "implementationName" : "Discharge Fraction",
+		    "transactions":  ["835"],
+		    "versions":  ["5010"],
+		    "usage" : "O",
+            "dataType" : "R",         
+		    "length": "1/10",
+            "minimumLength": 1,
+            "maximumLength": 10,
+            "codes": null,
+            "elementRepeat" : 1,
+            "dataElement" : 954,
+            "loop": "2100",
+            "definition" : ""
+	    }]
+}
