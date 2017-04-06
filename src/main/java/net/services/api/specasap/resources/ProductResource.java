@@ -18,6 +18,7 @@ import javax.ws.rs.core.UriInfo;
 import org.apache.log4j.Logger;
 
 import net.services.api.specasap.model.Product;
+import net.services.api.specasap.model.ProductSet;
 import net.services.api.specasap.services.ProductService;
 
 @Path("/{version}/products")
@@ -29,13 +30,13 @@ public class ProductResource {
 	@GET
 	@Path("/productlist")
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<Product> getProductList (@Context UriInfo uriInfo,
+	public List<ProductSet> getProductList (@Context UriInfo uriInfo,
 				@DefaultValue("ios") @QueryParam("os") String os,
 				@Context HttpServletRequest request)throws IOException {
 		
 		ProductService productService = new ProductService(request.getServletContext());
 		
-		List<Product> productList = productService.getProductList(os);		
-		return productList;
+		List<ProductSet> productSetList = productService.getProductList(os);		
+		return productSetList;
 	}	
 }

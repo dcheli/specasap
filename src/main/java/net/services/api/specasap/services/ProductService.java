@@ -9,16 +9,20 @@ import javax.servlet.ServletContext;
 import org.apache.log4j.Logger;
 import org.bson.Document;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mongodb.Block;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
 
+import net.services.api.specasap.model.CodeSet;
 import net.services.api.specasap.model.Product;
+import net.services.api.specasap.model.ProductSet;
 
 public class ProductService {
 	
-	Product product = null;
+	ProductSet productSet = null;
 	MongoDatabase db = null;
 	Logger logger = Logger.getLogger(ProductService.class);
 	MongoClient mongoClient = null;
@@ -41,9 +45,9 @@ public class ProductService {
 		}
 	}
 	
-	public ArrayList<Product> getProductList(String os) {
+	public ArrayList<ProductSet> getProductList(String os) {
 		
-		ArrayList<Product> productList = new ArrayList<Product>();
+		ArrayList<ProductSet> productSetList = new ArrayList<ProductSet>();
 		
 		String collection = "products";
 		System.out.println("database is " + db.getCollection(collection).toString());
@@ -55,21 +59,36 @@ public class ProductService {
 			@SuppressWarnings("unchecked")
 			@Override
 			public void apply(final Document document) {
-				String productId;
-				String operatingSystem;
-				String version;
-				String displayName;
-				System.out.println(document);
-				if(!document.isEmpty()) {
-					productId = document.containsKey("productId") ? document.getString("productId") : "";
-					operatingSystem = document.containsKey("operatingSystem") ? document.getString("operatingSystem") : "";
-					version = document.containsKey("version") ? document.getString("version") : "";
-					displayName = document.containsKey("displayName") ? document.getString("displayName") : "";
-					product = new Product(productId, operatingSystem, version, displayName);
-					productList.add(product);
-				}
+								
+				ObjectMapper mapper = new ObjectMapper();
+				mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+				String json = document.toJson();
+	    		try {
+	    			
+					productSet = mapper.readValue(json, ProductSet.class);
+					productSetList.add(productSet);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}	
+
+
+		//		String productId;
+		//		String operatingSystem;
+		//		String version;
+		//		String displayName;
+		//		System.out.println(document);
+			//	if(!document.isEmpty()) {
+			//		productId = document.containsKey("productId") ? document.getString("productId") : "";
+			//		operatingSystem = document.containsKey("operatingSystem") ? document.getString("operatingSystem") : "";
+			//		version = document.containsKey("version") ? document.getString("version") : "";
+			//		displayName = document.containsKey("displayName") ? document.getString("displayName") : "";
+			//		product = new Product(productId, operatingSystem, version, displayName);
+			//		productList.add(product);
+			//	}
 			}
 		});
-		return productList;
+		
+		return productSetList;
 	}
 }
