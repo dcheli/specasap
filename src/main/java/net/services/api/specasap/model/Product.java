@@ -11,14 +11,7 @@ public class Product {
 	public Product() {
 		super();
 	}
-/*	public Product(String productId, String operatingSystem, String version, String displayName) {
-		super();
-		this.productId = productId;
-		this.operatingSystem = operatingSystem;
-		this.version = version;
-		this.displayName = displayName;
-	}
-	*/
+	
 	public String getProductId() {
 		return productId;
 	}

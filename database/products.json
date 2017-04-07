@@ -43,7 +43,7 @@
 
 {
 	domain: "Healthcare",
-	operatingSystem : ["ios"],
+	operatingSystems : ["ios"],
 	products : [
 	{
     productId : "com.dataasap.x12asap",
@@ -70,7 +70,7 @@
 
 {
 	domain: "Finance",
-	operatingSystem : ["ios"],
+	operatingSystems : ["ios"],
 	products : [
 
 {

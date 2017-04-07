@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ProductSet {
 	String domain;
-	ArrayList<String> operatingSystem = new ArrayList<String>();
+	ArrayList<String> operatingSystems = new ArrayList<String>();
 	ArrayList<Product> products = new ArrayList<Product>();
 	public ProductSet() {
 		super();
@@ -22,12 +22,11 @@ public class ProductSet {
 	public void setProducts(ArrayList<Product> products) {
 		this.products = products;
 	}
-	public ArrayList<String> getOperatingSystem() {
-		return operatingSystem;
+	public ArrayList<String> getOperatingSystems() {
+		return operatingSystems;
 	}
-	public void setOperatingSystem(ArrayList<String> operatingSystem) {
-		this.operatingSystem = operatingSystem;
+	public void setOperatingSystems(ArrayList<String> operatingSystems) {
+		this.operatingSystems = operatingSystems;
 	}
-
 
 }

@@ -2,16 +2,16 @@
 <!-- This web.xml file is not required when using Servlet 3.0 container,
      see implementation details http://jersey.java.net/nonav/documentation/latest/jax-rs.html -->
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-   <display-name>specasap</display-name>
+   <display-name>SpecASAP</display-name>
    
    	<context-param>
 		<param-name>MONGODB_HOST</param-name>
 		<!-- For Local Docker Container -->
-		<param-value>192.168.99.100</param-value>
+		<!--<param-value>192.168.99.100</param-value>-->
 		<!-- For Amazon AWS Docker Container this may create a problem if the EC2 ip changes-->
-		<!--<param-value>172.30.3.182</param-value>-->
+		<param-value>172.30.3.182</param-value>
 		<!-- Amazon AWS public IP -->
-		<!--<param-value>34.207.173.202</param-value>-->
+		<!--<param-value>54.164.176.151</param-value>-->
 	</context-param>
 	<context-param>
 		<param-name>MONGODB_PORT1</param-name>

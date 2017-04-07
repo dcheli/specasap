@@ -53,7 +53,7 @@ public class ProductService {
 		System.out.println("database is " + db.getCollection(collection).toString());
 		
 		FindIterable<Document> iterable = db.getCollection(collection).find(
-				new Document("operatingSystem",os));
+				new Document("operatingSystems",os));
 			
 		iterable.forEach(new Block<Document>() {
 			@SuppressWarnings("unchecked")
@@ -71,21 +71,6 @@ public class ProductService {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}	
-
-
-		//		String productId;
-		//		String operatingSystem;
-		//		String version;
-		//		String displayName;
-		//		System.out.println(document);
-			//	if(!document.isEmpty()) {
-			//		productId = document.containsKey("productId") ? document.getString("productId") : "";
-			//		operatingSystem = document.containsKey("operatingSystem") ? document.getString("operatingSystem") : "";
-			//		version = document.containsKey("version") ? document.getString("version") : "";
-			//		displayName = document.containsKey("displayName") ? document.getString("displayName") : "";
-			//		product = new Product(productId, operatingSystem, version, displayName);
-			//		productList.add(product);
-			//	}
 			}
 		});
 		
