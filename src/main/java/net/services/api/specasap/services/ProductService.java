@@ -56,7 +56,6 @@ public class ProductService {
 				new Document("operatingSystems",os));
 			
 		iterable.forEach(new Block<Document>() {
-			@SuppressWarnings("unchecked")
 			@Override
 			public void apply(final Document document) {
 								
@@ -64,7 +63,6 @@ public class ProductService {
 				mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 				String json = document.toJson();
 	    		try {
-	    			
 					productSet = mapper.readValue(json, ProductSet.class);
 					productSetList.add(productSet);
 				} catch (IOException e) {

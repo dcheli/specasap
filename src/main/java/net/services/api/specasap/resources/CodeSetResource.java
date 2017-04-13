@@ -1,8 +1,6 @@
 package net.services.api.specasap.resources;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.inject.Singleton;
 import javax.servlet.ServletContext;
@@ -19,8 +17,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.UriInfo;
 import org.apache.log4j.Logger;
 import net.services.api.specasap.model.CodeSet;
-import net.services.api.specasap.model.NCPDPElement;
-import net.services.api.specasap.services.NCPDPCodeSetService;
+
+import net.services.api.specasap.services.CodeSetService;
 
 @Path("/{version}/codesets")
 @Singleton
@@ -30,18 +28,19 @@ public class CodeSetResource {
 	private @Context ServletContext servletContext; 
 	
 	@GET
-	@Path("/ncpdp/{searchParam}")
+	@Path("/{domain}/{searchParam}")
 	@Produces(MediaType.APPLICATION_JSON) 	
-	public CodeSet getNCPDPCodeSet(@PathParam("searchParam") 
-	@Pattern(regexp = "[a-zA-Z0-9-\\s]+", message="The search parameter contains invalid characters.") String searchParam,
-	@DefaultValue("D0") @QueryParam("v") String collectionVersion,
-	@Context UriInfo uriInfo,
-	@Context HttpServletRequest request) throws IOException{
-		System.out.print("searchParamater is " + searchParam);
+	public CodeSet getCodeSet(
+			@PathParam("searchParam") @Pattern(regexp = "[a-zA-Z0-9-\\s]+", message="The search parameter contains invalid characters.") String searchParam,
+			@PathParam("domain") @Pattern(regexp = "[a-zA-Z0-9-\\s]+", message="The search parameter contains invalid characters.") String domain,
+			@Context UriInfo uriInfo,
+			@Context HttpServletRequest request) throws IOException{
+			System.out.print("searchParamater is " + searchParam);
+			System.out.print("domain is " + domain);
 
 		CodeSet codeSet = new CodeSet();
-		NCPDPCodeSetService ncpdpCodeSetService = new NCPDPCodeSetService(request.getServletContext());
-		codeSet = ncpdpCodeSetService.getCodeSet(searchParam, collectionVersion);
+		CodeSetService codeSetService = new CodeSetService(request.getServletContext());
+		codeSet = codeSetService.getCodeSet(domain, searchParam);
 		
 		
 		return codeSet;

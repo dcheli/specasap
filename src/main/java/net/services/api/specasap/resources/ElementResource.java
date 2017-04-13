@@ -20,11 +20,13 @@ import javax.ws.rs.core.UriInfo;
 
 import org.apache.log4j.Logger;
 
+import net.services.api.specasap.model.CCDPlusElement;
 import net.services.api.specasap.model.HL7Element;
 import net.services.api.specasap.model.NCPDPElement;
 import net.services.api.specasap.model.X12Element;
 import net.services.api.specasap.services.NCPDPElementService;
 import net.services.api.specasap.services.X12ElementService;
+import net.services.api.specasap.services.CCDPlusElementService;
 import net.services.api.specasap.services.HL7ElementService;
 
 @Path("/{version}/elements")
@@ -90,4 +92,21 @@ public class ElementResource  {
 		returnList.forEach(element -> elementList.add(element));
 		return (ArrayList<HL7Element>) elementList;
 	}
+
+	@GET
+	@Path("/ccdplus/{searchParam}")
+	@Produces(MediaType.APPLICATION_JSON) 
+	public ArrayList<CCDPlusElement> getCCDPlusElement(@PathParam("searchParam") 
+			@Pattern(regexp = "[a-zA-Z0-9-\\s]+", message="The search parameter contains invalid characters.") String searchParam,
+			@DefaultValue("2") @QueryParam("v") String collectionVersion,
+			@Context UriInfo uriInfo,
+			@Context HttpServletRequest request) throws IOException{
+		
+		final List<CCDPlusElement> elementList = new ArrayList<>();
+		CCDPlusElementService ccdPlusElementService = new CCDPlusElementService(request.getServletContext());
+		List<CCDPlusElement> returnList = ccdPlusElementService.getElement(searchParam, collectionVersion);
+		returnList.forEach(element -> elementList.add(element));
+		return (ArrayList<CCDPlusElement>) elementList;
+	}
+
 }
