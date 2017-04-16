@@ -41,7 +41,7 @@ public class HL7ElementService {
 		List<HL7Element> elementList = new ArrayList<HL7Element>();
 		
 		if(!("").equals(searchParam)) {
-			String collection = "hl7" + collectionVersion;
+			String collection = "hl7Elements" + collectionVersion;
 			FindIterable<Document> iterable = db.getCollection(collection).find(
 					new Document("tags", java.util.regex.Pattern.compile(searchParam, Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE)));
 			

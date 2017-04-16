@@ -1,0 +1,898 @@
+{ "elementIds" : ["202-B2"],
+    "codes" :
+    [
+    { "code" : "01", "description" : "National Provider Identifier (NPI)" , "longDescription" : "National Provider Identifier (NPI) - a standard unique health identifier for health care providers. The NPI is a 10 position numeric identifier with a check digit in the 10th position and is assigned by the National Provider System (NPS)."},
+    { "code" : "02", "description" : "Blue Cross" , "longDescription" : "Blue Cross - a number assigned by a Blue Cross health plan which is a nonprofit hospital expense prepayment plan primarily designed to provide benefits for hospitalization coverage, with certain restrictions on the accommodations to be used."},
+    { "code" : "03", "description" : "Blue Shield" , "longDescription" : "Blue Shield - a number assigned by a Blue Shield health plan which is a prepayment plan offered by voluntary nonprofit organizations that cover medical and surgical expenses."},
+    { "code" : "04", "description" : "Medicare" , "longDescription" : "Medicare - a number assigned by the carrier or intermediary which administers the Medicare health insurance program for people age 65 or older, some people with disabilities under age 65, and people with end-stage renal disease. Medicare has two parts, hospital insurance (Part A) and medical insurance (Part B)."},
+    { "code" : "05", "description" : "Medicaid" , "longDescription" : "Medicaid - a number assigned to a provider by a state Medicaid agency. Each state has a unique identifier. Medicaid is a program established pursuant to Title XIX of the Social Security Act to provide medical benefits for certain categories of low-income individuals. The program provides benefits to indigent and disabled individuals and members of families receiving Aid to Families with Dependent Children. States have the option to provide benefits to a broader range of individuals. The program is a cooperative arrangement between the federal government and the states, under which both the federal government and a participating state contribute financial support. The state, however, retains a considerable amount of discretion over the operation and administration of the program, and has the right to determine the benefits to be provided, rules for eligibility, rates of payment for services and other matters, as long as broad regulatory guidelines established by the federal government are followed."},
+    { "code" : "06", "description" : "UPIN (Unique Physician/Practitioner Identification Number)" , "longDescription" : "UPIN (Unique Physician/Practitioner Identification Number) - a number assigned to each Medicare physician/practitioner to identify the referring or ordering physician on Medicare claims. UPINs consist of an alpha character and five numerics and are assigned by CMS."},
+    { "code" : "07", "description" : "NCPDP Provider Identification Number" , "longDescription" : "NCPDP Provider Identification Number - a number that provides pharmacies with a unique, 7 digit national identifying number that assists pharmacies in their interactions with federal agencies and third party providers. The NCPDP Provider Identification Number was formerly known as the NABP (National Board of Pharmacy) number. NCPDP also enumerates licensed dispensing sites in the United States as part of its Alternate Site Enumeration Program Numbering System (ASEP). The purpose of this system is to enable a site to identify itself to all third part processors by one standard number, in order to adjudicate claims and receive reimbursement from prescription card programs."},
+    { "code" : "08", "description" : "State License" , "longDescription" : "State License - the number assigned and required by a State Board or other State regulatory agency that uniquely identifies a pharmacy by category, as defined by each State or Territory or a prescriber by practice specialty for which they reside/practice."},
+    { "code" : "09", "description" : "TRICARE" , "longDescription" : "TRICARE - a number that uniquely identifies a provider that participates in the TRICARE program which is a federal medical benefits program that helps pay for civilian medical care rendered to the spouses and children of active duty and retired personnel."},
+    { "code" : "10", "description" : "Health Industry Number (HIN)" , "longDescription" : "Health Industry Number (HIN) - a 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities. The number is assigned by HIBCC."},
+    { "code" : "11", "description" : "Federal Tax ID" , "longDescription" : "Federal Tax ID - a 9-digit number assigned by the Internal Revenue Service to sole proprietors, corporations, partnerships, estates, trusts, and other entities for the purpose of tax filing and reporting."},
+    { "code" : "12", "description" : "Drug Enforcement Administration (DEA) Number" , "longDescription" : "Drug Enforcement Administration (DEA) Number - the number assigned by the DEA to all businesses that manufacture or distribute controlled pharmaceuticals, all health professionals who dispense, administer, or prescribe controlled pharmaceuticals and all pharmacies that fill prescriptions."},
+    { "code" : "13", "description" : "State Issued" , "longDescription" : "State Issued - a unique number issued by a state program or organization other than Medicaid, to a provider of service."},
+    { "code" : "14", "description" : "Plan Specific" , "longDescription" : "Plan Specific - a unique proprietary number assigned by a commercial health care plan to a provider of service."},
+    { "code" : "15", "description" : "HCID (HC IDea)" , "longDescription" : "HCID (HC IDea) - a 10-character, alphanumeric identifier assigned by NCPDP to identify authorized prescribers of drugs."},
+    { "code" : "16", "description" : "Combat Methamphetamine Epidemic Act (CMEA) Certificate ID" , "longDescription" : "Combat Methamphetamine Epidemic Act (CMEA) Certificate ID - a unique number assigned by the DEA to a business for the purpose of identifying the business that has given the training program."},
+    { "code" : "99", "description" : "Other" , "longDescription" : "Other - used to identify other health plans and enumerating organizations not listed above."}
+    ]
+ }
+ 
+ 
+ { "elementIds" : ["118-TS"],
+    "codes" :
+    [ 
+    { "code" : "00", "description" : "Not Specified" , "longDescription" : "Not Specified"},
+    { "code" : "01", "description" : "National Provider Identifier (NPI)" , "longDescription" : "National Provider Identifier (NPI) - a standard unique health identifier for health care providers. The NPI is a 10 position numeric identifier with a check digit in the 10th position and is assigned by the National Provider System (NPS)."},
+    { "code" : "17", "description" : "Foreign Prescriber Identifier" , "longDescription" : "Foreign Prescriber Identifier - a value used to identify a prescriber who practices outside of the United States and does not have a prescriber identifier issued from within the United States."}
+ ]}
+
+ 
+{ "elementIds" : ["579-XX"],
+    "codes" :
+    [ 
+    { "code" : "01", "description" : "National Provider Identifier (NPI)" , "longDescription" : "National Provider Identifier (NPI) - a standard unique health identifier for health care providers. The NPI is a 10 position numeric identifier with a check digit in the 10th position and is assigned by the National Provider System (NPS)."},
+    { "code" : "02", "description" : "Blue Cross" , "longDescription" : "Blue Cross - a number assigned by a Blue Cross health plan which is a nonprofit hospital expense prepayment plan primarily designed to provide benefits for hospitalization coverage, with certain restrictions on the accommodations to be used."},
+    { "code" : "03", "description" : "Blue Shield" , "longDescription" : "Blue Shield - a number assigned by a Blue Shield health plan which is a prepayment plan offered by voluntary nonprofit organizations that cover medical and surgical expenses."},
+    { "code" : "04", "description" : "Medicare" , "longDescription" : "Medicare - a number assigned by the carrier or intermediary which administers the Medicare health insurance program for people age 65 or older, some people with disabilities under age 65, and people with end-stage renal disease. Medicare has two parts, hospital insurance (Part A) and medical insurance (Part B)."},
+    { "code" : "05", "description" : "Medicaid" , "longDescription" : "Medicaid - a number assigned to a provider by a state Medicaid agency. Each state has a unique identifier. Medicaid is a program established pursuant to Title XIX of the Social Security Act to provide medical benefits for certain categories of low-income individuals. The program provides benefits to indigent and disabled individuals and members of families receiving Aid to Families with Dependent Children. States have the option to provide benefits to a broader range of individuals. The program is a cooperative arrangement between the federal government and the states, under which both the federal government and a participating state contribute financial support. The state, however, retains a considerable amount of discretion over the operation and administration of the program, and has the right to determine the benefits to be provided, rules for eligibility, rates of payment for services and other matters, as long as broad regulatory guidelines established by the federal government are followed."},
+    { "code" : "06", "description" : "UPIN" , "longDescription" : "UPIN (Unique Physician/Practitioner Identification Number) - a number assigned to each Medicare physician/practitioner to identify the referring or ordering physician on Medicare claims. UPINs consist of an alpha character and five numerics and are assigned by CMS."},
+    { "code" : "07", "description" : "NCPDP Provider Identification Number" , "longDescription" : "NCPDP Provider Identification Number - a number that provides pharmacies with a unique, 7 digit national identifying number that assists pharmacies in their interactions with federal agencies and third party providers. The NCPDP Provider Identification Number was formerly known as the NABP (National Board of Pharmacy) number. NCPDP also enumerates licensed dispensing sites in the United States as part of its Alternate Site Enumeration Program Numbering System (ASEP). The purpose of this system is to enable a site to identify itself to all third part processors by one standard number, in order to adjudicate claims and receive reimbursement from prescription card programs."},
+    { "code" : "08", "description" : "State License" , "longDescription" : "State License - the number assigned and required by a State Board or other State regulatory agency that uniquely identifies a pharmacy by category, as defined by each State or Territory or a prescriber by practice specialty for which they reside/practice."},
+    { "code" : "09", "description" : "TRICARE" , "longDescription" : "TRICARE - a number that uniquely identifies a provider that participates in the TRICARE program which is a federal medical benefits program that helps pay for civilian medical care rendered to the spouses and children of active duty and retired personnel."},
+    { "code" : "10", "description" : "Health Industry Number (HIN)" , "longDescription" : "Health Industry Number (HIN) - a 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities. The number is assigned by HIBCC."},
+    { "code" : "11", "description" : "Federal Tax ID" , "longDescription" : "Federal Tax ID - a 9-digit number assigned by the Internal Revenue Service to sole proprietors, corporations, partnerships, estates, trusts, and other entities for the purpose of tax filing and reporting."},
+    { "code" : "12", "description" : "Drug Enforcement Administration (DEA) Number" , "longDescription" : "Drug Enforcement Administration (DEA) Number - the number assigned by the DEA to all businesses that manufacture or distribute controlled pharmaceuticals, all health professionals who dispense, administer, or prescribe controlled pharmaceuticals and all pharmacies that fill prescriptions."},
+    { "code" : "13", "description" : "State Issued" , "longDescription" : "State Issued - a unique number issued by a state program or organization other than Medicaid, to a provider of service."},
+    { "code" : "14", "description" : "Plan Specific" , "longDescription" : "Plan Specific - a unique proprietary number assigned by a commercial health care plan to a provider of service."},
+    { "code" : "15", "description" : "HCID (HC IDea)" , "longDescription" : "HCID (HC IDea) - a 10-character, alphanumeric identifier assigned by NCPDP to identify authorized prescribers of drugs."},
+    { "code" : "99", "description" : "Other" , "longDescription" : "Other - used to identify other health plans and enumerating organizations not listed above."}]
+ }
+ 
+ 
+ { "elementIds" : ["466-EZ"],
+    "codes" :
+    [ 
+    { "code" : "00", "description" : "Not Specified" , "longDescription" : "Not Specified"},
+    { "code" : "01", "description" : "National Provider Identifier (NPI)" , "longDescription" : "National Provider Identifier (NPI) - a standard unique health identifier for health care providers. The NPI is a 10 position numeric identifier with a check digit in the 10th position and is assigned by the National Provider System (NPS)."},
+    { "code" : "02", "description" : "Blue Cross" , "longDescription" : "Blue Cross - a number assigned by a Blue Cross health plan which is a nonprofit hospital expense prepayment plan primarily designed to provide benefits for hospitalization coverage, with certain restrictions on the accommodations to be used."},
+    { "code" : "03", "description" : "Blue Shield" , "longDescription" : "Blue Shield - a number assigned by a Blue Shield health plan which is a prepayment plan offered by voluntary nonprofit organizations that cover medical and surgical expenses."},
+    { "code" : "04", "description" : "Medicare" , "longDescription" : "Medicare - a number assigned by the carrier or intermediary which administers the Medicare health insurance program for people age 65 or older, some people with disabilities under age 65, and people with end-stage renal disease. Medicare has two parts, hospital insurance (Part A) and medical insurance (Part B)."},
+    { "code" : "05", "description" : "Medicaid" , "longDescription" : "Medicaid - a number assigned to a provider by a state Medicaid agency. Each state has a unique identifier. Medicaid is a program established pursuant to Title XIX of the Social Security Act to provide medical benefits for certain categories of low-income individuals. The program provides benefits to indigent and disabled individuals and members of families receiving Aid to Families with Dependent Children. States have the option to provide benefits to a broader range of individuals. The program is a cooperative arrangement between the federal government and the states, under which both the federal government and a participating state contribute financial support. The state, however, retains a considerable amount of discretion over the operation and administration of the program, and has the right to determine the benefits to be provided, rules for eligibility, rates of payment for services and other matters, as long as broad regulatory guidelines established by the federal government are followed."},
+    { "code" : "06", "description" : "UPIN" , "longDescription" : "UPIN (Unique Physician/Practitioner Identification Number) - a number assigned to each Medicare physician/practitioner to identify the referring or ordering physician on Medicare claims. UPINs consist of an alpha character and five numerics and are assigned by CMS."},
+    { "code" : "08", "description" : "State License" , "longDescription" : "State License - the number assigned and required by a State Board or other State regulatory agency that uniquely identifies a pharmacy by category, as defined by each State or Territory or a prescriber by practice specialty for which they reside/practice."},
+    { "code" : "09", "description" : "TRICARE" , "longDescription" : "TRICARE - a number that uniquely identifies a provider that participates in the TRICARE program which is a federal medical benefits program that helps pay for civilian medical care rendered to the spouses and children of active duty and retired personnel."},
+    { "code" : "10", "description" : "Health Industry Number (HIN)" , "longDescription" : "Health Industry Number (HIN) - a 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities. The number is assigned by HIBCC."},
+    { "code" : "11", "description" : "Federal Tax ID" , "longDescription" : "Federal Tax ID - a 9-digit number assigned by the Internal Revenue Service to sole proprietors, corporations, partnerships, estates, trusts, and other entities for the purpose of tax filing and reporting."},
+    { "code" : "12", "description" : "Drug Enforcement Administration (DEA) Number" , "longDescription" : "Drug Enforcement Administration (DEA) Number - the number assigned by the DEA to all businesses that manufacture or distribute controlled pharmaceuticals, all health professionals who dispense, administer, or prescribe controlled pharmaceuticals and all pharmacies that fill prescriptions."},
+    { "code" : "13", "description" : "State Issued" , "longDescription" : "State Issued - a unique number issued by a state program or organization other than Medicaid, to a provider of service."},
+    { "code" : "14", "description" : "Plan Specific" , "longDescription" : "Plan Specific - a unique proprietary number assigned by a commercial health care plan to a provider of service."},
+    { "code" : "15", "description" : "HCID (HC IDea)" , "longDescription" : "HCID (HC IDea) - a 10-character, alphanumeric identifier assigned by NCPDP to identify authorized prescribers of drugs."},
+    { "code" : "17", "description" : "Foreign Prescriber Identifier" , "longDescription" : "Foreign Prescriber Identifier - a value used to identify a prescriber who practices outside of the United States and does not have a prescriber identifier issued from within the United States."},
+    { "code" : "99", "description" : "Other" , "longDescription" : "Other - used to identify other health plans and enumerating organizations not listed above."}
+    ]
+ }
+
+ 
+ { "elementIds" : ["468-2E"],
+    "codes" :
+    [ 
+    { "code" : "00", "description" : "Not Specified" , "longDescription" : "Not Specified"},
+    { "code" : "01", "description" : "National Provider Identifier (NPI)" , "longDescription" : "National Provider Identifier (NPI) - a standard unique health identifier for health care providers. The NPI is a 10 position numeric identifier with a check digit in the 10th position and is assigned by the National Provider System (NPS)."},
+    { "code" : "02", "description" : "Blue Cross" , "longDescription" : "Blue Cross - a number assigned by a Blue Cross health plan which is a nonprofit hospital expense prepayment plan primarily designed to provide benefits for hospitalization coverage, with certain restrictions on the accommodations to be used."},
+    { "code" : "03", "description" : "Blue Shield" , "longDescription" : "Blue Shield - a number assigned by a Blue Shield health plan which is a prepayment plan offered by voluntary nonprofit organizations that cover medical and surgical expenses."},
+    { "code" : "04", "description" : "Medicare" , "longDescription" : "Medicare - a number assigned by the carrier or intermediary which administers the Medicare health insurance program for people age 65 or older, some people with disabilities under age 65, and people with end-stage renal disease. Medicare has two parts, hospital insurance (Part A) and medical insurance (Part B)."},
+    { "code" : "05", "description" : "Medicaid" , "longDescription" : "Medicaid - a number assigned to a provider by a state Medicaid agency. Each state has a unique identifier. Medicaid is a program established pursuant to Title XIX of the Social Security Act to provide medical benefits for certain categories of low-income individuals. The program provides benefits to indigent and disabled individuals and members of families receiving Aid to Families with Dependent Children. States have the option to provide benefits to a broader range of individuals. The program is a cooperative arrangement between the federal government and the states, under which both the federal government and a participating state contribute financial support. The state, however, retains a considerable amount of discretion over the operation and administration of the program, and has the right to determine the benefits to be provided, rules for eligibility, rates of payment for services and other matters, as long as broad regulatory guidelines established by the federal government are followed."},
+    { "code" : "06", "description" : "UPIN" , "longDescription" : "UPIN (Unique Physician/Practitioner Identification Number) - a number assigned to each Medicare physician/practitioner to identify the referring or ordering physician on Medicare claims. UPINs consist of an alpha character and five numerics and are assigned by CMS."},
+    { "code" : "08", "description" : "State License" , "longDescription" : "State License - the number assigned and required by a State Board or other State regulatory agency that uniquely identifies a pharmacy by category, as defined by each State or Territory or a prescriber by practice specialty for which they reside/practice."},
+    { "code" : "09", "description" : "TRICARE" , "longDescription" : "TRICARE - a number that uniquely identifies a provider that participates in the TRICARE program which is a federal medical benefits program that helps pay for civilian medical care rendered to the spouses and children of active duty and retired personnel."},
+    { "code" : "10", "description" : "Health Industry Number (HIN)" , "longDescription" : "Health Industry Number (HIN) - a 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities. The number is assigned by HIBCC."},
+    { "code" : "11", "description" : "Federal Tax ID" , "longDescription" : "Federal Tax ID - a 9-digit number assigned by the Internal Revenue Service to sole proprietors, corporations, partnerships, estates, trusts, and other entities for the purpose of tax filing and reporting."},
+    { "code" : "12", "description" : "Drug Enforcement Administration (DEA) Number" , "longDescription" : "Drug Enforcement Administration (DEA) Number - the number assigned by the DEA to all businesses that manufacture or distribute controlled pharmaceuticals, all health professionals who dispense, administer, or prescribe controlled pharmaceuticals and all pharmacies that fill prescriptions."},
+    { "code" : "13", "description" : "State Issued" , "longDescription" : "State Issued - a unique number issued by a state program or organization other than Medicaid, to a provider of service."},
+    { "code" : "14", "description" : "Plan Specific" , "longDescription" : "Plan Specific - a unique proprietary number assigned by a commercial health care plan to a provider of service."},
+    { "code" : "15", "description" : "HCID (HC IDea)" , "longDescription" : "HCID (HC IDea) - a 10-character, alphanumeric identifier assigned by NCPDP to identify authorized prescribers of drugs."},
+    { "code" : "99", "description" : "Other" , "longDescription" : "Other - used to identify other health plans and enumerating organizations not listed above."}
+    ] }
+ 
+ 
+
+{ "elementIds" : ["600-71","601-37","600-95"],
+    "codes": [
+{ "code" : "C", "description" : "Contracting Organization (PMO) assigned ID number" , "longDescription" : "Contracting Organization (PMO) assigned ID number – Alphanumeric code used to identify the PMO that sent a NCPDP manufacturer rebate flat file standard layout to a PICO. This code is an internal number assigned by the PMO."},
+{ "code" : "D", "description" : "DEA Number" , "longDescription" : "DEA Number – The number assigned by the DEA to all businesses that manufacturer or distribute controlled pharmaceuticals, all health professionals who dispense, administer, or prescribe controlled pharmaceuticals and all pharmacies that fill prescriptions."},
+{ "code" : "F", "description" : "Federal Tax ID Number" , "longDescription" : "Federal Tax ID Number – A 9-digit number assigned by the Internal Revenue Service to sole proprietors, corporations, partnerships, estates, trusts, and other entities for the purpose of tax filing and reporting."},
+{ "code" : "H", "description" : "HIBCC HIN" , "longDescription" : "HIBCC HIN - A 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities. The number is assigned by HIBCC."},
+{ "code" : "M", "description" : "Manufacturer (PICO) assigned ID Number" , "longDescription" : "Manufacturer (PICO) assigned ID Number - A value assigned by a manufacturer and used internally to identify a given trading partner."},
+{ "code" : "P", "description" : "National Provider ID (NPI)" , "longDescription" : "National Provider ID (NPI) –A HIPAA-mandated standard unique health identifier for health care providers."},
+{ "code" : "T", "description" : "Telephone Number" , "longDescription" : "Telephone Number – Code indicating that the information to follow is a telephone number (for voice, data, fax, etc.)."},
+{ "code" : "X", "description" : "Standard Unique Health Plan Identifier" , "longDescription" : "Standard Unique Health Plan Identifier – The Health Plan Identifier (HPID) or the Other Entity Identifier (OEID) established in 45 CFR 162 Subpart E."},
+{ "code" : "Z", "description" : "Mutually agreed upon number" , "longDescription" : "Mutually agreed upon number- A value mutually agreed upon by trading partners to identify a given data element. The value may be unique between the trading partners or from an existing industry standard."}
+]}
+
+
+{ "elementIds" : ["496-H2"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified" , "longDescription" : "Not Specified"},
+{ "code" : "01", "description" : "Blood Pressure" , "longDescription" : "Blood Pressure (BP) — amount of pressure (measured in millimeters of mercury) exerted by blood on vascular walls with each heart beat"},
+{ "code" : "02", "description" : "Blood Glucose" , "longDescription" : "Blood Glucose — laboratory test measuring the amount of sugar (in grams per deciliter) in blood"},
+{ "code" : "03", "description" : "Temperature" , "longDescription" : "Temperature — degree of heat generated by the body"},
+{ "code" : "04", "description" : "Serum Creatinine (SCr)" , "longDescription" : "Serum Creatinine (SCr) — laboratory test measuring kidney function"},
+{ "code" : "05", "description" : "Glycosylated Hemoglobin (HbA1c)" , "longDescription" : "Glycosylated Hemoglobin (HbA1c)—laboratory test to measure the level of glucose in the blood over a defined period of time"},
+{ "code" : "06", "description" : "Sodium (Na+)" , "longDescription" : "Sodium (Na+) —l aboratory test measuring the amount of this electrolyte in blood or other body fluids"},
+{ "code" : "07", "description" : "Potassium (K+)" , "longDescription" : "Potassium (K+) — laboratory test measuring the amount of this electrolyte in blood or other body fluids"},
+{ "code" : "08", "description" : "Calcium (Ca++)" , "longDescription" : "Calcium (Ca++) — laboratory test measuring the amount of this electrolyte in blood or other body fluids"},
+{ "code" : "09", "description" : "Serum Glutamic-Oxaloacetic Transaminase (SGOT)" , "longDescription" : "Serum Glutamic-Oxaloacetic Transaminase (SGOT) — laboratory test measuring liver function"},
+{ "code" : "10", "description" : "Serum Glutamic-Pyruvic Transaminase (SGPT)" , "longDescription" : "Serum Glutamic-Pyruvic Transaminase (SGPT)—  laboratory test measuring liver function"},
+{ "code" : "11", "description" : "Alkaline Phosphatase" , "longDescription" : "Alkaline Phosphatase — laboratory test measuring liver function"},
+{ "code" : "12", "description" : "Theophylline " , "longDescription" : "Theophylline — laboratory test measuring the amount of this drug in blood"},
+{ "code" : "13", "description" : "Digoxin" , "longDescription" : "Digoxin — laboratory test measuring the amount of this drug in blood"},
+{ "code" : "14", "description" : "Weight" , "longDescription" : "Weight — physical measure of bone, muscle, fluids and fat"},
+{ "code" : "15", "description" : "Body Surface Area (BSA)" , "longDescription" : "Body Surface Area (BSA) — measured or calculated surface of the human body"},
+{ "code" : "16", "description" : "Height" , "longDescription" : "Height — physical measure of stature"},
+{ "code" : "17", "description" : "Creatinine Clearance (CrCl)" , "longDescription" : "Creatinine Clearance (CrCl) — laboratory test measuring kidney function"},
+{ "code" : "18", "description" : "Cholesterol" , "longDescription" : "Cholesterol — laboratory test measuring the amount of this fatty substance in the body"},
+{ "code" : "19", "description" : "Low Density Lipoprotein (LDL)" , "longDescription" : "Low Density Lipoprotein (LDL) — laboratory test measuring the amount of this fatty substance in the body"},
+{ "code" : "20", "description" : "High Density Lipoprotein (HDL)" , "longDescription" : "High Density Lipoprotein (HDL) — laboratory test measuring the amount of this fatty substance in the body"},
+{ "code" : "21", "description" : "Triglycerides (TG)" , "longDescription" : "Triglycerides (TG) — laboratory test measuring the amount of this fatty substance in the body"},
+{ "code" : "22", "description" : "Bone Mineral Density (BMD T-Score)" , "longDescription" : "Bone Mineral Density (BMD T-Score) — X-ray test measuring the structural integrity of bone skeleton"},
+{ "code" : "23", "description" : "Prothrombin Time (PT)" , "longDescription" : "Prothrombin Time (PT) — laboratory test measuring the amount of time required for blood to clot"},
+{ "code" : "24", "description" : "Hemoglobin (Hb; Hgb)" , "longDescription" : "Hemoglobin (Hb; Hgb) — laboratory test measuring the amount of oxygen-carrying capacity of red blood cells"},
+{ "code" : "25", "description" : "Hematocrit (Hct)" , "longDescription" : "Hematocrit (Hct) — laboratory test measuring the volume percentage of erythrocytes in whole blood"},
+{ "code" : "26", "description" : "White Blood Cell Count (WBC)" , "longDescription" : "White Blood Cell Count (WBC) — laboratory test measuring the number of leucocytes in whole blood"},
+{ "code" : "27", "description" : "Red Blood Cell Count (RBC)" , "longDescription" : "Red Blood Cell Count (RBC) — laboratory test measuring the number of erythrocytes in whole blood"},
+{ "code" : "28", "description" : "Heart Rate" , "longDescription" : "Heart Rate — the number times the heart beats per minute"},
+{ "code" : "29", "description" : "Absolute Neutrophil Count (ANC)" , "longDescription" : "Absolute Neutrophil Count (ANC) — the number of white blood cells that are neutophils"},
+{ "code" : "30", "description" : "Activated Partial Thromboplastin Time (APTT)" , "longDescription" : "Activated Partial Thromboplastin Time (APTT) — laboratory test measuring the amount of time for blood to clot"},
+{ "code" : "31", "description" : "CD4 Count" , "longDescription" : "CD4 Count — (also T4 Count, T-helper cells) laboratory test measuring the immune system's strength"},
+{ "code" : "32", "description" : "Partial Thromboplastin Time (PTT)" , "longDescription" : "Partial Thromboplastin Time (PTT) — laboratory test measuring the amount of time for blood to clot"},
+{ "code" : "33", "description" : "T-Cell Count" , "longDescription" : "T-Cell Count — laboratory test measuring the number of white blood cells that are T-cells"},
+{ "code" : "34", "description" : "INR-International Normalized Ratio" , "longDescription" : "INR-International Normalized Ratio — laboratory test measuring the ratio of a patient's prothrombin time to a"},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Other"}
+]}
+
+
+{ "elementIds" : ["436-E1"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified" , "longDescription" : "Not Specified"},    
+{ "code" : "00", "description" : "Not Specified" , "longDescription" : "Not Specified"},
+{ "code" : "01", "description" : "Universal Product Code (UPC)" , "longDescription" : "An 11 digit code which identifies the manufacturer and the specific description of the product."},
+{ "code" : "02", "description" : "Health Related Item (HRI)" , "longDescription" : "Health Related Item is a unique 10 digit numeric code assigned to health related drug products by the FDA and the manufacturer or distributor. The format of an HRI is 4-6 and it is converted to the 11 digit number used on billing transactions by adding a zero to the 11th position."},
+{ "code" : "03", "description" : "National Drug Code (NDC)" , "longDescription" : "National Drug Code is a unique 10-digit, 3-segment number, assigned to each drug product by the FDA. For consistency in billing and reimbursement in the pharmacy services sector of healthcare, the NDC in a unique 11 digit formatted number, a zero is added. This number identifies the labeler/manufacturer, product, and package size of the drug. The first segment is the labeler code and assigned by the FDA. The second segment, the product code, identifies a specific strength, dosage form, and formulation. The third segment, the package code, identifies package sizes. Both the product and package codes are assigned by the labeler/manufacturer. National Drug File Reference (NDF-RT) National Drug File Reference Terminology"},
+{ "code" : "04", "description" : "Health Industry Business Communications Council (HIBCC)" , "longDescription" : "A 9-digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities."},
+{ "code" : "06", "description" : "Drug Use Review/Professional Pharmacy Service (DUR/PPS)" , "longDescription" : "Cognitive service involving the concurrent or prospective review of therapeutic regimens for the purpose of improving outcome, preventing adverse sequela and/or assisting patients in understanding the content and purpose of drug therapy."},
+{ "code" : "07", "description" : "Common Procedure Terminology (CPT4)" , "longDescription" : "Code indicating that the following data is a CPT® code. Current Procedural Terminology (CPT®) Fourth Edition is a listing of descriptive terms and identifying codes for reporting medical services and procedures. The code set is managed by the CPT Editorial panel and is maintained and published by the American Medical Association. Also known as Healthcare Common Procedure System (HCPCS) Level I."},
+{ "code" : "08", "description" : "Common Procedure Terminology (CPT5)" , "longDescription" : "Enhancements to CPT® 4 in development with emphasis on maintaining what works while correcting problems and extending the applicability of CPT into new areas."},
+{ "code" : "09", "description" : "Health Care Financing Administration Common Procedural Code System (HCPCS)" , "longDescription" : "The Healthcare Common Procedure Coding System (HCPCS) is a uniform method for health care providers and medical suppliers to report professional services, procedures and supplies. Used specifically it applies to the Level II Alpha codes (a letter followed by 4 numerals) and modifiers. Used generically HCPCS includes the Level I CPT procedure codes and modifiers. HCPCS Level II codes are maintained and published by the Centers for Medicare and Medicaid Services (CMS). Level III - Local Codes eliminated by HIPAA effective 10/16/03."},
+{ "code" : "10", "description" : "Pharmacy Practice Activity Classification (PPAC)" , "longDescription" : "A classification system or taxonomy to evaluate research on the pharmaceutical care activities performed by pharmacists and to provide valid, measurable units of pharmacist contributions to patient health. These then become the basis for documentation and billing."},
+{ "code" : "11", "description" : "National Pharmaceutical Product Interface Code (NAPPI)" , "longDescription" : "A unique identifier for a given product which enables electronic transfer of information throughout the South African healthcare delivery chain. NAPPI as a coding standard that contains information on the NAPPI code, product description, strength, pack size and manufacturer."},
+{ "code" : "12", "description" : "Global Trade Identification Number (GTIN)" , "longDescription" : "The foundation for the EAN.UCC System for uniquely identifying trade items (products and services) sold, delivered, warehoused, and billed throughout the retail and commercial distribution channels. It provides an accurate, efficient and economical means of controlling the flow of products and information through the use of an all-numeric identification system."},
+{ "code" : "15", "description" : "First DataBank Formulation ID (GCN)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "28", "description" : "First DataBank Medication Name ID (FDB Med Name ID)" , "longDescription" : "A permanent numeric identifier that represents a unique product or generic name."},
+{ "code" : "29", "description" : "First DataBank Routed Medication ID (FDB Routed Med ID)" , "longDescription" : "Represents the product or generic name and route of administration."},
+{ "code" : "30", "description" : "First DataBank Routed Dosage Form ID (FDB Routed Dosage Form Med ID)" , "longDescription" : "Represents the product or generic name, route of administration, and dosage form."},
+{ "code" : "31", "description" : "First DataBank Medication ID (FDB MedID)" , "longDescription" : "A permanent numeric identifier that represents the unique combination of product or generic name, route of administration, dosage form, strength, and strength unit-of-measure."},
+{ "code" : "32", "description" : "First DataBank Clinical Formulation ID Sequence Number (GCN_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "33", "description" : "First DataBank Ingredient List ID (HICL_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that identifies a unique combination of active ingredients, irrespective of the manufacturer, package size, dosage form, route of administration, or strength."},
+{ "code" : "34", "description" : "Universal Product Number (UPN)" , "longDescription" : "Unambiguously identifies medical/surgical products in the supply chain, thereby simplifying product distribution. Each product, at all levels of packaging, will be assigned a unique UPN, consisting of either the HIBC-LIC or UCC/EAN primary data structure."},
+{ "code" : "36", "description" : "Representative National Drug Code (NDC)" , "longDescription" : "An 11-digit NDC code that depicts a category of medication exclusive of package size and manufacturer/labeler. A representative NDC should be a nationally available product and should not be a repackaged NDC, obsolete NDC, private label NDC or unit dose NDC unless it is the only NDC available identifying that category of medication. When exchanged, the drug description of the product must match the description of the representative NDC code value."},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Other"}
+]}
+
+{ "elementIds" : ["453-EJ"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified" , "longDescription" : "Not Specified"},    
+{ "code" : "00", "description" : "Not Specified" , "longDescription" : "Not Specified"},
+{ "code" : "01", "description" : "Universal Product Code (UPC)" , "longDescription" : "An 11 digit code which identifies the manufacturer and the specific description of the product."},
+{ "code" : "02", "description" : "Health Related Item (HRI)" , "longDescription" : "Health Related Item is a unique 10 digit numeric code assigned to health related drug products by the FDA and the manufacturer or distributor. The format of an HRI is 4-6 and it is converted to the 11 digit number used on billing transactions by adding a zero to the 11th position."},
+{ "code" : "03", "description" : "National Drug Code (NDC)" , "longDescription" : "National Drug Code is a unique 10-digit, 3-segment number, assigned to each drug product by the FDA. For consistency in billing and reimbursement in the pharmacy services sector of healthcare, the NDC in a unique 11 digit formatted number, a zero is added. This number identifies the labeler/manufacturer, product, and package size of the drug. The first segment is the labeler code and assigned by the FDA. The second segment, the product code, identifies a specific strength, dosage form, and formulation. The third segment, the package code, identifies package sizes. Both the product and package codes are assigned by the labeler/manufacturer. National Drug File Reference (NDF-RT) National Drug File Reference Terminology"},
+{ "code" : "04", "description" : "Health Industry Business Communications Council (HIBCC)" , "longDescription" : "A 9-digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities."},
+{ "code" : "06", "description" : "Drug Use Review/Professional Pharmacy Service (DUR/PPS)" , "longDescription" : "Cognitive service involving the concurrent or prospective review of therapeutic regimens for the purpose of improving outcome, preventing adverse sequela and/or assisting patients in understanding the content and purpose of drug therapy."},
+{ "code" : "07", "description" : "Common Procedure Terminology (CPT4)" , "longDescription" : "Code indicating that the following data is a CPT® code. Current Procedural Terminology (CPT®) Fourth Edition is a listing of descriptive terms and identifying codes for reporting medical services and procedures. The code set is managed by the CPT Editorial panel and is maintained and published by the American Medical Association. Also known as Healthcare Common Procedure System (HCPCS) Level I."},
+{ "code" : "08", "description" : "Common Procedure Terminology (CPT5)" , "longDescription" : "Enhancements to CPT® 4 in development with emphasis on maintaining what works while correcting problems and extending the applicability of CPT into new areas."},
+{ "code" : "09", "description" : "Health Care Financing Administration Common Procedural Code System (HCPCS)" , "longDescription" : "The Healthcare Common Procedure Coding System (HCPCS) is a uniform method for health care providers and medical suppliers to report professional services, procedures and supplies. Used specifically it applies to the Level II Alpha codes (a letter followed by 4 numerals) and modifiers. Used generically HCPCS includes the Level I CPT procedure codes and modifiers. HCPCS Level II codes are maintained and published by the Centers for Medicare and Medicaid Services (CMS). Level III - Local Codes eliminated by HIPAA effective 10/16/03."},
+{ "code" : "10", "description" : "Pharmacy Practice Activity Classification (PPAC)" , "longDescription" : "A classification system or taxonomy to evaluate research on the pharmaceutical care activities performed by pharmacists and to provide valid, measurable units of pharmacist contributions to patient health. These then become the basis for documentation and billing."},
+{ "code" : "11", "description" : "National Pharmaceutical Product Interface Code (NAPPI)" , "longDescription" : "A unique identifier for a given product which enables electronic transfer of information throughout the South African healthcare delivery chain. NAPPI as a coding standard that contains information on the NAPPI code, product description, strength, pack size and manufacturer."},
+{ "code" : "12", "description" : "Global Trade Identification Number (GTIN)" , "longDescription" : "The foundation for the EAN.UCC System for uniquely identifying trade items (products and services) sold, delivered, warehoused, and billed throughout the retail and commercial distribution channels. It provides an accurate, efficient and economical means of controlling the flow of products and information through the use of an all-numeric identification system."},
+{ "code" : "15", "description" : "First DataBank Formulation ID (GCN)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "28", "description" : "First DataBank Medication Name ID (FDB Med Name ID)" , "longDescription" : "A permanent numeric identifier that represents a unique product or generic name."},
+{ "code" : "29", "description" : "First DataBank Routed Medication ID (FDB Routed Med ID)" , "longDescription" : "Represents the product or generic name and route of administration."},
+{ "code" : "30", "description" : "First DataBank Routed Dosage Form ID (FDB Routed Dosage Form Med ID)" , "longDescription" : "Represents the product or generic name, route of administration, and dosage form."},
+{ "code" : "31", "description" : "First DataBank Medication ID (FDB MedID)" , "longDescription" : "A permanent numeric identifier that represents the unique combination of product or generic name, route of administration, dosage form, strength, and strength unit-of-measure."},
+{ "code" : "32", "description" : "First DataBank Clinical Formulation ID Sequence Number (GCN_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "33", "description" : "First DataBank Ingredient List ID (HICL_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that identifies a unique combination of active ingredients, irrespective of the manufacturer, package size, dosage form, route of administration, or strength."},
+{ "code" : "34", "description" : "Universal Product Number (UPN)" , "longDescription" : "Unambiguously identifies medical/surgical products in the supply chain, thereby simplifying product distribution. Each product, at all levels of packaging, will be assigned a unique UPN, consisting of either the HIBC-LIC or UCC/EAN primary data structure."},
+{ "code" : "36", "description" : "Representative National Drug Code (NDC)" , "longDescription" : "An 11-digit NDC code that depicts a category of medication exclusive of package size and manufacturer/labeler. A representative NDC should be a nationally available product and should not be a repackaged NDC, obsolete NDC, private label NDC or unit dose NDC unless it is the only NDC available identifying that category of medication. When exchanged, the drug description of the product must match the description of the representative NDC code value."},
+{ "code" : "38", "description" : "RxNorm Semantic Clinical Drug (SCD)" , "longDescription" : "An RxNorm code maintained and distributed by the National Library of Medicine (NLM) representing the ingredient plus strength and dose form. I.e. Fluoxetine 4 MG/ML Oral Solution"},
+{ "code" : "39", "description" : "RxNorm Semantic Branded Drug (SBD)" , "longDescription" : "An RxNorm code maintained and distributed by the National Library of Medicine (NLM) representing the ingredient, strength and dose form plus the branded name. I.e. Fluoxetine 4 MG/ML Oral Solution [Prozac]"},
+{ "code" : "40", "description" : "RxNorm Generic Package (GPCK)" , "longDescription" : "An RxNorm code maintained and distributed by the National Library of Medicine (NLM) representing the generic drug delivery device. I.e. {11 (varenicline 0.5 MG Oral Tablet) / 42 (varenicline 1 MG Oral Tablet) } Pack"},
+{ "code" : "41", "description" : "RxNorm Branded Package (BPCK)" , "longDescription" : "An RxNorm code maintained and distributed by the National Library of Medicine (NLM) representing the branded drug delivery device. I.e. {12 (Ethinyl Estradiol 0.035 MG / Norethindrone 0.5 MG Oral Tablet) / 9 (Ethinyl Estradiol 0.035 MG / Norethindrone 1 MG Oral Tablet) / 7 (Inert Ingredients 1 MG Oral Tablet) } Pack [Leena 28 Day]"},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Other"}
+]}
+
+
+
+{ "elementIds" : ["488-RE"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified" , "longDescription" : "Not Specified"},    
+{ "code" : "01", "description" : "Universal Product Code (UPC)" , "longDescription" : "An 11 digit code which identifies the manufacturer and the specific description of the product."},
+{ "code" : "02", "description" : "Health Related Item (HRI)" , "longDescription" : "Health Related Item is a unique 10 digit numeric code assigned to health related drug products by the FDA and the manufacturer or distributor. The format of an HRI is 4-6 and it is converted to the 11 digit number used on billing transactions by adding a zero to the 11th position."},
+{ "code" : "03", "description" : "National Drug Code (NDC)" , "longDescription" : "National Drug Code is a unique 10-digit, 3-segment number, assigned to each drug product by the FDA. For consistency in billing and reimbursement in the pharmacy services sector of healthcare, the NDC in a unique 11 digit formatted number, a zero is added. This number identifies the labeler/manufacturer, product, and package size of the drug. The first segment is the labeler code and assigned by the FDA. The second segment, the product code, identifies a specific strength, dosage form, and formulation. The third segment, the package code, identifies package sizes. Both the product and package codes are assigned by the labeler/manufacturer. National Drug File Reference (NDF-RT) National Drug File Reference Terminology"},
+{ "code" : "04", "description" : "Health Industry Business Communications Council (HIBCC)" , "longDescription" : "A 9-digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities."},
+{ "code" : "11", "description" : "National Pharmaceutical Product Interface Code (NAPPI)" , "longDescription" : "A unique identifier for a given product which enables electronic transfer of information throughout the South African healthcare delivery chain. NAPPI as a coding standard that contains information on the NAPPI code, product description, strength, pack size and manufacturer."},
+{ "code" : "12", "description" : "Global Trade Identification Number (GTIN)" , "longDescription" : "The foundation for the EAN.UCC System for uniquely identifying trade items (products and services) sold, delivered, warehoused, and billed throughout the retail and commercial distribution channels. It provides an accurate, efficient and economical means of controlling the flow of products and information through the use of an all-numeric identification system."},
+{ "code" : "15", "description" : "First DataBank Formulation ID (GCN)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "28", "description" : "First DataBank Medication Name ID (FDB Med Name ID)" , "longDescription" : "A permanent numeric identifier that represents a unique product or generic name."},
+{ "code" : "29", "description" : "First DataBank Routed Medication ID (FDB Routed Med ID)" , "longDescription" : "Represents the product or generic name and route of administration."},
+{ "code" : "30", "description" : "First DataBank Routed Dosage Form ID (FDB Routed Dosage Form Med ID)" , "longDescription" : "Represents the product or generic name, route of administration, and dosage form."},
+{ "code" : "31", "description" : "First DataBank Medication ID (FDB MedID)" , "longDescription" : "A permanent numeric identifier that represents the unique combination of product or generic name, route of administration, dosage form, strength, and strength unit-of-measure."},
+{ "code" : "32", "description" : "First DataBank Clinical Formulation ID Sequence Number (GCN_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "33", "description" : "First DataBank Ingredient List ID (HICL_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that identifies a unique combination of active ingredients, irrespective of the manufacturer, package size, dosage form, route of administration, or strength."},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Other"}
+]}
+
+
+
+{ "elementIds" : ["475-J9"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified" , "longDescription" : "Not Specified"},    
+{ "code" : "01", "description" : "Universal Product Code (UPC)" , "longDescription" : "An 11 digit code which identifies the manufacturer and the specific description of the product."},
+{ "code" : "02", "description" : "Health Related Item (HRI)" , "longDescription" : "Health Related Item is a unique 10 digit numeric code assigned to health related drug products by the FDA and the manufacturer or distributor. The format of an HRI is 4-6 and it is converted to the 11 digit number used on billing transactions by adding a zero to the 11th position."},
+{ "code" : "03", "description" : "National Drug Code (NDC)" , "longDescription" : "National Drug Code is a unique 10-digit, 3-segment number, assigned to each drug product by the FDA. For consistency in billing and reimbursement in the pharmacy services sector of healthcare, the NDC in a unique 11 digit formatted number, a zero is added. This number identifies the labeler/manufacturer, product, and package size of the drug. The first segment is the labeler code and assigned by the FDA. The second segment, the product code, identifies a specific strength, dosage form, and formulation. The third segment, the package code, identifies package sizes. Both the product and package codes are assigned by the labeler/manufacturer. National Drug File Reference (NDF-RT) National Drug File Reference Terminology"},
+{ "code" : "04", "description" : "Health Industry Business Communications Council (HIBCC)" , "longDescription" : "A 9-digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities."},
+{ "code" : "07", "description" : "Common Procedure Terminology (CPT4)" , "longDescription" : "Code indicating that the following data is a CPT® code. Current Procedural Terminology (CPT®) Fourth Edition is a listing of descriptive terms and identifying codes for reporting medical services and procedures. The code set is managed by the CPT Editorial panel and is maintained and published by the American Medical Association. Also known as Healthcare Common Procedure System (HCPCS) Level I."},
+{ "code" : "08", "description" : "Common Procedure Terminology (CPT5)" , "longDescription" : "Enhancements to CPT® 4 in development with emphasis on maintaining what works while correcting problems and extending the applicability of CPT into new areas."},
+{ "code" : "09", "description" : "Health Care Financing Administration Common Procedural Code System (HCPCS)" , "longDescription" : "The Healthcare Common Procedure Coding System (HCPCS) is a uniform method for health care providers and medical suppliers to report professional services, procedures and supplies. Used specifically it applies to the Level II Alpha codes (a letter followed by 4 numerals) and modifiers. Used generically HCPCS includes the Level I CPT procedure codes and modifiers. HCPCS Level II codes are maintained and published by the Centers for Medicare and Medicaid Services (CMS). Level III - Local Codes eliminated by HIPAA effective 10/16/03."},
+{ "code" : "11", "description" : "National Pharmaceutical Product Interface Code (NAPPI)" , "longDescription" : "A unique identifier for a given product which enables electronic transfer of information throughout the South African healthcare delivery chain. NAPPI as a coding standard that contains information on the NAPPI code, product description, strength, pack size and manufacturer."},
+{ "code" : "12", "description" : "Global Trade Identification Number (GTIN)" , "longDescription" : "The foundation for the EAN.UCC System for uniquely identifying trade items (products and services) sold, delivered, warehoused, and billed throughout the retail and commercial distribution channels. It provides an accurate, efficient and economical means of controlling the flow of products and information through the use of an all-numeric identification system."},
+{ "code" : "14", "description" : "Medi-Span Product Line Generic Product Identifier (GPI)" , "longDescription" : "A group or groups of pharmaceutically equivalent drug products. Products having the same 14-digit GPI are identical with respect to active ingredient(s), dosage form, route of administration and strength or concentration."},
+{ "code" : "15", "description" : "First DataBank Formulation ID (GCN)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "16", "description" : "Micromedex/Medical Economics Generic Formulation Code (GFC)" , "longDescription" : "The Generic Formulation Code (GFC) serves as the key that links all of the UltiMedex clinical modules. The GFC represents a group of products sharing the same active ingredients, route, form, and strength."},
+{ "code" : "17", "description" : "Medi-Span Product Line Drug Descriptor ID (DDID)" , "longDescription" : "Index terms and phrases assigned to each record to characterize the substantive content of the original drug."},
+{ "code" : "18", "description" : "First DataBank SmartKey" , "longDescription" : "24-character element that defines a product by therapeutic class, ingredients, strength, dosage form, route and certain packaging. characteristics."},
+{ "code" : "19", "description" : "Micromedex/Medical Economics Generic Master (GM)" , "longDescription" : "Unique and persistent identifier for the core or base ingredient of a drug."},
+{ "code" : "20", "description" : "International Classification of Diseases (ICD9)" , "longDescription" : "Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services."},
+{ "code" : "21", "description" : "International Classification of Diseases-10-Clinical Modifications (ICD-10-CM)" , "longDescription" : "Code indicating that the following information is a diagnosis as defined by ICD-10-CM. As of January 1, 1999, the ICD-10 is used to code and classify mortality data from death certificates. The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services."},
+{ "code" : "23", "description" : "National Criteria Care Institute (NCCI)" , "longDescription" : "The CMS-developed Correct Coding Initiative (CCI) to promote national correct coding methodologies and to control improper coding leading to inappropriate payment in Part B claims. The CMS developed its coding policies based on coding conventions defined in the American Medical Association’s CPT manual, national and local policies and edits, coding guidelines developed by national societies, analysis of standard medical and surgical practices, and a review of current coding practices."},
+{ "code" : "24", "description" : "The Systematized Nomenclature of Medicine Clinical Terms (SNOMED)" , "longDescription" : "A clinical health care terminology and infrastructure that provides a common language that enables a consistent way of capturing, sharing and aggregating health data across specialties and sites of care."},
+{ "code" : "25", "description" : "Common Dental Terminology (CDT)" , "longDescription" : "Current Dental Terminology (CDT) is the published Code on Dental Procedures and Nomenclature (the Code) providing descriptive terms, codes and guidance for the accurate reporting of dental procedures. The Code is maintained by the Code Revision Committee and published by the American Dental Association. The procedure codes and descriptions are also published as part of the Healthcare Common Procedure System (HCPCS) Level II through agreement with Centers for Medicare and Medicaid Services."},
+{ "code" : "26", "description" : "American Psychiatric Association Diagnostic Statistical Manual of Mental Disorders (DSM IV)" , "longDescription" : "Diagnostic criteria for the most common mental disorders including: description, diagnosis, treatment, and research findings. Comments: The Diagnostic and Statistical Manual of Mental Disorders - Fourth Edition (DSM-IV) is published by the American Psychiatric Association, Washington D.C."},
+{ "code" : "27", "description" : "International Classification of Diseases-10-Procedure Coding System (ICD-10-PCS)" , "longDescription" : "Multi-axial seven-character alphanumeric code structure developed by CMS that provides a unique code for all substantially different procedures, and allows new procedures to be easily incorporated as new codes. This code set replace Volume 3 of the International Classification of Diseases 9th Revision (ICD-9-CM)"},
+{ "code" : "28", "description" : "First DataBank Medication Name ID (FDB Med Name ID)" , "longDescription" : "A permanent numeric identifier that represents a unique product or generic name."},
+{ "code" : "29", "description" : "First DataBank Routed Medication ID (FDB Routed Med ID)" , "longDescription" : "Represents the product or generic name and route of administration."},
+{ "code" : "30", "description" : "First DataBank Routed Dosage Form ID (FDB Routed Dosage Form Med ID)" , "longDescription" : "Represents the product or generic name, route of administration, and dosage form."},
+{ "code" : "31", "description" : "First DataBank Medication ID (FDB MedID)" , "longDescription" : "A permanent numeric identifier that represents the unique combination of product or generic name, route of administration, dosage form, strength, and strength unit-of-measure."},
+{ "code" : "32", "description" : "First DataBank Clinical Formulation ID Sequence Number (GCN_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "33", "description" : "First DataBank Ingredient List ID (HICL_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that identifies a unique combination of active ingredients, irrespective of the manufacturer, package size, dosage form, route of administration, or strength."},
+{ "code" : "34", "description" : "Universal Product Number (UPN)" , "longDescription" : "Unambiguously identifies medical/surgical products in the supply chain, thereby simplifying product distribution. Each product, at all levels of packaging, will be assigned a unique UPN, consisting of either the HIBC-LIC or UCC/EAN primary data structure."},
+{ "code" : "35", "description" : "Logical Observation Identifier Names and Codes (LOINC)" , "longDescription" : "Code set used to report laboratory and clinical observations."},
+{ "code" : "37", "description" : "American Hospital Formulary Service (AHFS)" , "longDescription" : "Suite of products providing peer-reviewed information on medicines and drug products, including off-label and labeled uses, drug interactions; adverse reactions; cautions and toxicity; therapeutic perspective; specific dosage and administration information; preparations, chemistry, and stability; pharmacology and pharmacokinetics; contraindications."},
+{ "code" : "38", "description" : "RxNorm Semantic Clinical Drug (SCD)" , "longDescription" : "An RxNorm code maintained and distributed by the National Library of Medicine (NLM) representing the ingredient plus strength and dose form. I.e. Fluoxetine 4 MG/ML Oral Solution"},
+{ "code" : "39", "description" : "RxNorm Semantic Branded Drug (SBD)" , "longDescription" : "An RxNorm code maintained and distributed by the National Library of Medicine (NLM) representing the ingredient, strength and dose form plus the branded name. I.e. Fluoxetine 4 MG/ML Oral Solution [Prozac]"},
+{ "code" : "40", "description" : "RxNorm Generic Package (GPCK)" , "longDescription" : "An RxNorm code maintained and distributed by the National Library of Medicine (NLM) representing the generic drug delivery device. I.e. {11 (varenicline 0.5 MG Oral Tablet) / 42 (varenicline 1 MG Oral Tablet) } Pack"},
+{ "code" : "41", "description" : "RxNorm Branded Package (BPCK)" , "longDescription" : "An RxNorm code maintained and distributed by the National Library of Medicine (NLM) representing the branded drug delivery device. I.e. {12 (Ethinyl Estradiol 0.035 MG / Norethindrone 0.5 MG Oral Tablet) / 9 (Ethinyl Estradiol 0.035 MG / Norethindrone 1 MG Oral Tablet) / 7 (Inert Ingredients 1 MG Oral Tablet) } Pack [Leena 28 Day]"},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Other"}
+]}
+
+
+
+{ "elementIds" : ["552-AP"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified" , "longDescription" : "Not Specified"},    
+{ "code" : "01", "description" : "Universal Product Code (UPC)" , "longDescription" : "An 11 digit code which identifies the manufacturer and the specific description of the product."},
+{ "code" : "02", "description" : "Health Related Item (HRI)" , "longDescription" : "Health Related Item is a unique 10 digit numeric code assigned to health related drug products by the FDA and the manufacturer or distributor. The format of an HRI is 4-6 and it is converted to the 11 digit number used on billing transactions by adding a zero to the 11th position."},
+{ "code" : "03", "description" : "National Drug Code (NDC)" , "longDescription" : "National Drug Code is a unique 10-digit, 3-segment number, assigned to each drug product by the FDA. For consistency in billing and reimbursement in the pharmacy services sector of healthcare, the NDC in a unique 11 digit formatted number, a zero is added. This number identifies the labeler/manufacturer, product, and package size of the drug. The first segment is the labeler code and assigned by the FDA. The second segment, the product code, identifies a specific strength, dosage form, and formulation. The third segment, the package code, identifies package sizes. Both the product and package codes are assigned by the labeler/manufacturer. National Drug File Reference (NDF-RT) National Drug File Reference Terminology"},
+{ "code" : "04", "description" : "Health Industry Business Communications Council (HIBCC)" , "longDescription" : "A 9-digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities."},
+{ "code" : "11", "description" : "National Pharmaceutical Product Interface Code (NAPPI)" , "longDescription" : "A unique identifier for a given product which enables electronic transfer of information throughout the South African healthcare delivery chain. NAPPI as a coding standard that contains information on the NAPPI code, product description, strength, pack size and manufacturer."},
+{ "code" : "12", "description" : "Global Trade Identification Number (GTIN)" , "longDescription" : "The foundation for the EAN.UCC System for uniquely identifying trade items (products and services) sold, delivered, warehoused, and billed throughout the retail and commercial distribution channels. It provides an accurate, efficient and economical means of controlling the flow of products and information through the use of an all-numeric identification system."},
+{ "code" : "14", "description" : "Medi-Span Product Line Generic Product Identifier (GPI)" , "longDescription" : "A group or groups of pharmaceutically equivalent drug products. Products having the same 14-digit GPI are identical with respect to active ingredient(s), dosage form, route of administration and strength or concentration."},
+{ "code" : "15", "description" : "First DataBank Formulation ID (GCN)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "16", "description" : "Micromedex/Medical Economics Generic Formulation Code (GFC)" , "longDescription" : "The Generic Formulation Code (GFC) serves as the key that links all of the UltiMedex clinical modules. The GFC represents a group of products sharing the same active ingredients, route, form, and strength."},
+{ "code" : "17", "description" : "Medi-Span Product Line Drug Descriptor ID (DDID)" , "longDescription" : "Index terms and phrases assigned to each record to characterize the substantive content of the original drug."},
+{ "code" : "18", "description" : "First DataBank SmartKey" , "longDescription" : "24-character element that defines a product by therapeutic class, ingredients, strength, dosage form, route and certain packaging. characteristics."},
+{ "code" : "19", "description" : "Micromedex/Medical Economics Generic Master (GM)" , "longDescription" : "Unique and persistent identifier for the core or base ingredient of a drug."},
+{ "code" : "28", "description" : "First DataBank Medication Name ID (FDB Med Name ID)" , "longDescription" : "A permanent numeric identifier that represents a unique product or generic name."},
+{ "code" : "29", "description" : "First DataBank Routed Medication ID (FDB Routed Med ID)" , "longDescription" : "Represents the product or generic name and route of administration."},
+{ "code" : "30", "description" : "First DataBank Routed Dosage Form ID (FDB Routed Dosage Form Med ID)" , "longDescription" : "Represents the product or generic name, route of administration, and dosage form."},
+{ "code" : "31", "description" : "First DataBank Medication ID (FDB MedID)" , "longDescription" : "A permanent numeric identifier that represents the unique combination of product or generic name, route of administration, dosage form, strength, and strength unit-of-measure."},
+{ "code" : "32", "description" : "First DataBank Clinical Formulation ID Sequence Number (GCN_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "33", "description" : "First DataBank Ingredient List ID (HICL_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that identifies a unique combination of active ingredients, irrespective of the manufacturer, package size, dosage form, route of administration, or strength."},
+{ "code" : "37", "description" : "American Hospital Formulary Service (AHFS)" , "longDescription" : "Suite of products providing peer-reviewed information on medicines and drug products, including off-label and labeled uses, drug interactions; adverse reactions; cautions and toxicity; therapeutic perspective; specific dosage and administration information; preparations, chemistry, and stability; pharmacology and pharmacokinetics; contraindications."},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Other"}
+]}
+
+
+
+
+{ "elementIds" : ["995-HV"],
+    "codes": [
+{ "code" : "01", "description" : "Universal Product Code (UPC)" , "longDescription" : "An 11 digit code which identifies the manufacturer and the specific description of the product."},
+{ "code" : "02", "description" : "Health Related Item (HRI)" , "longDescription" : "Health Related Item is a unique 10 digit numeric code assigned to health related drug products by the FDA and the manufacturer or distributor. The format of an HRI is 4-6 and it is converted to the 11 digit number used on billing transactions by adding a zero to the 11th position."},
+{ "code" : "03", "description" : "National Drug Code (NDC)" , "longDescription" : "National Drug Code is a unique 10-digit, 3-segment number, assigned to each drug product by the FDA. For consistency in billing and reimbursement in the pharmacy services sector of healthcare, the NDC in a unique 11 digit formatted number, a zero is added. This number identifies the labeler/manufacturer, product, and package size of the drug. The first segment is the labeler code and assigned by the FDA. The second segment, the product code, identifies a specific strength, dosage form, and formulation. The third segment, the package code, identifies package sizes. Both the product and package codes are assigned by the labeler/manufacturer. National Drug File Reference (NDF-RT) National Drug File Reference Terminology"},
+{ "code" : "04", "description" : "Health Industry Business Communications Council (HIBCC)" , "longDescription" : "A 9-digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities."},
+{ "code" : "06", "description" : "Drug Use Review/Professional Pharmacy Service (DUR/PPS)" , "longDescription" : "Cognitive service involving the concurrent or prospective review of therapeutic regimens for the purpose of improving outcome, preventing adverse sequela and/or assisting patients in understanding the content and purpose of drug therapy."},
+{ "code" : "07", "description" : "Common Procedure Terminology (CPT4)" , "longDescription" : "Code indicating that the following data is a CPT® code. Current Procedural Terminology (CPT®) Fourth Edition is a listing of descriptive terms and identifying codes for reporting medical services and procedures. The code set is managed by the CPT Editorial panel and is maintained and published by the American Medical Association. Also known as Healthcare Common Procedure System (HCPCS) Level I."},
+{ "code" : "08", "description" : "Common Procedure Terminology (CPT5)" , "longDescription" : "Enhancements to CPT® 4 in development with emphasis on maintaining what works while correcting problems and extending the applicability of CPT into new areas."},
+{ "code" : "09", "description" : "Health Care Financing Administration Common Procedural Code System (HCPCS)" , "longDescription" : "The Healthcare Common Procedure Coding System (HCPCS) is a uniform method for health care providers and medical suppliers to report professional services, procedures and supplies. Used specifically it applies to the Level II Alpha codes (a letter followed by 4 numerals) and modifiers. Used generically HCPCS includes the Level I CPT procedure codes and modifiers. HCPCS Level II codes are maintained and published by the Centers for Medicare and Medicaid Services (CMS). Level III - Local Codes eliminated by HIPAA effective 10/16/03."},
+{ "code" : "10", "description" : "Pharmacy Practice Activity Classification (PPAC)" , "longDescription" : "A classification system or taxonomy to evaluate research on the pharmaceutical care activities performed by pharmacists and to provide valid, measurable units of pharmacist contributions to patient health. These then become the basis for documentation and billing."},
+{ "code" : "11", "description" : "National Pharmaceutical Product Interface Code (NAPPI)" , "longDescription" : "A unique identifier for a given product which enables electronic transfer of information throughout the South African healthcare delivery chain. NAPPI as a coding standard that contains information on the NAPPI code, product description, strength, pack size and manufacturer."},
+{ "code" : "12", "description" : "Global Trade Identification Number (GTIN)" , "longDescription" : "The foundation for the EAN.UCC System for uniquely identifying trade items (products and services) sold, delivered, warehoused, and billed throughout the retail and commercial distribution channels. It provides an accurate, efficient and economical means of controlling the flow of products and information through the use of an all-numeric identification system."},
+{ "code" : "15", "description" : "First DataBank Formulation ID (GCN)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "28", "description" : "First DataBank Medication Name ID (FDB Med Name ID)" , "longDescription" : "A permanent numeric identifier that represents a unique product or generic name."},
+{ "code" : "29", "description" : "First DataBank Routed Medication ID (FDB Routed Med ID)" , "longDescription" : "Represents the product or generic name and route of administration."},
+{ "code" : "30", "description" : "First DataBank Routed Dosage Form ID (FDB Routed Dosage Form Med ID)" , "longDescription" : "Represents the product or generic name, route of administration, and dosage form."},
+{ "code" : "31", "description" : "First DataBank Medication ID (FDB MedID)" , "longDescription" : "A permanent numeric identifier that represents the unique combination of product or generic name, route of administration, dosage form, strength, and strength unit-of-measure."},
+{ "code" : "32", "description" : "First DataBank Clinical Formulation ID Sequence Number (GCN_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "33", "description" : "First DataBank Ingredient List ID (HICL_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that identifies a unique combination of active ingredients, irrespective of the manufacturer, package size, dosage form, route of administration, or strength."},
+{ "code" : "34", "description" : "Universal Product Number (UPN)" , "longDescription" : "Unambiguously identifies medical/surgical products in the supply chain, thereby simplifying product distribution. Each product, at all levels of packaging, will be assigned a unique UPN, consisting of either the HIBC-LIC or UCC/EAN primary data structure."},
+{ "code" : "35", "description" : "Logical Observation Identifier Names and Codes (LOINC)" , "longDescription" : "Code set used to report laboratory and clinical observations."},
+{ "code" : "36", "description" : "Representative National Drug Code (NDC)" , "longDescription" : "An 11-digit NDC code that depicts a category of medication exclusive of package size and manufacturer/labeler. A representative NDC should be a nationally available product and should not be a repackaged NDC, obsolete NDC, private label NDC or unit dose NDC unless it is the only NDC available identifying that category of medication. When exchanged, the drug description of the product must match the description of the representative NDC code value."},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Other"}
+]}
+
+
+{ "elementIds" : ["961-HX", "963-HZ"],
+    "codes": [
+{ "code" : "01", "description" : "Universal Product Code (UPC)" , "longDescription" : "An 11 digit code which identifies the manufacturer and the specific description of the product."},
+{ "code" : "02", "description" : "Health Related Item (HRI)" , "longDescription" : "Health Related Item is a unique 10 digit numeric code assigned to health related drug products by the FDA and the manufacturer or distributor. The format of an HRI is 4-6 and it is converted to the 11 digit number used on billing transactions by adding a zero to the 11th position."},
+{ "code" : "03", "description" : "National Drug Code (NDC)" , "longDescription" : "National Drug Code is a unique 10-digit, 3-segment number, assigned to each drug product by the FDA. For consistency in billing and reimbursement in the pharmacy services sector of healthcare, the NDC in a unique 11 digit formatted number, a zero is added. This number identifies the labeler/manufacturer, product, and package size of the drug. The first segment is the labeler code and assigned by the FDA. The second segment, the product code, identifies a specific strength, dosage form, and formulation. The third segment, the package code, identifies package sizes. Both the product and package codes are assigned by the labeler/manufacturer. National Drug File Reference (NDF-RT) National Drug File Reference Terminology"},
+{ "code" : "04", "description" : "Health Industry Business Communications Council (HIBCC)" , "longDescription" : "A 9-digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities."},
+{ "code" : "06", "description" : "Drug Use Review/Professional Pharmacy Service (DUR/PPS)" , "longDescription" : "Cognitive service involving the concurrent or prospective review of therapeutic regimens for the purpose of improving outcome, preventing adverse sequela and/or assisting patients in understanding the content and purpose of drug therapy."},
+{ "code" : "07", "description" : "Common Procedure Terminology (CPT4)" , "longDescription" : "Code indicating that the following data is a CPT® code. Current Procedural Terminology (CPT®) Fourth Edition is a listing of descriptive terms and identifying codes for reporting medical services and procedures. The code set is managed by the CPT Editorial panel and is maintained and published by the American Medical Association. Also known as Healthcare Common Procedure System (HCPCS) Level I."},
+{ "code" : "08", "description" : "Common Procedure Terminology (CPT5)" , "longDescription" : "Enhancements to CPT® 4 in development with emphasis on maintaining what works while correcting problems and extending the applicability of CPT into new areas."},
+{ "code" : "09", "description" : "Health Care Financing Administration Common Procedural Code System (HCPCS)" , "longDescription" : "The Healthcare Common Procedure Coding System (HCPCS) is a uniform method for health care providers and medical suppliers to report professional services, procedures and supplies. Used specifically it applies to the Level II Alpha codes (a letter followed by 4 numerals) and modifiers. Used generically HCPCS includes the Level I CPT procedure codes and modifiers. HCPCS Level II codes are maintained and published by the Centers for Medicare and Medicaid Services (CMS). Level III - Local Codes eliminated by HIPAA effective 10/16/03."},
+{ "code" : "10", "description" : "Pharmacy Practice Activity Classification (PPAC)" , "longDescription" : "A classification system or taxonomy to evaluate research on the pharmaceutical care activities performed by pharmacists and to provide valid, measurable units of pharmacist contributions to patient health. These then become the basis for documentation and billing."},
+{ "code" : "11", "description" : "National Pharmaceutical Product Interface Code (NAPPI)" , "longDescription" : "A unique identifier for a given product which enables electronic transfer of information throughout the South African healthcare delivery chain. NAPPI as a coding standard that contains information on the NAPPI code, product description, strength, pack size and manufacturer."},
+{ "code" : "12", "description" : "Global Trade Identification Number (GTIN)" , "longDescription" : "The foundation for the EAN.UCC System for uniquely identifying trade items (products and services) sold, delivered, warehoused, and billed throughout the retail and commercial distribution channels. It provides an accurate, efficient and economical means of controlling the flow of products and information through the use of an all-numeric identification system."},
+{ "code" : "15", "description" : "First DataBank Formulation ID (GCN)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "28", "description" : "First DataBank Medication Name ID (FDB Med Name ID)" , "longDescription" : "A permanent numeric identifier that represents a unique product or generic name."},
+{ "code" : "29", "description" : "First DataBank Routed Medication ID (FDB Routed Med ID)" , "longDescription" : "Represents the product or generic name and route of administration."},
+{ "code" : "30", "description" : "First DataBank Routed Dosage Form ID (FDB Routed Dosage Form Med ID)" , "longDescription" : "Represents the product or generic name, route of administration, and dosage form."},
+{ "code" : "31", "description" : "First DataBank Medication ID (FDB MedID)" , "longDescription" : "A permanent numeric identifier that represents the unique combination of product or generic name, route of administration, dosage form, strength, and strength unit-of-measure."},
+{ "code" : "32", "description" : "First DataBank Clinical Formulation ID Sequence Number (GCN_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "33", "description" : "First DataBank Ingredient List ID (HICL_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that identifies a unique combination of active ingredients, irrespective of the manufacturer, package size, dosage form, route of administration, or strength."},
+{ "code" : "34", "description" : "Universal Product Number (UPN)" , "longDescription" : "Unambiguously identifies medical/surgical products in the supply chain, thereby simplifying product distribution. Each product, at all levels of packaging, will be assigned a unique UPN, consisting of either the HIBC-LIC or UCC/EAN primary data structure."},
+{ "code" : "36", "description" : "Representative National Drug Code (NDC)" , "longDescription" : "An 11-digit NDC code that depicts a category of medication exclusive of package size and manufacturer/labeler. A representative NDC should be a nationally available product and should not be a repackaged NDC, obsolete NDC, private label NDC or unit dose NDC unless it is the only NDC available identifying that category of medication. When exchanged, the drug description of the product must match the description of the representative NDC code value."},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Other"}
+]}
+
+{ "elementIds" : ["125-TZ"],
+    "codes": [
+{ "code" : "01", "description" : "Universal Product Code (UPC)" , "longDescription" : "An 11 digit code which identifies the manufacturer and the specific description of the product."},
+{ "code" : "02", "description" : "Health Related Item (HRI)" , "longDescription" : "Health Related Item is a unique 10 digit numeric code assigned to health related drug products by the FDA and the manufacturer or distributor. The format of an HRI is 4-6 and it is converted to the 11 digit number used on billing transactions by adding a zero to the 11th position."},
+{ "code" : "03", "description" : "National Drug Code (NDC)" , "longDescription" : "National Drug Code is a unique 10-digit, 3-segment number, assigned to each drug product by the FDA. For consistency in billing and reimbursement in the pharmacy services sector of healthcare, the NDC in a unique 11 digit formatted number, a zero is added. This number identifies the labeler/manufacturer, product, and package size of the drug. The first segment is the labeler code and assigned by the FDA. The second segment, the product code, identifies a specific strength, dosage form, and formulation. The third segment, the package code, identifies package sizes. Both the product and package codes are assigned by the labeler/manufacturer. National Drug File Reference (NDF-RT) National Drug File Reference Terminology"},
+{ "code" : "04", "description" : "Health Industry Business Communications Council (HIBCC)" , "longDescription" : "A 9-digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities."},
+{ "code" : "06", "description" : "Drug Use Review/Professional Pharmacy Service (DUR/PPS)" , "longDescription" : "Cognitive service involving the concurrent or prospective review of therapeutic regimens for the purpose of improving outcome, preventing adverse sequela and/or assisting patients in understanding the content and purpose of drug therapy."},
+{ "code" : "07", "description" : "Common Procedure Terminology (CPT4)" , "longDescription" : "Code indicating that the following data is a CPT® code. Current Procedural Terminology (CPT®) Fourth Edition is a listing of descriptive terms and identifying codes for reporting medical services and procedures. The code set is managed by the CPT Editorial panel and is maintained and published by the American Medical Association. Also known as Healthcare Common Procedure System (HCPCS) Level I."},
+{ "code" : "08", "description" : "Common Procedure Terminology (CPT5)" , "longDescription" : "Enhancements to CPT® 4 in development with emphasis on maintaining what works while correcting problems and extending the applicability of CPT into new areas."},
+{ "code" : "09", "description" : "Health Care Financing Administration Common Procedural Code System (HCPCS)" , "longDescription" : "The Healthcare Common Procedure Coding System (HCPCS) is a uniform method for health care providers and medical suppliers to report professional services, procedures and supplies. Used specifically it applies to the Level II Alpha codes (a letter followed by 4 numerals) and modifiers. Used generically HCPCS includes the Level I CPT procedure codes and modifiers. HCPCS Level II codes are maintained and published by the Centers for Medicare and Medicaid Services (CMS). Level III - Local Codes eliminated by HIPAA effective 10/16/03."},
+{ "code" : "10", "description" : "Pharmacy Practice Activity Classification (PPAC)" , "longDescription" : "A classification system or taxonomy to evaluate research on the pharmaceutical care activities performed by pharmacists and to provide valid, measurable units of pharmacist contributions to patient health. These then become the basis for documentation and billing."},
+{ "code" : "11", "description" : "National Pharmaceutical Product Interface Code (NAPPI)" , "longDescription" : "A unique identifier for a given product which enables electronic transfer of information throughout the South African healthcare delivery chain. NAPPI as a coding standard that contains information on the NAPPI code, product description, strength, pack size and manufacturer."},
+{ "code" : "12", "description" : "Global Trade Identification Number (GTIN)" , "longDescription" : "The foundation for the EAN.UCC System for uniquely identifying trade items (products and services) sold, delivered, warehoused, and billed throughout the retail and commercial distribution channels. It provides an accurate, efficient and economical means of controlling the flow of products and information through the use of an all-numeric identification system."},
+{ "code" : "15", "description" : "First DataBank Formulation ID (GCN)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "28", "description" : "First DataBank Medication Name ID (FDB Med Name ID)" , "longDescription" : "A permanent numeric identifier that represents a unique product or generic name."},
+{ "code" : "29", "description" : "First DataBank Routed Medication ID (FDB Routed Med ID)" , "longDescription" : "Represents the product or generic name and route of administration."},
+{ "code" : "30", "description" : "First DataBank Routed Dosage Form ID (FDB Routed Dosage Form Med ID)" , "longDescription" : "Represents the product or generic name, route of administration, and dosage form."},
+{ "code" : "31", "description" : "First DataBank Medication ID (FDB MedID)" , "longDescription" : "A permanent numeric identifier that represents the unique combination of product or generic name, route of administration, dosage form, strength, and strength unit-of-measure."},
+{ "code" : "32", "description" : "First DataBank Clinical Formulation ID Sequence Number (GCN_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "33", "description" : "First DataBank Ingredient List ID (HICL_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that identifies a unique combination of active ingredients, irrespective of the manufacturer, package size, dosage form, route of administration, or strength."},
+{ "code" : "34", "description" : "Universal Product Number (UPN)" , "longDescription" : "Unambiguously identifies medical/surgical products in the supply chain, thereby simplifying product distribution. Each product, at all levels of packaging, will be assigned a unique UPN, consisting of either the HIBC-LIC or UCC/EAN primary data structure."},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Other"}
+]}
+
+{ "elementIds" : ["916-B7","918-B9", "920-CT", "922-CV"],
+    "codes": [
+{ "code" : "E", "description" : "Medical Economics Generic Formulation Code (GFC)" , "longDescription" : "The Generic Formulation Code (GFC) serves as the key that links all of the UltiMedex clinical modules. The GFC represents a group of products sharing the same active ingredients, route, form, and strength."},
+{ "code" : "G", "description" : "Medical Economics Generic Master (GM)" , "longDescription" : "Unique and persistent identifier for the core or base ingredient of a drug."},
+{ "code" : "AF", "description" : "American Hospital Formulary Service (AHFS)" , "longDescription" : "Suite of products providing peer-reviewed information on medicines and drug products, including off-label and labeled uses, drug interactions; adverse reactions; cautions and toxicity; therapeutic perspective; specific dosage and administration information; preparations, chemistry, and stability; pharmacology and pharmacokinetics; contraindications."},
+{ "code" : "FD", "description" : "First DataBank Routed Dosage Form ID (FDB Routed Dosage Form Med ID)" , "longDescription" : "Represents the product or generic name, route of administration, and dosage form."},
+{ "code" : "FG", "description" : "First DataBank Clinical Formulation ID Sequence Number (GCN_SEQ_NO)" , "longDescription" : "A six-character numeric indicator that represents a generic drug formulation identifier that groups together drug products by the following criteria: Ingredients List Identifier (HICL_SEQNO) which represents the list or set of ingredients in a drug formulation; Route of Administration; Dosage Form; Strength of Drug. A unique GCN_SEQNO is assigned to each different combination of ingredient(s), strength, dosage form, and route of administration for a generic drug formulation."},
+{ "code" : "FM", "description" : "First DataBank Medication ID (FDB MedID)" , "longDescription" : "A permanent numeric identifier that represents the unique combination of product or generic name, route of administration, dosage form, strength, and strength unit-of-measure."},
+{ "code" : "FN", "description" : "First DataBank Medication Name ID (FDB Med Name ID)" , "longDescription" : "A permanent numeric identifier that represents a unique product or generic name."},
+{ "code" : "FR", "description" : "First DataBank Routed Medication ID (FDB Routed Med ID)" , "longDescription" : "Represents the product or generic name and route of administration."},
+{ "code" : "FS", "description" : "First Databank Smartkey" , "longDescription" : "24-character element that defines a product by therapeutic class, ingredients, strength, dosage form, route and certain packaging. characteristics."},
+{ "code" : "GS", "description" : "Gold Standard Product Item Collection" , "longDescription" : "A long integer value that represents the unique collection of drug and non-drug items contained within at least one marketed product in the US. It serves as a link to all drug and non-drug items that are contained within a single dose form product, multi-dose form product, or kit containing one more drug and non-drug items. The identifier describes the ingredient formulation, strength(s) and dosage form of each drug item in a product, along with any non-drug items, such as syringes, needles, etc. and is independent of marketer or manufacturer, and serves as a unique identifier for all products sharing identical drug and/or non-drug items as they are marketed in the US."},
+{ "code" : "MC", "description" : "Multum Drug ID" , "longDescription" : "Corresponds to the generic name of a drug; links products to clinical information for drug use review messaging with respect to pregnancy risk categories, maximum number of therapeutic duplications allowed, half-life and an indicator whether the drug ID represents a single-ingredient product or a combination product."},
+{ "code" : "MD", "description" : "Medi-Span Product Line (DDID)" , "longDescription" : "Index terms and phrases assigned to each record to characterize the substantive content of the original drug."},
+{ "code" : "MG", "description" : "Medi-Span Generic Product Identifier (GPI)" , "longDescription" : "A group or groups of pharmaceutically equivalent drug products. Products having the same 14-digit GPI are identical with respect to active ingredient(s), dosage form, route of administration and strength or concentration."},
+{ "code" : "MM", "description" : "Multum MMDC" , "longDescription" : "Groups of drug products that share the same ingredient(s), strength, route and dose form."},
+{ "code" : "US", "description" : "U.S. Pharmacopoeia (USP)" , "longDescription" : "The official public standards-setting authority for all prescription and over-the-counter medicines, dietary supplements, and other healthcare products manufactured and sold in the United States."},
+{ "code" : "ZZ", "description" : "Mutually Defined" , "longDescription" : "Mutually Defined"},
+{ "code" : "GFC", "description" : "Truven Micromedex RedBook V1 (Select, Expanded, Extra): GFC (generic formulation code)" , "longDescription" : ""},
+{ "code" : "CG", "description" : "Truven Micromedex RedBook V3 (Advanced): CG (composite generic)" , "longDescription" : ""},
+{ "code" : "DC", "description" : "DIT Drug Information Technologies DIT Drug Database" , "longDescription" : ""}
+]}
+
+
+{ "elementIds" : ["946-GT","947-GU", "948-GV", "949-GW", "950-GX"],
+    "codes": [
+{ "code" : "U", "description" : "Unknown" , "longDescription" : ""},
+{ "code" : "0", "description" : "Not Reimbursable" , "longDescription" : ""},
+{ "code" : "1", "description" : "Non Formulary" , "longDescription" : ""},
+{ "code" : "2", "description" : "On Formulary/Non Preferred" , "longDescription" : ""},
+{ "code" : "3", "description" : "On Formulary/Preferred Level 1" , "longDescription" : ""},
+{ "code" : "4", "description" : "On Formulary/Preferred Level 2" , "longDescription" : ""},
+{ "code" : "5", "description" : "On Formulary/Preferred Level 3" , "longDescription" : ""},
+{ "code" : "6-99", "description" : "On Formulary/Preferred Levels 4 through 101" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["423-DN", "490-UE"],
+    "codes": [
+{ "code" : "00", "description" : "Default" , "longDescription" : ""},
+{ "code" : "01", "description" : "AWP (Average Wholesale Price)" , "longDescription" : "A pricing benchmark for prescription drugs."},
+{ "code" : "02", "description" : "Local Wholesaler" , "longDescription" : "A legitimate supplier from the surrounding area who resells drugs."},
+{ "code" : "03", "description" : "Direct" , "longDescription" : "Represents the manufacturer’s published catalog or list price for any item to non-wholesalers. It does not represent actual transaction prices and does not include prompt pay or other discounts, rebates or reductions."},
+{ "code" : "04", "description" : "EAC (Estimated Acquisition Cost)" , "longDescription" : "A formula-driven estimate of an entity’s actual acquisition cost of a product, typically using as a percentage of AWP, derived by applying a discount to AWP. Various EAC methodologies may exist to estimate acquisition costs."},
+{ "code" : "05", "description" : "Acquisition" , "longDescription" : "Used to indicate the provided ingredient cost is the actual cost as paid by the provider to the supplier for the specific item."},
+{ "code" : "06", "description" : "MAC (Maximum Allowable Cost)" , "longDescription" : "Maximum reimbursable ingredient cost amount according to a payer’s price list."},
+{ "code" : "07", "description" : "Usual & Customary" , "longDescription" : "The pharmacy’s price for the medication for a cash paying person on the day of dispensing."},
+{ "code" : "08", "description" : "340B /Disproportionate Share Pricing/Public Health Service" , "longDescription" : "Price available under Section 340B of the Public Health Service Act of 1992 including sub-ceiling purchases authorized by Section 340B (a)(10) and those made through the Prime Vendor Program (Section 340B(a)(8)). Applicable only to submissions for Medicaid and other state or federal programs when required by law or regulation and when the payer and/or processor has communicated a unique RxBIN or unique RxBIN/RxPCN combination to distinguish these from other lines of business that do not meet the requirement."},
+{ "code" : "09", "description" : "Other" , "longDescription" : "Different from those implied or specified."},
+{ "code" : "10", "description" : "ASP (Average Sales Price)" , "longDescription" : "The average sales price (ASP) is a cost basis required by and reported to CMS for pricing Medicare Part B drugs."},
+{ "code" : "11", "description" : "AMP (Average Manufacturer Price)" , "longDescription" : "The average price paid to manufacturers by wholesalers for drugs distributed to the retail class of trade; calculated net of chargebacks, discounts, rebates, and other benefits tied to the purchase of the drug product, regardless of whether these incentives are paid to the wholesaler or the retailer."},
+{ "code" : "12", "description" : "WAC (Wholesale Acquisition Cost)" , "longDescription" : "A cost as defined in Title XIX, Section 1927 of the Social Security Act."},
+{ "code" : "13", "description" : "Special Patient Pricing" , "longDescription" : "The cost calculated by the pharmacy for the drug for this special patient."},
+{ "code" : "14", "description" : "Cost basis on un-reportable quantities" , "longDescription" : ""}
+]}
+
+
+{ "elementIds" : ["721-MD"],
+    "codes": [
+
+{ "code" : "Blank", "description" : "Unknown" , "longDescription" : ""},
+{ "code" : "1", "description" : "Male" , "longDescription" : ""},
+{ "code" : "2", "description" : "Female" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["305-C5"],
+    "codes": [
+
+{ "code" : "0", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "1", "description" : "Male" , "longDescription" : ""},
+{ "code" : "2", "description" : "Female" , "longDescription" : ""}
+]}
+{ "elementIds" : ["595-YY"],
+    "codes": [
+
+{ "code" : "0", "description" : "Unknown" , "longDescription" : ""},
+{ "code" : "1", "description" : "Male" , "longDescription" : ""},
+{ "code" : "2", "description" : "Female" , "longDescription" : ""}
+]}
+
+
+
+{ "elementIds" : ["299"],
+    "codes": [
+
+{ "code" : "0", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "1", "description" : "Prior Authorization" , "longDescription" : "a) Code assigned for use with claim billing to allow processing of a claim which would otherwise reject based upon benefit or program design. b) Indicator to convey that coverage of the specified product is dependant upon the prescriber submitting the request (including required documentation) to the payer/plan or designated utilization management organization for approval/authorization prior to ordering/dispensing the product."},
+{ "code" : "2", "description" : "Medical Certification" , "longDescription" : "A code indicating that a health care provider practitioner certifies to an incapacitation, examination, or treatment or to a period of disability while a patient was or is receiving professional treatment."},
+{ "code" : "3", "description" : "EPSDT (Early Periodic Screening Diagnosis Treatment)" , "longDescription" : "Code indicating information about services involving preventative health measures for children, e.g., screening assessments, tests and their subsequent results and findings, immunization information, guidance and education given, and follow-up care required."},
+{ "code" : "4", "description" : "Exemption from Copay and/or Coinsurance" , "longDescription" : "Code used to classify the reason for the prior authorization request as one used when the member has qualified for an exemption from copay and/or coinsurance payments according to the benefit design."},
+{ "code" : "5", "description" : "Exemption from RX" , "longDescription" : "Code used to classify the reason for the prior authorization request as one used when the member has qualified for an exemption from limitations on the number of prescriptions covered by the program/plan in a specified period of time."},
+{ "code" : "6", "description" : "Family Planning Indicator" , "longDescription" : "Code to indicate the drug prescribed is for management of reproduction."},
+{ "code" : "7", "description" : "TANF (Temporary Assistance for Needy Families)" , "longDescription" : "An organization that provides assistance and work opportunities to needy families by granting states the federal funds and the flexibility to develop and implement their own welfare programs."},
+{ "code" : "8", "description" : "Payer Defined Exemption" , "longDescription" : "Used to indicate the provider is submitting the prior authorization for the purpose of utilizing a payer defined exemption not covered by one of the other type codes."}
+]}
+
+
+
+{ "elementIds" : ["299"],
+    "codes": [
+
+{ "code" : "0", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "1", "description" : "Prior Authorization" , "longDescription" : "a) Code assigned for use with claim billing to allow processing of a claim which would otherwise reject based upon benefit or program design. b) Indicator to convey that coverage of the specified product is dependant upon the prescriber submitting the request (including required documentation) to the payer/plan or designated utilization management organization for approval/authorization prior to ordering/dispensing the product."},
+{ "code" : "2", "description" : "Medical Certification" , "longDescription" : "A code indicating that a health care provider practitioner certifies to an incapacitation, examination, or treatment or to a period of disability while a patient was or is receiving professional treatment."},
+{ "code" : "3", "description" : "EPSDT (Early Periodic Screening Diagnosis Treatment)" , "longDescription" : "Code indicating information about services involving preventative health measures for children, e.g., screening assessments, tests and their subsequent results and findings, immunization information, guidance and education given, and follow-up care required."},
+{ "code" : "4", "description" : "Exemption from Copay and/or Coinsurance" , "longDescription" : "Code used to classify the reason for the prior authorization request as one used when the member has qualified for an exemption from copay and/or coinsurance payments according to the benefit design."},
+{ "code" : "5", "description" : "Exemption from RX" , "longDescription" : "Code used to classify the reason for the prior authorization request as one used when the member has qualified for an exemption from limitations on the number of prescriptions covered by the program/plan in a specified period of time."},
+{ "code" : "6", "description" : "Family Planning Indicator" , "longDescription" : "Code to indicate the drug prescribed is for management of reproduction."},
+{ "code" : "7", "description" : "TANF (Temporary Assistance for Needy Families)" , "longDescription" : "An organization that provides assistance and work opportunities to needy families by granting states the federal funds and the flexibility to develop and implement their own welfare programs."},
+{ "code" : "8", "description" : "Payer Defined Exemption" , "longDescription" : "Used to indicate the provider is submitting the prior authorization for the purpose of utilizing a payer defined exemption not covered by one of the other type codes."}
+]}
+
+
+{ "elementIds" : ["461-EU"],
+    "codes": [
+
+{ "code" : "0", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "1", "description" : "Prior Authorization" , "longDescription" : "a) Code assigned for use with claim billing to allow processing of a claim which would otherwise reject based upon benefit or program design. b) Indicator to convey that coverage of the specified product is dependant upon the prescriber submitting the request (including required documentation) to the payer/plan or designated utilization management organization for approval/authorization prior to ordering/dispensing the product."},
+{ "code" : "2", "description" : "Medical Certification" , "longDescription" : "A code indicating that a health care provider practitioner certifies to an incapacitation, examination, or treatment or to a period of disability while a patient was or is receiving professional treatment."},
+{ "code" : "3", "description" : "EPSDT (Early Periodic Screening Diagnosis Treatment)" , "longDescription" : "Code indicating information about services involving preventative health measures for children, e.g., screening assessments, tests and their subsequent results and findings, immunization information, guidance and education given, and follow-up care required."},
+{ "code" : "4", "description" : "Exemption from Copay and/or Coinsurance" , "longDescription" : "Code used to classify the reason for the prior authorization request as one used when the member has qualified for an exemption from copay and/or coinsurance payments according to the benefit design."},
+{ "code" : "5", "description" : "Exemption from RX" , "longDescription" : "Code used to classify the reason for the prior authorization request as one used when the member has qualified for an exemption from limitations on the number of prescriptions covered by the program/plan in a specified period of time."},
+{ "code" : "6", "description" : "Family Planning Indicator" , "longDescription" : "Code to indicate the drug prescribed is for management of reproduction."},
+{ "code" : "7", "description" : "TANF (Temporary Assistance for Needy Families)" , "longDescription" : "An organization that provides assistance and work opportunities to needy families by granting states the federal funds and the flexibility to develop and implement their own welfare programs."},
+{ "code" : "8", "description" : "Payer Defined Exemption" , "longDescription" : "Used to indicate the provider is submitting the prior authorization for the purpose of utilizing a payer defined exemption not covered by one of the other type codes."},
+{ "code" : "9", "description" : "Emergency Preparedness " , "longDescription" : "Code used to override claim edits during an emergency situation. Field 462-EV Prior Authorization Number Submitted supports the following values when an emergency healthcare disaster has been officially declared by the appropriate U.S. government agency. 91100000000 - Emergency Preparedness (EP) Refill Extension Override; 91100000001 - Emergency Preparedness (EP) Refill Too Soon Edit Override; 91100000002 - Emergency Preparedness (EP) Prior Authorization Requirement Override; 91100000003 - Emergency Preparedness (EP) Accumulated Quantity Override; 91100000004 - Emergency Preparedness (EP) Step Therapy Override; 91100000005 - Emergency Preparedness (EP) override all of the above"}
+]}
+
+
+
+
+
+{ "elementIds" : ["601-19"],
+    "codes": [
+{ "code" : "BLANK", "description" : "Not Specified"},
+{ "code" : "1", "description" : "First DataBank Formulation ID (GCN)" , "longDescription" : "A five character numeric indicator that represents the generic formulation; specific to generic ingredient combination, route of administration, dosage form, and drug strength. The GCN is the same across manufacturers and/or package sizes; useful for online computer applications, such as generic substitution."},
+{ "code" : "2", "description" : "Medi-Span Product Line Generic Product Identifier (GPI)" , "longDescription" : "A group or groups of pharmaceutically equivalent drug products. Products having the same 14-digit GPI are identical with respect to active ingredient(s), dosage form, route of administration and strength or concentration."},
+{ "code" : "3", "description" : "First DataBank GC3" , "longDescription" : "A three character alphanumeric indicator that identifies the specific therapeutic class in which the active ingredient is classified."},
+{ "code" : "4", "description" : "Medi-Span Product Line Drug Descriptor ID (DDID)" , "longDescription" : "Index terms and phrases assigned to each record to characterize the substantive content of the original drug."},
+{ "code" : "5", "description" : "First DataBank Medication Name Identifier (FDB Med Name ID)" , "longDescription" : "A permanent numeric identifier that represents a unique product or generic name."},
+{ "code" : "6", "description" : "First DataBank Routed Medication Identifier (FDB Routed Med ID)" , "longDescription" : "Represents the product or generic name and route of administration."},
+{ "code" : "7", "description" : "First Databank Routed Dosage Form Medication Identifier (FDB Routed Dosage Form Med ID)" , "longDescription" : "Represents the product or generic name, route of administration, and dosage form."},
+{ "code" : "8", "description" : "First DataBank Medication Identifier (FDB MedID)" , "longDescription" : "A permanent numeric identifier that represents the unique combination of product or generic name, route of administration, dosage form, strength, and strength unit-of-measure."},
+{ "code" : "9", "description" : "Nine-digit NDC" , "longDescription" : ""},
+{ "code" : "A", "description" : "American Hospital Formulary Service (AHFS) Code" , "longDescription" : "Suite of products providing peer-reviewed information on medicines and drug products, including off-label and labeled uses, drug interactions; adverse reactions; cautions and toxicity; therapeutic perspective; specific dosage and administration information; preparations; chemistry and stability; pharmacology and pharmacokinetics; contraindications."},
+{ "code" : "C", "description" : "Contracting Organization (PMO) Assigned Code" , "longDescription" : "Internal alphanumeric code used by a PMO to describe a Product Code or Therapeutic Class in a NCPDP manufacturer rebate flat file standard layout. This code is an internal number assigned by the PMO."},
+{ "code" : "G", "description" : "First Data Bank GCN Sequence Number (Mnemonic: GCN*SEQNO)" , "longDescription" : ""},
+{ "code" : "H", "description" : "First Data Bank HICL Sequence Number (Mnemonic: HICL*SEQNO)" , "longDescription" : ""},
+{ "code" : "M", "description" : "Manufacturer (PICO) Assigned Code" , "longDescription" : "Code assigned by Pharmaceutical Industry Contracting Organization (PICO). (Any organization contracting to pay rebates for pharmaceutical products (e.g. manufacturer, distributor, other). Rebates are paid by the PICO to Pharmacy Management Organizations (PMOs))"},
+{ "code" : "N", "description" : "Eleven-digit NDC" , "longDescription" : ""},
+{ "code" : "O", "description" : "UPC (OTCS)" , "longDescription" : ""},
+{ "code" : "P", "description" : "Product group (brand or generic name)" , "longDescription" : ""},
+{ "code" : "T", "description" : "First Data Bank Therapeutic Class Code, Specific (Mnemonic: HIC3)" , "longDescription" : ""},
+{ "code" : "U", "description" : "Universal System of Classification Code (USC)" , "longDescription" : "A standard classification used to differentiate drug products by the markets in which they are traditionally sold. The USC is maintained by its copyright owner, IMS Health Incorporated."},
+{ "code" : "V", "description" : "All products used" , "longDescription" : "Represents all valid products regardless of type"},
+{ "code" : "Z", "description" : "Mutually Agreed Upon Code" , "longDescription" : "A code mutually agreed upon by trading partners to identify a given data type element."}
+]}
+
+{ "elementIds" : ["601-26"],
+    "codes": [
+{ "code" : "BLANK", "description" : "Not Specified"},
+{ "code" : "1", "description" : "First DataBank Formulation ID (GCN)" , "longDescription" : "A five character numeric indicator that represents the generic formulation; specific to generic ingredient combination, route of administration, dosage form, and drug strength. The GCN is the same across manufacturers and/or package sizes; useful for online computer applications, such as generic substitution."},
+{ "code" : "2", "description" : "Medi-Span Product Line Generic Product Identifier (GPI)" , "longDescription" : "A group or groups of pharmaceutically equivalent drug products. Products having the same 14-digit GPI are identical with respect to active ingredient(s), dosage form, route of administration and strength or concentration."},
+{ "code" : "3", "description" : "First DataBank GC3" , "longDescription" : "A three character alphanumeric indicator that identifies the specific therapeutic class in which the active ingredient is classified."},
+{ "code" : "4", "description" : "Medi-Span Product Line Drug Descriptor ID (DDID)" , "longDescription" : "Index terms and phrases assigned to each record to characterize the substantive content of the original drug."},
+{ "code" : "5", "description" : "First DataBank Medication Name Identifier (FDB Med Name ID)" , "longDescription" : "A permanent numeric identifier that represents a unique product or generic name."},
+{ "code" : "6", "description" : "First DataBank Routed Medication Identifier (FDB Routed Med ID)" , "longDescription" : "Represents the product or generic name and route of administration."},
+{ "code" : "7", "description" : "First Databank Routed Dosage Form Medication Identifier (FDB Routed Dosage Form Med ID)" , "longDescription" : "Represents the product or generic name, route of administration, and dosage form."},
+{ "code" : "8", "description" : "First DataBank Medication Identifier (FDB MedID)" , "longDescription" : "A permanent numeric identifier that represents the unique combination of product or generic name, route of administration, dosage form, strength, and strength unit-of-measure."},
+{ "code" : "9", "description" : "First DataBank Enhanced Therapeutic Class Codes (ETC ID)" , "longDescription" : "A system that allows drugs to reside in multiple therapeutic classes, with links to drug concepts at any level of the therapeutic class hierarchy. It links to Multiple Access Points (MAPs), and uses a wide variety of medication concept identifiers to support multiple use-case scenarios."},
+{ "code" : "A", "description" : "American Hospital Formulary Service (AHFS) Code" , "longDescription" : "Suite of products providing peer-reviewed information on medicines and drug products, including off-label and labeled uses, drug interactions; adverse reactions; cautions and toxicity; therapeutic perspective; specific dosage and administration information; preparations; chemistry and stability; pharmacology and pharmacokinetics; contraindications."},
+{ "code" : "C", "description" : "Contracting Organization (PMO) Assigned Code" , "longDescription" : "Internal alphanumeric code used by a PMO to describe a Product Code or Therapeutic Class in a NCPDP manufacturer rebate flat file standard layout. This code is an internal number assigned by the PMO."},
+{ "code" : "D", "description" : "First Data Bank Therapeutic Class code, Generic" , "longDescription" : "This classification provides the most general therapeutic groupings available from First DataBank."},
+{ "code" : "E", "description" : "First Data Bank Therapeutic Class code, Standard" , "longDescription" : "This therapeutic classification is intended to service those users who need a definitive but not comprehensive therapeutic classification system."},
+{ "code" : "M", "description" : "Manufacturer (PICO) Assigned Code" , "longDescription" : "Code assigned by Pharmaceutical Industry Contracting Organization (PICO). (Any organization contracting to pay rebates for pharmaceutical products (e.g. manufacturer, distributor, other). Rebates are paid by the PICO to Pharmacy Management Organizations (PMOs))"},
+{ "code" : "U", "description" : "Universal System of Classification Code (USC)" , "longDescription" : "A standard classification used to differentiate drug products by the markets in which they are traditionally sold. The USC is maintained by its copyright owner, IMS Health Incorporated."},
+{ "code" : "Z", "description" : "Mutually Agreed Upon Code" , "longDescription" : "A code mutually agreed upon by trading partners to identify a given data type element."}
+]}
+
+{ "elementIds" : ["406-D6", "A6"],
+    "codes": [
+{ "code" : "0", "description" : "Not Specified" , "longDescription" : " This value is not allowed for the Telecommunication Standard"},
+{ "code" : "1", "description" : "Not a Compound" , "longDescription" : "Medication that is available commercially as a dispensable product"},
+{ "code" : "2", "description" : "Compound" , "longDescription" : "Customized medication prepared in a pharmacy by combining, mixing, or altering of ingredients (but not reconstituting) for an individual patient in response to a licensed practitioner’s prescription"}
+]}
+
+
+{ "elementIds" : ["528-FS"],
+    "codes": [
+{ "code" : "BLANK", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "1", "description" : "Major" , "longDescription" : "Code indicating that an event, transaction, etc. is of the highest importance; action required to prevent adverse drug event."},
+{ "code" : "2", "description" : "Moderate" , "longDescription" : "Code indicating that an event, transaction, etc. is of mid-level significance; requires thoughtful review before prescribing/dispensing the medication. Risk vs. benefit should be evaluated."},
+{ "code" : "3", "description" : "Minor" , "longDescription" : "Code indicating a non-life threatening, annoying, or not-well-documented effect which may or may not require a change in drug therapy."},
+{ "code" : "9", "description" : "Undetermined" , "longDescription" : "Value to describe a professional service with variable or unknown severity."}
+]}
+
+
+
+
+{ "elementIds" : ["440-E5"],
+    "codes": [
+{ "code" : "00", "description" : "No intervention" , "longDescription" : ""},
+{ "code" : "AS", "description" : "Patient assessment" , "longDescription" : "Code indicating that an initial evaluation of a patient or complaint/symptom for the purpose of developing a therapeutic plan."},
+{ "code" : "CC", "description" : "Coordination of care" , "longDescription" : "Case management activities of a pharmacist related to the care being delivered by multiple providers."},
+{ "code" : "DE", "description" : "Dosing evaluation/determination" , "longDescription" : "Cognitive service whereby the pharmacist reviews and evaluates the appropriateness of a prescribed medication’s dose, interval, frequency and/or formulation."},
+{ "code" : "DP", "description" : "Dosage evaluated" , "longDescription" : "Code indicating that dosage has been evaluated with respect to risk for the patient."},
+{ "code" : "FE", "description" : "Formulary enforcement" , "longDescription" : "Code indicating that activities including interventions with prescribers and patients related to the enforcement of a pharmacy benefit plan formulary have occurred. Comment: Use this code for cross-licensed brand products or generic to brand interchange."},
+{ "code" : "GP", "description" : "Generic product selection" , "longDescription" : "The selection of a chemically and therapeutically identical product to that specified by the prescriber for the purpose of achieving cost savings for the payer."},
+{ "code" : "M0", "description" : "Prescriber consulted" , "longDescription" : "Code indicating prescriber communication related to collection of information or clarification of a specific limited problem."},
+{ "code" : "MA", "description" : "Medication administration" , "longDescription" : "Code indicating an action of supplying a medication to a patient through any of several routes—oral, topical, intravenous, intramuscular, intranasal, etc."},
+{ "code" : "MB", "description" : "Overriding benefit" , "longDescription" : "Benefits of the prescribed medication outweigh the risks."},
+{ "code" : "MP", "description" : "Patient will be monitored" , "longDescription" : "Prescriber is aware of the risk and will be monitoring the patient."},
+{ "code" : "MR", "description" : "Medication review" , "longDescription" : "Code indicating comprehensive review and evaluation of a patient’s entire medication regimen."},
+{ "code" : "PA", "description" : "Previous patient tolerance" , "longDescription" : "Patient has taken medication previously without issue."},
+{ "code" : "PE", "description" : "Patient education/instruction" , "longDescription" : "Code indicating verbal and/or written communication by a pharmacist to enhance the patient’s knowledge about the condition under treatment or to develop skills and competencies related to its management."},
+{ "code" : "PH", "description" : "Patient medication history" , "longDescription" : "Code indicating the establishment of a medication history database on a patient to serve as the foundation for the ongoing maintenance of a medication profile."},
+{ "code" : "PM", "description" : "Patient monitoring" , "longDescription" : "Code indicating the evaluation of established therapy for the purpose of determining whether an existing therapeutic plan should be altered."},
+{ "code" : "P0", "description" : "Patient consulted" , "longDescription" : "Code indicating patient communication related to collection of information or clarification of a specific limited problem."},
+{ "code" : "PT", "description" : "Perform laboratory test" , "longDescription" : "Code indicating that the pharmacist performed a clinical laboratory test on a patient."},
+{ "code" : "R0", "description" : "Pharmacist consulted other source" , "longDescription" : "Code indicating communication related to collection of information or clarification of a specific limited problem."},
+{ "code" : "RT", "description" : "Recommend laboratory test" , "longDescription" : "Code indicating that the pharmacist recommends the performance of a clinical laboratory test on a patient."},
+{ "code" : "SC", "description" : "Self-care consultation" , "longDescription" : "Code indicating activities performed by a pharmacist on behalf of a patient intended to allow the patient to function more effectively on his or her own behalf in health promotion and disease prevention, detection, or treatment."},
+{ "code" : "SW", "description" : "Literature search/review" , "longDescription" : "Code indicating that the pharmacist searches or reviews the pharmaceutical and/or medical literature for information related to the care of a patient."},
+{ "code" : "TC", "description" : "Payer/processor consulted" , "longDescription" : "Code indicating communication by a pharmacist to a processor or payer related to the care of the patient."},
+{ "code" : "TH", "description" : "Therapeutic product interchange" , "longDescription" : "Code indicating that the selection of a therapeutically equivalent product to that specified by the prescriber for the purpose of achieving cost savings for the payer."}
+]}
+
+{ "elementIds" : ["439-E4"],
+    "codes": [
+{ "code" : "AD", "description" : "Additional Drug Needed" , "longDescription" : "Code indicating optimal treatment of the patient’s condition requiring the addition of a new drug to the existing drug therapy"},
+{ "code" : "AN", "description" : "Prescription Authentication" , "longDescription" : "Code indicating that circumstances required the pharmacist to verify the validity and/or authenticity of the prescription."},
+{ "code" : "AR", "description" : "Adverse Drug Reaction" , "longDescription" : "Code indicating an adverse reaction by a patient to a drug."},
+{ "code" : "AT", "description" : "Additive Toxicity" , "longDescription" : "Code indicating a detection of drugs with similar side effects when used in combination could exhibit a toxic potential greater than either agent by itself."},
+{ "code" : "CD", "description" : "Chronic Disease Management" , "longDescription" : "The patient is participating in a coordinated health care intervention program."},
+{ "code" : "CH", "description" : "Call Help Desk" , "longDescription" : "Processor message to recommend the receiver contact the processor/plan"},
+{ "code" : "CS", "description" : "Patient Complaint/Symptom" , "longDescription" : "Code indicating that in the course of assessment or discussion with the patient, the pharmacist identified an actual or potential problem when the patient presented to the pharmacist complaints or symptoms suggestive of illness requesting evaluation and treatment."},
+{ "code" : "DA", "description" : "Drug-Allergy" , "longDescription" : "Indicates that an adverse immune event may occur due to the patient’s previously demonstrated heightened allergic response to the drug product in question."},
+{ "code" : "DC", "description" : "Drug-Disease (Inferred)" , "longDescription" : "Indicates that the use of the drug may be inappropriate in light of a specific medical condition that the patient has. The existence of the specific medical condition is inferred from drugs in the patient’s medication history."},
+{ "code" : "DD", "description" : "Drug-Drug Interaction" , "longDescription" : "Indicates that drug combinations in which the net pharmacologic response may be different from the result expected when each drug is given separately."},
+{ "code" : "DF", "description" : "Drug-Food interaction" , "longDescription" : "Indicates interactions between a drug and certain foods."},
+{ "code" : "DI", "description" : "Drug Incompatibility" , "longDescription" : "Indicates physical and chemical incompatibilities between two or more drugs."},
+{ "code" : "DL", "description" : "Drug-Lab Conflict" , "longDescription" : "Indicates that laboratory values may be altered due to the use of the drug, or that the patient’s response to the drug may be altered due to a condition that is identified by a certain laboratory value."},
+{ "code" : "DM", "description" : "Apparent Drug Misuse" , "longDescription" : "Code indicating a pattern of drug use by a patient in a manner that is significantly different than that prescribed by the prescriber."},
+{ "code" : "DR", "description" : "Dose Range Conflict" , "longDescription" : "Code indicating that the prescription does not follow recommended medication dosage."},
+{ "code" : "DS", "description" : "Tobacco Use" , "longDescription" : "Code indicating that a conflict was detected when a prescribed drug is contraindicated or might conflict with the use of tobacco products."},
+{ "code" : "ED", "description" : "Patient Education/Instruction" , "longDescription" : "Code indicating that a cognitive service whereby the pharmacist performed a patient care activity by providing additional instructions or education to the patient beyond the simple task of explaining the prescriber’s instructions on the prescription."},
+{ "code" : "ER", "description" : "Overuse" , "longDescription" : "Code indicating that the current prescription refill is occurring before the days supply of the previous filling should have been exhausted."},
+{ "code" : "EX", "description" : "Excessive Quantity" , "longDescription" : "Code that documents the quantity is excessive for the single time period for which the drug is being prescribed."},
+{ "code" : "HD", "description" : "High Dose" , "longDescription" : "Detects drug doses that fall above the standard dosing range."},
+{ "code" : "IC", "description" : "Iatrogenic Condition" , "longDescription" : "Code indicating that a possible inappropriate use of drugs that are designed to amerliorate complications caused by another medication has been detected."},
+{ "code" : "ID", "description" : "Ingredient Duplication" , "longDescription" : "Code indicating that simultaneous use of drug products containing one or more identical generic chemical entities has been detected."},
+{ "code" : "LD", "description" : "Low Dose" , "longDescription" : "Code indicating that the submitted drug doses fall below the standard dosing range."},
+{ "code" : "LK", "description" : "Lock In Recipient" , "longDescription" : "Code indicating that the professional service was related to a plan/payer constraint on the member whereby the member is required to obtain services from only one specified pharmacy or other provider type, hence the member is 'locked in' to using only those providers or pharmacies."},
+{ "code" : "LR", "description" : "Underuse" , "longDescription" : "Code indicating that a prescription refill that occurred after the days supply of the previous filling should have been exhausted."},
+{ "code" : "MC", "description" : "Drug-Disease (Reported)" , "longDescription" : "Indicates that the use of the drug may be inappropriate in light of a specific medical condition that the patient has. Information about the specific medical condition was provided by the prescriber, patient or pharmacist."},
+{ "code" : "MN", "description" : "Insufficient Duration" , "longDescription" : "Code indicating that regimens shorter than the minimal limit of therapy for the drug product, based on the product’s common uses, has been detected."},
+{ "code" : "MS", "description" : "Missing Information/Clarification" , "longDescription" : "Code indicating that the prescription order is unclear, incomplete, or illegible with respect to essential information."},
+{ "code" : "MX", "description" : "Excessive Duration" , "longDescription" : "Detects regimens that are longer than the maximal limit of therapy for a drug product based on the product’s common uses."},
+{ "code" : "NA", "description" : "Drug Not Available" , "longDescription" : "Indicates the drug is not currently available from any source."},
+{ "code" : "NC", "description" : "Non-covered Drug Purchase" , "longDescription" : "Code indicating a cognitive service whereby a patient is counseled, the pharmacist’s recommendation is accepted and a claim is submitted to the processor requesting payment for the professional pharmacy service only, not the drug."},
+{ "code" : "ND", "description" : "New Disease/Diagnosis" , "longDescription" : "Code indicating that a professional pharmacy service has been performed for a patient who has a newly diagnosed condition or disease."},
+{ "code" : "NF", "description" : "Non-Formulary Drug" , "longDescription" : "Code indicating that mandatory formulary enforcement activities have been performed by the pharmacist when the drug is not included on the formulary of the patient’s pharmacy benefit plan."},
+{ "code" : "NP", "description" : "New Patient Processing" , "longDescription" : "Code indicating that a pharmacist has performed the initial interview and medication history of a new patient."},
+{ "code" : "NR", "description" : "Lactation/Nursing Interaction" , "longDescription" : "Code indicating that the drug is excreted in breast milk and may represent a danger to a nursing infant."},
+{ "code" : "NS", "description" : "Insufficient Quantity" , "longDescription" : "Code indicating that the quantity of dosage units prescribed is insufficient."},
+{ "code" : "OH", "description" : "Alcohol Conflict" , "longDescription" : "Detects when a prescribed drug is contraindicated or might conflict with the use of alcoholic beverages"},
+{ "code" : "PA", "description" : "Drug-Age" , "longDescription" : "Indicates age-dependent drug problems."},
+{ "code" : "PC", "description" : "Patient Question/Concern" , "longDescription" : "Code indicating that a request for information/concern was expressed by the patient, with respect to patient care."},
+{ "code" : "PG", "description" : "Drug-Pregnancy" , "longDescription" : "Indicates pregnancy related drug problems. This information is intended to assist the healthcare professional in weighing the therapeutic value of a drug against possible adverse effects on the fetus."},
+{ "code" : "PH", "description" : "Preventive Health Care" , "longDescription" : "Code indicating that the provided professional service was to educate the patient regarding measures mitigating possible adverse effects or maximizing the benefits of the product(s) dispensed; or measures to optimize health status, prevent recurrence or exacerbation of problems."},
+{ "code" : "PN", "description" : "Prescriber Consultation" , "longDescription" : "Code indicating that a prescriber has requested information or a recommendation related to the care of a patient."},
+{ "code" : "PP", "description" : "Plan Protocol" , "longDescription" : "Code indicating that a cognitive service whereby a pharmacist, in consultation with the prescriber or using professional judgment, recommends a course of therapy as outlined in the patient’s plan and submits a claim for the professional service provided."},
+{ "code" : "PR", "description" : "Prior Adverse Reaction" , "longDescription" : "Code identifying the patient has had a previous atypical reaction to drugs."},
+{ "code" : "PS", "description" : "Product Selection Opportunity" , "longDescription" : "Code indicating that an acceptable generic substitute or a therapeutic equivalent exists for the drug. This code is intended to support discretionary drug product selection activities by pharmacists."},
+{ "code" : "RE", "description" : "Suspected Environmental Risk" , "longDescription" : "Code indicating that the professional service was provided to obtain information from the patient regarding suspected environmental factors."},
+{ "code" : "RF", "description" : "Health Provider Referral" , "longDescription" : "Patient referred to the pharmacist by another health care provider for disease specific or general purposes."},
+{ "code" : "SC", "description" : "Suboptimal Compliance" , "longDescription" : "Code indicating that professional service was provided to counsel the patient regarding the importance of adherence to the provided instructions and of consistent use of the prescribed product including any ill effects anticipated as a result of non-compliance."},
+{ "code" : "SD", "description" : "Suboptimal Drug/Indication" , "longDescription" : "Code indicating incorrect, inappropriate, or less than optimal drug prescribed for the patient’s condition."},
+{ "code" : "SE", "description" : "Side Effect" , "longDescription" : "Code reporting possible major side effects of the prescribed drug."},
+{ "code" : "SF", "description" : "Suboptimal Dosage Form" , "longDescription" : "Code indicating incorrect, inappropriate, or less than optimal dosage form for the drug."},
+{ "code" : "SR", "description" : "Suboptimal Regimen" , "longDescription" : "Code indicating incorrect, inappropriate, or less than optimal dosage regimen specified for the drug in question."},
+{ "code" : "SX", "description" : "Drug-Gender" , "longDescription" : "Indicates the therapy is inappropriate or contraindicated in either males or females."},
+{ "code" : "TD", "description" : "Therapeutic" , "longDescription" : "Code indicating that a simultaneous use of different primary generic chemical entities that have the same therapeutic effect was detected."},
+{ "code" : "TN", "description" : "Laboratory Test Needed" , "longDescription" : "Code indicating that an assessment of the patient suggests that a laboratory test is needed to optimally manage a therapy."},
+{ "code" : "TP", "description" : "Payer/Processor Question" , "longDescription" : "Code indicating that a payer or processor requested information related to the care of a patient."},
+{ "code" : "UD", "description" : "Duplicate Drug" , "longDescription" : "Code indicating that multiple prescriptions of the same drug formulation are present in the patient’s current medication profile."}
+]}
+
+
+{ "elementIds" : ["441-E6"],
+    "codes": [
+{ "code" : "00", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "1A", "description" : "Filled As Is, False Positive" , "longDescription" : "Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and determines the alert is incorrect for that prescription for that patient and fills the prescription as originally written."},
+{ "code" : "1B", "description" : "Filled Prescription As Is" , "longDescription" : "Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and determines the alert is not relevant for that prescription for that patient and fills the prescription as originally written."},
+{ "code" : "1C", "description" : "Filled, With Different Dose" , "longDescription" : "Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and fills the prescription with a different dose than was originally prescribed."},
+{ "code" : "1D", "description" : "Filled, With Different Directions" , "longDescription" : "Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and fills the prescription with different directions than were originally prescribed."},
+{ "code" : "1E", "description" : "Filled, With Different Drug" , "longDescription" : "Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and fills the prescription with a different drug than was originally prescribed."},
+{ "code" : "1F", "description" : "Filled, With Different Quantity" , "longDescription" : "Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and fills the prescription with a different quantity than was originally prescribed."},
+{ "code" : "1G", "description" : "Filled, With Prescriber Approval" , "longDescription" : "Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and fills the prescription after consulting with or obtaining approval from the prescriber."},
+{ "code" : "1H", "description" : "Brand-to-Generic Change" , "longDescription" : "Action whereby a pharmacist dispenses the generic formulation of an originally prescribed branded product. Allowed, often mandated, unless the prescriber indicates 'Do Not Substitute' on the prescription"},
+{ "code" : "1J", "description" : "XRx-to-OTC Change" , "longDescription" : "Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert) fills the prescription with an over-the-counter product in lieu of the originally prescribed prescription-only product."},
+{ "code" : "1K", "description" : "Filled with Different Dosage Form" , "longDescription" : "Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert) and fills the prescription with a different dosage form than was originally prescribed."},
+{ "code" : "2A", "description" : "Prescription Not Filled" , "longDescription" : "Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert) and determines that the prescription should not be filled as written."},
+{ "code" : "2B", "description" : "Not Filled, Directions Clarified" , "longDescription" : "Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert), consults with the prescriber or using professional judgment, does not fill the prescription and counsels the patient as to the prescriber’s instructions."},
+{ "code" : "3A", "description" : "Recommendation Accepted" , "longDescription" : "Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert), recommends a more appropriate product or regimen then dispenses the alternative after consultation with the prescriber."},
+{ "code" : "3B", "description" : "Recommendation Not Accepted" , "longDescription" : "Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert), recommends a more appropriate product or regimen but the prescriber does not concur."},
+{ "code" : "3C", "description" : "Discontinued Drug" , "longDescription" : "Cognitive service involving the pharmacist’s review of drug therapy that results in the removal of a medication from the therapeutic regimen."},
+{ "code" : "3D", "description" : "Regimen Changed" , "longDescription" : "Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert), recommends a more appropriate regimen then dispenses the recommended medication(s) after consultation with the prescriber."},
+{ "code" : "3E", "description" : "Therapy Changed" , "longDescription" : "Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert), recommends a more appropriate product or regimen then dispenses the alternative after consultation with the prescriber."},
+{ "code" : "3F", "description" : "Therapy Changed-cost increased acknowledged" , "longDescription" : "Code indicating a cognitive service. The pharmacist reviews and evaluates a therapeutic issue (alert), recommends a more appropriate product or regimen acknowledging that a cost increase will be incurred, then dispenses the alternative after consultation with the prescriber."},
+{ "code" : "3G", "description" : "XDrug Therapy Unchanged" , "longDescription" : "Cognitive service whereby the pharmacist reviews and evaluates a therapeutic issue (alert), consults with the prescriber or uses professional judgment and subsequently fills the prescription as originally written."},
+{ "code" : "3H", "description" : "Follow-Up/Report" , "longDescription" : "Code indicating that additional follow through by the pharmacist is required"},
+{ "code" : "3J", "description" : "Patient Referral" , "longDescription" : "Code indicating the referral of a patient to another health care provider following evaluation by the pharmacist."},
+{ "code" : "3K", "description" : "Instructions Understood" , "longDescription" : "Indicator used to convey that the patient affirmed understanding of the instructions provided by the pharmacist regarding the use and handling of the medication dispensed."},
+{ "code" : "3M", "description" : "Compliance Aid Provided" , "longDescription" : "Cognitive service whereby the pharmacist supplies a product that assists the patient in complying with instructions for taking medications."},
+{ "code" : "3N", "description" : "Medication Administered" , "longDescription" : "Cognitive service whereby the pharmacist performs a patient care activity by personally administering the medication."},
+{ "code" : "4A", "description" : "Prescribed with acknowledgements" , "longDescription" : "Physician is prescribing this medication with knowledge of the potential conflict."}
+]}
+
+
+{ "elementIds" : ["A46-1S", "968-JF"],
+    "codes": [
+{ "code" : "AL", "description" : "Age Limits" , "longDescription" : "Indicator used to convey that age constraints apply to the coverage of the specified product or list of products, to limit use to certain populations based on cost and availability of appropriate alternative therapies."},
+{ "code" : "CP", "description" : "Copay" , "longDescription" : "Indicator used to convey that the patient is responsible for a fixed dollar amount (copay) for the specified product or list of products regardless of the patient’s current benefit status, product selection or network selection."},
+{ "code" : "DE", "description" : "Product Coverage Exclusion" , "longDescription" : "Indicator used to convey that the specified product or a list of products is excluded from being paid by the plan rules."},
+{ "code" : "FM", "description" : "Formulary" , "longDescription" : "Indicator used to convey a list maintained and provided by a health plan, pharmacy benefit manager or payer that identifies products/prescription drugs as covered, covered with limitations and/or prior authorization, or not covered. The formulary may identify alternate products for substitution of non-covered products."},
+{ "code" : "GI", "description" : "General Info" , "longDescription" : "Indicator used to convey information related to the administration of the formulary by the health plan, pharmacy benefit manager or payer including information for contact, prior authorization and appeals."},
+{ "code" : "GL", "description" : "Gender Limits" , "longDescription" : "Indicator used to convey that gender constraints apply to the coverage of the specified product or list of products, i.e., the product is allowed only for males or only for females."},
+{ "code" : "PA", "description" : "Prior Authorization" , "longDescription" : "Indicator used to convey that coverage of a product or list of products is dependant upon the prescriber submitting the request for coverage (including specified, required documentation) to the payer/plan or designated utilization management organization for approval/authorization prior to ordering/dispensing the product."},
+{ "code" : "PR", "description" : "Prior Authorization Processor" , "longDescription" : "Indicator used to convey who is processing the electronic prior authorization."},
+{ "code" : "QL", "description" : "Quantity Limits" , "longDescription" : "Indicator used to convey that quantity constraints apply to the coverage of the specified product or list of products, e.g. the maximum allowed quantity of Viagra is 3 tablets per month."},
+{ "code" : "ST", "description" : "Step Therapy" , "longDescription" : "Indicator used to convey that step therapy constraints apply to the coverage of the specified product or list of products. The step medications are not listed."}
+]}
+
+
+{ "elementIds" : ["342-HC"],
+    "codes": [
+{ "code" : "01" , "description" : "Delivery Cost" , "longDescription" : "An indicator which signifies the amount claimed for the costs related to the delivery of a product or service."},
+{ "code" : "02" , "description" : "Shipping Cost" , "longDescription" : "The amount claimed for transportation of an item."},
+{ "code" : "03" , "description" : "Postage Cost" , "longDescription" : "The amount claimed for the mailing of an item."},
+{ "code" : "04" , "description" : "Administrative Cost" , "longDescription" : "An indicator conveying the following amount is related to the cost of activities such as utilization review, premium collection, claims processing, quality assurance, and risk management for purposes of insurance."},
+{ "code" : "05" , "description" : "Incentive" , "longDescription" : "An indicator which signifies the dollar amount paid by the other payer which is related to additional fees or compensations paid as an inducement for an action taken by the provider (e.g. collection of survey data, counseling plan enrollees)."},
+{ "code" : "06" , "description" : "Cognitive Service" , "longDescription" : "An indicator which signifies the dollar amount paid by the other payer which is related to the pharmacist's interaction with a patient or caregiver that is beyond the traditional dispensing/patient instruction activity (e.g. therapeutic regimen review; recommendation for additional, fewer or different therapeutic choices)."},
+{ "code" : "07" , "description" : "Drug Benefit" , "longDescription" : "An indicator which signifies the dollar amount paid by the other payer which is related to the plan's drug benefit."},
+{ "code" : "09" , "description" : "Compound Preparation Cost Submitted" , "longDescription" : "The amount claimed for the preparation of the compound."},
+{ "code" : "10" , "description" : "Sales Tax" , "longDescription" : "An Indicator which signifies the dollar amount paid by the other payer which is related to Sales Tax."},
+{ "code" : "11" , "description" : "Medication Administration" , "longDescription" : "An indicator which signifies the dollar amount paid by the other payer which is related to the administration of the medication."}
+]}
+
+{ "elementIds" : ["479-H8", "564-J3"],
+    "codes": [
+{ "code" : "01" , "description" : "Delivery Cost" , "longDescription" : "An indicator which signifies the amount claimed for the costs related to the delivery of a product or service."},
+{ "code" : "02" , "description" : "Shipping Cost" , "longDescription" : "The amount claimed for transportation of an item."},
+{ "code" : "03" , "description" : "Postage Cost" , "longDescription" : "The amount claimed for the mailing of an item."},
+{ "code" : "04" , "description" : "Administrative Cost" , "longDescription" : "An indicator conveying the following amount is related to the cost of activities such as utilization review, premium collection, claims processing, quality assurance, and risk management for purposes of insurance."},
+{ "code" : "09" , "description" : "Compound Preparation Cost Submitted" , "longDescription" : "The amount claimed for the preparation of the compound."},
+{ "code" : "11" , "description" : "Medication Administration" , "longDescription" : "An indicator which signifies the dollar amount paid by the other payer which is related to the administration of the medication."}
+]}
+
+
+{ "elementIds" : ["306-C6"],
+    "codes": [
+{ "code" : "0" , "description" : "Not Specified" , "longDescription" : "*Prescription Transfer Standard Used for transfer of prescriptions on behalf of health plans. For Retail Transfer, values in this field will be based upon agreement between trading partners."},
+{ "code" : "1" , "description" : "Cardholder" , "longDescription" : "The individual that is enrolled in and receives benefits from a health plan. Prescription Transfer Standard Used for transfer of prescriptions on behalf of health plans. For Retail Transfer, values in this field will be based upon agreement between trading partners."},
+{ "code" : "2" , "description" : "Spouse" , "longDescription" : "Patient is the husband/wife/partner of the cardholder. Prescription Transfer Standard Used for transfer of prescriptions on behalf of health plans. For Retail Transfer, values in this field will be based upon agreement between trading partners."},
+{ "code" : "3" , "description" : "Child" , "longDescription" : "Patient is a child of the cardholder. Prescription Transfer Standard Used for transfer of prescriptions on behalf of health plans. For Retail Transfer, values in this field will be based upon agreement between trading partners."},
+{ "code" : "4" , "description" : "Other" , "longDescription" : "Relationship to cardholder is not precise. Prescription Transfer Standard Used for transfer of prescriptions on behalf of health plans. For Retail Transfer, values in this field will be based upon agreement between trading partners."},
+{ "code" : "5" , "description" : "Student" , "longDescription" : "A dependent child enrolled in school Only used in Prescription Transfer Standard. Used for transfer of prescriptions on behalf of health plans. For Retail Transfer, values in this field will be based upon agreement between trading partners."},
+{ "code" : "6" , "description" : "Disabled Dependent" , "longDescription" : "A dependent, regardless of age, who is disabled. Only used in Prescription Transfer Standard *Used for transfer of prescriptions on behalf of health plans. For Retail Transfer, values in this field will be based upon agreement between trading partners."},
+{ "code" : "7" , "description" : "Adult Dependent" , "longDescription" : "A dependent determined to be an adult. Parents fall under this category Only used in Prescription Transfer Standard. Used for transfer of prescriptions on behalf of health plans. For Retail Transfer, values in this field will be based upon agreement between trading partners."},
+{ "code" : "8" , "description" : "Significant Other" , "longDescription" : "Partner other than the spouse Only used in Prescription Transfer Standard. Used for transfer of prescriptions on behalf of health plans. For Retail Transfer, values in this field will be based upon agreement between trading partners."}
+]}
+
+{ "elementIds" : ["143-UW", "B50-8P"],
+    "codes": [
+{ "code" : "0" , "description" : "Not Specified" , "longDescription" : "Prescription Transfer Standard Used for transfer of prescriptions on behalf of health plans. For Retail Transfer, values in this field will be based upon agreement between trading partners."},
+{ "code" : "1" , "description" : "Cardholder" , "longDescription" : "The individual that is enrolled in and receives benefits from a health plan. Prescription Transfer Standard Used for transfer of prescriptions on behalf of health plans. For Retail Transfer, values in this field will be based upon agreement between trading partners."},
+{ "code" : "2" , "description" : "Spouse" , "longDescription" : "Patient is the husband/wife/partner of the cardholder. Prescription Transfer Standard Used for transfer of prescriptions on behalf of health plans. For Retail Transfer, values in this field will be based upon agreement between trading partners."},
+{ "code" : "3" , "description" : "Child" , "longDescription" : "Patient is a child of the cardholder. Prescription Transfer Standard Used for transfer of prescriptions on behalf of health plans. For Retail Transfer, values in this field will be based upon agreement between trading partners."},
+{ "code" : "4" , "description" : "Other" , "longDescription" : "Relationship to cardholder is not precise. Prescription Transfer Standard Used for transfer of prescriptions on behalf of health plans. For Retail Transfer, values in this field will be based upon agreement between trading partners."}
+]}
+
+{ "elementIds" : ["112-AN"],
+    "codes": [
+
+{ "code" : "A", "description" : "Approved" , "longDescription" : "Code indicating that the transaction has been approved"},
+{ "code" : "B", "description" : "Benefit" , "longDescription" : "Code indicating benefit information returned"},
+{ "code" : "C", "description" : "Captured" , "longDescription" : "Code indicating that the transaction had been captured"},
+{ "code" : "D", "description" : "Duplicate of Paid" , "longDescription" : "Code indicating that the transaction was paid in a previously submitted transaction"},
+{ "code" : "F", "description" : "PA Deferred" , "longDescription" : "Code indicating that the prior authorization transaction cannot be processed until additional information is obtained"},
+{ "code" : "P", "description" : "Paid" , "longDescription" : "Code indicating that the transaction has been adjudicated using plan rules and was paid"},
+{ "code" : "Q", "description" : "Duplicate of Capture" , "longDescription" : "Code indicating that the transaction had been previously captured"},
+{ "code" : "R", "description" : "Rejected" , "longDescription" : "Code indicating that the transaction has been denied/rejected"},
+{ "code" : "S", "description" : "Duplicate of Approved" , "longDescription" : "Code indicating that the transaction was previously approved"}
+]}
+
+{ "elementIds" : ["981-JV"],
+    "codes": [
+
+{ "code" : "F", "description" : "Full Replace" , "longDescription" : "A total substitute of the existing file."},
+{ "code" : "D", "description" : "Delete" , "longDescription" : "Remove the existing file."},
+{ "code" : "U", "description" : "Update" , "longDescription" : "Modify an existing file."},
+{ "code" : "O", "description" : "Original Submission (New)" , "longDescription" : "A new file."},
+{ "code" : "C", "description" : "Correction/Adjustment to a previous batch" , "longDescription" : "Modify a previously submitted batch."},
+{ "code" : "D", "description" : "Deletion of a previous batch" , "longDescription" : "Removal of a previously submitted batch."},
+{ "code" : "P", "description" : "Replacement of a previous batch (delete followed by add)" , "longDescription" : "The removal of an existing batch previously submitted with the addition of the submitted batch immediately following."}
+]}
+
+
+{ "elementIds" : ["986-KJ"],
+    "codes": [
+
+{ "code" : "1A", "description" : "Initial Audit Request", "longDescription" : ""},
+{ "code" : "1B", "description" : "Acknowledgement of Initial Audit Request", "longDescription" : ""},
+{ "code" : "1C", "description" : "Audit Response with Data", "longDescription" : ""},
+{ "code" : "1D", "description" : "Acknowledgement of Response Data", "longDescription" : ""},
+{ "code" : "1E", "description" : "Preliminary Audit Findings", "longDescription" : ""},
+{ "code" : "1F", "description" : "Acknowledgement of Preliminary Audit Findings", "longDescription" : ""},
+{ "code" : "1G", "description" : "Submission of Dispute Data", "longDescription" : ""},
+{ "code" : "1H", "description" : "Acknowledgement of Dispute Data", "longDescription" : ""},
+{ "code" : "1K", "description" : "Final Audit Findings", "longDescription" : ""},
+{ "code" : "1L", "description" : "Acknowledgement of Final Audit Findings", "longDescription" : ""},
+{ "code" : "1M", "description" : "Notice of Intent to Appeal", "longDescription" : ""},
+{ "code" : "1N", "description" : "Acknowledgement of Intent to Appeal", "longDescription" : ""},
+{ "code" : "1P", "description" : "Submission of Appeal Data", "longDescription" : ""},
+{ "code" : "1Q", "description" : "Acknowledgement of Appeal Data", "longDescription" : ""},
+{ "code" : "1R", "description" : "Identification of Hearing Date", "longDescription" : ""},
+{ "code" : "1S", "description" : "Acknowledgement of Hearing Date", "longDescription" : ""},
+{ "code" : "1T", "description" : "Post Audit Determination", "longDescription" : ""},
+{ "code" : "1U", "description" : "Acknowledgement of Post Audit Determination", "longDescription" : ""},
+{ "code" : "1AA", "description" :"Request for Audit Change", "longDescription" : ""},
+{ "code" : "1AB", "description" :"Acknowledgement", "longDescription" : ""},
+{ "code" : "FRE", "description" :"Formulary And Benefit Response", "longDescription" : ""},
+{ "code" : "FRM", "description" :"Formulary And Benefit Load", "longDescription" : ""}
+]}
+
+{ "elementIds" : ["880-K6"],
+    "codes": [
+{ "code" : "T", "description" : "Transaction", "longDescription" : "Code indicating the file contains submission transactions"},
+{ "code" : "R", "description" : "Response", "longDescription" : "Code indicating the file contains response transactions"},
+{ "code" : "E", "description" : "Error", "longDescription" : "Code indicating the entire file of transactions has been rejected by the receiver of the file"}
+]}
+
+
+
+{ "elementIds" : ["600-28"],
+    "codes": [
+{ "code" : "A", "description" : "Each", "longDescription" : "Being one or individual."},
+{ "code" : "GM", "description": " Grams", "longDescription" : "A metric unit of mass equal to one thousandth of a kilogram."},
+{ "code" : "ML", "description": " Milliliters", "longDescription" : "A metric measure of volume equal to one thousandth of a liter."}
+]}
+
+
+{ "elementIds" : ["102-A2"],
+    "codes": [
+{ "code" : "20", "description" : "Version 2.0", "longDescription" : ""},
+{ "code" : "21", "description" : "Version 2.1", "longDescription" : ""},
+{ "code" : "22", "description" : "Version 2.2", "longDescription" : ""},
+{ "code" : "22", "description" : "Version 22", "longDescription" : ""},
+{ "code" : "23", "description" : "Version 2.3", "longDescription" : ""},
+{ "code" : "30", "description" : "Version 3.0", "longDescription" : ""},
+{ "code" : "30", "description" : "Version 30", "longDescription" : ""},
+{ "code" : "31", "description" : "Version 3.1", "longDescription" : ""},
+{ "code" : "32", "description" : "Version 3.2", "longDescription" : ""},
+{ "code" : "33", "description" : "Version 33", "longDescription" : ""},
+{ "code" : "3A", "description" : "Standard Claim/Reversal", "longDescription" : ""},
+{ "code" : "3B", "description" : "Workers Compensation", "longDescription" : ""},
+{ "code" : "3C", "description" : "Medicaid Claim/Reversal", "longDescription" : ""},
+{ "code" : "33", "description" : "Version 3.3", "longDescription" : ""},
+{ "code" : "34", "description" : "Version 3.4", "longDescription" : ""},
+{ "code" : "35", "description" : "Version 3.5", "longDescription" : ""},
+{ "code" : "42", "description" : "Version 4.2", "longDescription" : ""},
+{ "code" : "42", "description" : "Version 42", "longDescription" : ""},
+{ "code" : "43", "description" : "Version 43", "longDescription" : ""},
+{ "code" : "44", "description" : "Version 44", "longDescription" : ""},
+{ "code" : "51", "description" : "Version 5.1", "longDescription" : ""},
+{ "code" : "52", "description" : "Version 5.2", "longDescription" : ""},
+{ "code" : "53", "description" : "Version 5.3", "longDescription" : ""},
+{ "code" : "54", "description" : "Version 5.4", "longDescription" : ""},
+{ "code" : "55", "description" : "Version 5.5", "longDescription" : ""},
+{ "code" : "56", "description" : "Version 5.6", "longDescription" : ""},
+{ "code" : "60", "description" : "Version 6.0", "longDescription" : ""},
+{ "code" : "70", "description" : "Version 7.0", "longDescription" : ""},
+{ "code" : "71", "description" : "Version 7.1", "longDescription" : ""},
+{ "code" : "80", "description" : "Version 8.0", "longDescription" : ""},
+{ "code" : "81", "description" : "Version 8.1", "longDescription" : ""},
+{ "code" : "82", "description" : "Version 8.2", "longDescription" : ""},
+{ "code" : "83", "description" : "Version 8.3", "longDescription" : ""},
+{ "code" : "90", "description" : "Version 9.0", "longDescription" : ""},
+{ "code" : "A0", "description" : "Version A.0", "longDescription" : ""},
+{ "code" : "A1", "description" : "Version A.1", "longDescription" : ""},
+{ "code" : "B0", "description" : "Version B.0", "longDescription" : ""},
+{ "code" : "C0", "description" : "Version C.0", "longDescription" : ""},
+{ "code" : "C1", "description" : "Version C.1", "longDescription" : ""},
+{ "code" : "C2", "description" : "Version C.2", "longDescription" : ""},
+{ "code" : "C4", "description" : "Version C.4", "longDescription" : ""},
+{ "code" : "D0", "description" : "Version D.0", "longDescription" : ""},
+{ "code" : "D1", "description" : "Version D.1", "longDescription" : ""},
+{ "code" : "D2", "description" : "Version D.2", "longDescription" : ""},
+{ "code" : "D3", "description" : "Version D.3", "longDescription" : ""},
+{ "code" : "D4", "description" : "Version D.4", "longDescription" : ""},
+{ "code" : "D5", "description" : "Version D.5", "longDescription" : ""},
+{ "code" : "D6", "description" : "Version D.6", "longDescription" : ""},
+{ "code" : "D7", "description" : "Version D.7", "longDescription" : ""},
+{ "code" : "D8", "description" : "Version D.8", "longDescription" : ""},
+{ "code" : "D9", "description" : "Version D.9", "longDescription" : ""},
+{ "code" : "E0", "description" : "Version E.0", "longDescription" : ""},
+{ "code" : "E1", "description" : "Version E.1", "longDescription" : ""},
+{ "code" : "E2", "description" : "Version E.2", "longDescription" : ""},
+{ "code" : "E3", "description" : "Version E.3", "longDescription" : ""},
+{ "code" : "E4", "description" : "Version E.4", "longDescription" : ""},
+{ "code" : "E5", "description" : "Version E5", "longDescription" : ""},
+{ "code" : "E6", "description" : "Version E6", "longDescription" : ""}
+]}

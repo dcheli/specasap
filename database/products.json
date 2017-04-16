@@ -26,7 +26,7 @@
     productId : "com.dataasap.ccdplusasap",
     operatingSystem : "ios",
     version: "1.0",
-    displayName : "CCD+",
+    displayName : "ACH CCD+ Addenda",
     domain : "finance"
 }
 
@@ -76,7 +76,7 @@
 {
     productId : "com.dataasap.ccdplusasap",
     version: "1.0",
-    displayName : "CCD+"
+    displayName : "ACH CCD+ Addenda"
  
 },{
     productId : "com.dataasap.baiasap",

@@ -43,7 +43,7 @@ public class BAIElementService {
 	public List<BAIElement> getElement(String searchParam, String collectionVersion) {
 		List<BAIElement> elementList = new ArrayList<BAIElement>();
 		if(!("").equals(searchParam)) {
-			String collection = "baiElementsv" + collectionVersion;
+			String collection = "baiElements" + collectionVersion;
 			System.out.println("database is " + db.getCollection(collection).toString());
 			
 			FindIterable<Document> iterable = db.getCollection(collection).find(

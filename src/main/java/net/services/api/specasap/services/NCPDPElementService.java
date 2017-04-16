@@ -41,7 +41,7 @@ public class NCPDPElementService {
 		List<NCPDPElement> elementList = new ArrayList<NCPDPElement>();
 
 		if(!("").equals(searchParam)) {
-			String collection = "ncpdp" + collectionVersion;
+			String collection = "ncpdpElements" + collectionVersion;
 			System.out.println("database is " + db.getCollection(collection).toString());
 			
 			FindIterable<Document> iterable = db.getCollection(collection).find(

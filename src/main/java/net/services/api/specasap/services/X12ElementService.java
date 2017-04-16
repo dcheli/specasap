@@ -41,7 +41,7 @@ public class X12ElementService {
 		List<X12Element> elementList = new ArrayList<X12Element>();
 
 		if(!("").equals(searchParam)) {
-			String collection = "x12" + collectionVersion;
+			String collection = "x12Elements" + collectionVersion;
 
 			FindIterable<Document> iterable = db.getCollection(collection).find(
 				new Document("tags", java.util.regex.Pattern.compile(searchParam, Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE)));

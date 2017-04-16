@@ -43,7 +43,7 @@ public class CCDPlusElementService {
 	public List<CCDPlusElement> getElement(String searchParam, String collectionVersion) {
 		List<CCDPlusElement> elementList = new ArrayList<CCDPlusElement>();
 		if(!("").equals(searchParam)) {
-			String collection = "ccdplus";
+			String collection = "ccdPlusElements";
 			System.out.println("database is " + db.getCollection(collection).toString());
 			
 			FindIterable<Document> iterable = db.getCollection(collection).find(
