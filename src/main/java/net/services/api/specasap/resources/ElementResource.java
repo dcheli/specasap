@@ -20,12 +20,14 @@ import javax.ws.rs.core.UriInfo;
 
 import org.apache.log4j.Logger;
 
+import net.services.api.specasap.model.BAIElement;
 import net.services.api.specasap.model.CCDPlusElement;
 import net.services.api.specasap.model.HL7Element;
 import net.services.api.specasap.model.NCPDPElement;
 import net.services.api.specasap.model.X12Element;
 import net.services.api.specasap.services.NCPDPElementService;
 import net.services.api.specasap.services.X12ElementService;
+import net.services.api.specasap.services.BAIElementService;
 import net.services.api.specasap.services.CCDPlusElementService;
 import net.services.api.specasap.services.HL7ElementService;
 
@@ -98,15 +100,32 @@ public class ElementResource  {
 	@Produces(MediaType.APPLICATION_JSON) 
 	public ArrayList<CCDPlusElement> getCCDPlusElement(@PathParam("searchParam") 
 			@Pattern(regexp = "[a-zA-Z0-9-\\s]+", message="The search parameter contains invalid characters.") String searchParam,
-			@DefaultValue("2") @QueryParam("v") String collectionVersion,
+			@DefaultValue("") @QueryParam("v") String collectionVersion,
 			@Context UriInfo uriInfo,
 			@Context HttpServletRequest request) throws IOException{
-		
+		System.out.println("CCDPlus is being called");
 		final List<CCDPlusElement> elementList = new ArrayList<>();
 		CCDPlusElementService ccdPlusElementService = new CCDPlusElementService(request.getServletContext());
 		List<CCDPlusElement> returnList = ccdPlusElementService.getElement(searchParam, collectionVersion);
 		returnList.forEach(element -> elementList.add(element));
 		return (ArrayList<CCDPlusElement>) elementList;
+	}
+	
+	
+	@GET
+	@Path("/bai/{searchParam}")
+	@Produces(MediaType.APPLICATION_JSON) 
+	public ArrayList<BAIElement> getBAIElement(@PathParam("searchParam") 
+			@Pattern(regexp = "[a-zA-Z0-9-\\s]+", message="The search parameter contains invalid characters.") String searchParam,
+			@DefaultValue("2") @QueryParam("v") String collectionVersion,
+			@Context UriInfo uriInfo,
+			@Context HttpServletRequest request) throws IOException{
+		System.out.println("BAI is being called");
+		final List<BAIElement> elementList = new ArrayList<>();
+		BAIElementService baiElementService = new BAIElementService(request.getServletContext());
+		List<BAIElement> returnList = baiElementService.getElement(searchParam, collectionVersion);
+		returnList.forEach(element -> elementList.add(element));
+		return (ArrayList<BAIElement>) elementList;
 	}
 
 }

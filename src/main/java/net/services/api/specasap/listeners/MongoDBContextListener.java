@@ -34,7 +34,6 @@ public class MongoDBContextListener implements ServletContextListener {
 					servletContext.getInitParameter("MONGODB_AUTH_DATABASE"),
 					servletContext.getInitParameter("MONGODB_PWD").toCharArray());
 		
-			
 			seeds.add(new ServerAddress(new InetSocketAddress(
 				servletContext.getInitParameter("MONGODB_HOST"), 
 					Integer.parseInt(servletContext.getInitParameter("MONGODB_PORT1")))));
