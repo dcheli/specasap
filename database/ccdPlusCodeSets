@@ -1,0 +1,92 @@
+{ "elementIds" : ["Service Class Code"],
+    "codes": [
+{ "code" : "200", "description" : "ACH Entries Mixed Debits and Credits", "longDescription" : ""},
+{ "code" : "220", "description" : "ACH Credits Only", "longDescription" : ""},
+{ "code" : "225", "description" : "ACH Debits Only", "longDescription" : ""},
+{ "code" : "280", "description" : "ACH Automated Account Advices", "longDescription" : ""}
+]}
+
+
+{ "elementIds" : ["Record Type Code"],
+    "codes": [
+{ "code" : "1", "description" : "File Header Record Format", "longDescription" : ""},
+{ "code" : "5", "description" : "Company/Batch Header Record Format", "longDescription" : ""},
+{ "code" : "6", "description" : "Entry Detail Record Format (Consumer and Corporate)", "longDescription" : ""},
+{ "code" : "7", "description" : "Addenda Record Formats", "longDescription" : ""},
+{ "code" : "8", "description" : "Company/Batch Control Record Format", "longDescription" : ""},
+{ "code" : "9", "description" : "File Control Record Format", "longDescription" : ""}
+]} 
+
+
+{ "elementIds" : ["Addenda Type Code"],
+    "codes": [
+{ "code" : "02", "description" : "Point of Sale Entry(POS), Shared Network Transaction (SHR), or Machie Transfer Entry (MTE)", "longDescription" : ""},
+{ "code" : "05", "description" : "Addenda Record", "longDescription" : ""},
+{ "code" : "10", "description" : "1st Addenda Record for IAT Entry", "longDescription" : ""},
+{ "code" : "11", "description" : "2nd Addenda Record for IAT Entry", "longDescription" : ""},
+{ "code" : "12", "description" : "3rd Addenda Record for IAT Entry", "longDescription" : ""},
+{ "code" : "13", "description" : "4th Addenda Record for IAT Entry", "longDescription" : ""},
+{ "code" : "14", "description" : "5th Addenda Record for IAT Entry", "longDescription" : ""},
+{ "code" : "15", "description" : "6th Addenda Record for IAT Entry", "longDescription" : ""},
+{ "code" : "16", "description" : "7th Addenda Record for IAT Entry", "longDescription" : ""},
+{ "code" : "17", "description" : "Addenda Record for IAT Entru Remittance Information", "longDescription" : ""},
+{ "code" : "18", "description" : "Addenda Recrod for IAT Entry Foreign Correspondent Bank Information", "longDescription" : ""},
+{ "code" : "98", "description" : "Notification of Change (COR) Addenda Record and Refused Notification of Change (COR) Addenda Record", "longDescription" : ""},
+{ "code" : "99", "description" : "Return Entry Addenda Record, Dishonored Return Entry Addenda Record, and Contested Dishonored Return Entry Addenda Record", "longDescription" : ""}
+]}
+
+
+{ "elementIds" : ["Standard Entry Class Code"],
+    "codes": [
+{ "code" : "ACK", "description" : "ACH Payment Acknowledgement" , "longDescription" : ""},
+{ "code" : "ADV", "description" : "Automated Accounting Advice" , "longDescription" : ""},
+{ "code" : "ARC", "description" : "Accounts Receivable Entry" , "longDescription" : ""},
+{ "code" : "ATX", "description" : "Financial EDI Acknowledgment" , "longDescription" : ""},
+{ "code" : "BOC", "description" : "Back of Office Conversion Entry" , "longDescription" : ""},
+{ "code" : "CCD", "description" : "Corporate Credit or Debit Entry" , "longDescription" : ""},
+{ "code" : "CIE", "description" : "Customer Initiated Entry" , "longDescription" : ""},
+{ "code" : "COR", "description" : "Notification of Change or Refused Notification of Change" , "longDescription" : ""},
+{ "code" : "CTX", "description" : "Corporat Trade Exchange" , "longDescription" : ""},
+{ "code" : "DNE", "description" : "Death Notification Entry" , "longDescription" : ""},
+{ "code" : "ENR", "description" : "Automated Enrollment Entry" , "longDescription" : ""},
+{ "code" : "IAT", "description" : "International ACH Transactions" , "longDescription" : ""},
+{ "code" : "MTE", "description" : "Machine Transfer Entry" , "longDescription" : ""},
+{ "code" : "POP", "description" : "Point-of-Purchase Entry" , "longDescription" : ""},
+{ "code" : "POS", "description" : "Point-of-Sale Entry" , "longDescription" : ""},
+{ "code" : "PPD", "description" : "Prearranged Payment and Deposit Entry" , "longDescription" : ""},
+{ "code" : "RCK", "description" : "Re-presented Check Entry" , "longDescription" : ""},
+{ "code" : "SHR", "description" : "Shared Network Transaction" , "longDescription" : ""},
+{ "code" : "TEL", "description" : "Telephone-initiated Entry" , "longDescription" : ""},
+{ "code" : "TRC", "description" : "Check truncation Entry" , "longDescription" : ""},
+{ "code" : "TRX", "description" : "Check Truncation Entries Exchange" , "longDescription" : ""},
+{ "code" : "WEB", "description" : "Internet-Initiated/Mobile Entry" , "longDescription" : ""},
+{ "code" : "XCK", "description" : " = Destroyed Check Entry" , "longDescription" : ""},
+]}
+
+{ "elementIds" : ["Addenda Record Indicator"],
+    "codes": [
+{ "code" : "0", "description" : "No Addenda Record follows the Entry", "longDescription" : ""},
+{ "code" : "1", "description" : "One or more Addenda Records follow the Entry", "longDescription" : ""}
+]}
+
+{ "elementIds" : ["Transaction Code"],
+    "codes": [
+{ "code" : "22", "description" : "Checking Credit", "longDescription" : "" },
+{ "code" : "23", "description" : "Checking Credit Prenote", "longDescription" : "" },
+{ "code" : "24", "description" : "Zero dollar with remittance into a Checking Account", "longDescription" : "" },
+{ "code" : "27", "description" : "Checking Debit", "longDescription" : "" },
+{ "code" : "28", "description" : "Checking Debit Prenote", "longDescription" : "" },
+{ "code" : "32", "description" : "Savings Credit", "longDescription" : "" },
+{ "code" : "33", "description" : "Savings Credit Prenote", "longDescription" : "" },
+{ "code" : "34", "description" : "Zero dollar with remittance into a Savings Account", "longDescription" : "" },
+{ "code" : "37", "description" : "Savings Debit", "longDescription" : "" },
+{ "code" : "38", "description" : "Savings Debit Prenote", "longDescription" : "" }  
+]}
+
+{ "elementIds" : ["Originator Status Code"],
+    "codes": [
+{ "code" : "0", "description" : "ADV File prepared by an ACH Operator", "longDescription" : "" },
+{ "code" : "1", "description" : "This code identifies the Originator as a depository financial institution", "longDescription" : "" },
+{ "code" : "2", "description" : "This code identifies the Originator as a Federal Government entity or agency", "longDescription" : "" }
+ 
+]}

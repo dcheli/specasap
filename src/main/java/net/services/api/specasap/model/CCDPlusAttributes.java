@@ -3,6 +3,7 @@ package net.services.api.specasap.model;
 public class CCDPlusAttributes {
 	
 	String segmentName;
+	String segmentId;
 	String elementPosition;
 	String elementName;
 	String usage;
@@ -75,6 +76,14 @@ public class CCDPlusAttributes {
 
 	public void setLength(String length) {
 		this.length = length;
+	}
+
+	public String getSegmentId() {
+		return segmentId;
+	}
+
+	public void setSegmentId(String segmentId) {
+		this.segmentId = segmentId;
 	}
 
 }

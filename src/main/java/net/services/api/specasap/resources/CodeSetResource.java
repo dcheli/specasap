@@ -33,14 +33,17 @@ public class CodeSetResource {
 	public CodeSet getCodeSet(
 			@PathParam("searchParam") @Pattern(regexp = "[a-zA-Z0-9-\\s]+", message="The search parameter contains invalid characters.") String searchParam,
 			@PathParam("domain") @Pattern(regexp = "[a-zA-Z0-9-\\s]+", message="The search parameter contains invalid characters.") String domain,
+			@QueryParam("v") String collectionVersion,
 			@Context UriInfo uriInfo,
 			@Context HttpServletRequest request) throws IOException{
-			System.out.print("searchParamater is " + searchParam);
-			System.out.print("domain is " + domain);
+		
+		System.out.println("searchParamater is " + searchParam);
+		System.out.println("domain is " + domain);
+		System.out.println("version is " + collectionVersion);
 
 		CodeSet codeSet = new CodeSet();
 		CodeSetService codeSetService = new CodeSetService(request.getServletContext());
-		codeSet = codeSetService.getCodeSet(domain, searchParam);
+		codeSet = codeSetService.getCodeSet(domain, collectionVersion, searchParam);
 		
 		
 		return codeSet;

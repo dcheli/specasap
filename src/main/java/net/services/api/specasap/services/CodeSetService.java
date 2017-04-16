@@ -37,20 +37,24 @@ public class CodeSetService {
 		}
 	}
 	
-	public CodeSet getCodeSet(String domain, String searchParam) {
+	public CodeSet getCodeSet(String domain, String version, String searchParam) {
 		
 		if(!("").equals(domain) && !("").equals(searchParam)) {
 			String collection  = domain;
-		/*
-			if(domain.equals("ncpdpD0"))
-				collection = "ncpdpD0CodeSets";
-			else if (domain.equals("x125010"))
-				collection = "x125010CodeSets";
-			else if (domain.equals("hl7v2"))
-				collection = "hl7v2CodeSets";
-			else if (domain.equals("ccdPlusCodeSets"))
+		
+			if(domain.equals("ncpdp"))
+				collection = "ncpdpCodeSets" + version;
+			else if (domain.equals("x12"))
+				collection = "x12CodeSets" + version;
+			else if (domain.equals("hl7"))
+				collection = "hl7CodeSets" + version;
+			else if (domain.equals("ccdplus"))
 				collection = "ccdPlusCodeSets";
-*/
+			else if (domain.equals("bai"))
+				collection = "baiCodeSets" + version;
+
+			System.out.println("Collection being searched is " + collection);
+			
 			FindIterable<Document> iterable = db.getCollection(collection).find(
 				new Document("elementIds", java.util.regex.Pattern.compile(searchParam, Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE)));
 		
