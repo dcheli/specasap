@@ -1,3 +1,227 @@
+{ "elementIds" : ["498-PA"],
+    "codes" :
+    [ 
+    { "code" : "1", "description" : "Initial" , "longDescription" : "Status indicating that an event, transaction, item, etc. is occurring at the very beginning; first."},
+    { "code" : "2", "description" : "Reauthorization" , "longDescription" : "A status indicating a renewal of an authorization."},
+    { "code" : "3", "description" : "Deferred" , "longDescription" : "Status indicating request is related to a deferred response status which indicates that the final determination of the previous prior authorization request cannot be made until additional medical information is obtained. The request contains the additional medical information requested in the deferred response."}
+ ]}
+ 
+ 
+ { "elementIds" : ["455-EM"],
+    "codes" :
+    [ 
+    { "code" : "1", "description" : "Rx Billing" , "longDescription" : "Transaction is a billing for a prescription or OTC drug product."},
+    { "code" : "2", "description" : "Service Billing" , "longDescription" : "Transaction is a billing for a professional service performed."}
+ ]}
+ 
+
+{ "elementIds" : ["373-2U"],
+    "codes" :
+    [ 
+    { "code" : "0", "description" : "Not Specified" , "longDescription" : "Status indicating that an event, transaction, item, etc. is occurring at the very beginning; first."},
+    { "code" : "1", "description" : "Initial" , "longDescription" : "Status indicating that an event, transaction, item, etc. is occurring at the very beginning; first."},
+    { "code" : "2", "description" : "Revision" , "longDescription" : "A status indicating a modification."},
+    { "code" : "3", "description" : "Recertification" , "longDescription" : "A status indicating a renewal of a certification."}
+ ]}
+ 
+ { "elementIds" : ["549-7F"],
+    "codes" :
+    [ 
+
+{ "code" : "01", "description" : "Switch" , "longDescription" : "An entity that accepts an electronic transaction from another organization and electronically routes the transaction to a receiving entity. A switch may perform value added services including detailed editing/messaging of input/output data for validity and accuracy and translating data from one format to another."},
+{ "code" : "02", "description" : "Intermediary" , "longDescription" : "A code indicating an organization that intercepts a request (or reply), performs a value-added function and then forwards the enhanced request (or reply) to the original target."},
+{ "code" : "03", "description" : "Processor/PBM" , "longDescription" : "Entity that processes the data submitted by a provider of pharmacy services for the purpose of receiving eligibility and coverage determination and/or payment."},
+{ "code" : "04", "description" : "REMS" , "longDescription" : "An FDA requirement of manufacturers to ensure that the benefits of a drug or biological product outweigh its risks."},
+{ "code" : "05", "description" : "PDMP" , "longDescription" : "A program which requires collection of designated data on reportable products dispensed within a given state."},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Different from those implied or specified."}
+]}
+ 
+ 
+ { "elementIds" : ["103-A3"],
+    "codes" :
+    [ 
+{ "code" : "B1", "description" : "Claim Billing", "longDescription" :""},
+{ "code" : "B2", "description" : "Claim Reversal", "longDescription" :""},
+{ "code" : "B3", "description" : "Claim Rebill", "longDescription" :""},
+{ "code" : "C1", "description" : "Controlled Substance Reporting", "longDescription" :""},
+{ "code" : "C2", "description" : "Controlled Substance Reporting Reversal", "longDescription" :""},
+{ "code" : "C3", "description" : "Controlled Substance Reporting Rebill", "longDescription" :""},
+{ "code" : "D1", "description" : "Predetermination of Benefits", "longDescription" :""},
+{ "code" : "E1", "description" : "Eligibility Verification", "longDescription" :""},
+{ "code" : "N1", "description" : "Information Reporting", "longDescription" :""},
+{ "code" : "N2", "description" : "Information Reporting Reversal", "longDescription" :""},
+{ "code" : "N3", "description" : "Information Reporting Rebill", "longDescription" :""},
+{ "code" : "P1", "description" : "P.A. Request & Billing", "longDescription" :""},
+{ "code" : "P2", "description" : "P.A. Reversal", "longDescription" :""},
+{ "code" : "P3", "description" : "P.A. Inquiry", "longDescription" :""},
+{ "code" : "P4", "description" : "P.A. Request Only", "longDescription" :""},
+{ "code" : "S1", "description" : "Service Billing", "longDescription" :""},
+{ "code" : "S2", "description" : "Service Reversal", "longDescription" :""},
+{ "code" : "S3", "description" : "Service Rebill", "longDescription" :""},
+{ "code" : "F1", "description" : "Financial Information Reporting Inquiry", "longDescription" :""},
+{ "code" : "F2", "description" : "Financial Information Reporting Update", "longDescription" :""},
+{ "code" : "F3", "description" : "Financial Information Reporting Exchange", "longDescription" :""},
+{ "code" : "F4", "description" : "Financial Information Reporting Suspense", "longDescription" :""},
+{ "code" : "F5", "description" : "Financial Information Reporting Release", "longDescription" :""}
+]}
+ 
+ 
+ { "elementIds" : ["420-DK"],
+    "codes" :
+    [ 
+{ "code" : "1", "description" : "No Override", "longDescription" :""},
+{ "code" : "2", "description" : "Other Override", "longDescription" :""},
+{ "code" : "3", "description" : "Vacation Supply", "longDescription" :"The pharmacist is indicating that the cardholder has requested a vacation supply of the medicine."},
+{ "code" : "4", "description" : "Lost Prescription", "longDescription" :"The pharmacist is indicating that the cardholder has requested a replacement of medication that has been lost."},
+{ "code" : "5", "description" : "Therapy Change", "longDescription" :"The pharmacist is indicating that the physician has determined that a change in therapy was required; either that the medication was used faster than expected, or a different dosage form is needed, etc."},
+{ "code" : "6", "description" : "Starter Dose", "longDescription" :"The pharmacist is indicating that the previousmedication was a starter dose and now additional medication is needed to continue treatment."},
+{ "code" : "7", "description" : "Medically Necessary", "longDescription" :"The pharmacist is indicating that this medication has been determined by the physician to be medically necessary."},
+{ "code" : "8", "description" : "Process Compound For Approved Ingredients", "longDescription" :"Process Compound For Approved Ingredients"},
+{ "code" : "9", "description" : "Encounters", "longDescription" :""},
+{ "code" : "10", "description" : "Meets Plan Limitations", "longDescription" :"The pharmacy certifies that the transaction is in compliance with the program’s policies and rules that are specific to the particular product being billed."},
+{ "code" : "11", "description" : "Certification on File", "longDescription" :"The supplier’s guarantee that a copy of the paper certification, signed and dated by the physician, is on file at the supplier’s office."},
+{ "code" : "12", "description" : "DME Replacement Indicator", "longDescription" :"Indicator that this certification is for a DME item replacing a previously purchased DME item."},
+{ "code" : "13", "description" : "Payer Recognized Emergency/Disaster Assistance Request", "longDescription" :" The pharmacist is indicating that an override is needed based on an emergency/disaster situation recognized by the payer."},
+{ "code" : "14", "description" : "Long Term Care Leave of Absence", "longDescription" :"The pharmacist is indicating that the cardholder requires a short-fill of a prescription due to a leave of absence from the Long Term Care (LTC) facility."},
+{ "code" : "15", "description" : "Long Term Care Replacement Medication", "longDescription" :"Medication has been contaminated during administration in a Long Term Care setting."},
+{ "code" : "16", "description" : "Long Term Care Emergency box (kit) or automated dispensing machine", "longDescription" :"Indicates that the transaction is a replacement supply for doses previously dispensed to the patient after hours."},
+{ "code" : "17", "description" : "Long Term Care Emergency supply remainder", "longDescription" :"Indicates that the transaction is for the remainder of the drug originally begun from an Emergency Kit."},
+{ "code" : "18", "description" : "Long Term Care Patient Admit/Readmit Indicator", "longDescription" :"Indicates that the transaction is for a new dispensing of medication due to the patient’s admission or readmission status."},
+{ "code" : "19", "description" : "Split Billing", "longDescription" :"indicates the quantity dispensed is the remainder billed to a subsequent payer when Medicare Part A expires. Used only in long-term care settings."},
+{ "code" : "20", "description" : "340B", "longDescription" :"Indicates that, prior to providing service, the pharmacy has determined the product being billed is purchased pursuant to rights available under Section 340B of the Public Health Act of 1992 including sub-ceiling purchases authorized by Section 340B (a)(10) and those made through the Prime Vendor Program (Section 340B(a)(8))."},
+{ "code" : "21", "description" : "LTC dispensing: 14 days or less not applicable", "longDescription" :"Fourteen day or less dispensing is not applicable due to CMS exclusion and/or manufacturer packaging may not be broken or special dispensing methodology (i.e vacation supply, leave of absence, ebox, spitter dose). Medication quantities are dispensed as billed."},
+{ "code" : "22", "description" : "LTC dispensing: 7 days", "longDescription" :"Pharmacy dispenses medication in 7 day supplies"},
+{ "code" : "23", "description" : "LTC dispensing: 4 days", "longDescription" :"Pharmacy dispenses medication in 4 day supplies"},
+{ "code" : "24", "description" : "LTC dispensing: 3 days", "longDescription" :"Pharmacy dispenses medication in 3 day supplies"},
+{ "code" : "25", "description" : "LTC dispensing: 2 days", "longDescription" :"Pharmacy dispenses medication in 2 day supplies"},
+{ "code" : "26", "description" : "LTC dispensing: 1 day", "longDescription" :"Pharmacy or remote (multiple shifts)dispenses medication in 1 day supplies"},
+{ "code" : "27", "description" : "LTC dispensing: 4-3 days", "longDescription" :"Pharmacy dispenses medication in 4 day, then 3 day supplies"},
+{ "code" : "28", "description" : "LTC dispensing: 2-2-3 days", "longDescription" :"Pharmacy dispenses medication in 2 day, then 2 day, then 3 day supplies"},
+{ "code" : "29", "description" : "LTC dispensing: daily and 3-day weekend", "longDescription" :"Pharmacy or remote dispensed daily during the week and combines multiple days dispensing for weekends."},
+{ "code" : "30", "description" : "LTC dispensing: Per shift dispensing", "longDescription" :"Remote dispensing per shift (multiple med passes)"},
+{ "code" : "31", "description" : "LTC dispensing: Per med pass dispensing", "longDescription" :"Remote dispensing per med pass"},
+{ "code" : "32", "description" : "LTC dispensing: PRN on demand", "longDescription" :"Remote dispensing on demand as needed"},
+{ "code" : "33", "description" : "LTC dispensing: 7 day or less cycle not otherwise represented", "longDescription" :" 7 day or less cycle not otherwise represented"},
+{ "code" : "34", "description" : "LTC dispensing: 14 days dispensing", "longDescription" :"Pharmacy dispenses medication in 14 day supplies"},
+{ "code" : "35", "description" : "LTC dispensing: 8-14 day dispensing method not listed above", "longDescription" :"8-14 Day dispensing cycle not otherwise represented"},
+{ "code" : "36", "description" : "LTC dispensing: dispensed outside short cycle", "longDescription" : "Claim was originally submitted to a payer other than Medicare Part D and was subsequently determined to be Part D."},
+{ "code" : "42", "description" : "Prescriber ID Submitted is valid and prescribing requirements have been validated.", "longDescription" :"Prescriber ID Submitted is valid and prescribing requirements have been validated."},
+{ "code" : "43", "description" : "Prescriber's DEA is active with DEA Authorized Prescriptive Right.", "longDescription" :"Prescriber's DEA is active with DEA Authorized Prescriptive Right."},
+{ "code" : "44", "description" : "For prescriber ID submitted, associated prescriber DEA recently licensed or re-activated", "longDescription" :"For prescriber ID submitted, associated prescriber DEA recently licensed or re-activated"},
+{ "code" : "45", "description" : "Prescriber's DEA is a valid Hospital DEA with Suffix and has prescriptive authority for this drug DEA Schedule", "longDescription" :"Prescriber's DEA is a valid Hospital DEA with Suffix and has prescriptive authority for this drug DEA Schedule"},
+{ "code" : "46", "description" : "Prescriber's DEA has prescriptive authority for this drug DEA Schedule", "longDescription" :"Prescriber's DEA has prescriptive authority for this drug DEA Schedule"},
+{ "code" : "47", "description" : "Shortened Days Supply Fill", "longDescription" :"only used to request an override to plan limitations when a shortened days supply is being dispensed."},
+{ "code" : "48", "description" : "Fill Subsequent to a Shortened Days Supply Fill", "longDescription" :"Only used to request an override to plan limitations when a fill subsequent to a shortened days supply is being dispensed."},
+{ "code" : "49", "description" : "Prescriber does not currently have an active Type 1 NPI", "longDescription" :"Prescriber does not currently have an active Type 1 NPI"},
+{ "code" : "50", "description" : "Prescriber’s active Medicare Fee For Service enrollment status has been validated", "longDescription" :"Prescriber’s active Medicare Fee For Service enrollment status has been validated"},
+{ "code" : "51", "description" : "Pharmacy’s active Medicare Fee For Service enrollment status has been validated", "longDescription" :"Pharmacy’s active Medicare Fee For Service enrollment status has been validated"},
+{ "code" : "99", "description" : "Other", "longDescription" :""}
+]}
+
+
+{ "elementIds" : ["395"],
+    "codes" :
+    [ 
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "01-09", "description" : "Paid", "longDescription" :""},
+{ "code" : "10-19", "description" : "Reversals", "longDescription" :""},
+{ "code" : "20-29", "description" : "Adjustments", "longDescription" :""},
+{ "code" : "30-39", "description" : "Rejects", "longDescription" :""}
+]}
+
+
+ 
+ { "elementIds" : ["309-C9"],
+    "codes" :
+    [ 
+{ "code" : "0", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "1", "description" : "No Override", "longDescription" :"Eligibility denial cannot be superseded"},
+{ "code" : "2", "description" : "Override", "longDescription" :"Eligibility denial is being superseded"},
+{ "code" : "3", "description" : "Full Time Student", "longDescription" :"A dependent child enrolled as a full time student at a school"},
+{ "code" : "4", "description" : "Disabled Dependent", "longDescription" :"A dependent, regardless of age, who is disabled"},
+{ "code" : "5", "description" : "Dependent Parent", "longDescription" :"A dependent who is the parent."},
+{ "code" : "6", "description" : "Significant Other ", "longDescription" :"Partner other than the spouse"}
+]}
+ 
+ 
+ { "elementIds" : ["497-H3"],
+    "codes" :
+    [ 
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "01", "description" : "Inches (In)", "longDescription" : "measure of length; 1/12th of a foot"},
+{ "code" : "02", "description" : "Centimeters (cm)", "longDescription" : "measure of length; 1/100th of a meter"},
+{ "code" : "03", "description" : "Pounds (lb)", "longDescription" : "measure of weight or mass; equal to 16 ounces"},
+{ "code" : "04", "description" : "Kilograms (kg)", "longDescription" : "measure of weight or mass; equal to 1000 grams"},
+{ "code" : "05", "description" : "Celsius (C)", "longDescription" : "measure of temperature"},
+{ "code" : "06", "description" : "Fahrenheit (F)", "longDescription" : "measure of temperature"},
+{ "code" : "07", "description" : "Meters squared (m2)", "longDescription" : "measure of area in length times width"},
+{ "code" : "08", "description" : "Milligrams per deciliter (mg/dl)", "longDescription" : "measure of mass in 100 milliliters"},
+{ "code" : "09", "description" : "Units per milliliter (U/ml)", "longDescription" : "measure of volume in 1 milliliter"},
+{ "code" : "10", "description" : "Millimeters of mercury (mmHg)", "longDescription" : "measure of force, as in blood pressure"},
+{ "code" : "11", "description" : "Centimeters squared (cm2)", "longDescription" : "measure of area, as in body surface area"},
+{ "code" : "12", "description" : "Milliliters per minute (ml/min)", "longDescription" : "measure of volume per unit of time"},
+{ "code" : "13", "description" : "Percent (%)", "longDescription" : "amount per 100"},
+{ "code" : "14", "description" : "Milliequivalents per milliliter (mEq/ml)", "longDescription" : "measure of the concentration of a substrate in one milliliter of fluid"},
+{ "code" : "15", "description" : "International units per liter (IU/L)", "longDescription" : "measure of volume in one liter of fluid"},
+{ "code" : "16", "description" : "Micrograms per milliliter (mcg/ml)", "longDescription" : "measure of mass in one milliliter of fluid. One microgram = 1 millionth of a gram"},
+{ "code" : "17", "description" : "Nanograms per milliliter (ng/ml)", "longDescription" : "measure of mass in one milliliter of fluid. One nanogram = 1 billionth of a gram"},
+{ "code" : "18", "description" : "Milligrams per milliliter (mg/ml)", "longDescription" : "measure of mass in one milliliter of fluid. One milligram = 1 thousandth of a gram"},
+{ "code" : "19", "description" : "Ratio", "longDescription" : "measurement of the quantity of one substance or entity in relation to that of another; expressed as the quotient of one divided by the other"},
+{ "code" : "20", "description" : "SI Units", "longDescription" : "The International System of Units. Founded on seven SI base units for seven base quantities: length (meter), mass (kilogram), time (second), electric current (ampere), thermodynamic temperature (kelvin), amount of substance (mole), and luminous intensity (candela)."},
+{ "code" : "21", "description" : "Millimoles/liter (mmol/l)", "longDescription" : "measure of mass in one liter of fluid"},
+{ "code" : "22", "description" : "Seconds", "longDescription" : "measure of time; Equal to one 60th of an hour"},
+{ "code" : "23", "description" : "Grams per deciliter (g/dl)", "longDescription" : "measure of mass per 100 milliliters"},
+{ "code" : "24", "description" : "Cells per cubic millimeter (cells/cu mm)", "longDescription" : "number of units (cells) in 0.001 milliliters of fluid"},
+{ "code" : "25", "description" : "1,000,000 cells per cubic millimeter (million cells/cu mm)", "longDescription" : "measure of the number of units (cells) in 0.001 milliliters of fluid"},
+{ "code" : "26", "description" : "Standard deviation", "longDescription" : "measure of the spread of values in a set"},
+{ "code" : "27", "description" : "Beats per minute", "longDescription" : "the number of occurrences in one minute, as in heart rate."}
+]}
+ 
+ 
+ 
+ { "elementIds" : ["109-A9"],
+    "codes" :    [
+{ "code" : "1", "description" : "One Occurrence", "longDescription" :""},
+{ "code" : "2", "description" : "Two Occurrences", "longDescription" :""},
+{ "code" : "3", "description" : "Three Occurrences", "longDescription" :""},
+{ "code" : "4", "description" : "Four Occurrences", "longDescription" :""}
+]}
+ 
+ { "elementIds" : ["132-UH"],
+    "codes" :
+    [ 
+{ "code" : "01", "description" : "First Line" , "longDescription" : "Used for first line of free form text with no pre-defined structure."},
+{ "code" : "02", "description" : "Second Line" , "longDescription" : "Used for second line of free form text with no pre-defined structure."},
+{ "code" : "03", "description" : "Third Line" , "longDescription" : "Used for third line of free form text with no pre-defined structure."},
+{ "code" : "04", "description" : "Fourth Line" , "longDescription" : "Used for fourth line of free form text with no pre-defined structure."},
+{ "code" : "05", "description" : "Fifth Line" , "longDescription" : "Used for fifth line of free form text with no pre-defined structure."},
+{ "code" : "06", "description" : "Sixth Line" , "longDescription" : "Used for sixth line of free form text with no pre-defined structure."},
+{ "code" : "07", "description" : "Seventh Line" , "longDescription" : "Used for seventh line of free form text with no pre-defined structure."},
+{ "code" : "08", "description" : "Eighth Line" , "longDescription" : "Used for eighth line of free form text with no pre-defined structure."},
+{ "code" : "09", "description" : "Ninth Line" , "longDescription" : "Used for ninth line of free form text with no pre-defined structure."},
+{ "code" : "10", "description" : "Next Available Fill Date" , "longDescription" : "Next Date of Service on which this claim can be submitted. (Note: Date format is CCYYMMDD)"}
+]}
+ 
+{ "elementIds" : ["498-PD"],
+    "codes" :
+    [ 
+    { "code" : "ME", "description" : "Medical Exception" , "longDescription" : "A medical case that does not conform to normal rules."},
+    { "code" : "PR", "description" : "Plan Requirement" , "longDescription" : "Code indicating that the Prior Authorization Segment is being submitted because the payer/plan requires prior authorization as a condition of coverage."},
+    { "code" : "PL", "description" : "Increase Plan Limitation" , "longDescription" : "To allow dispensing above the restrictions imposed by the plan."}
+ ]}
+
+ { "elementIds" : ["492-WE"],
+    "codes" :
+    [ 
+{ "code" : "00", "description" : "Not Specified" , "longDescription" : "Only to be used when needed to conform in fixed file layout specifications."},
+{ "code" : "01", "description" : "International Classification of Diseases (ICD9)" , "longDescription" : "Code indicating the diagnosis is defined according to the International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. Most codes are numeric and consist of 3, 4, or 5 numbers and a description. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services."},
+{ "code" : "02", "description" : "International Classification of Diseases-10-Clinical Modifications (ICD-10-CM)" , "longDescription" : "Code indicating that the following information is a diagnosis as defined by ICD-10-CM. As of January 1, 1999, the ICD-10 is used to code and classify mortality data from death certificates. The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-9-CM) is a statistical classification system that arranges diseases and injuries into groups according to established criteria. The codes are 3 to 7 digits with the first digit alpha, the second and third numeric and the remainder A/N. The codes are maintained by the World Health Organization and published by the Centers for Medicare and Medicaid Services.From the code set maintainer: The ICD codes do have a decimal; however, for transaction/submission of the codes the decimal is not included in the code."},
+{ "code" : "03", "description" : "National Criteria Care Institute (NCCI)" , "longDescription" : "The CMS-developed Correct Coding Initiative (CCI) to promote national correct coding methodologies and to control improper coding leading to inappropriate payment in Part B claims. The CMS developed its coding policies based on coding conventions defined in the American Medical Association’s CPT manual, national and local policies and edits, coding guidelines developed by national societies, analysis of standard medical and surgical practices, and a review of current coding practices."},
+{ "code" : "04", "description" : "The Systematized Nomenclature of Medicine Clinical Terms® (SNOMED)" , "longDescription" : "A clinical health care terminology and infrastructure that provides a common language that enables a consistent way of capturing, sharing and aggregating health data across specialties and sites of care."},
+{ "code" : "05", "description" : "Common Dental Terminology (CDT)" , "longDescription" : "Current Dental Terminology (CDT) is the published Code on Dental Procedures and Nomenclature (the Code) providing descriptive terms, codes and guidance for the accurate reporting of dental procedures. The Code is maintained by the Code Revision Committee and published by the American Dental Association. The procedure codes and descriptions are also published as part of the Healthcare Common Procedure System (HCPCS) Level II through agreement with Centers for Medicare and Medicaid Services."},
+{ "code" : "07", "description" : "American Psychiatric Association Diagnostic Statistical Manual of Mental Disorders (DSM IV)" , "longDescription" : "Diagnostic criteria for the most common mental disorders including: description, diagnosis, treatment, and research findings. Comments: The Diagnostic and Statistical Manual of Mental Disorders - Fourth Edition (DSM-IV) is published by the American Psychiatric Association, Washington D.C."}
+]}
+ 
 { "elementIds" : ["202-B2"],
     "codes" :
     [
