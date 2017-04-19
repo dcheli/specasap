@@ -15,6 +15,8 @@ public class NCPDPElement extends Element{
 	String[] standardFormats;
 	String comments;
 	String[] fieldFormats;
+	String[] fbRejectMessages;
+	
 	//@XmlElement(nillable = true) String codeSet;
 	String[] codes;
 	String definition;
@@ -28,7 +30,7 @@ public class NCPDPElement extends Element{
 
 	public NCPDPElement(String elementId, String[] segmentIds, String[] segmentNames, String elementName, String[] versions, 
 			String[] transactions,  String[] fieldFormats, String[] codes, String[] length, String[] standardFormats,String definition,
-			String[] requestTransactions, String[] responseTransactions, String comments) {
+			String[] requestTransactions, String[] responseTransactions, String comments,String[] fbRejectMessages) {
 		super();
 		this.elementId = elementId;
 		this.elementName = elementName;
@@ -43,6 +45,7 @@ public class NCPDPElement extends Element{
 		this.standardFormats = standardFormats;
 		this.definition = definition;
 		this.comments = comments;
+		this.fbRejectMessages =  fbRejectMessages;
 	}
 
 
@@ -150,6 +153,14 @@ public class NCPDPElement extends Element{
 
 	public void setComments(String comments) {
 		this.comments = comments;
+	}
+
+	public String[] getFbRejectMessages() {
+		return fbRejectMessages;
+	}
+
+	public void setFbRejectMessages(String[] fbRejectMessages) {
+		this.fbRejectMessages = fbRejectMessages;
 	}
 
 }

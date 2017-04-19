@@ -9,12 +9,15 @@ import javax.servlet.ServletContext;
 import org.apache.log4j.Logger;
 import org.bson.Document;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mongodb.Block;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
 
 import net.services.api.specasap.exceptions.DataNotFoundException;
+import net.services.api.specasap.model.CodeSet;
 import net.services.api.specasap.model.NCPDPElement;
 
 public class NCPDPElementService {
@@ -52,6 +55,7 @@ public class NCPDPElementService {
 				@Override
 				public void apply(final Document document) {
 					
+										
 					String elementId = document.containsKey("elementId") ? document.getString("elementId") : "";
 					String elementName = "";
 					String definition = "";
@@ -66,6 +70,7 @@ public class NCPDPElementService {
 					String[] fieldFormats = null;
 					String[] lengths = null;
 					String[] versions = null;
+					String[] fbRejectMessages = null;
 					
 					List<Document> attributes = document.containsKey("attributes") ? (List<Document>)document.get("attributes") : null;
 					if(attributes != null){
@@ -165,12 +170,23 @@ public class NCPDPElementService {
 									fieldFormats = c.stream().toArray(String[]::new);
 								}
 							}
+							
+							
+							if(attributes.get(0).containsKey("fbRejectMessages")) {						
+								if(attributes.get(0).get("fbRejectMessages") == null){			
+									fbRejectMessages = new String[]{};
+								} else {
+									List<Document> c = (List<Document>) attributes.get(0).get("fbRejectMessages");
+									fbRejectMessages = c.stream().toArray(String[]::new);
+								}
+							}
+
 						}
 					}
 					
 					element = new NCPDPElement(elementId, segmentIds, segmentNames, elementName, versions, 
 							transactions, fieldFormats, codes, lengths,	standardFormats, definition, 
-							requestTransactions, responseTransactions, comments);
+							requestTransactions, responseTransactions, comments,fbRejectMessages);
 					
 						elementList.add(element);
 				}

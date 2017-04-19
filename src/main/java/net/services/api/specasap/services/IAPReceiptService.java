@@ -47,6 +47,8 @@ public class IAPReceiptService {
 		productList.add("com.dataasap.hl7asap");
 		productList.add("com.dataasap.ncpdpasap");
 		productList.add("com.dataasap.x12asap");
+		productList.add("com.dataasap.ccdplussap");
+		productList.add("com.dataasap.baiasap");
 	}
 	
 	public List<EnabledProduct> verifyAppleReceipt(final String receipt) throws UnsupportedEncodingException, IOException, ParseException {
@@ -67,6 +69,7 @@ public class IAPReceiptService {
 		// parse the response.readEntity(String.class)
 		// find the most current transaction record of each list productId; find record with max expires_date
 		// determine if it's active and set the isActive accordingly
+		
 		IAPReceipt iapReceipt = null;
 		if(response.getStatus() == 200) {
 			System.out.println("Metadata " + response.getMetadata());
@@ -107,9 +110,6 @@ public class IAPReceiptService {
 			System.out.println("What???");
 		}
 
-	
-		
-		//IAPReceipt iapReceipt = response.readEntity(IAPReceipt.class);
 		 logger.error("Made call to itunes... now what " + response.getStatus());
 		 logger.error("Response is " + response);
 		 // this will be a problem if getStatus != 200

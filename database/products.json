@@ -1,70 +1,28 @@
 {
-    productId : "com.dataasap.x12asap",
-    operatingSystem : "ios",
-    version: "1.0",
-    displayName : "X12 5010",
-    domain : "healthcare"
-}
-
-{
-    productId : "com.dataasap.ncpdpasap",
-    operatingSystem : "ios",
-    version: "1.0",
-    displayName : "NCPDP D.0",
-    domain : "healthcare"
-}
-
-{
-    productId : "com.dataasap.hl7asap",
-    operatingSystem : "ios",
-    version: "1.0",
-    displayName : "HL7 v2",
-    domain : "healthcare"
-}
-
-{
-    productId : "com.dataasap.ccdplusasap",
-    operatingSystem : "ios",
-    version: "1.0",
-    displayName : "ACH CCD+ Addenda",
-    domain : "finance"
-}
-
-{
-    productId : "com.dataasap.baiasap",
-    operatingSystem : "ios",
-    version: "1.0",
-    displayName : "BAI",
-    domain : "finance"
-}
-
-
-//////////////////NEW ///////////////////
-
-{
 	domain: "Healthcare",
 	operatingSystems : ["ios"],
 	products : [
 	{
     productId : "com.dataasap.x12asap",
     version: "1.0",
-    displayName : "X12 5010"
+    displayName : "X12 5010",
+    active: false
 },
 
 {
     productId : "com.dataasap.ncpdpasap",
     version: "1.0",
-    displayName : "NCPDP D.0"
+    displayName : "NCPDP D.0",
+    active: false
 },
 
 {
     productId : "com.dataasap.hl7asap",
     version: "1.0",
-    displayName : "HL7 v2"
+    displayName : "HL7 v2",
+    active: false
 }
-	
-	]
-}
+]}
 
 
 
@@ -76,11 +34,13 @@
 {
     productId : "com.dataasap.ccdplusasap",
     version: "1.0",
-    displayName : "ACH CCD+ Addenda"
+    displayName : "ACH CCD+ Addenda",
+    active: false
  
 },{
     productId : "com.dataasap.baiasap",
     version: "1.0",
-    displayName : "BAI"
+    displayName : "BAI",
+    active: false
 }
 ]}

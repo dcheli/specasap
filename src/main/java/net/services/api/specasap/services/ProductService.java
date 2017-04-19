@@ -66,7 +66,6 @@ public class ProductService {
 					productSet = mapper.readValue(json, ProductSet.class);
 					productSetList.add(productSet);
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}	
 			}

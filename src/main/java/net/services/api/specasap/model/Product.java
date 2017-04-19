@@ -7,6 +7,7 @@ public class Product {
 	String productId;
 	String version;
 	String displayName;
+	Boolean active;
 	
 	public Product() {
 		super();
@@ -31,7 +32,13 @@ public class Product {
 	public void setDisplayName(String displayName) {
 		this.displayName = displayName;
 	}
-	
-	
 
+	public Boolean getActive() {
+		return active;
+	}
+
+	public void setActive(Boolean active) {
+		this.active = active;
+	}
+	
 }
