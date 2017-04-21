@@ -1120,3 +1120,331 @@
 { "code" : "E5", "description" : "Version E5", "longDescription" : ""},
 { "code" : "E6", "description" : "Version E6", "longDescription" : ""}
 ]}
+
+
+
+
+
+
+{ "elementIds" : ["996-G1"],
+    "codes": [
+{ "code" : "01", "description" : "Anti-infective", "longDescription" : "A medicinal product intended to treat pathogens such as bacteria, viruses, fungi or parasites"},
+{ "code" : "02", "description" : "Ionotropic", "longDescription" : "A medicinal product intended to correct irregular heart rhythms"},
+{ "code" : "03", "description" : "Chemotherapy", "longDescription" : "A medicinal product intended to treat cancer"},
+{ "code" : "04", "description" : "Pain management", "longDescription" : "A regimen of therapy intended to ameliorate mild to severe discomfort"},
+{ "code" : "05", "description" : "TPN/PPN (Hepatic, Renal, Pediatric) Total Parenteral Nutrition/ Peripheral Parenteral Nutrition", "longDescription" : "Products intended to provide nourishment by central or peripheral veins for patients with compromised digestive tracts"},
+{ "code" : "06", "description" : "Hydration", "longDescription" : "A product intended to restore body fluids"},
+{ "code" : "07", "description" : "Ophthalmic", "longDescription" : "A product intended to be applied to or instill in the surface of the eye"},
+{ "code" : "99", "description" : "Other", "longDescription" : "Not defined by other available codes"}
+]}
+
+
+{ "elementIds" : ["711"],
+    "codes": [
+{ "code" : "A", "description" : "Add", "longDescription" : "Member is being added as new member to the group and/or processor control number. If the member was previously in a different group and changes to a new one, this would be an add with a new effective date."},
+{ "code" : "R", "description" : "Reinstate", "longDescription" : "The member, within the group, was previously terminated. This transaction makes the member eligible again."},
+{ "code" : "S", "description" : "Suspend", "longDescription" : "Suspend eligibility of Group or Member until Reinstate is received."},
+{ "code" : "T", "description" : "Terminate", "longDescription" : "The last day of coverage for the  member, within the group. If the member is changing groups, the records are provided: (1) Terminate in previous group (2) Add in new group with or without lapse in coverage."},
+{ "code" : "U", "description" : "Update", "longDescription" : "Acts as Change if the record exists and an Add if it does not."}
+]}
+
+
+
+{ "elementIds" : ["754"],
+    "codes": [
+
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "01", "description" : "Deers", "longDescription" : ""},
+{ "code" : "99", "description" : "Processor specific", "longDescription" : ""}
+]}
+
+{ "elementIds" : ["755"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "99", "description" : "Processor specific", "longDescription" : ""}
+]}
+
+
+{ "elementIds" : ["723"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "S", "description" : "Survivor", "longDescription" : ""},
+{ "code" : "X", "description" : "Cross Reference", "longDescription" : ""}
+]}
+
+
+
+{ "elementIds" : ["432-DW"],
+    "codes": [
+
+{ "code" : "0", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "1", "description" : "Explicit directions", "longDescription" : ""},
+{ "code" : "2", "description" : "PRN directions (take as needed pharmacist estimate)", "longDescription" : ""},
+{ "code" : "3", "description" : "As directed by physician", "longDescription" : ""}
+]}
+
+
+{ "elementIds" : ["758"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "00", "description" : "All", "longDescription" : ""},
+{ "code" : "01", "description" : "Retail", "longDescription" : ""},
+{ "code" : "02", "description" : "Mail Service", "longDescription" : ""},
+{ "code" : "03", "description" : "Maintenance", "longDescription" : ""},
+{ "code" : "04", "description" : "Participating Network", "longDescription" : ""},
+{ "code" : "05", "description" : "Non-Participating Network", "longDescription" : ""},
+{ "code" : "06", "description" : "Start-Up Group", "longDescription" : ""},
+{ "code" : "07", "description" : "N/H-Long Term Care", "longDescription" : ""},
+{ "code" : "08", "description" : "Staff Model Pharmacy", "longDescription" : ""},
+{ "code" : "09", "description" : "Ex-Patraite", "longDescription" : ""},
+{ "code" : "10", "description" : "Emergency Care", "longDescription" : ""},
+{ "code" : "11", "description" : "member Direct Claim", "longDescription" : ""},
+{ "code" : "12", "description" : "Case Management", "longDescription" : ""},
+{ "code" : "13", "description" : "Internet", "longDescription" : ""},
+{ "code" : "14", "description" : "Prescriber/Office Distrib.", "longDescription" : ""},
+{ "code" : "99", "description" : "Processor Defined", "longDescription" : ""}
+]}
+
+{ "elementIds" : ["760","762","741","749","743","747","771","798","799","742","745"],
+    "codes": [
+{ "code" : "N", "description" : "No", "longDescription" : ""},
+{ "code" : "Y", "description" : "Yes", "longDescription" : ""}
+]}
+
+{ "elementIds" : ["600-02"],
+    "codes": [
+{ "code" : "00", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "01", "description" : "Blue Cross", "longDescription" : ""},
+{ "code" : "02", "description" : "Employer", "longDescription" : ""},
+{ "code" : "03", "description" : "Government, Municipal", "longDescription" : ""},
+{ "code" : "04", "description" : "HMO", "longDescription" : ""},
+{ "code" : "05", "description" : "Insurance Carrier", "longDescription" : ""},
+{ "code" : "06", "description" : "Medicare", "longDescription" : ""},
+{ "code" : "07", "description" : "Medicaid", "longDescription" : ""},
+{ "code" : "08", "description" : "Medicare HMO", "longDescription" : ""},
+{ "code" : "09", "description" : "PPO", "longDescription" : ""},
+{ "code" : "10", "description" : "TPA", "longDescription" : ""},
+{ "code" : "11", "description" : "Union", "longDescription" : ""},
+{ "code" : "12", "description" : "Workers Compensation", "longDescription" : ""},
+{ "code" : "13", "description" : "CHAMPUS", "longDescription" : ""},
+{ "code" : "14", "description" : "FEP", "longDescription" : ""},
+{ "code" : "99", "description" : "Processor Specified", "longDescription" : ""}
+]}
+
+{ "elementIds" : ["764"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "01", "description" : "Dollar + Percentage", "longDescription" : ""},
+{ "code" : "02", "description" : "Percentage + Dollar", "longDescription" : ""},
+{ "code" : "03", "description" : "Greater of Dollar or Percentage", "longDescription" : ""},
+{ "code" : "04", "description" : "Lesser of Dollar or Percentage", "longDescription" : ""},
+{ "code" : "05", "description" : "Dollar with Minimum and Maximum", "longDescription" : ""},
+{ "code" : "06", "description" : "Percentage with Minimum and Maximum", "longDescription" : ""}
+]}
+
+{ "elementIds" : ["768"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "00", "description" : "All", "longDescription" : ""},
+{ "code" : "01", "description" : "Brand – Single Source", "longDescription" : ""},
+{ "code" : "02", "description" : "Generic", "longDescription" : ""},
+{ "code" : "03", "description" : "Brand – Multi-source", "longDescription" : ""},
+{ "code" : "04", "description" : "Maintenance Brand – Single", "longDescription" : ""},
+{ "code" : "05", "description" : "Maintenance Generic", "longDescription" : ""},
+{ "code" : "06", "description" : "Maintenance Brand – Multi", "longDescription" : ""},
+{ "code" : "07", "description" : "Non-formulary Brand – Single", "longDescription" : ""},
+{ "code" : "08", "description" : "Non-Formulary Generic", "longDescription" : ""},
+{ "code" : "09", "description" : "Non-formulary Brand – Multi", "longDescription" : ""},
+{ "code" : "10", "description" : "Over the Counter", "longDescription" : ""},
+{ "code" : "11", "description" : "Durable Medical Supplies", "longDescription" : ""},
+{ "code" : "12", "description" : "Exceed Max Benefit", "longDescription" : ""},
+{ "code" : "13", "description" : "Exceed Max Out of Pocket", "longDescription" : ""},
+{ "code" : "14", "description" : "Diabetic Supplies", "longDescription" : ""},
+{ "code" : "99", "description" : "Processor Specific", "longDescription" : ""}
+]}
+
+
+
+
+{ "elementIds" : ["770"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "01", "description" : "Through Date of Birth", "longDescription" : "" },
+{ "code" : "02" , "description" : "To Date of Birth", "longDescription" : "" },
+{ "code" : "03" , "description" : "Through Week of Birth", "longDescription" : "" },
+{ "code" : "04" , "description" : "Through Month of Birth", "longDescription" : "" },
+{ "code" : "05" , "description" : "Through Year of Birth", "longDescription" : "" },
+{ "code" : "06" , "description" : "To Date Specified", "longDescription" : "" },
+{ "code" : "99" , "description" : "Processor Defined", "longDescription" : "" }
+]}
+
+{ "elementIds" : ["703"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "C", "description": "Combination (Group & Member)", "longDescription" :  ""},
+{ "code" : "G", "description": "Group Only", "longDescription" :  ""},
+{ "code" : "M", "description": "Member Only", "longDescription" :  ""}
+]}
+
+
+{ "elementIds" : ["820-9A"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "1", "description": "Record Number", "longDescription" :  ""},
+{ "code" : "2", "description": "Record Number", "longDescription" :  ""},
+{ "code" : "3", "description": "Record Number", "longDescription" :  ""}
+]}
+
+{ "elementIds" : ["773"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "01" , "description" : "Member Level", "longDescription" : "" },
+{ "code" : "02" , "description" : "Contract Level", "longDescription" : "" }
+]}
+
+{ "elementIds" : ["715"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "1", "description": "Cardholder", "longDescription" :  ""},
+{ "code" : "2", "description": "Spouse", "longDescription" :  ""},
+{ "code" : "3", "description": "Child", "longDescription" :  ""},
+{ "code" : "4", "description": "Other", "longDescription" :  ""},
+{ "code" : "5", "description": "Student", "longDescription" :  ""},
+{ "code" : "6", "description": "Disabled Dependent", "longDescription" :  ""},
+{ "code" : "7", "description": "Adult Dependent", "longDescription" :  ""},
+{ "code" : "8", "description": "Significant Other", "longDescription" :  ""}
+]}
+
+
+
+{ "elementIds" : ["774"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "1", "description": "Tax exempt", "longDescription" :  ""},
+{ "code" : "2", "description": "Not tax exempt", "longDescription" :  ""}
+]}
+
+{ "elementIds" : ["775"],
+    "codes": [
+{ "code" : "20", "description" : "1999 Version 2.0 Format", "longDescription" : "" }
+]}
+
+{ "elementIds" : ["781"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "01", "description" : "Employer (Benefits Office)", "longDescription" : "" },
+{ "code" : "02", "description" : "Employer (Location)", "longDescription" : "" },
+{ "code" : "03", "description" : "Insurer", "longDescription" : "" },
+{ "code" : "04", "description" : "Location Injury Occurred", "longDescription" : "" },
+{ "code" : "05", "description" : "Case Manager", "longDescription" : "" },
+{ "code" : "99", "description" : "Other", "longDescription" : "" }
+]}
+
+{ "elementIds" : ["790"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "N", "description": "New", "longDescription" :  ""},
+{ "code" : "A", "description": "Additional", "longDescription" :  ""},
+{ "code" : "R", "description": "Replacement", "longDescription" :  ""},
+{ "code" : "C", "description": "Card Info Change", "longDescription" :  ""}
+]}
+
+{ "elementIds" : ["720"],
+    "codes": [
+{ "code" : "1", "description": "1st", "longDescription" :  ""},
+{ "code" : "2", "description": "2nd", "longDescription" :  ""},
+{ "code" : "3", "description": "3rd", "longDescription" :  ""},
+{ "code" : "4", "description": "4th", "longDescription" :  ""},
+{ "code" : "5", "description": "5th", "longDescription" :  ""},
+{ "code" : "6", "description": "6th", "longDescription" :  ""},
+{ "code" : "7", "description": "7th", "longDescription" :  ""},
+{ "code" : "8", "description": "8th", "longDescription" :  ""},
+{ "code" : "9", "description": "9th", "longDescription" :  ""}
+]}
+
+
+{ "elementIds" : ["496"],
+    "codes": [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" : ""},
+{ "code" : "01", "description" : "DEA", "longDescription" : "" },
+{ "code" : "02", "description" : "State License", "longDescription" : "" },
+{ "code" : "03", "description" : "Social Security Number", "longDescription" : "" },
+{ "code" : "04", "description" : "Name;05=National Provider ID (NPI)", "longDescription" : "" },
+{ "code" : "06", "description" : "Health Industry Number (HIN)", "longDescription" : "" },
+{ "code" : "07", "description" : "State Issued;99=Other", "longDescription" : "" }
+]}
+
+{ "elementIds" : ["416-DG"],
+    "codes": [
+{ "code" : "0", "description": "Not Specified", "longDescription" :  ""},
+{ "code" : "1", "description": "Prior authorization", "longDescription" :  ""},
+{ "code" : "2", "description": "Medical certification", "longDescription" :  ""},
+{ "code" : "3", "description": "EPSDT (Early Periodic Screening Diagnosis Treatment)", "longDescription" :  ""},
+{ "code" : "4", "description": "Exemption from co-pay", "longDescription" :  ""},
+{ "code" : "5", "description": "Exemption from prescription limits", "longDescription" :  ""},
+{ "code" : "6", "description": "Family planning indicator", "longDescription" :  ""},
+{ "code" : "7", "description" : "TANF (Temporary Assistance for Needy Families)", "longDescription" : "" },
+{ "code" : "8", "description" : "Payer defined exemption", "longDescription" :  ""}
+]}
+
+
+
+{ "elementIds" : ["707"],
+    "codes": [
+{ "code" : "A", "description": "Active only-terminate by absence", "longDescription" :  ""},
+{ "code" : "R", "description": "Replacement: of complete file", "longDescription" :  ""},
+{ "code" : "C", "description": "Comparison: only-no updates", "longDescription" :  ""},
+{ "code" : "M", "description": "Maintenance-changes only", "longDescription" :  ""},
+{ "code" : "F", "description": "Full file with member terms", "longDescription" :  ""},
+{ "code" : "T", "description": "Full file with member terms-terminate by absence", "longDescription" :  ""}
+]}
+
+{ "elementIds" : ["843-5Z"],
+    "codes": [
+
+{ "code" : "0", "description": "Processor Record", "longDescription" :  ""},
+{ "code" : "1", "description": "Carrier Record", "longDescription" :  ""},
+{ "code" : "2", "description": "Pharmacy Record", "longDescription" :  ""},
+{ "code" : "3", "description": "Pharmacy Record", "longDescription" :  ""},
+{ "code" : "4", "description": "Claim Record", "longDescription" :  ""},
+{ "code" : "5", "description": "Payment Record", "longDescription" :  ""},
+{ "code" : "6", "description": "Batch Control Record", "longDescription" :  ""},
+{ "code" : "7", "description": "Pharmacy Batch Control Record", "longDescription" :  ""},
+{ "code" : "8", "description": "Diskette and Tape Batch Control Record. ", "longDescription" :  ""},
+{ "code" : "9", "description": "Tape Batch Control Record", "longDescription" :  ""}
+]}
+
+{ "elementIds" : ["844-6A"],
+    "codes": [
+{ "code" : "0", "description": "Original Submission", "longDescription" :  ""},
+{ "code" : "1", "description": "First Re-submission", "longDescription" :  ""},
+{ "code" : "2", "description": "Second Re-submission", "longDescription" :  ""}
+]}
+
+{ "elementIds" : ["880-KD"],
+    "codes": [
+{ "code" : "1", "description": "Payment", "longDescription" :  ""},
+{ "code" : "2", "description": "Adjustment", "longDescription" :  ""},
+{ "code" : "3", "description": "Rejection", "longDescription" :  ""},
+{ "code" : "4", "description": "Passthru", "longDescription" :  ""},
+{ "code" : "5", "description": "Capture", "longDescription" :  ""},
+{ "code" : "6", "description": "Out of Cycle Reversal", "longDescription" :  ""},
+{ "code" : "7", "description": "In Cycle Reversal", "longDescription" :  ""},
+{ "code" : "8", "description": "Pending Payment", "longDescription" :  ""},
+{ "code" : "9", "description": "Partial Claim Payment", "longDescription" :  ""},
+{ "code" : "10", "description": "Partial Claim Adjustment", "longDescription" :  ""}
+]}
+
+{ "elementIds" : ["102-A2"],
+    "codes": [
+{ "code" : "10", "description" : "Version 1.0", "longDescription" : "" },
+{ "code" : "20", "description" : "Version 2.0", "longDescription" : "" },
+{ "code" : "30", "description" : "Payment Tape Version 3.0", "longDescription" : "" },
+{ "code" : "40", "description" : "Payment Tape Version 4.0", "longDescription" : "" }
+]}
+
+{ "elementIds" : ["790"],
+    "codes": [
+{ "code" : "M", "description": "Government", "longDescription" :  ""},
+{ "code" : "P", "description": "Private", "longDescription" :  ""}
+]}
