@@ -1531,7 +1531,7 @@
 
 ]}
 
-{ "elementIds" : ["498-PJ","810-1G","318-CI","782","387-3V","B49-8N","683","360-2B","A22-YR","324-CO","123-TX","832-6F","A27-ZQ","A24-ZK","367-2N","675-Y3","593-YW","586-YP","729-TA","729"],
+{ "elementIds" : ["498-PJ","810-1G","318-CI","782","387-3V","B49-8N","683","360-2B","A22-YR","324-CO","123-TX","832-6F","A27-ZQ","A24-ZK","367-2N","675-Y3","593-YW","586-YP","729-TA","729","838-5U"],
     "codes" :
 [
  
@@ -2998,3 +2998,76 @@
 { "code" : "4", "description" : "Payer/Plan and Patient are Tax Exempt" , "longDescription" : "Neither the payer/plan nor the patient can be charged tax."}
 ]}
 
+{ "elementIds" : ["296"],
+    "codes" :
+    [ 
+{ "code" : "Taxonomy Code", "description" : "" , "longDescription" : "The values can be obtained from the following link: http://www.wpc-edi.com/reference/codelists/healthcare/health-care-provider-taxonomy-code-set/"}
+]}
+
+{ "elementIds" : ["307-C7"],
+    "codes" :
+    [ 
+{ "code" : "Place Of Service Codes", "description" : "" , "longDescription" : "The Centers for Medicare and Medicaid Services (CMS) maintains this code set. The complete code set is available at https://www.cms.gov/Medicare/Coding/place-of-service-codes/index.html"}
+ ]}
+
+{ "elementIds" : ["995-E2"],
+    "codes" :
+    [ 
+{ "code" : "SNOWMED CT Terminology", "description" : "" , "longDescription" : "Systematized Nomenclature of Medicine Clinical Terms® (SNOMED CT) SNOMED CT® terminology which is available from the International Health Terminology Standards Development Organization (IHTSDO) http://www.ihtsdo.org/snomed-ct/"}
+]}
+
+
+{ "elementIds" : ["602-10"],
+    "codes" :
+    [ 
+{ "code" : "Reconciliation Reason Code", "description" : "" , "longDescription" : "See ECL Appendix D, E, and F"}
+ ]}
+ 
+ { "elementIds" : ["601-04"],
+    "codes" :
+    [ 
+{ "code" : "Record Type", "description" : "" , "longDescription" : "Please Consult ECL"}
+ ]}
+ 
+ { "elementIds" : ["450-EF"],
+    "codes" :
+    [ 
+{ "code" : "Blank", "description" : "Not Specified" , "longDescription" : "Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "01", "description" : "Capsule" , "longDescription" : "a soluble dispensable unit enclosing a single dose of a medication or combination of medications. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "02", "description" : "Ointment" , "longDescription" : "a semisolid preparation, used as a vehicle for medication and applied externally to the body. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "03", "description" : "Cream" , "longDescription" : "a soft solid or thick liquid containing medication, applied externally for a prophylactic, therapeutic, or cosmetic purpose. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "04", "description" : "Suppository" , "longDescription" : "a dispensable unit containing a single dose of medication or combination of medications to be introduced into a body orifice, such as the rectum, urethra, or vagina. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "05", "description" : "Powder" , "longDescription" : "finely ground particles of a solid medication. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "06", "description" : "Emulsion" , "longDescription" : "a mixture of two immiscible liquids, one being dispersed throughout the other in small droplets. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "07", "description" : "Liquid" , "longDescription" : "a substance that flows readily in its natural state. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "10", "description" : "Tablet" , "longDescription" : "a single dispensable unit containing one or more medications, with or without a suitable diluent. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "11", "description" : "Solution" , "longDescription" : "a homogeneous mixture of one or more liquids. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "12", "description" : "Suspension" , "longDescription" : "a preparation of a powdered form of a drug incorporated into a suitable liquid vehicle. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "13", "description" : "Lotion" , "longDescription" : "a liquid suspension for external application to the body. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "14", "description" : "Shampoo" , "longDescription" : "a liquid preparation (solution, suspension, emulsion) for external application to the scalp. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "15", "description" : "Elixir" , "longDescription" : "a clear, sweetened, usually hydroalcoholic liquid containing flavoring substance and one or more medications. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "16", "description" : "Syrup" , "longDescription" : "a concentrated solution of a sugar in water or other aqueous liquid and one or more medications. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "17", "description" : "Lozenge" , "longDescription" : "a solid, single dispensable unit containing one or more medications intended for dissolution in the mouth. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."},
+{ "code" : "18", "description" : "Enema" , "longDescription" : "a liquid preparation intended for introduction into the rectum containing one or more medications. Used in Telecommunication Standard Version D.2 or lower. Value was deleted for use in higher versions of this standard."}
+
+]}
+
+{ "elementIds" : ["289"],
+    "codes" :
+    [ 
+{ "code" : "Pharmacy Class Code", "description" : "" , "longDescription" : "See values in NCPDP Pharmacy Database Files Standard Implementation Guide."}
+ ]}
+
+ { "elementIds" : ["290"],
+    "codes" :
+    [ 
+{ "code" : "Pharmacy Dispenser Type", "description" : "" , "longDescription" : "See values in NCPDP Pharmacy Database Files Standard Implementation Guide."}
+ ]}
+
+ 
+ { "elementIds" : ["801-5A","802-1A","803-1B"],
+    "codes" :
+[
+{ "code" : "Adjustment/Reject Codes", "description" : "" , "longDescription" : "See Appendix F, G, H - Reject Code Listing in the ECL"}
+]}
+ 
