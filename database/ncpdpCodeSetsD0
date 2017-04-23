@@ -558,7 +558,7 @@
 ]}
 
 
-{ "elementIds" : ["961-HX", "963-HZ"],
+{ "elementIds" : ["961-HX", "963-HZ","959-HV"],
     "codes": [
 { "code" : "01", "description" : "Universal Product Code (UPC)" , "longDescription" : "An 11 digit code which identifies the manufacturer and the specific description of the product."},
 { "code" : "02", "description" : "Health Related Item (HRI)" , "longDescription" : "Health Related Item is a unique 10 digit numeric code assigned to health related drug products by the FDA and the manufacturer or distributor. The format of an HRI is 4-6 and it is converted to the 11 digit number used on billing transactions by adding a zero to the 11th position."},
@@ -1205,7 +1205,7 @@
 { "code" : "99", "description" : "Processor Defined", "longDescription" : ""}
 ]}
 
-{ "elementIds" : ["760","762","741","749","743","747","771","798","799","742","745"],
+{ "elementIds" : ["760","762","741","749","743","747","771","798","799","742","745","600-69","601-59"],
     "codes": [
 { "code" : "N", "description" : "No", "longDescription" : ""},
 { "code" : "Y", "description" : "Yes", "longDescription" : ""}
@@ -1448,3 +1448,1553 @@
 { "code" : "M", "description": "Government", "longDescription" :  ""},
 { "code" : "P", "description": "Private", "longDescription" :  ""}
 ]}
+
+{ "elementIds" : ["369-2Q"],
+    "codes" :
+    [ 
+{ "code" : "006", "description" : "Medicare 04.04B", "longDescription" : "Lymphedema Pumps"},
+{ "code" : "007", "description" : "Medicare 04.05C", "longDescription" : "Osteogenesis Stimulator" },
+{ "code" : "008", "description" : "Medicare 06.03B", "longDescription" : "Transcutaneous Electrical Nerve Stimulator (TENS)" },
+{ "code" : "009", "description" : "Medicare 07.03A", "longDescription" : "Seat Lift Mechanisms" },
+{ "code" : "012", "description" : "Medicare 09.02", "longDescription" : "Infusion Pump" },
+{ "code" : "015", "description" : "Medicare 484.03", "longDescription" : "Oxygen" },
+{ "code" : "016", "description" : "Medicare 10.03", "longDescription" : "Enteral and Parenteral Nutrition" },
+{ "code" : "017", "description" : "Medicare 11.02", "longDescription" : "Section C Continuation Form" }
+ ]}
+
+
+
+{ "elementIds" : ["131-UG"],
+    "codes" :[
+{ "code" : "+", "description" : "Current Text Continues." , "longDescription" : ""}
+
+]}
+
+
+
+
+
+{ "elementIds" : ["205"],
+    "codes" :
+[
+{ "code" : "1", "description" : "Debit" , "longDescription" : "An adjustment resulting in an increased payment amount."},
+{ "code" : "2", "description" : "Credit" , "longDescription" : "An adjustment resulting in a decreased payment amount."}
+]}
+
+
+
+{ "elementIds" : ["207"],
+    "codes" :
+[
+{ "code" : "Blank", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "A", "description" : "Add to count" , "longDescription" : ""},
+{ "code" : "S", "description" : "Subtracts from count" , "longDescription" : ""}
+]}
+
+
+{ "elementIds" : ["548-6F"],
+    "codes" :
+[
+{ "code" : "Blank", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "001", "description" : "Generic Available" , "longDescription" : "Message from Processor to the pharmacist that a generic equivalent product is available when a claim is submitted for a brand-name product."},
+{ "code" : "002", "description" : "Non-Formulary Drug" , "longDescription" : "Response code indicating that the prescribed drug is not included in the plan formulary."},
+{ "code" : "003", "description" : "Maintenance Drug" , "longDescription" : "Medication used to control the symptoms of a chronic condition."},
+{ "code" : "004", "description" : "Filled During Transition Benefit" , "longDescription" : "The drug was paid because the Medicare Part D patient is in a transitional drug benefit period."},
+{ "code" : "005", "description" : "Filled During Transition Benefit/Prior Authorization Required" , "longDescription" : "The drug was paid because the Medicare Part D patient is in a transitional drug benefit period but would have rejected due to the need for a prior authorization."},
+{ "code" : "006", "description" : "Filled During Transition Benefit/Non-Formulary" , "longDescription" : "The drug was paid because the Medicare Part D patient is in a transitional drug benefit period. After the transition drug benefit period, this drug would be considered non-formulary and not payable."},
+{ "code" : "007", "description" : "Filled During Transition Benefit/Other Rejection" , "longDescription" : "The drug was paid because the Medicare Part D patient is in a transitional drug benefit period. After the transition drug benefit period, this drug will reject for plan limitations or other reason(s)."},
+{ "code" : "008", "description" : "Emergency Fill Situation" , "longDescription" : "This drug was paid because it is a first time fill for a Medicare Part D patient who is not within a transitional drug benefit period."},
+{ "code" : "009", "description" : "Emergency Fill Situation/Prior Authorization Required" , "longDescription" : "This drug was paid because it is a first time fill for a Medicare Part D patient who is not within a transitional drug benefit period but would have rejected due to the need for a prior authorization."},
+{ "code" : "010", "description" : "Emergency Fill Situation/Non-Formulary" , "longDescription" : "This drug was paid because it is a first time fill for a Medicare Part D patient who is not within a transitional drug benefit period but would have rejected as non-formulary or not covered."},
+{ "code" : "011", "description" : "Emergency Fill Situation/Other Rejection" , "longDescription" : "This drug was paid because it is a first time fill for a Medicare Part D patient who is not within a transitional drug benefit period but would have rejected for plan limitations or other reason(s)."},
+{ "code" : "012", "description" : "Level of Care Change" , "longDescription" : "This drug was paid because the patient has had a change in level of care"},
+{ "code" : "013", "description" : "Level Of Care Change/Prior Authorization Required" , "longDescription" : "This drug was paid because it was determined that the patient has had a change in level of care. Future fills of this drug under the same level of care will reject unless a prior auth is submitted and approved by the plan."},
+{ "code" : "014", "description" : "Level Of Care Change/Non-Formulary" , "longDescription" : "This drug was paid because it was determined that the patient has had a change in level of care. Future fills of this drug under the same level of care will reject because of plan limitations of other reason(s)."},
+{ "code" : "015", "description" : "Level of Care Change/Other Rejection" , "longDescription" : "This drug was paid because it was determined that the patient has had a change in level of care. Future fills of this drug under the same level of care will reject as non-formulary or not covered."},
+{ "code" : "016", "description" : "PMP Reportable Required" , "longDescription" : "Used to identify reportable products that need to be submitted to a State(s) or Federal Prescription Monitoring Program."},
+{ "code" : "017", "description" : "PMP Reporting Completed" , "longDescription" : "Used to identify reportable products that have been submitted to a State(s) or Federal Prescription Monitoring Program."},
+{ "code" : "018", "description" : "Provide Notice: Medicare Prescription Drug Coverage and Your Rights" , "longDescription" : "Claim for a Part D drug submitted to the plan’s Medicare D BIN/PCN is not covered by the Part D plan but is paid by the beneficiary per a plan-sponsored negotiated price. In this situation the member should be provided the notice entitled “Medicare Prescription Drug Coverage and Your Rights”."},
+{ "code" : "019", "description" : "The Submitted Prescriber ID is inactive or expired" , "longDescription" : "Flagged for Retrospective Review.  The claim paid, however, the combination of Prescriber ID qualifier (466-EZ) and Prescriber ID (411-DB) provided on the transaction was inactive or expired in the processor’s system."},
+{ "code" : "020", "description" : "For the Submitted Prescriber ID, the associated DEA Number is Not Found" , "longDescription" : "Flagged for Retrospective Review.  The claim paid for a controlled substance, however, a valid DEA number could not be found (within the processor’s system) using the combination of Prescriber ID qualifier (466-EZ) and Prescriber ID (411-DB) provided on the transaction."},
+{ "code" : "021", "description" : "For the Submitted Prescriber ID, the associated DEA Number is Inactive or Expired" , "longDescription" : "Flagged for Retrospective Review. The claim paid for a controlled substance, however, an active DEA number could not be found (within the processor’s system) using the combination of Prescriber ID qualifier (466-EZ) and Prescriber ID (411-DB) provided on the transaction."},
+{ "code" : "022", "description" : "For the submitted Prescriber ID, the associated DEA Number does not allow this drug DEA Schedule" , "longDescription" : "Flagged for Retrospective Review"},
+{ "code" : "023", "description" : "Prorated copayment applied based on days supply. " , "longDescription" : "Plan has prorated the copayment based on days supply."},
+{ "code" : "024", "description" : "The submitted Prescriber ID is Not Found" , "longDescription" : "Flagged for Retrospective Review"},
+{ "code" : "025", "description" : "The submitted Prescriber ID is associated to a Deceased Prescriber" , "longDescription" : "Flagged for Retrospective Review"},
+{ "code" : "026", "description" : "Prescriber Type 1 NPI Required" , "longDescription" : "Flagged for Retrospective Review"},
+{ "code" : "027", "description" : "The submitted Prescriber DEA does not allow this drug DEA Schedule" , "longDescription" : "Flagged for Retrospective Review"},
+{ "code" : "028", "description" : "Type 1 NPI Required, Claim Paid Based on Plan's Prescriber NPI Data" , "longDescription" : "When the plan pays and chooses to send a cross walked NPI on the PDE"},
+{ "code" : "029", "description" : "Grace period claim. " , "longDescription" : "Patient required to pay for the full cost of the prescription. Patient to contact plan."},
+{ "code" : "030", "description" : "Prescriber active enrollment with Medicare Fee For Service required. " , "longDescription" : "Flagged for retrospective review - Value returned only if Submission Clarification Code 50 (Prescriber’s active Medicare Fee For Service enrollment status has been validated) was submitted and accepted."},
+{ "code" : "031", "description" : "Pharmacy active enrollment with Medicare Fee For Service required. " , "longDescription" : "Flagged for retrospective review - Value returned only if Submission Clarification Code 51 (Pharmacy’s active Medicare Fee For Service enrollment status has been validated) was submitted and accepted."},
+{ "code" : "032", "description" : "Plan's Prescriber data base not able to verify active state license with prescriptive authority for Prescriber ID Submitted" , "longDescription" : "Flagged for retrospective review."}
+
+]}
+
+{ "elementIds" : ["498-PJ","810-1G","318-CI","782","387-3V","B49-8N","683","360-2B","A22-YR","324-CO","123-TX","832-6F","A27-ZQ","A24-ZK","367-2N","675-Y3","593-YW","586-YP","729-TA","729"],
+    "codes" :
+[
+ 
+{ "code" : "AL", "description" : "Alabama" , "longDescription" : "NCPDP Code 01"},
+{ "code" : "AK", "description" : "Alaska" , "longDescription" : "NCPDP Code 02"},
+{ "code" : "AZ", "description" : "Arizona" , "longDescription" : "NCPDP Code 03"},
+{ "code" : "AR", "description" : "Arkansas" , "longDescription" : "NCPDP Code 04"},
+{ "code" : "AS", "description" : "American Samoa" , "longDescription" : ""},
+{ "code" : "CA", "description" : "California" , "longDescription" : "NCPDP Code 05 *(see Additional State Code)"},
+{ "code" : "CO", "description" : "Colorado" , "longDescription" : "NCPDP Code 06"},
+{ "code" : "CT", "description" : "Connecticut" , "longDescription" : "NCPDP Code 07"},
+{ "code" : "DE", "description" : "Delaware" , "longDescription" : "NCPDP Code 08"},
+{ "code" : "DC", "description" : "District Of Columbia" , "longDescription" : "NCPDP Code 09"},
+{ "code" : "FM", "description" : "Federated States Of Micronesia" , "longDescription" : ""},
+{ "code" : "FL", "description" : "Florida" , "longDescription" : "NCPDP Code 10 *(see Additional State Code)"},
+{ "code" : "GA", "description" : "Georgia" , "longDescription" : "NCPDP Code 11"},
+{ "code" : "GU", "description" : "Guam" , "longDescription" : "NCPDP Code 54"},
+{ "code" : "HI", "description" : "Hawaii" , "longDescription" : "NCPDP Code 12"},
+{ "code" : "ID", "description" : "Idaho" , "longDescription" : "NCPDP Code 13"},
+{ "code" : "IL", "description" : "Illinois" , "longDescription" : "NCPDP Code 14"},
+{ "code" : "IN", "description" : "Indiana" , "longDescription" : "NCPDP Code 15"},
+{ "code" : "IA", "description" : "Iowa" , "longDescription" : "NCPDP Code 16"},
+{ "code" : "KS", "description" : "Kansas" , "longDescription" : "NCPDP Code 17"},
+{ "code" : "KY", "description" : "Kentucky" , "longDescription" : "NCPDP Code 18"},
+{ "code" : "LA", "description" : "Louisiana" , "longDescription" : "NCPDP Code 19"},
+{ "code" : "ME", "description" : "Maine" , "longDescription" : "NCPDP Code 20"},
+{ "code" : "MH", "description" : "Marshall Islands" , "longDescription" : ""},
+{ "code" : "MD", "description" : "Maryland" , "longDescription" : "NCPDP Code 21"},
+{ "code" : "MA", "description" : "Massachusetts" , "longDescription" : "NCPDP Code 22"},
+{ "code" : "MI", "description" : "Michigan" , "longDescription" : "NCPDP Code 23"},
+{ "code" : "MN", "description" : "Minnesota" , "longDescription" : "NCPDP Code 24"},
+{ "code" : "MS", "description" : "Mississippi" , "longDescription" : "NCPDP Code 25"},
+{ "code" : "MO", "description" : "Missouri" , "longDescription" : "NCPDP Code 26"},
+{ "code" : "MT", "description" : "Montana" , "longDescription" : "NCPDP Code 27"},
+{ "code" : "NE", "description" : "Nebraska" , "longDescription" : "NCPDP Code 28"},
+{ "code" : "NV", "description" : "Nevada" , "longDescription" : "NCPDP Code 29"},
+{ "code" : "NH", "description" : "New Hampshire" , "longDescription" : "NCPDP Code 30"},
+{ "code" : "NJ", "description" : "New Jersey" , "longDescription" : "NCPDP Code 31"},
+{ "code" : "NM", "description" : "New Mexico" , "longDescription" : "NCPDP Code 32"},
+{ "code" : "NY", "description" : "New York" , "longDescription" : "NCPDP Code 33 *(see Additional State Code)"},
+{ "code" : "NC", "description" : "North Carolina" , "longDescription" : "NCPDP Code 34"},
+{ "code" : "ND", "description" : "North Dakota" , "longDescription" : "NCPDP Code 35"},
+{ "code" : "MP", "description" : "Northern Mariana Islands" , "longDescription" : ""},
+{ "code" : "OH", "description" : "Ohio" , "longDescription" : "NCPDP Code 36"},
+{ "code" : "OK", "description" : "Oklahoma" , "longDescription" : "NCPDP Code 37"},
+{ "code" : "OR", "description" : "Oregon" , "longDescription" : "NCPDP Code 38"},
+{ "code" : "PW", "description" : "Palau" , "longDescription" : ""},
+{ "code" : "PA", "description" : "Pennsylvania" , "longDescription" : "NCPDP Code 39"},
+{ "code" : "PR", "description" : "Puerto Rico" , "longDescription" : "NCPDP Code 40"},
+{ "code" : "RI", "description" : "Rhode Island" , "longDescription" : "NCPDP Code 41"},
+{ "code" : "SC", "description" : "South Carolina" , "longDescription" : "NCPDP Code 42"},
+{ "code" : "SD", "description" : "South Dakota" , "longDescription" : "NCPDP Code 43"},
+{ "code" : "TN", "description" : "Tennessee" , "longDescription" : "NCPDP Code 44"},
+{ "code" : "TX", "description" : "Texas" , "longDescription" : "NCPDP Code 45 *(see Additional State Code) "},
+{ "code" : "UT", "description" : "Utah" , "longDescription" : "NCPDP Code 46"},
+{ "code" : "VT", "description" : "Vermont" , "longDescription" : "NCPDP Code 47"},
+{ "code" : "VA", "description" : "Virginia" , "longDescription" : "NCPDP Code 48"},
+{ "code" : "VI", "description" : "Virgin Islands" , "longDescription" : "NCPDP Code 53"},
+{ "code" : "WA", "description" : "Washington" , "longDescription" : "NCPDP Code 49"},
+{ "code" : "WV", "description" : "West Virginia" , "longDescription" : "NCPDP Code 50"},
+{ "code" : "WI", "description" : "Wisconsin" , "longDescription" : "NCPDP Code 51"},
+{ "code" : "WY", "description" : "Wyoming" , "longDescription" : "NCPDP Code 52"}
+]}
+
+{ "elementIds" : ["573-4V"],
+    "codes" :
+    [ 
+{ "code" : "", "description" : "" , "longDescription" : ""},
+
+{ "code" : "01", "description" : "Quantity Dispensed" , "longDescription" : "The quantity of the prescription dispensed for the patient."},
+{ "code" : "02", "description" : "Quantity Intended To Be Dispensed" , "longDescription" : "Indicates that the originally intended quantity of an item as written in the physician’s order is being used for the calculation of this amount even if this transaction indicates a partial filling of the order."},
+{ "code" : "03", "description" : "Usual and Customary/Prorated" , "longDescription" : "Used when payment is based upon the submitted U&C value rather than the calculated/contracted rate, causing a situation where the copay/dispensing fee is higher than the U&C value, so the plan/processor returns a copay/dispensing fee to the provider which is less than the plan copay/dispensing fee, thereby being prorated."},
+{ "code" : "04", "description" : "Waived Due To Partial Fill" , "longDescription" : "Due to the fact that the provider is submitting a partial fill transaction (no assumptions are being made as to whether this is the initial billing or the final billing in a partial fill situation), the plan/processor may elect not to apply a copay or a dispensing fee on one or both of those partial fill transactions."},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Different from those implied or specified."}
+ ]}
+
+ { "elementIds" : ["347-HJ", "346-HH"],
+    "codes" :
+    [ 
+{ "code" : "01", "description" : "Quantity Dispensed", "longDescription" : "The quantity of the prescription dispensed for the patient."},
+{ "code" : "02", "description" : "Quantity Intended To Be Dispensed", "longDescription" : "Indicates that the originally intended quantity of an item as written in the physician’s order is being used for the calculation of this amount even if this transaction indicates a partial filling of the order."},
+{ "code" : "03", "description" : "Usual and Customary/Prorated", "longDescription" : "Used when payment is based upon the submitted U&C value rather than the calculated/contracted rate, causing a situation where the copay/dispensing fee is higher than the U&C value, so the plan/processor returns a copay/dispensing fee to the provider which is less than the plan copay/dispensing fee, thereby being prorated."},
+{ "code" : "04", "description" : "Waived Due To Partial Fill", "longDescription" : "Due to the fact that the provider is submitting a partial fill transaction (no assumptions are being made as to whether this is the initial billing or the final billing in a partial fill situation), the plan/processor may elect not to apply a copay or a dispensing fee on one or both of those partial fill transactions."},
+{ "code" : "99", "description" : "Other", "longDescription" : "Different from those implied or specified."}
+ ]}
+
+
+ { "elementIds" : ["348-HK","349-HM"],
+    "codes" :
+    [ 
+{ "code" : "Blank", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "00", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "01", "description" : "Quantity Dispensed" , "longDescription" : "The quantity of the prescription dispensed for the patient."},
+{ "code" : "02", "description" : "Quantity Intended To Be Dispensed" , "longDescription" : "Indicates that the originally intended quantity of an item as written in the physician’s order is being used for the calculation of this amount even if this transaction indicates a partial filling of the order."}
+ ]}
+ 
+ { "elementIds" : ["522-FM"],
+    "codes" :
+    [ 
+{ "code" : "0", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "1", "description" : "Ingredient Cost Paid as Submitted" , "longDescription" : "Used to indicate when reimbursement is equal to the amount billed by the provider for the prescription item. "},
+{ "code" : "2", "description" : "Ingredient Cost Reduced to AWP Pricing" , "longDescription" : "Used to indicate when reimbursement is based upon the average wholesale price for the prescription item. "},
+{ "code" : "3", "description" : "Ingredient Cost Reduced to AWP Less X% Pricing" , "longDescription" : "Used to indicate when reimbursement is based on a discounted average wholesale price for the prescription item. "},
+{ "code" : "4", "description" : "Usual & Customary Paid as Submitted" , "longDescription" : "Indicates when the ingredient cost reimbursed to the provider is based upon the submitted Usual and Customary Price. "},
+{ "code" : "5", "description" : "Paid Lower of Ingredient Cost Plus Fees Versus Usual & Customary" , "longDescription" : "Used to indicate that the processor has compared submitted U&C to the cost plus the fee (May be either their negotiated value for cost plus fee, or the submitted cost and fee), and is paying the lower of the amounts. "},
+{ "code" : "6", "description" : "MAC Pricing Ingredient Cost Paid" , "longDescription" : "Indicates when the ingredient cost reimbursed to the provider is based upon a payer’s Maximum Allowable Cost list. (when MAC Basis of Cost was submitted) "},
+{ "code" : "7", "description" : "MAC Pricing Ingredient Cost Reduced to MAC" , "longDescription" : "Indicates when the ingredient cost reimbursed to the provider is based upon a payer’s Maximum Allowable Cost list. (when other than MAC Basis of Cost was submitted) "},
+{ "code" : "8", "description" : "Contract Pricing" , "longDescription" : "Price based upon contractual agreement between trading partners. "},
+{ "code" : "9", "description" : "Acquisition Pricing" , "longDescription" : "Used to indicate when reimbursement is based upon the actual cost of the item. "},
+{ "code" : "10", "description" : "ASP (Average Sales Price)" , "longDescription" : "The average sales price (ASP) is a cost basis required by and reported to CMS for pricing Medicare Part B drugs. "},
+{ "code" : "11", "description" : "AMP (Average Manufacturer Price)" , "longDescription" : "The average price paid to manufacturers by wholesalers for drugs distributed to the retail class of trade; calculated net of charge backs, discounts, rebates, and other benefits tied to the purchase of the drug product, regardless of whether these incentives are paid to the wholesaler or the retailer. "},
+{ "code" : "12", "description" : "340B /Disproportionate Share Pricing/Public Health Service" , "longDescription" : "Price available under Section 340B of the Public Health Service Act of 1992 including sub-ceiling purchases authorized by Section 340B (a)(10) and those made through the Prime Vendor Program (Section 340B(a)(8)). Applicable only to submissions for Medicaid and other state or federal programs when required by law or regulation and when the payer and/or processor has communicated a unique RxBIN or unique RxBIN/RxPCN combination to distinguish these from other lines of business that do not meet the requirement. "},
+{ "code" : "13", "description" : "WAC (Wholesale Acquisition Cost)" , "longDescription" : "A cost as defined in Title XIX, Section 1927 of the Social Security Act. "},
+{ "code" : "14", "description" : "Other Payer-Patient Responsibility Amount" , "longDescription" : "Indicates reimbursement was based on the Other Payer-Patient Responsibility Amount (352-NQ). "},
+{ "code" : "15", "description" : "Patient Pay Amount" , "longDescription" : "Indicates reimbursement was based on the Patient Pay Amount (505-F5). "},
+{ "code" : "16", "description" : "Coupon Payment" , "longDescription" : "Indicates reimbursement was based on the Coupon Value Amount (487-NE) submitted or coupon amount determined by the processor. "},
+{ "code" : "17", "description" : "Special Patient Reimbursement" , "longDescription" : "Indicates the reimbursement was based on the cost calculated by the pharmacy for the drug for this special patient. "},
+{ "code" : "18", "description" : "Direct Price (DP)" , "longDescription" : "Represents the manufacturer's published catalog or list price for a drug product to non-wholesalers. Direct Price does not represent actual transaction prices and does not include prompt pay or other discounts, rebates or reductions. "},
+{ "code" : "19", "description" : "State Fee Schedule (SFS) Reimbursement" , "longDescription" : "State mandated level of reimbursement for Workers’ Compensation or Property and Casualty prescription services. "},
+{ "code" : "20", "description" : "National Average Drug Acquisition Cost (NADAC)" , "longDescription" : "The estimated average drug acquisition cost as defined by CMS. "},
+{ "code" : "21", "description" : "State Average Acquisition Cost (AAC)" , "longDescription" : "The estimated average drug acquisition cost as defined by a state Medicaid. "}
+ ]}
+
+ 
+
+{ "elementIds" : ["393-MV"],
+    "codes" :
+    [ 
+
+{ "code" : "Blank", "description" : "Not Specified" , "longDescription" : "Used only in Telecommunication Standard Versions C.3 and C.4. Value was deleted for use in higher versions of this standard."},
+{ "code" : "01", "description" : "Deductible" , "longDescription" : "The amount of covered expenses that must be incurred and paid by the insured before benefits become payable by the insurer."},
+{ "code" : "02", "description" : "Initial Benefit" , "longDescription" : "The first monthly benefit, or the first monthly benefit following any break in participation."},
+{ "code" : "03", "description" : "Coverage Gap (donut hole)" , "longDescription" : "Commonly referred to as the 'donut hole'. Amount paid for Medicare prescription drug coverage, with a PDP or an MA-PD, after the initial coverage limit and until the total out of your pocket paid for covered prescription drugs reaches a certain amount."},
+{ "code" : "04", "description" : "Catastrophic Coverage" , "longDescription" : "Once a total maximum is reached, the insured pays a small amount for a drug claim until the end of the calendar year."},
+{ "code" : "50", "description" : "Not paid under Part D, paid under Part C benefit (for MA-PD plan) " , "longDescription" : "* This qualifier applies to MA-PD plans where the claim is submitted under the Part D BIN/PCN. * The claim is NOT paid by the Part D plan benefit * The claim IS paid for by Part C benefit (MA portion of the MA-PD). * When the qualifier value of 50 is used, the Benefit Stage Count is 1 and no other benefit stage qualifier should be used. * The field 394-MV Benefit Stage Amount should be populated with the total amount (total of 505-F5 Patient Pay Amount, 509-F9 Total Amount Paid, and 566-J5 Other Payer Amount Recognized) of the claim."},
+{ "code" : "60", "description" : "Not paid under Part D, paid as or under a supplemental benefit only " , "longDescription" : "* This qualifier applies to co-administered plans, where the claim is submitted under the part D BIN/PCN and where one pharmacy response is provided. * This qualifier also applies to Primary claims submitted under the Part D BIN/PCN when a supplemental benefit is provided (drugs covered outside of the allowable Part D benefit). * The claim is NOT paid by the Part D plan benefit but is paid under the supplemental benefit. * When the qualifier value of 60 is used, the Benefit Stage Count is 1 and no other benefit stage qualifier should be used. * The field 394-MV Benefit Stage Amount should be populated with the total amount (total of 505-F5 Patient Pay Amount, 509-F9 Total Amount Paid, and 566-J5 Other Payer Amount Recognized) of the claim. * Since 60 is not specific to a Part D covered drug versus a non-Part D drug/non-qualified either of the following situations may occur: 1. For Part D drugs not paid by the Part D plan benefit, the Approved Message Code field (548-6F) must be returned with a value 018 – “Provide Notice: Medicare Prescription Drug Coverage and Your Rights”. 2. For non Part D/non qualified drugs Benefit Stage Qualifier 60 will be returned without the Approved Message Code value of 018. Note: Non-qualified drugs are defined as not meeting the definition of a Part D drug."},
+{ "code" : "61", "description" : "Part D drug not paid by Part D plan benefit, paid as or under a co-administered insured benefit only" , "longDescription" : "* This qualifier applies to co-administered plans, where the claim is submitted under the Part D BIN/PCN and where one pharmacy response is provided. * The claim is NOT paid by the Part D plan benefit but is paid under the co-administered insured benefit. * When the qualifier value of 61is used, the Benefit Stage Count is 1 and no other benefit stage qualifier should be used. * The field 394-MC Benefit Stage Amount should be populated with the total amount (total of 505-F5 Patient Pay Amount, 509-F9 Total Amount Paid, and 566-J5 Other Payer Amount Recognized) of the claim. * Benefit Stage Qualifier (393-MV) values 61 or 62 to replace the value of 60 are available for use as of 01/01/2013."},
+{ "code" : "62", "description" : "Non-Part D/non-qualified drug not paid by Part D plan benefit. Paid as or under a co-administered benefit only" , "longDescription" : "* This qualifier applies to co-administered plans, where the claim is submitted under the Part D BIN/PCN and where one pharmacy response is provided. * The claim is NOT paid by the Part D plan benefit but is paid paid under the co-administered benefit. * When the qualifier value of 62 is used, the Benefit Stage Count is 1 and no other benefit stage qualifier should be used. * The field 394-MC Benefit Stage Amount should be populated with the total amount (total of 505-F5 Patient Pay Amount, 509-F9 Total Amount Paid, and 566-J5 Other Payer Amount Recognized) of the claim. Note: Non-qualified drugs are defined as not meeting the definition of a Part D drug. Benefit Stage Qualifier (393-MV) values 61 or 62 to replace the value of 60 are available for use as of 01/01/2013."},
+{ "code" : "63", "description" : "Non-Part D/non-qualified drug not paid by Part D plan benefit." , "longDescription" : "Paid under Medicaid benefit only of the Medicare/Medicaid (MMP) plan. * This qualifier applies to Medicare/Medicaid (MMP) plans, where the claim is submitted under the Part D BIN/PCN and where one pharmacy response is provided. * The claim is NOT paid by the Part D plan benefit but is paid under the Medicaid benefit only of the Medicare/Medicaid (MMP) plan. * When the qualifier of 63 is used, the Benefit Stage Count is 1 and no other benefit stage qualifier should be used. * The field 394-MW Benefit Stage Amount should be populated with the total amount (total of 505-F5 Patient Pay Amount, 509-F9 Total Amount Paid, and 566-J5 Other Payer Amount Recognized) of the claim. Note: Non-qualified drugs are defined as not meeting the definition of Part D drug"},
+{ "code" : "70", "description" : "Part D drug not paid by Part D plan benefit, paid by the beneficiary under plan-sponsored negotiated pricing" , "longDescription" : "* This qualifier applies to a plan sponsor that offers negotiated pricing to the beneficiary when the Part D drug is not covered by the plan (e.g. non-formulary, quantity limit, etc.). * When the qualifier value of 70 is used, the Benefit Stage Count is 1 and no other benefit stage qualifier should be used. * The field 394-MV Benefit Stage Amount should be populated with the total amount (total of 505-F5 Patient Pay Amount, 509-F9 Total Amount Paid, and 566-J5 Other Payer Amount Recognized) of the claim. * For Part D drugs not paid by the Part D plan benefit, paid by the beneficiary under plan-sponsored negotiated pricing, the Approved Message Code field (548-6F) must be returned with a value 018 – 'Provide Notice: Medicare Prescription Drug Coverage and Your Rights'."},
+{ "code" : "80", "description" : "Non-Part D/non-qualified drug not paid by Part D plan benefit, hospice benefit, or any other component of Medicare" , "longDescription" : "Paid by the beneficiary under plan-sponsored negotiated pricing * This qualifier applies to a plan sponsor that offers negotiated pricing to the beneficiary when drug is not covered under Part D law (i.e. excluded drugs). * When the qualifier value of 80 is used, the Benefit Stage Count is 1 and no other benefit stage qualifier should be used. * The field 394-MV Benefit Stage Amount should be populated with the total amount (total of 505-F5 Patient Pay Amount, 509-F9 Total Amount Paid, and 566-J5 Other Payer Amount Recognized) of the claim."},
+{ "code" : "90", "description" : "Enhance or OTC drug (PDE value of E/O)" , "longDescription" : "Not applicable to the Part D drug spend, but is covered by the Part D plan * When the qualifier value of 90 is used, the Benefit Stage Count is 1 and no other benefit stage qualifier should be used. * The field 394-MV Benefit Stage Amount should be populated with the total amount (total of 505-F5 Patient Pay Amount, 509-F9 Total Amount Paid, and 566-J5 Other Payer Amount Recognized) of the claim."}
+     
+]}
+
+
+{ "elementIds" : ["212"],
+    "codes" :
+    [ 
+{ "code" : "Blank", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "1", "description" : "Mail Order Only" , "longDescription" : "Claims accepted for payment only when dispensed by pharmacies that primarily conduct their business by delivering the filled prescriptions by mail or parcel service."},
+{ "code" : "2", "description" : "Mail Order Member Paper Only" , "longDescription" : "Claims accepted for payment only when dispensed by pharmacies that primarily conduct their business by delivering the filled prescriptions by mail or parcel service and only when the claim is submitted by the member via a request for reimbursement."},
+{ "code" : "3", "description" : "Card Only" , "longDescription" : "Claims accepted for payment only when the prescription is dispensed at retail pharmacies."},
+{ "code" : "4", "description" : "Member Paper Only – Claims accepted for payment when the claim is submitted by the member requesting reimbursement."},
+{ "code" : "5", "description" : "Standard Program (Integrated Card, Mail Service & Member Paper Programs) – Claims accepted from all types of dispensing providers and paper claims submitted requesting reimbursement after dispensing."},
+{ "code" : "6", "description" : "Card and member paper only" , "longDescription" : "Claims accepted for payment only when the prescription is dispensed at a retail pharmacy, or when a paper claim is submitted by the member requesting reimbursement"},
+{ "code" : "7", "description" : "Mail and Card Only" , "longDescription" : "Claims accepted for payment only when dispensed by mail service or retail pharmacies; claims submitted by the member requesting reimbursement are not covered."},
+{ "code" : "8", "description" : "Discount Card Program" , "longDescription" : "Claims accepted but members are required to pay 1ØØ% copay for all types of pharmacy claims."}
+ ]}
+
+
+
+{ "elementIds" : ["117-TR"],
+    "codes" :
+    [
+{ "code" : "0", "description" : "Provider Submitted-Pay to Provider", "longDescription" : ""},
+{ "code" : "1", "description" : "Provider Submitted-Pay to Another Party", "longDescription" : ""},
+{ "code" : "2", "description" : "Agent Submitted-Pay to Agent", "longDescription" : ""},
+{ "code" : "3", "description" : "Agent Submitted-Pay to Another Party", "longDescription" : ""}
+]}
+
+{ "elementIds" : ["218"],
+    "codes" :
+    [
+{ "code" : "Blank", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "1", "description" :  "POS Claim", "longDescription" : "A Point-Of-Sale transaction submitted in a real-time mode."},
+{ "code" : "2", "description" :  "Batch Claim", "longDescription" : "A non real-time transaction submitted when an immediate response is not available or required."},
+{ "code" : "3", "description" :  "Pharmacy Submitted Paper Claim (UCF)", "longDescription" : "A non-electronic transaction submitted via an NCPDP-developed Universal Claim Form."},
+{ "code" : "4", "description" :  "Member Submitted Paper Claim (Direct Member Reimbursement (DMR))", "longDescription" : "A claim submitted by the member requesting reimbursement."},
+{ "code" : "5", "description" :  "Other", "longDescription" : "Different from the codes already specified"}
+]}
+
+
+{ "elementIds" : ["223"],
+    "codes" :
+[
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "01", "description" : "Average Wholesale Price" , "longDescription" : "The current average wholesale price as listed in a nationally recognized pricing source based on the package size dispensed."},
+{ "code" : "02", "description" : "Acquisition Cost (ACQ)" , "longDescription" : "Price based on the acquisition cost for the package size dispensed."},
+{ "code" : "03", "description" : "Manufacturer Direct Price" , "longDescription" : "Price the submitter paid for the drug purchased directly from the manufacturer."},
+{ "code" : "04", "description" : "Federal Upper Limit (FUL)" , "longDescription" : "The maximum allowable cost that federal programs will reimburse."},
+{ "code" : "05", "description" : "Average Generic Price" , "longDescription" : "An average price of generics in the same chemical strength and dosage form of the dispensed medication."},
+{ "code" : "06", "description" : "Usual & Customary" , "longDescription" : "The pharmacy’s price for the medication for a person paying cash on the day of dispensing."},
+{ "code" : "07", "description" : "Submitted Ingredient Cost" , "longDescription" : "Ingredient cost submitted by the pharmacy on the claim"},
+{ "code" : "08", "description" : "State MAC" , "longDescription" : "The maximum allowable unit cost as published by the State Medicaid Agency."},
+{ "code" : "09", "description" : "Unit" , "longDescription" : "The price per unit of the drug."},
+{ "code" : "10", "description" : "Usual & Customary or Copay" , "longDescription" : "The pharmacy’s price for the medication for a person paying cash on the day of dispensing or the patient copay whichever is less. "}    
+]}
+
+{ "elementIds" : ["997-G2"],
+    "codes" :
+[
+
+{ "code" : "Y", "description" : "Yes" , "longDescription" : "CMS qualified facility"},
+{ "code" : "N", "description" : "No" , "longDescription" : "Not a CMS qualified facility"}
+]}
+
+
+{ "elementIds" : ["226"],
+    "codes" :
+[
+
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "1", "description" : "Secondary Claims Not Processed" , "longDescription" : "Supplemental claims are not eligible for COB."},
+{ "code" : "J", "description" : "Major Medical" , "longDescription" : "Supplemental health care claims, excluding pharmaceutical claims, are eligible for COB"},
+{ "code" : "M", "description" : "Mail Service" , "longDescription" : "Pharmaceutical claims dispensed out of a Mail Order Facility."},
+{ "code" : "R", "description" : "Retail" , "longDescription" : "Pharmaceutical claims dispensed out of a Retail pharmacy."}
+]}
+
+
+{ "elementIds" : ["239"],
+    "codes" :
+[
+
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "E", "description" : "Email (Electronic mail)" , "longDescription" : "The exchange of electronic messages and computer files between computers that are connected to the Internet or some other computer network."},
+{ "code" : "F", "description" : "Fax" , "longDescription" : "Prescription obtained via transmission using a fax machine."},
+{ "code" : "I", "description" : "Interactive Voice Response Unit (IVRU)" , "longDescription" : "a phone technology that allows a computer to detect voice and touch tones using a normal phone call. The IVRU system can respond with pre-recorded or dynamically generated audio to further direct callers on how to proceed. IVRU systems can be used to control almost any function where the interface can be broken down into a series of simple menu choices."},
+{ "code" : "D", "description" : "Directly delivered to pharmacy (delivery service/mail/walk in)" , "longDescription" : "delivered to the pharmacy personally"},
+{ "code" : "P", "description" : "Electronic Prescription" , "longDescription" : "a computer based means of transmitting a prescription"},
+{ "code" : "V", "description" : "Customer Service (phoned in)" , "longDescription" : "Use of a telephone to communicate information"},
+{ "code" : "W", "description" : "Website" , "longDescription" : "A site (location) on the World Wide Web. Each website contains a homepage, which is the first document users see when they enter the site. The site might also contain additional documents and files. Each site is owned and managed by an individual, company, or organization"}
+]}
+
+{ "elementIds" : ["451-EG"],
+    "codes" :
+    [ 
+{ "code" : "1", "description" : "Each" , "longDescription" : "Being one or individual."},
+{ "code" : "2", "description" : "Grams" , "longDescription" : "A metric unit of mass equal to one thousandth of a kilogram."},
+{ "code" : "3", "description" : "Milliliters" , "longDescription" : "A metric measure of volume equal to one thousandth of a liter."}
+]}
+
+{ "elementIds" : ["908-BW"],
+    "codes" :
+    [
+{ "code" : "SL", "description" : "Summary Level" , "longDescription" : "Indicates that the detail listed is summarized according to the criteria specified within the detailed records (e.g. formulary status, product type, pharmacy type, etc.) vs. for specific drugs."},
+{ "code" : "DS", "description" : "Drug Specific" , "longDescription" : "Used to identify those copay values which are unique to a certain drug or drug group."}
+]}
+
+
+{ "elementIds" : ["485-KE"],
+    "codes" :
+    [
+{ "code" : "01", "description" : "Price Discount" , "longDescription" : "a reduced cost for the product incurred by the bearer of the coupon."},
+{ "code" : "02", "description" : "Free Product" , "longDescription" : "no cost incurred for the product by the bearer of the coupon."},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Different from those implied or specified."}
+]}
+
+{ "elementIds" : ["912-B3"],
+    "codes" :
+    [
+{ "code" : "AL", "description" : "Age Limits" , "longDescription" : "Age restrictions placed on medications by formularies to limit use to certain populations based on cost and availability of appropriate alternative therapies."},
+{ "code" : "DE", "description" : "Product Coverage Exclusion" , "longDescription" : "Used to indicate the list of products provided is excluded from being paid by the plan rules."},
+{ "code" : "GL", "description" : "Gender Limits" , "longDescription" : "Indicator used in the Formulary and Benefits Standard to convey that gender constraints apply to the coverage of the specified product, i.e., the product is allowed only for males or only for females."},
+{ "code" : "PA", "description" : "Prior Authorization" , "longDescription" : "a) Code assigned for use with claim billing to allow processing of a claim which would otherwise reject based upon benefit or program design. b) Indicator to convey that coverage of the specified product is dependent upon the prescriber submitting the request (including required documentation) to the payer/plan or designated utilization management organization for approval/authorization prior to ordering/dispensing the product."},
+{ "code" : "PR", "description" : "Prior Authorization Processor" , "longDescription" : "Indicator used to convey who is processing the electronic prior authorization."},
+{ "code" : "QL", "description" : "Quantity Limits" , "longDescription" : "Indicator used to convey that quantity constraints apply to the coverage of the specified product, e.g. the maximum allowed quantity of Viagra is 3 tablets per month."},
+{ "code" : "RD", "description" : "Resource Link - Drug-Specific Level" , "longDescription" : "Indicates that the resource link is for the specified drug and coverage type listed in the record."},
+{ "code" : "SG", "description" : "Step Medications Groups - Indicates a grouping of drugs that is referenced by the step medication trigger drug."},
+{ "code" : "SM", "description" : "Step Medications Triggers" , "longDescription" : "Indicates the drugs that have a step medication protocol and the details about the step medication protocol."},
+{ "code" : "ST", "description" : "Step Therapy" , "longDescription" : "Indicates that this coverage list defines step therapy medications—but does not list the step medications."},
+{ "code" : "TM", "description" : "Coverage Text Message" , "longDescription" : "A code indicating a free form description of the type of coverage"}
+]}
+{ "elementIds" : ["601-31"],
+    "codes" :
+    [ 
+    
+{ "code" : "CN", "description" : "Contracting organization NDC level" , "longDescription" : "The level of data being submitted by a PMO for manufacturer rebates summarized across fill dates at the NDC level."},
+{ "code" : "CP", "description" : "Contracting organization prescription level" , "longDescription" : "The level of data being submitted by a PMO for manufacturer rebates at the RX detail level."},
+{ "code" : "PN", "description" : "Plan NDC level" , "longDescription" : "Product utilization is submitted for rebate consideration by summarizing each Plan and NDC that had adjudicated claims that reporting period."},
+{ "code" : "PP", "description" : "Plan prescription level" , "longDescription" : "Product utilization is submitted for rebate consideration by each Plan at a prescription level."},
+{ "code" : "ZZ", "description" : "Mutually agreed upon level" , "longDescription" : "The mutually agreed data level to be exchanged between trading partners (i.e. summary of PN levelvs. detail or PP level data records) for manufacturer rebates."}
+]}
+
+
+{ "elementIds" : ["532-FW"],
+    "codes" :
+    [ 
+
+{ "code" : "1", "description" :  "First DataBank" , "longDescription" : "a drug database company"},
+{ "code" : "2", "description" :  "Medi-Span Product Line" , "longDescription" : "a drug database company"},
+{ "code" : "3", "description" :  "Micromedex/Medical Economics" , "longDescription" : "a drug database company"},
+{ "code" : "4", "description" :  "Processor Developed" , "longDescription" : "a proprietary drug file"},
+{ "code" : "5", "description" :  "Other" , "longDescription" : "Different from those implied or specified"},
+{ "code" : "6", "description" :  "Redbook" , "longDescription" : "a Micromedex publication of drug information"},
+{ "code" : "7", "description" :  "Multum" , "longDescription" : "a drug database company"}
+]}
+
+{ "elementIds" : ["357-NV"],
+    "codes" :
+    [ 
+{ "code" : "1", "description" : "Proof of eligibility unknown or unavailable" , "longDescription" : "Transaction delayed because identification card or verification transaction not available, or patient enrollment in benefit plan not complete at the time of service."},
+{ "code" : "2", "description" : "Litigation" , "longDescription" : "Transaction delayed because litigation to determine liability for medical expenditures was unresolved at the time of service."},
+{ "code" : "3", "description" : "Authorization delays" , "longDescription" : "Transaction delayed because the review process for authorization of the service was not completed/finalized at the time of service."},
+{ "code" : "4", "description" : "Delay in certifying provider" , "longDescription" : "Transaction delayed because the provider certification for participation with the plan was not completed/finalized at the time of service."},
+{ "code" : "5", "description" : "Delay in supplying billing forms" , "longDescription" : "Transaction delayed because specified billing form was not available at the time of service."},
+{ "code" : "6", "description" : "Delay in delivery of custom-made appliances" , "longDescription" : "Transaction delayed because custom-fabricated appliance was not ready for delivery at the time related services/supplies were provided."},
+{ "code" : "7", "description" : "Third party processing delay" , "longDescription" : "Transaction delayed because payment decision of third party payer(s) was not complete/received at the time of service."},
+{ "code" : "8", "description" : "Delay in eligibility determination" , "longDescription" : "Transaction delayed because patient enrollment in benefit plan not complete at the time of service; or subsequent determination made enrollment retroactive to or prior to the date of service."},
+{ "code" : "9", "description" : "Original claims rejected or denied due to a reason unrelated to the billing limitation rules" , "longDescription" : "Transaction delayed for correction of inadequacies or errors on previous, timely submitted claims."},
+{ "code" : "10", "description" :"Administration delay in the prior approval process" , "longDescription" : "Transaction delayed because the authorizing entity was unable to complete and/or provide the authorization prior to the time of service."},
+{ "code" : "11", "description" :"Other" , "longDescription" : "Does not fit within any of the other delay reason codes."},
+{ "code" : "12", "description" :"Received late with no exceptions." , "longDescription" : ""},
+{ "code" : "13", "description" :"Substantial damage by fire, etc to provider records" , "longDescription" : "Transaction delayed because damaged records of services had to be reconstructed in order to complete the transaction."},
+{ "code" : "14", "description" :"Theft, sabotage/other willful acts by employee" , "longDescription" : "Transaction delayed because of employee misconduct."}
+ ]}
+ 
+ 
+
+{ "elementIds" : ["408-D8"],
+    "codes" :
+    [ 
+
+{ "code" : "0", "description" : "No Product Selection Indicated" , "longDescription" : "This is the field default value that is appropriately used for prescriptions for single source brand, co-branded/co-licensed, or generic products. For a multi-source branded product with available generic(s), DAW 0 is not appropriate, and may result in a reject."},
+{ "code" : "1", "description" : "Substitution Not Allowed by Prescriber" , "longDescription" : "This value is used when the prescriber indicates, in a manner specified by prevailing law, that the product is Medically Necessary to be Dispensed As Written. DAW 1 is based on prescriber instruction and not product classification."},
+{ "code" : "2", "description" : "Substitution Allowed-Patient Requested Product Dispensed" , "longDescription" : "This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted and the patient requests the brand product. This situation can occur when the prescriber writes the prescription using either the brand or generic name and the product is available from multiple sources."},
+{ "code" : "3", "description" : "Substitution Allowed-Pharmacist Selected Product Dispensed" , "longDescription" : "This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted and the pharmacist determines that the brand product should be dispensed. This can occur when the prescriber writes the prescription using either the brand or generic name and the product is available from multiple sources."},
+{ "code" : "4", "description" : "Substitution Allowed-Generic Drug Not in Stock" , "longDescription" : "This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted and the brand product is dispensed since a currently marketed generic is not stocked in the pharmacy. This situation exists due to the buying habits of the pharmacist, not because of the unavailability of the generic product in the marketplace."},
+{ "code" : "5", "description" : "Substitution Allowed-Brand Drug Dispensed as a Generic" , "longDescription" : "This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted and the pharmacist is utilizing the brand product as the generic entity."},
+{ "code" : "6", "description" : "Override" , "longDescription" : "This value is used by various claims processors in very specific instances as defined by that claims’ processor and/or its client(s)."},
+{ "code" : "7", "description" : "Substitution Not Allowed-Brand Drug Mandated by Law" , "longDescription" : "This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted but prevailing law or regulation prohibits the substitution of a brand product even though generic versions of the product may be available in the marketplace."},
+{ "code" : "8", "description" : "Substitution Allowed-Generic Drug Not Available in Marketplace" , "longDescription" : "This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted and the brand product is dispensed since the generic is not currently manufactured, distributed, or is temporarily unavailable."},
+{ "code" : "9", "description" : "Substitution Allowed By Prescriber but Plan Requests Brand - Patient's Plan Requested Brand Product To Be Dispensed" , "longDescription" : "This value is used when the prescriber has indicated, in a manner specified by prevailing law, that generic substitution is permitted, but the plan's formulary requests the brand product. This situation can occur when the prescriber writes the prescription using either the brand or generic name and the product is available from multiple sources."}
+]}
+
+{ "elementIds" : ["343-HD"],
+    "codes" :
+    [ 
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "P", "description" : "Partial Fill" , "longDescription" : "A dispensing of less than the prescribed quantity, the balance of which will be dispensed at a later time."},
+{ "code" : "C", "description" : "Completion of Partial Fill" , "longDescription" : "Dispensing the remaining quantity of a prescription when the entire amount could not be supplied at the original dispensing (fill)."}
+]}
+
+{ "elementIds" : ["425-DP"],
+    "codes" :
+    [ 
+
+{ "code" : "0", "description" : "Not Specified" , "longDescription" : "When used in the Prior Authorization Transfer Standard 0=Specific but not limited; all legend and OTC's"},
+{ "code" : "1", "description" : "Single Source" , "longDescription" : "A clinical formulation that is only available from a single distributor."},
+{ "code" : "2", "description" : "Authorized Generic (aka 'Branded Generic')" , "longDescription" : "the originating company is authorizing the manufacturer of the drug using their New Drug Application (NDA). Often introduced as patent protection for the original branded formulation when nearing expiration. e.g. Pfizer and its subsidiary Greenstone."},
+{ "code" : "3", "description" : "Generic" , "longDescription" : "the pharmaceutically equivalent product of a branded product introduced by additional distributors after patient protection has expired on the brand product. Manufactured under an Abbreviated New Drug Application (ANDA)."},
+{ "code" : "4", "description" : "Over the Counter" , "longDescription" : "Drugs and other pharmaceuticals that may be purchased without a prescription. These products do not carry the legend: 'Caution: Federal Law Prohibits Dispensing Without a Prescription.'"},
+{ "code" : "5", "description" : "Multi-source Brand" , "longDescription" : "Product’s clinical formulation is available from multiple distributors"}
+]}
+{ "elementIds" : ["474-8E"],
+    "codes" :
+    [ 
+{ "code" : "0", "description" : "Not Specified"},
+{ "code" : "11", "description" : "Level 1 (Lowest)" , "longDescription" : "Straightforward: Service involves minimal diagnosis or treatment options, minimal amount or complexity of data considered, and minimal risk; AND/OR Requires 1 to 4 MINUTES of effort."},
+{ "code" : "12", "description" : "Level 2 (Low Complexity)" , "longDescription" : "Service involves limited diagnosis or treatment options, limited amount or complexity of data considered, and low risk; AND/OR Requires 5 to 14 MINUTES of effort."},
+{ "code" : "13", "description" : "Level 3 (Moderate Complexity)" , "longDescription" : "Service involves moderate diagnosis or treatment options, moderate amount or complexity of data considered, and moderate risk; AND/OR Requires 15 to 29 MINUTES of effort."},
+{ "code" : "14", "description" : "Level 4 (High Complexity)" , "longDescription" : "Service involves multiple diagnosis or treatment options, extensive amount or complexity of data considered, and high risk; AND/OR Requires 30 to 59 MINUTES of effort."},
+{ "code" : "15", "description" : "Level 5 (Highest) - Comprehensive" , "longDescription" : "Service involves extensive diagnosis or treatment options, exceptional amount or complexity of data considered, counseling or coordination of care dominated the encounter, and very high risk; AND/OR requires equal to or greater than 60 MINUTES of effort AND/OR a sterile or negative pressure environment."}
+]}
+
+{ "elementIds" : ["245"],
+    "codes" :
+    [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "1", "description" : "Payer is primary", "longDescription" :"Plan is first payer for patient"},
+{ "code" : "2", "description" : "Payer is secondary", "longDescription" :"Plan is second payer for patient"},
+{ "code" : "3", "description" : "Payer is tertiary", "longDescription" :"Plan is third payer for patient"}
+]}
+
+{ "elementIds" : ["247"],
+    "codes" :
+    [
+{ "code" : "0", "description" : "Not Applicable", "longDescription" : ""},
+{ "code" : "1", "description" : "Spouse", "longDescription" : ""},
+{ "code" : "2", "description" : "Son or Daughter", "longDescription" : ""},
+{ "code" : "3", "description" : "Father or Mother", "longDescription" : ""},
+{ "code" : "4", "description" : "Grandfather or Grandmother", "longDescription" : ""},
+{ "code" : "5", "description" : "Grandson or Granddaughter", "longDescription" : ""},
+{ "code" : "6", "description" : "Uncle or Aunt", "longDescription" : ""},
+{ "code" : "7", "description" : "Nephew or Niece", "longDescription" : ""},
+{ "code" : "8", "description" : "Cousin", "longDescription" : ""},
+{ "code" : "9", "description" : "Adopted Child", "longDescription" : ""},
+{ "code" : "10", "description" : "Foster Child", "longDescription" : ""},
+{ "code" : "11", "description" : "Son-in-law or Daughter-in-law", "longDescription" : ""},
+{ "code" : "12", "description" : "Brother-in-law or Sister-in-law", "longDescription" : ""},
+{ "code" : "13", "description" : "Mother-in-law or Father-in-law", "longDescription" : ""},
+{ "code" : "14", "description" : "Brother or Sister", "longDescription" : ""},
+{ "code" : "15", "description" : "Ward", "longDescription" : ""},
+{ "code" : "16", "description" : "Stepparent", "longDescription" : ""},
+{ "code" : "17", "description" : "Stepson or Stepdaughter", "longDescription" : ""},
+{ "code" : "18", "description" : "Self", "longDescription" : ""},
+{ "code" : "19", "description" : "Child", "longDescription" : "Dependent between the ages of 0 and 19; age qualifications may vary depending on policy"},
+{ "code" : "20", "description" : "Employee", "longDescription" : ""},
+{ "code" : "21", "description" : "Unknown", "longDescription" : ""},
+{ "code" : "22", "description" : "Handicapped Dependent", "longDescription" : ""},
+{ "code" : "23", "description" : "Sponsored Dependent", "longDescription" : "Dependents between the ages of 19 and 25 not attending school; age qualifications may vary depending on policy"},
+{ "code" : "24", "description" : "Dependent of a Minor Dependent", "longDescription" : ""},
+{ "code" : "25", "description" : "Ex-spouse", "longDescription" : ""},
+{ "code" : "26", "description" : "Guardian", "longDescription" : ""},
+{ "code" : "27", "description" : "Student", "longDescription" : "Dependent between the ages of 19 and 25 attending school; age qualifications may vary depending on policy"},
+{ "code" : "28", "description" : "Friend", "longDescription" : ""},
+{ "code" : "29", "description" : "Significant Other", "longDescription" : ""},
+{ "code" : "30", "description" : "Both Parents", "longDescription" : "The residence or legal custody of the student is with both parents"},
+{ "code" : "31", "description" : "Court Appointed Guardian", "longDescription" : ""},
+{ "code" : "32", "description" : "Mother", "longDescription" : ""},
+{ "code" : "33", "description" : "Father", "longDescription" : ""},
+{ "code" : "34", "description" : "Other Adult", "longDescription" : ""},
+{ "code" : "36", "description" : "Emancipated Minor", "longDescription" : "A person who has been judged by a court of competent jurisdiction to be allowed to act in his or her own interest; no adult is legally responsible for this minor; this may be declared as a result of marriage"},
+{ "code" : "37", "description" : "Agency Representative", "longDescription" : ""},
+{ "code" : "38", "description" : "Collateral Dependent", "longDescription" : "Relative related by blood or marriage who resides in the home and is dependent on the insured for a major portion of their support"},
+{ "code" : "39", "description" : "Organ Donor", "longDescription" : "Individual receiving medical service in order to donate organs for a transplant"},
+{ "code" : "40", "description" : "Cadaver Donor", "longDescription" : "Deceased individual donating body to be used for research or transplants"},
+{ "code" : "41", "description" : "Injured Plaintiff", "longDescription" : ""},
+{ "code" : "43", "description" : "Child Where Insured Has No Financial Responsibility", "longDescription" : "Child is covered by the insured but the insured is not the legal guardian"},
+{ "code" : "45", "description" : "Widow", "longDescription" : ""},
+{ "code" : "46", "description" : "Widower", "longDescription" : ""},
+{ "code" : "47", "description" : "State Fund", "longDescription" : "The state affiliated insurance organization providing coverage and or benefits to the claimant"},
+{ "code" : "48", "description" : "Stepfather", "longDescription" : ""},
+{ "code" : "49", "description" : "Stepmother", "longDescription" : ""},
+{ "code" : "50", "description" : "Foster Parent", "longDescription" : ""},
+{ "code" : "51", "description" : "Emergency Contact", "longDescription" : ""},
+{ "code" : "52", "description" : "Employer", "longDescription" : ""},
+{ "code" : "53", "description" : "Life Partner", "longDescription" : ""},
+{ "code" : "55", "description" : "Adopted Daughter", "longDescription" : ""},
+{ "code" : "56", "description" : "Adopted Son", "longDescription" : ""},
+{ "code" : "57", "description" : "Adoptive Father", "longDescription" : ""},
+{ "code" : "58", "description" : "Adoptive Mother", "longDescription" : ""},
+{ "code" : "59", "description" : "Adoptive Parents", "longDescription" : ""},
+{ "code" : "60", "description" : "Annuitant", "longDescription" : ""},
+{ "code" : "61", "description" : "Aunt", "longDescription" : ""},
+{ "code" : "62", "description" : "Brother", "longDescription" : ""},
+{ "code" : "63", "description" : "Brother-in-law", "longDescription" : ""},
+{ "code" : "64", "description" : "Business", "longDescription" : ""},
+{ "code" : "81", "description" : "Father-in-Law", "longDescription" : ""},
+{ "code" : "82", "description" : "Fiancé (Male)", "longDescription" : ""},
+{ "code" : "83", "description" : "Financée (Female)", "longDescription" : ""},
+{ "code" : "84", "description" : "Fiduciary", "longDescription" : ""},
+{ "code" : "86", "description" : "Foster Daughter", "longDescription" : ""},
+{ "code" : "87", "description" : "Foster Father", "longDescription" : ""},
+{ "code" : "88", "description" : "Foster Mother", "longDescription" : ""},
+{ "code" : "90", "description" : "Foster Son", "longDescription" : ""},
+{ "code" : "91", "description" : "God Daughter", "longDescription" : ""},
+{ "code" : "92", "description" : "God Father", "longDescription" : ""},
+{ "code" : "93", "description" : "God Parents", "longDescription" : ""},
+{ "code" : "94", "description" : "God Son", "longDescription" : ""},
+{ "code" : "95", "description" : "Grandchildren", "longDescription" : ""},
+{ "code" : "96", "description" : "Granddaughter", "longDescription" : ""},
+{ "code" : "97", "description" : "Grandfather", "longDescription" : ""},
+{ "code" : "98", "description" : "Grandmother", "longDescription" : ""},
+{ "code" : "99", "description" : "Grandparents", "longDescription" : ""},
+{ "code" : "A1", "description" : "Grandson", "longDescription" : ""},
+{ "code" : "A2", "description" : "Great Aunt", "longDescription" : ""},
+{ "code" : "A3", "description" : "Ex-husband", "longDescription" : ""},
+{ "code" : "A4", "description" : "Half Brother", "longDescription" : ""},
+{ "code" : "A5", "description" : "Half Sister", "longDescription" : ""},
+{ "code" : "A6", "description" : "Husband", "longDescription" : ""},
+{ "code" : "A7", "description" : "Institution", "longDescription" : ""},
+{ "code" : "A8", "description" : "Mortgage Holder", "longDescription" : ""},
+{ "code" : "A9", "description" : "Mother-in-Law", "longDescription" : ""},
+{ "code" : "B1", "description" : "Nephew", "longDescription" : ""},
+{ "code" : "B2", "description" : "Niece", "longDescription" : ""},
+{ "code" : "B3", "description" : "Parents-in-Law", "longDescription" : ""},
+{ "code" : "B4", "description" : "Partnership", "longDescription" : ""},
+{ "code" : "B5", "description" : "Partner", "longDescription" : ""},
+{ "code" : "B6", "description" : "Personal Insurance Trust", "longDescription" : ""},
+{ "code" : "B7", "description" : "Sister", "longDescription" : ""},
+{ "code" : "B8", "description" : "Sister-in-Law", "longDescription" : ""},
+{ "code" : "B9", "description" : "Sole Proprietorship", "longDescription" : ""},
+{ "code" : "C1", "description" : "Son", "longDescription" : ""},
+{ "code" : "C2", "description" : "Son-in-Law", "longDescription" : ""},
+{ "code" : "C3", "description" : "Step Brother", "longDescription" : ""},
+{ "code" : "C4", "description" : "Step Children", "longDescription" : ""},
+{ "code" : "C5", "description" : "Step Daughter", "longDescription" : ""},
+{ "code" : "C8", "description" : "Step Sister", "longDescription" : ""},
+{ "code" : "C9", "description" : "Step Son", "longDescription" : ""},
+{ "code" : "D1", "description" : "Trust", "longDescription" : ""},
+{ "code" : "D2", "description" : "Trustee", "longDescription" : ""},
+{ "code" : "D3", "description" : "Uncle", "longDescription" : ""},
+{ "code" : "D4", "description" : "Wife", "longDescription" : ""},
+{ "code" : "D5", "description" : "Teacher", "longDescription" : ""},
+{ "code" : "D6", "description" : "School Counselor", "longDescription" : ""},
+{ "code" : "D7", "description" : "School Principal", "longDescription" : ""},
+{ "code" : "D8", "description" : "Other School Administrator", "longDescription" : ""},
+{ "code" : "D9", "description" : "Coach", "longDescription" : ""},
+{ "code" : "E1", "description" : "Activity Sponsor", "longDescription" : ""},
+{ "code" : "E2", "description" : "Supervisor", "longDescription" : ""},
+{ "code" : "E3", "description" : "Co-worker", "longDescription" : ""},
+{ "code" : "E4", "description" : "Minister or Priest", "longDescription" : ""},
+{ "code" : "E5", "description" : "Ecclesiastical or Religious Leader", "longDescription" : ""},
+{ "code" : "E6", "description" : "God Mother", "longDescription" : ""},
+{ "code" : "E7", "description" : "Probation Officer", "longDescription" : ""},
+{ "code" : "E8", "description" : "Accountant", "longDescription" : ""},
+{ "code" : "E9", "description" : "Advisor", "longDescription" : ""},
+{ "code" : "F1", "description" : "Alma Mater", "longDescription" : ""},
+{ "code" : "F2", "description" : "Applicant", "longDescription" : ""},
+{ "code" : "F3", "description" : "Banker", "longDescription" : ""},
+{ "code" : "F6", "description" : "Clergyman", "longDescription" : ""},
+{ "code" : "F7", "description" : "Client", "longDescription" : ""},
+{ "code" : "F8", "description" : "Club or Organization Officer", "longDescription" : ""},
+{ "code" : "F9", "description" : "Doctor", "longDescription" : ""},
+{ "code" : "G2", "description" : "Educator/Teacher/Instructor", "longDescription" : ""},
+{ "code" : "G3", "description" : "Betrothed", "longDescription" : ""},
+{ "code" : "G4", "description" : "Insured", "longDescription" : ""},
+{ "code" : "G5", "description" : "Lawyer", "longDescription" : ""},
+{ "code" : "G6", "description" : "Medical Care Provider", "longDescription" : ""},
+{ "code" : "G7", "description" : "Neighbor", "longDescription" : ""},
+{ "code" : "G8", "description" : "Other Relationship", "longDescription" : ""},
+{ "code" : "G9", "description" : "Other Relative", "longDescription" : ""},
+{ "code" : "H1", "description" : "Owner", "longDescription" : ""},
+{ "code" : "H4", "description" : "Payor", "longDescription" : ""},
+{ "code" : "N1", "description" : "None", "longDescription" : ""},
+{ "code" : "OT", "description" : "Non-applicable Individual Relationship Category", "longDescription" : ""},
+{ "code" : "ZZ", "description" : "Mutually Defined", "longDescription" : ""}
+]}
+ 
+ { "elementIds" : ["248"],
+    "codes" :
+    [ 
+{ "code" : "CHD", "description" : "Children Only", "longDescription" : ""},
+{ "code" : "DEP", "description" : "Dependents Only", "longDescription" : ""},
+{ "code" : "E1D", "description" : "Employee and One Dependent", "longDescription" : ""},
+{ "code" : "E2D", "description" : "Employee and Two Dependents", "longDescription" : ""},
+{ "code" : "E3D", "description" : "Employee and Three Dependents", "longDescription" : ""},
+{ "code" : "E5D", "description" : "Employee and One or More Dependents", "longDescription" : ""},
+{ "code" : "E6D", "description" : "Employee and Two or More Dependents", "longDescription" : ""},
+{ "code" : "E7D", "description" : "Employee and Three or More Dependents", "longDescription" : ""},
+{ "code" : "E8D", "description" : "Employee and Four or More Dependents", "longDescription" : ""},
+{ "code" : "E9D", "description" : "Employee and Five or More Dependents", "longDescription" : ""},
+{ "code" : "ECH", "description" : "Employee and Children", "longDescription" : ""},
+{ "code" : "EMP", "description" : "Employee Only", "longDescription" : ""},
+{ "code" : "ESP", "description" : "Employee and Spouse", "longDescription" : ""},
+{ "code" : "FAM", "description" : "Family", "longDescription" : ""},
+{ "code" : "IND", "description" : "Individual", "longDescription" : ""},
+{ "code" : "SPC", "description" : "Spouse and Children", "longDescription" : ""},
+{ "code" : "SPO", "description" : "Spouse Only", "longDescription" : ""},
+{ "code" : "TWO", "description" : "Two Party", "longDescription" : "Coverage for only two people"}
+]}
+
+
+{ "elementIds" : ["250"],
+    "codes" :
+    [ 
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "0", "description" : "Was Drug Efficacy Study Implementation (DESI) At One Time But No Longer", "longDescription" : "" },
+{ "code" : "1", "description" : "Drug Efficacy Study Implementation (DESI) Drug", "longDescription" : "" }
+]}
+
+
+{ "elementIds" : ["251"],
+    "codes" :
+    [ 
+
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "1", "description" : "Yes", "longDescription" : "" },
+{ "code" : "2", "description" : "No", "longDescription" : "" }
+]}
+
+{ "elementIds" : ["252"],
+    "codes" :
+    [ 
+
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "1", "description" : "Schedule I Substance (no known use)", "longDescription" : "" },
+{ "code" : "2", "description" : "Schedule II Narcotic Substances", "longDescription" : "" },
+{ "code" : "3", "description" : "Schedule III Narcotic Substances", "longDescription" : "" },
+{ "code" : "4", "description" : "Schedule IV Substances", "longDescription" : "" },
+{ "code" : "5", "description" : "Schedule V Substances", "longDescription" : "" }
+]}
+ 
+ { "elementIds" : ["702-MC"],
+    "codes" :
+    [ 
+{ "code" : "T", "description" : "Test" , "longDescription" : "In processing systems, the test environment."},
+{ "code" : "P", "description" : "Production" , "longDescription" : "In processing systems, the live environment."}
+]}
+
+
+{ "elementIds" : ["403-D3","254"],
+    "codes" :
+    [ 
+{ "code" : "0", "description" : "Original dispensing", "longDescription" : "The first dispensing"},
+{ "code" : "1-99", "description" : "Refill number", "longDescription" : "Number of the replenishment"}
+]}
+
+
+
+{ "elementIds" : ["924-DH"],
+    "codes" :
+    [ 
+{ "code" : "F", "description" : "Flat Copay", "longDescription" : "A code indicating the patient responsibility is based on a preset value for the corresponding drug type."},
+{ "code" : "P", "description" : "Percent Copay", "longDescription" : "A code indicating the patient responsibility is based on a computed percentage forthe corresponding drug type."}
+]}
+ 
+ 
+{ "elementIds" : ["600-73"],
+    "codes" :
+    [
+{ "code" : "1010", "description" : "OPEN", "longDescription" : "A pharmaceutical benefit utilized by members of a plan or organization that does not restrict reimbursement or implement intervention against pharmaceutical products in a plan or organization formulary. "},
+{ "code" : "1020", "description" : "CLOSED", "longDescription" : "A pharmaceutical benefit utilized by members of a plan or organization that restricts reimbursement to pre-identified pharmaceutical products. "},
+{ "code" : "1030", "description" : "CHOICE", "longDescription" : "Choice with no specific type of control. "},
+{ "code" : "1040", "description" : "LIMITED", "longDescription" : "A pharmaceutical benefit utilized by members of a plan or organization that restricts reimbursement for certain branded pharmaceutical products, or implements interventions against certain branded pharmaceutical products. "},
+{ "code" : "1041", "description" : "STANDARD LIMITED", "longDescription" : "Limited with Standard Control. "},
+{ "code" : "1042", "description" : "BENEFIT LIMITED", "longDescription" : "Limited with Benefit Control. "},
+{ "code" : "1043", "description" : "CLOSED LIMITED", "longDescription" : "Limited with Closed Control. "},
+{ "code" : "1050", "description" : "PARTIAL CLOSED", "longDescription" : "A pharmaceutical benefit utilized by members of a plan or organization that restricts reimbursement of pre-defined pharmaceutical products within specific therapeutic classes or other categories."},
+{ "code" : "1060", "description" : "RESTRICTED", "longDescription" : "List of pharmaceutical products that are available for use in treating their patients within an institution or healthcare financing system. Restrictive formularies limit prescribing and reimbursement to only certain pharmaceutical products. "},
+{ "code" : "1070", "description" : "PREFERRED", "longDescription" : "Preferred means available on a pharmaceutical formulary in a manner such that the product is given preference in dispensing decisions over competing products in a therapeutic class or therapeutic use. "},
+{ "code" : "1071", "description" : "STANDARD PREFERRED", "longDescription" : "Preferred with Standard Control. "},
+{ "code" : "1072", "description" : "BENEFIT PREFERRED", "longDescription" : "Preferred with Benefit Control. "},
+{ "code" : "1073", "description" : "CLOSED PREFERRED", "longDescription" : "Preferred with Closed Control. "},
+{ "code" : "1080", "description" : "EXCLUSIVE", "longDescription" : "Exclusive means available on a pharmaceutical formulary in a manner such that it is the only product included on the formulary in its therapeutic class, and no competing products in its therapeutic class are reimbursed or dispensed. "},
+{ "code" : "1081", "description" : "STANDARD EXCLUSIVE", "longDescription" : "Exclusive with Standard Control. "},
+{ "code" : "1082", "description" : "BENEFIT EXCLUSIVE", "longDescription" : "Exclusive with Benefit Control. "},
+{ "code" : "1083", "description" : "CLOSED EXCLUSIVE", "longDescription" : "Exclusive with Closed Control. "},
+{ "code" : "1090", "description" : "EXPANDED", "longDescription" : "Expanded with no specific type of control."},
+{ "code" : "1091", "description" : "STANDARD EXPANDED", "longDescription" : "Expanded with Standard Control. "},
+{ "code" : "1092", "description" : "BENEFIT EXPANDED", "longDescription" : "Expanded with Benefit Control."},
+{ "code" : "1093", "description" : "CLOSED EXPANDED", "longDescription" : "Expanded with Closed Control."},
+{ "code" : "9901", "description" : "OTHER", "longDescription" : " Any other types not covered by definitions above. New codes, definitions and descriptions should be developed for anything classified as 'Other'."},
+{ "code" : "9999", "description" : "NOT CLASSIFIED", "longDescription" : ""}
+]}
+ { "elementIds" : ["927-FP"],
+    "codes" :
+    [ 
+{ "code" : "A", "description" : "Any" , "longDescription" : ""},
+{ "code" : "U", "description" : "Unknown" , "longDescription" : ""},
+{ "code" : "0", "description" : "Not Reimbursable" , "longDescription" : "A message from the processor to the pharmacist that the medication submitted on the claim is not on the list of payable products in that patient’s plan formulary."},
+{ "code" : "1", "description" : "Non Formulary" , "longDescription" : "Response code indicating that the prescribed drug is not included in the plan formulary."},
+{ "code" : "2", "description" : "On Formulary (Not Preferred)" , "longDescription" : "A message from Processor to the pharmacist that the medication submitted on the claim is included in the list of payable products in that patient’s plan formulary but that there is a more preferred product in the therapeutic category."},
+{ "code" : "3", "description" : "Preferred Level 1" , "longDescription" : "Level of preferences for the formulary drug listed. The higher the number for the preferred level, the more preferred the drug is. Value = 1, least preferred level."},
+{ "code" : "4", "description" : "Preferred Level 2" , "longDescription" : "Level of preferences for the formulary drug listed. The higher the number for the preferred level, the more preferred the drug is."},
+{ "code" : "5", "description" : "Preferred Level 3" , "longDescription" : "Level of preferences for the formulary drug listed. The higher the number for the preferred level, the more preferred the drug is."},
+{ "code" : "6-99", "description" : "Preferred Levels 4 through 99" , "longDescription" : "Level of preferences for the formulary drug listed. The higher the number for the preferred level, the more preferred the drug is. Values=4 through 99 with 99 being the most preferred level."}
+]}
+
+{ "elementIds" : ["257"],
+    "codes" :
+    [ 
+
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "I", "description" : "Drug on Formulary; Non-Preferred" , "longDescription" : "The medication submitted on the claim is included in the list of products in that patient’s plan formulary but there is a preferable product in the therapeutic category."},
+{ "code" : "J", "description" : "Drug not on Formulary; Non-Preferred" , "longDescription" : "The medication submitted on the claim is NOT included in the list of products in that patient’s plan formulary, and there is a more preferable product in the therapeutic category."},
+{ "code" : "K", "description" : "Drug not on Formulary; Preferred" , "longDescription" : "The medication submitted on the claim is NOT included in the list of products in that patient’s plan formulary, but the product is still considered the preferable choice."},
+{ "code" : "N", "description" : "Drug not on Formulary; Neutral" , "longDescription" : "The medication submitted on the claim is NOT included in the list of products in that patient’s plan formulary, and the plan has no specific preference as to the drug’s status."},
+{ "code" : "P", "description" : "Drug on Formulary" , "longDescription" : "The medication submitted on the claim is included in the list of products in that patient’s plan formulary."},
+{ "code" : "Q", "description" : "Drug not on Formulary" , "longDescription" : "The medication submitted on the claim is NOT included in the list of products in that patient’s plan formulary."},
+{ "code" : "T", "description" : "Drug on Formulary; Preferred" , "longDescription" : "Therapeutic interchange occurred on this claim - The medication submitted on the claim is included in the list of products in that patient’s plan formulary and the plan has allowed the substitution of an equivalent product."},
+{ "code" : "Y", "description" : "Drug on Formulary; Neutral" , "longDescription" : "The medication submitted on the claim is included in the list of payable products in that patient’s plan formulary, and the plan has no specific preference as to the drug’s status."}
+]}
+
+
+{ "elementIds" : ["501-F1"],
+    "codes" :
+    [ 
+
+{ "code" : "A", "description" : "Accepted" , "longDescription" : "Code indicating the receipt and approval of the transmission."},
+{ "code" : "R", "description" : "Rejected" , "longDescription" : "Code indicating the rejection or refusal to accept the transmission."}
+]}
+
+
+{ "elementIds" : ["266"],
+    "codes" :
+    [ 
+
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "Y", "description" : "In Network" , "longDescription" : "The dispensing pharmacy was under contract with the plan to provide services."},
+{ "code" : "N", "description" : "Out of Network" , "longDescription" : "The dispensing pharmacy was not under contract with the plan."}
+]}
+ 
+ { "elementIds" : ["463-EW"],
+    "codes" :
+    [ 
+
+{ "code" : "0", "description" :  "Not Specified" , "longDescription" : ""},
+{ "code" : "1", "description" :  "Intermediary Authorization" , "longDescription" : "Code for a service that intercepts a request (or reply), performs a value-added function and then forwards the enhanced request (or reply) to the original target"},
+{ "code" : "99", "description" : "Other Override" , "longDescription" : "A value different from those specified that indicates exception processing."}
+]}
+
+{ "elementIds" : ["170-WB","171-WC","172-WD","173-WF","174-WG"],
+    "codes" :
+    [ 
+
+
+{ "code" : "001", "description" : "Administrative Fee" , "longDescription" : "A fee for services to manage or supervise the execution of a contractual agreement between parties, calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "002", "description" : "Aggregate Formulary" , "longDescription" : "The entire formulary as a whole calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "003", "description" : "Aggregate Therapeutic Market Share" , "longDescription" : "The total drug utilization for a defined therapeutic class of drugs, calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "004", "description" : "Baseline Market Share" , "longDescription" : "A rebate type that is based upon a prior period’s market share performance (baseline). The period to be used as the baseline and the calculation method as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "005", "description" : "Compliance Rebate" , "longDescription" : "The type of rebate payment requested by the PMO of the PICO where the Performance Qualifier is CR (Compliance) calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "006", "description" : "Discount Price Guarantee" , "longDescription" : "The type of rebate payment requested by the PMO of the PICO where the rebate amount is calculated using a fixed price for all units dispensed. The fixed price is a price guarantee offered by the PICO to the PMO calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "007", "description" : "Dollar Volume" , "longDescription" : "The total dollar amount paid for a given drug or drug class in a given period of time, calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "008", "description" : "Dosage Guarantee" , "longDescription" : "The type of rebate payment requested by the PMO of the PICO where the rebate amount is calculated based upon the number of units dispensed or market share percentage of a certain product’s dosage. The rebate amount to be paid for the number of units dispensed at a certain dose or the market share to be achieved at a certain dosage calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "009", "description" : "Fixed Discount" , "longDescription" : "Term used to identify the type of rebate (discount) negotiated between trading partners. The fixed discount is a predetermined or set amount that is independent of volume or market share (also known as flat rebate), calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "010", "description" : "Individual Formulary" , "longDescription" : "Rebate calculation based on the performance of a specific formulary such as open, closed, restricted, etc. calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "011", "description" : "Individual Therapeutic Market Share" , "longDescription" : "A market share rebate calculation for a given product(s) based on the performance of that product within a specific therapeutic class, calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "012", "description" : "Market Share" , "longDescription" : "Used to determine the calculation of a rebate based upon a contractual specification, the market share is a measure of the product’s relative contribution to the whole of similar products. Market share is a ratio of the product(s) in question over the entire product basket, expressed as a percentage calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "013", "description" : "National Market Share" , "longDescription" : "Refers to a benchmark market share percentage, as measured on a national average basis, for the product’s share of the total of all products within the product category in which it competes, calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "014", "description" : "Per Member Per Month (PMPM)" , "longDescription" : "Rebates are calculated monthly using a fixed amount for each member in the plan, calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "015", "description" : "Per Member Per Quarter (PMPQ)" , "longDescription" : "Rebates are calculated quarterly using a fixed amount for each member in the plan, calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "016", "description" : "Per Member Per Year (PMPY)" , "longDescription" : "Rebates are calculated annually using a fixed amount for each member in the plan, calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "017", "description" : "Performance-Based" , "longDescription" : "Rebates are determined based on performance indicators such as sales growth, compliance, or market share, etc., calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "018", "description" : "Risk Share" , "longDescription" : "Used to describe a category of rebate in which both parties associated with the rebate or discount agreement agree to performance incentives, including the willingness to share the risk of some objectively measurable financial gain or loss, calculated as agreed to between parties of further defined via the contract document between trading partners."},
+{ "code" : "019", "description" : "Standard Dollar" , "longDescription" : "A rebate type that is paid based upon a standard definition of volume, calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "020", "description" : "Unit Volume" , "longDescription" : "A rebate that is paid based upon an objectively measured unit volume reported by the contracting entity, may be payable per unit, as long as the use of the product meets or exceeds a threshold, calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "021", "description" : "Volume Fixed Discount" , "longDescription" : "The rebate is a pre-determined fixed amount dependent on the volume calculated as agreed to between parties or further defined via the contract document between trading partners."},
+{ "code" : "022", "description" : "Volume Tier" , "longDescription" : "The rebate is an amount dependant on volume tier(s), calculated as agreed to between parties of further defined via the contract document between trading partners."},
+{ "code" : "Z_", "description" : "Mutually Agreed Upon Rebate Types " , "longDescription" : "All codes beginning with the letter Z are reserved for use between trading partners. A Rebate type (fixed, market share, etc.) mutually agreed upon by trading partners to define the rebate."}
+]}
+ 
+ { "elementIds" : ["371-2S"],
+    "codes" :
+    [ 
+
+{ "code" : "0", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "1", "description" : "Hours" , "longDescription" : "Units of time composed of 60 minutes; there are 24 in one day"},
+{ "code" : "2", "description" : "Days" , "longDescription" : "Units of time composed of 24 consecutive hours"},
+{ "code" : "3", "description" : "Weeks" , "longDescription" : "Units of time composed of 7 consecutive days"},
+{ "code" : "4", "description" : "Months" , "longDescription" : "Units of time composed of 28 to 31 days; there are 12 in one year"},
+{ "code" : "5", "description" : "Years" , "longDescription" : "Units of time composed of 12 months; also equivalent to 365 days (366 days in leap years)"},
+{ "code" : "6", "description" : "Lifetime" , "longDescription" : "An imprecise time reference that equates to the perceived time remaining until either the end of the patient’s life or the useful duration of the product referenced by the claim"}
+]}
+{ "elementIds" : ["418-DI"],
+    "codes" :
+    [ 
+
+{ "code" : "0", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "1", "description" : "Patient consultation" , "longDescription" : "professional service involving provider/patient discussion of disease, therapy or medication regimen, or other health issues"},
+{ "code" : "2", "description" : "Home delivery" , "longDescription" : "provision of medications from pharmacy to patient’s place of residence"},
+{ "code" : "3", "description" : "Emergency" , "longDescription" : "urgent provision of care"},
+{ "code" : "4", "description" : "24 hour service" , "longDescription" : "provision of care throughout the day and night"},
+{ "code" : "5", "description" : "Patient consultation regarding generic product selection" , "longDescription" : "professional service involving discussion of alternatives to brand-name medications"},
+{ "code" : "6", "description" : "In-Home Service" , "longDescription" : "provision of care in patient’s place of residence"}
+]}
+{ "elementIds" : ["928-FR"],
+    "codes" :
+    [ 
+{ "code" : "F", "description" : "Full Replace" , "longDescription" : "All data previously provided (if any) is replaced with the current data; if no prior data exists, the current data is added"},
+{ "code" : "D", "description" : "Delete" , "longDescription" : "All data previously provided is deleted and no replacement data is provided"},
+{ "code" : "U", "description" : "Update" , "longDescription" : "Previously provided data is amended or replaced by the current data"}
+]}
+
+{ "elementIds" : ["930-F2"],
+    "codes" :
+    [ 
+{ "code" : "01", "description" : "File loaded correctly" , "longDescription" : "Process whereby a computer manipulates a string of bytes without error."},
+{ "code" : "02", "description" : "File loaded with errors" , "longDescription" : "Process whereby a computer manipulates a string of bytes that contains inaccuracies."},
+{ "code" : "03", "description" : "File contains errors" , "longDescription" : "File Not loaded - Process whereby a computer could not manipulate a string of bytes with errors."},
+{ "code" : "04", "description" : "An error has occurred during processing not related to the structure of the file" , "longDescription" : "Process whereby a computer manipulates a string of bytes and performs some type of validation that detects a mistake in that data."}
+]}
+
+
+{ "elementIds" : ["272"],
+    "codes" :
+    [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "Y", "description" : "Reduced to MAC pricing" , "longDescription" : ""},
+{ "code" : "N", "description" : "Not reduced to MAC pricing" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["273"],
+    "codes" :
+    [
+
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "Y", "description" : "Maintenance Drug" , "longDescription" : "Medication used to treat a chronic condition."},
+{ "code" : "N", "description" : "Not Maintenance" , "longDescription" : "Medication used to treat an acute condition."}
+]}
+
+{ "elementIds" : ["600-72"],
+    "codes" :
+    [
+
+{ "code" : "C", "description" : "Contracting organization (PMO) assigned ID number" , "longDescription" : "Alphanumeric code used to identify the PMO that sent a NCPDP manufacturer rebate flat file standard layout to a PICO. This code is an internal number assigned by the PMO."},
+{ "code" : "D", "description" : "DEA number" , "longDescription" : "The number assigned by the DEA to all businesses that manufacturer or distributes controlled pharmaceuticals, all health professionals who dispense, administer, or prescribe controlled pharmaceuticals an all pharmacies that fill prescriptions."},
+{ "code" : "F", "description" : "Federal Tax ID number" , "longDescription" : "A 9-digit number assigned by the Internal Revenue Service to sole proprietors, corporations, partnerships, estates, trusts, and other entities for the purpose of tax filing and reporting."},
+{ "code" : "H", "description" : "HIBCC HIN" , "longDescription" : "A 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities. The number is assigned by HIBCC."},
+{ "code" : "L", "description" : "NDC labeler code" , "longDescription" : "The first five digits of the 5-4-2 formatted NDC code."},
+{ "code" : "M", "description" : "Manufacturer (PICO) assigned ID number" , "longDescription" : "A value assigned by a manufacturer and used internally to identify a given trading partner."},
+{ "code" : "T", "description" : "Telephone number" , "longDescription" : "Code indicating that the information to follow is a telephone number (for voice, data, fax, etc.)."},
+{ "code" : "Z", "description" : "Mutually agreed upon ID number" , "longDescription" : "A value mutually agreed upon by trading partners to identify a given data element. The value may be unique between the trading partners or from an existing industry standard"}
+]}
+
+{ "elementIds" : ["931-F8"],
+    "codes" :
+    [ 
+
+{ "code" : "D", "description" : "Days", "longDescription" :"Age described in complete units of 24-hour periods"},
+{ "code" : "Y", "description" : "Years", "longDescription" :"Age described in complete units of 12-month periods"}
+]}
+
+{ "elementIds" : ["934-GC"],
+    "codes" :
+    [ 
+{ "code" : "DL", "description" : "Dollar Amount", "longDescription" :"The value in the Maximum Amount field is expressed in United States currency."},
+{ "code" : "DS", "description" : "Days Supply ", "longDescription" :"tThe value in the Maximum Amount field is expressed in the total number of days over which the prescription is intended to be consumed by the patient."},
+{ "code" : "FL", "description" : "Fills", "longDescription" :"The value in the Maximum Amount field is expressed in the total number of times that the patient obtains the prescription including the original dispensing and all subsequent dispensing under that same Rx number."},
+{ "code" : "QY", "description" : "Quantity", "longDescription" :"The value in the Maximum Amount field is expressed in a numeric count of the number of billing units."}
+]}
+{ "elementIds" : ["935-GF"],
+    "codes" :
+    [ 
+
+{ "code" : "CM", "description" : "Calendar Month", "longDescription" :"Specifically, the time elapsed from the start of the first day of a month until the end of the last day of that same month; frequently accepted as a period beginning with a specific event on the Nth day of a month and ending at the end of the day prior to the Nth day of the next month."},
+{ "code" : "CQ", "description" : "Calendar Quarter", "longDescription" :"Specifically, the time elapsed from the start of the first day of a month until the end of the last day of the second month that follows; traditionally these periods start on the first day of the months of January, April, July and October."},
+{ "code" : "CY", "description" : "Calendar Year", "longDescription" :"Specifically, the time elapsed from the start of the first day of a year until the end of the last day of that same year; frequently accepted as a period beginning with a specific event on the Nth day of a year and ending at the end of the day prior to the Nth day of the next year."},
+{ "code" : "DY", "description" : "Days", "longDescription" :"Units of time composed of 24 consecutive hours."},
+{ "code" : "LT", "description" : "Lifetime", "longDescription" :"An imprecise time reference that equates to the perceived time remaining until either the end of the patient’s life or the useful duration of a product referenced."},
+{ "code" : "PD", "description" : "Per Dispensing", "longDescription" :"An imprecise time reference that equates to the perceived time between dispensing events."},
+{ "code" : "SP", "description" : "Specific Date Range", "longDescription" :"A specific period of time, as qualified by start and end dates."}
+]}
+
+{ "elementIds" : ["139-UR"],
+    "codes" :
+    [
+
+{ "code" : "1", "description" : "Primary", "longDescription" :"First"},
+{ "code" : "2", "description" : "Secondary", "longDescription" :"Second"},
+{ "code" : "3", "description" : "Tertiary", "longDescription" :"Third"},
+{ "code" : "4", "description" : "Quaternary", "longDescription" :"Fourth"},
+{ "code" : "5", "description" : "Quinary", "longDescription" :"Fifth"},
+{ "code" : "6", "description" : "Senary", "longDescription" :"Sixth"},
+{ "code" : "7", "description" : "Septenary", "longDescription" :"Seventh"},
+{ "code" : "8", "description" : "Octonary", "longDescription" :"Eighth"},
+{ "code" : "9", "description" : "Nonary", "longDescription" :"Ninth"}
+]}
+{ "elementIds" : ["274"],
+    "codes" :
+    [ 
+
+{ "code" : "A", "description" : "Medicare Part A" , "longDescription" : "Part of the Original Medicare Plan managed by the federal government. Covers some, but not all, of the expenses incurred for inpatient hospital care or medical care that a person may receive at a skilled nursing facility (not a custodial care facility). Some hospice care and some home health care are also covered. Limitations apply, and have deductibles, copays, or other costs to satisfy."},
+{ "code" : "B", "description" : "Medicare Part B" , "longDescription" : "Part of the Original Medicare Plan managed by the federal government. This covers medically necessary services from doctors or outpatient hospital care. It also helps with costs associated with some physical and occupational therapist services and some home health care services. A person typically must sign up for Part B and pay a monthly premium in order to benefit from coverage."},
+{ "code" : "C", "description" : "Medicare Part C" , "longDescription" : "Part of Medicare includes medical and other benefits provided through private health benefits companies (approved by the federal government) known as Medicare Advantage Plans. Plans cover the same or better benefits as the Original Medicare Plan with easy-to-budget copay and coinsurance amounts when a person uses a network doctor and hospital."},
+{ "code" : "D", "description" : "Medicare Part D" , "longDescription" : "The optional Medicare prescription drug coverage."},
+{ "code" : "X", "description" : "Medicare Part Unknown" , "longDescription" : "Person is eligible for a Medicare plan but the plan is unidentified"},
+{ "code" : "Z", "description" : "Not Medicare Eligible" , "longDescription" : "Person is not eligible for any Medicare plan."}
+]}
+
+{ "elementIds" : ["275"],
+    "codes" :
+    [ 
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "Ø", "description" : "No reduction applied" , "longDescription" : ""},
+{ "code" : "1", "description" : "Days supply reduced due to Client plan limitations" , "longDescription" : ""},
+{ "code" : "2", "description" : "Days supply reduced due to Medicare Plan Limits" , "longDescription" : ""},
+{ "code" : "3", "description" : "Prescribed Days Supply Dispensed based on Client Approval" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["276"],
+    "codes" :
+    [ 
+
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "Ø", "description" : "No Medicare Recovery" , "longDescription" : "No demand for payment has been made by Medicare"},
+{ "code" : "1", "description" : "Prospective Billing" , "longDescription" : "Demand for payment has been made before service provided"},
+{ "code" : "2", "description" : "Retrospective Billing" , "longDescription" : "Demand for payment has been made after service provided"}
+]}
+{ "elementIds" : ["600-83"],
+    "codes" :
+    [ 
+{ "code" : "1", "description" : "Beginning of period" , "longDescription" : ""},
+{ "code" : "2", "description" : "End of period" , "longDescription" : ""},
+{ "code" : "3", "description" : "Average of period" , "longDescription" : ""},
+{ "code" : "4", "description" : "Minimum count" , "longDescription" : "lowest number within a given period"},
+{ "code" : "5", "description" : "Maximum count" , "longDescription" : "highest number within a given period"},
+{ "code" : "6", "description" : "Middle of period"}
+]}
+
+{ "elementIds" : ["600-86"],
+    "codes" :
+    [ 
+{ "code" : "A", "description" : "Annually" , "longDescription" : "Once per year"},
+{ "code" : "M", "description" : "Monthly" , "longDescription" : "Once per month; also12 times per year"},
+{ "code" : "Q", "description" : "Quarterly" , "longDescription" : "Once per quarter of a year or once every three months; also 4 times per year"},
+{ "code" : "S", "description" : "Semi Annually" , "longDescription" : "Once per half of a year or once every six months; also twice per year"}
+
+]}
+
+{ "elementIds" : ["600-89"],
+    "codes" :
+    [ 
+
+{ "code" : "1", "description" : "Covered Lives" , "longDescription" : "number of lives covered during a period of time"},
+{ "code" : "2", "description" : "Beds" , "longDescription" : "number of beds"},
+{ "code" : "3", "description" : "Retail Stores" , "longDescription" : "A duly-licensed entity that delivers pharmaceutical goods or services for sale to or use by the final consumer."}
+]}
+
+{ "elementIds" : ["279"],
+    "codes" :
+    [ 
+
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "1", "description" : "Paper Claim Direct" , "longDescription" : "Patient has submitted a paper claim for reimbursement after the pharmacy transmits the claim through an NCPDP Telecommunication claim billing transaction. The patient pays 1ØØ%."},
+{ "code" : "2", "description" : "Paperless Claim Direct" , "longDescription" : "The pharmacy transmits the claim through an NCPDP Telecommunication claim billing transaction and the patient pays 1ØØ%. The patient does not need to send in a paper claim as the billing transaction will trigger the reimbursement to the member after a defined period of time."},
+{ "code" : "3", "description" : "Paper Submit Only" , "longDescription" : "Patient must submit a paper claim as there is no Point of Sale (POS) component."},
+{ "code" : "4", "description" : "Paper Claim Direct With Dual Pricing" , "longDescription" : "Same as #1 but reimbursement to a patient may differ if no billing transaction (POS claim) was transmitted."},
+{ "code" : "5", "description" : "Paperless Claim Direct With Dual Pricing" , "longDescription" : "Same as # 2 but reimbursement to the patient may differ if paper claim is received."},
+{ "code" : "6", "description" : "Paperless Claim Direct With Mail Pricing" , "longDescription" : ""},
+{ "code" : "7", "description" : "Paperless Claim Direct and Paper Submit" , "longDescription" : ""},
+{ "code" : "8", "description" : "Paper Claim Direct W/ Dual Pricing Determined by Days Supply" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["943-GQ"],
+    "codes" :
+    [ 
+
+{ "code" : "D", "description" : "Days" , "longDescription" : "Age described in complete units of 24-hour periods"},
+{ "code" : "Y", "description" : "Years" , "longDescription" : "Age described in complete units of 12-month periods"}
+]}
+
+{ "elementIds" : ["282"],
+    "codes" :
+    [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "H", "description" : "Bypass all system edits." , "longDescription" : "Pays claims at full amount billed with no copay."},
+{ "code" : "I", "description" : "Bypasses all system edits." , "longDescription" : "Pays claims at full amount billed with copay applied."},
+{ "code" : "J", "description" : "Bypasses all system edits." , "longDescription" : "Pays claims according to plan pricing and copay specifications."},
+{ "code" : "K", "description" : "Pays claims at full amount submitted with copay applied."}
+
+]}
+{ "elementIds" : ["415-DF"],
+    "codes" :
+    [
+
+{ "code" : "0", "description" : "No refills authorized" , "longDescription" : ""},
+{ "code" : "1-99", "description" : "Authorized Refill number" , "longDescription" : "with 99 being as needed, refills unlimited"}
+]}
+
+{ "elementIds" : ["308-C8"],
+    "codes" :
+    [
+{ "code" : "0", "description" : "Not Specified by patient" , "longDescription" : ""},
+{ "code" : "1", "description" : "No other coverage" , "longDescription" : "Code used in coordination of benefits transactions to convey that no other coverage is available."},
+{ "code" : "2", "description" : "Other coverage exists-payment collected" , "longDescription" : "Code used in coordination of benefits transactions to convey that other coverage is available, the payer has been billed and payment received."},
+{ "code" : "3", "description" : "Other Coverage Billed – claim not covered" , "longDescription" : "Code used in coordination of benefits transactions to convey that other coverage is available, the payer has been billed and payment denied because the service is not covered."},
+{ "code" : "4", "description" : "Other coverage exists-payment not collected" , "longDescription" : "Code used in coordination of benefits transactions to convey that other coverage is available, the payer has been billed and payment has not been received."},
+{ "code" : "8", "description" : "Claim is billing for patient financial responsibility only" , "longDescription" : "Copay is a form of cost sharing that holds the patient responsible for a fixed dollar amount for each product/service received and regardless of the patient’s current benefit status, product selection or network selection."}
+]}
+
+{ "elementIds" : ["338-5C"],
+    "codes" :
+    [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "01", "description" : "Primary" , "longDescription" : "First"},
+{ "code" : "02", "description" : "Secondary" , "longDescription" : "Second"},
+{ "code" : "03", "description" : "Tertiary" , "longDescription" : "Third"},
+{ "code" : "04", "description" : "Quaternary" , "longDescription" : "Fourth"},
+{ "code" : "05", "description" : "Quinary" , "longDescription" : "Fifth"},
+{ "code" : "06", "description" : "Senary" , "longDescription" : "Sixth"},
+{ "code" : "07", "description" : "Septenary" , "longDescription" : "Seventh"},
+{ "code" : "08", "description" : "Octonary" , "longDescription" : "Eighth"},
+{ "code" : "09", "description" : "Nonary" , "longDescription" : "Ninth"}
+]}
+
+
+{ "elementIds" : ["339-6C"],
+    "codes" :
+    [
+{ "code" : "01", "description" : "Standard Unique Health Plan Identifier" , "longDescription" : "Code indicating that the information is the HIPAA mandated Health Plan Identifier (HPID) or the Other Entity Identifier (OEID) established in 45 CFR 162 Subpart E."},
+{ "code" : "1C", "description" : "Medicare Number" , "longDescription" : "A number that identifies the federal program providing health insurance for people aged 65 and older and for disabled people of all ages. Used only in the Prescription Transfer Standard. Not used in any other standard."},
+{ "code" : "1D", "description" : "Medicaid Number" , "longDescription" : "A number that identifies a program, financed jointly by the federal government and the states, that provides health coverage for mostly low-income women and children as well as nursing-home care for low-income elderly. Used only in the Prescription Transfer Standard. Not used in any other standard."},
+{ "code" : "02", "description" : "Health Industry Number (HIN)" , "longDescription" : "A 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities. The number is assigned by HIBCC."},
+{ "code" : "03", "description" : "Bank Information Number (BIN)" , "longDescription" : "Card Issuer ID or Bank ID Number assigned by ANSI used for network routing. Now defined by ANSI as the Issuer Identification Number (IIN). This may also be the Processor ID, assigned by NCPDP."},
+{ "code" : "04", "description" : "National Association of Insurance Commissioners (NAIC)" , "longDescription" : "A unique number for each company that does business in the United States as assigned by NAIC. A company may have multiple NAIC Codes to represent subsidiary companies under a main company."},
+{ "code" : "05", "description" : "Medicare Carrier Number" , "longDescription" : "A number assigned by the carrier or intermediary which administers the Medicare health insurance program."},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Different from those implied or specified."}
+]}
+
+{ "elementIds" : ["351-NP"],
+    "codes" :
+    [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "01", "description" : "Amount Applied to Periodic Deductible (517-FH)" , "longDescription" : "as reported by previous payer. The following dollar amount is the amount of the patient’s responsibility applied to the patient’s plan periodic deductible liability."},
+{ "code" : "02", "description" : "Amount Attributed to Product Selection/Brand Drug (134-UK)" , "longDescription" : "as reported by previous payer."},
+{ "code" : "03", "description" : "Amount Attributed to Sales Tax (523-FN)" , "longDescription" : "as reported by previous payer. A dollar value of the portion of the copay (as reported by previous payer) which the member is required to pay due to sales tax on the prescription."},
+{ "code" : "04", "description" : "Amount Exceeding Periodic Benefit Maximum (520-FK)" , "longDescription" : "as reported by previous payer. A dollar value of the portion of the copay which the member is required to pay due to a benefit cap/maximum being met or exceeded."},
+{ "code" : "05", "description" : "Amount of Copay (518-FI)" , "longDescription" : "as reported by previous payer. Code indicating that the following dollar amount is the amount of the patient responsibility applied to the patient’s plan co-pay liability by another/previous payer."},
+{ "code" : "06", "description" : "Patient Pay Amount (505-F5)" , "longDescription" : "as reported by previous payer. Used to indicate the provider is submitting the amount reported by a prior payer as the patient’s responsibility."},
+{ "code" : "07", "description" : "Amount of Coinsurance (572-4U)" , "longDescription" : "as reported by previous payer. Coinsurance is a form of cost sharing that holds the patient responsible for a dollar amount based on a percentage for each product/service received and regardless of the patient’s current benefit status, product selection or network selection."},
+{ "code" : "08", "description" : "Amount Attributed to Product Selection/Non-Preferred Formulary Selection (135-UM)" , "longDescription" : "as reported by previous payer"},
+{ "code" : "09", "description" : "Amount Attributed to Health Plan Assistance Amount (129-UD)" , "longDescription" : "as reported by previous payer"},
+{ "code" : "10", "description" : "Amount Attributed to Provider Network Selection (133-UJ)" , "longDescription" : "as reported by previous payer."},
+{ "code" : "11", "description" : "Amount Attributed to Product Selection/Brand Non-Preferred Formulary Selection (136-UN)" , "longDescription" : "as reported by previous payer."},
+{ "code" : "12", "description" : "Amount Attributed to Coverage Gap (137-UP)" , "longDescription" : "that was to be collected from the patient due to a coverage gap as reported by previous payer."},
+{ "code" : "13", "description" : "Amount Attributed to Processor Fee (571-NZ)" , "longDescription" : "as reported by previous payer."}
+]}
+
+{ "elementIds" : ["529-FT "],
+    "codes" :
+    [
+
+{ "code" : "0", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "1", "description" : "Your Pharmacy" , "longDescription" : "Response code indicating that the pharmacy dispensing the current drug is the same as the pharmacy dispensing the conflicting drug."},
+{ "code" : "2", "description" : "Other Pharmacy in Same Chain" , "longDescription" : "Code indicating the pharmacy dispensing the drug is in the same chain as the pharmacy dispe nsing the conflicting drug."},
+{ "code" : "3", "description" : "Other Pharmacy" , "longDescription" : "Code indicating the pharmacy of the current drug is not the same as the pharmacy of the conflicting drug."}
+]}
+
+
+{ "elementIds" : ["533-FX"],
+    "codes" :
+    [
+{ "code" : "0", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "1", "description" : "Same Prescriber" , "longDescription" : "Response code indicating the prescriber of the current drug is the same as the prescriber of the conflicting drug."},
+{ "code" : "2", "description" : "Other Prescriber" , "longDescription" : "Code indicating the prescriber of the current drug is not the same as the prescriber of the conflicting drug."}
+]}
+
+{ "elementIds" : ["391-MT"],
+    "codes" :
+    [ 
+{ "code" : "Y", "description" : "Patient assigns benefits" , "longDescription" : "Patient has assigned benefits to another party"},
+{ "code" : "N", "description" : "Patient does not assign benefits" , "longDescription" : "Patient has not assigned benefits to another party"}
+]}
+
+{ "elementIds" : ["331-CX"],
+    "codes" :
+    [ 
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "01", "description" : "Social Security Number" , "longDescription" : "Code indicating that the information to follow is the 9-digit number assigned to an individual by the Social Security Administration for various purposes, including paying and reporting taxes."},
+{ "code" : "1J", "description" : "Facility ID Number" , "longDescription" : "ID number assigned by the LTC Facility to the patient"},
+{ "code" : "02", "description" : "Driver's License Number" , "longDescription" : "Indicator defining the information to follow as the patient’s license to operate a motor vehicle"},
+{ "code" : "03", "description" : "U.S. Military ID" , "longDescription" : "An identification number given to an active or retired member of the US Armed Services or their dependents."},
+{ "code" : "04", "description" : "Non-SSN-based patient identifier assigned by health plan" , "longDescription" : "An identification number given to a member by the health plan that is not based on the member’s SSN."},
+{ "code" : "05", "description" : "SSN-based patient identifier assigned by health plan" , "longDescription" : "An identification number given to a member by the health plan that is based on the member’s SSN with modifications so the number is not equal to the SSN."},
+{ "code" : "06", "description" : "Medicaid ID" , "longDescription" : "a number assigned by a state Medicaid agency"},
+{ "code" : "07", "description" : "State Issued ID" , "longDescription" : "An ID issued by a state for the purpose of identifying the individual for legal requirements."},
+{ "code" : "08", "description" : "Passport ID" , "longDescription" : "A document number found within an official identification document that is supplied to an individual by a national government."},
+{ "code" : "09", "description" : "Medicare HIC#" , "longDescription" : "The identification of person assigned by Medicare."},
+{ "code" : "10", "description" : "Employer Assigned ID" , "longDescription" : "The identification of a person assigned by the employer."},
+{ "code" : "11", "description" : "Payer/PBM Assigned ID" , "longDescription" : "The identification of a person assigned by the payer or pharmacy benefit manager."},
+{ "code" : "12", "description" : "Alien Number (Government Permanent Residence Residence Number)" , "longDescription" : "The ID number assigned by the government for the individual in the country as a permanent resident."},
+{ "code" : "13", "description" : "Government Student VISA Number" , "longDescription" : "The ID number assigned by the government for the individual in the country on a student VISA."},
+{ "code" : "14", "description" : "Indian Tribal ID" , "longDescription" : "An ID assigned by an Indian Tribal Authority to identify an individual."},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Different from those implied or specified."},
+{ "code" : "EA", "description" : "Medical Record Identification Number (EHR)" , "longDescription" : "A unique number assigned to each patient by the provider of service to assist in retrieval of medical records"}
+]}
+
+
+{ "elementIds" : ["384-4X"],
+    "codes" :
+    [ 
+{ "code" : "0", "description" : "Not Specified" , "longDescription" : "Other patient residence not identified below."},
+{ "code" : "1", "description" : "Home" , "longDescription" : "Location, other than a hospital or other facility, where the patient receives drugs or services in a private residence."},
+{ "code" : "2", "description" : "Skilled Nursing Facility" , "longDescription" : "A facility which primarily provides inpatient skilled nursing care and related services to patients who require medical, nursing, or rehabilitative service but does not provide the level of care or treatment available in a hospital. For Medicare Part B use only."},
+{ "code" : "3", "description" : "Nursing Facility" , "longDescription" : "A facility which primarily provides to residents skilled nursing care and related services for the rehabilitation of injured, disabled, or sick persons, or, on a regular basis,, health-related care services above the level of custodial care to other than mentally retarded individuals."},
+{ "code" : "4", "description" : "Assisted Living Facility" , "longDescription" : "Congregate residential facility with self-contained living units providing assessment of each resident’s needs and on-site support 24 hours a day, 7 days a week, with the capacity to deliver or arrange for services including some health care and other services."},
+{ "code" : "5", "description" : "Custodial Care Facility" , "longDescription" : "A facility which provides room, board and other personal assistance services, generally on a long-term basis, and which does not include a medical component. For Medicare Part B use only."},
+{ "code" : "6", "description" : "Group Home" , "longDescription" : "Congregate residential foster care setting for children and adolescents in state custody that provides some social, health care, and educational support services and that promotes rehabilitation and reintegration of residents into the community. "},
+{ "code" : "7", "description" : "Inpatient Psychiatric Facility" , "longDescription" : "A facility that provides inpatient psychiatric services for the diagnosis and treatment of mental illness on a 24-hour basis, by or under the supervision of a physician. Not applicable to Pharmacy Benefits"},
+{ "code" : "8", "description" : "Psychiatric Facility – Partial Hospitalization" , "longDescription" : "A facility for the diagnosis and treatment of mental illness that provides a planned therapeutic program for patients who do not require full time hospitalization, but who need broader programs than are possible from outpatient visits to a hospital-based or hospital-affiliated facility. Not applicable to Pharmacy Benefits"},
+{ "code" : "9", "description" : "Intermediate Care Facility/Mentally Retarded" , "longDescription" : "A facility which primarily provides health-related care and services above the level of custodial care to mentally retarded individuals but does not provide the level of care or treatment available in a hospital or SNF."},
+{ "code" : "10", "description" : "Residential Substance Abuse Treatment Facility" , "longDescription" : "A facility which provides treatment for substance (alcohol and drug) abuse to live-in residents who do not require acute medical care. Services include individual and group therapy and counseling, family counseling, laboratory tests, drugs and supplies, psychological testing, and room and board. Not applicable to Pharmacy Benefits"},
+{ "code" : "11", "description" : "Hospice" , "longDescription" : "A facility, other than a patient's home, in which palliative and supportive care for terminally ill patients and their families are provided."},
+{ "code" : "12", "description" : "Psychiatric Residential Treatment Facility" , "longDescription" : "A facility or distinct part of a facility for psychiatric care which provides a total 24-hour therapeutically planned and professionally staffed group living and learning environment. Not applicable to Pharmacy Benefits"},
+{ "code" : "13", "description" : "Comprehensive Inpatient Rehabilitation Facility" , "longDescription" : "A facility that provides comprehensive rehabilitation services under the supervision of a physician to inpatients with physical disabilities. Services include physical therapy, occupational therapy, speech pathology, social or psychological services, and orthotics and prosthetics services. Not applicable to Pharmacy Benefits"},
+{ "code" : "14", "description" : "Homeless Shelter" , "longDescription" : "A facility or location whose primary purpose is to provide temporary housing to homeless individuals (e.g., emergency shelters, individual or family shelters). Not applicable to Pharmacy Benefits"},
+{ "code" : "15", "description" : "Correctional Institution" , "longDescription" : "A facility that provides treatment and rehabilitation of offenders through a program of penal custody."}
+]}
+
+{ "elementIds" : ["568-J7"],
+    "codes" :
+    [ 
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "01", "description" : "Standard Unique Health Plan Identifier" , "longDescription" : "Code indicating that the information is the HIPAA mandated Health Plan Identifier (HPID) or the Other Entity Identifier (OEID) established in 45 CFR 162 Subpart E."},
+{ "code" : "02", "description" : "Health Industry Number (HIN)" , "longDescription" : "a 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities. The number is assigned by HIBCC."},
+{ "code" : "03", "description" : "Bank Information Number (BIN)" , "longDescription" : "Card Issuer ID or Bank ID Number assigned by ANSI used for network routing. Now defined by ANSI as the Issuer Identification Number (IIN). This may also be the Processor ID, assigned by NCPDP."},
+{ "code" : "04", "description" : "National Association of Insurance Commissioners (NAIC)" , "longDescription" : "A unique number for each company that does business in the United States as assigned by NAIC. A company may have multiple NAIC Codes to represent subsidiary companies under a main company."},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Different from those implied or specified."}
+]}
+
+{ "elementIds" : ["288"],
+    "codes" :
+    [ 
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "1", "description" : "Hourly" , "longDescription" : ""},
+{ "code" : "2", "description" : "Salary" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["561-AZ", "484-JE"],
+    "codes" :
+    [ 
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "02", "description" : "Ingredient Cost" , "longDescription" : "The dollar amount/value of the prescription submitted by the pharmacist. Does not include sales tax or dispensing fee."},
+{ "code" : "03", "description" : "Ingredient Cost + Dispensing Fee" , "longDescription" : "The dollar amount/value of the prescription submitted by the pharmacist plus dispensing fee."},
+{ "code" : "04", "description" : "Professional Service Fee" , "longDescription" : "The dollar amount/value for the professional service."}
+]}
+
+{ "elementIds" : ["147-U7"],
+    "codes" :
+    [
+
+{ "code" : "1", "description" : "Community/Retail Pharmacy Services." , "longDescription" : "Storing, preparing, and dispensing medicinal preparations and/or prescriptions for a local patient population in accordance with federal and state law; counseling patients and caregivers (sometimes independent of the dispensing process); administering vaccinations; and providing other professional services associated with pharmaceutical care such as health screenings, consultative services with other health care providers, collaborative practice, disease state management, and education classes."},
+{ "code" : "2", "description" : "Compounding Pharmacy Services." , "longDescription" : "Preparation, mixing, assembling, packaging and labeling of a drug or device that result in a customized medication prepared by a pharmacist according to a practitioner’s specifications to meet an individual patient need. Medications are typically made using raw chemicals, powders and specialized equipment."},
+{ "code" : "3", "description" : "Home Infusion Therapy Provider Services." , "longDescription" : "Decentralized patient care services performed with expertise in USP 797-compliant sterile drug compounding that provides care to patients with acute or chronic conditions generally pertaining to parenteral administration of drugs, biologics and nutritional formulae administered through catheters and/or needles in home and alternate sites. Extensive professional pharmacy services, care coordination, infusion nursing services, supplies and equipment are provided to optimize efficacy and compliance."},
+{ "code" : "4", "description" : "Institutional Pharmacy Services." , "longDescription" : "Compounding and delivery of medicinal preparations to be administered to the patient by nursing or other authorized personnel in a hospital (inpatient) or institution."},
+{ "code" : "5", "description" : "Long Term Care Pharmacy Services.vDispensing medicinal preparations delivered to patients residing within an intermediate or skilled nursing facility, including intermediate care facilities for the mentally retarded, hospice, assisted living facilities, group homes, and other forms of congregate living arrangements."},
+{ "code" : "6", "description" : "Mail Order Pharmacy Services." , "longDescription" : "Compounding or dispensing prescriptions or other medications in accordance with federal and state law, using common carriers to deliver the medications to patient or their caregivers. Consultation to patients and caregivers (sometimes independent of the dispensing process) through telephone or email contact and provide other professional services associated with pharmaceutical care appropriate to the setting."},
+{ "code" : "7", "description" : "Managed Care Organization Pharmacy Services." , "longDescription" : "Compounding and dispensing of medicinal preparations by a pharmacy owned by a managed care organization (MCO) to the MCO’s covered members."},
+{ "code" : "8", "description" : "Specialty Care Pharmacy Services." , "longDescription" : "Preparation and dispensing of high cost medicinal preparations to patients who are undergoing intensive therapies for illnesses that are generally chronic, complex and potentially life threatening. Often these therapies require specialized delivery and administration."},
+{ "code" : "9", "description" : "Not used." , "longDescription" : ""},
+{ "code" : "10", "description" :"Not used." , "longDescription" : ""},
+{ "code" : "99", "description" :"Other." , "longDescription" : "Different from that or those implied or specified."}
+]}
+
+
+{ "elementIds" : ["955–HR"],
+    "codes" :
+    [
+{ "code" : "R", "description" : "Retail" , "longDescription" : "A duly-licensed entity that delivers pharmaceutical goods or services for sale to or use by the final consumer."},
+{ "code" : "M", "description" : "Mail Order" , "longDescription" : "A distribution center that provides medications directly to patients via US Mail or other delivery services."},
+{ "code" : "S", "description" : "Specialty" , "longDescription" : "A pharmacy which typically dispenses exclusively those medications which require special handling due to their storage or handling requirements."},
+{ "code" : "L", "description" : "Long-Term Care" , "longDescription" : "LTC is a community network of health and supportive services that help individuals and their caregivers manage health needs, personal needs and activities of daily living in a variety of settings on a long-term basis. The various components in the LTC spectrum include nursing homes, skilled nursing facilities, housing with supportive services, assisted living, continuing care retirement communities, adult day care, intermediate care facilities for the mentally retarded and developmentally disabled, home health care, hospice care and respite care."},
+{ "code" : "A", "description" : "Any" , "longDescription" : "Code indicating a pharmacy without restriction or exception"}
+]}
+
+{ "elementIds" : ["292"],
+    "codes" :
+    [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "1", "description" : "Medicare Part B (Plan Cutback)" , "longDescription" : "A reduction in a quantity of a medical service covered by Medicare Part B"},
+{ "code" : "2", "description" : "Medicare Part B with days supply cutback" , "longDescription" : "A reduction in the days supply of a service/drug covered by Medicare Part B"},
+{ "code" : "C", "description" : "Net Check limit cutback" , "longDescription" : "A reduction in the net amount of a check"},
+{ "code" : "D", "description" : "Days Supply cutback" , "longDescription" : "A reduction in the days supply"},
+{ "code" : "I", "description" : "Ingredient Cost cutback" , "longDescription" : "A reduction in the ingredient cost"},
+{ "code" : "Q", "description" : "Quantity cutback" , "longDescription" : "A reduction in the quantity"}
+]}
+
+{ "elementIds" : ["601-01"],
+    "codes" :
+    [ 
+{ "code" : "1000", "description" : "Alternate Site Infusion" , "longDescription" : "An independent facility that provides infusion care. "},
+{ "code" : "1110", "description" : "Blues Plan" , "longDescription" : "A plan that contracts with Blue Cross Blue Shield for their health care benefits. "},
+{ "code" : "1120", "description" : "Blues HMO" , "longDescription" : "An HMO plan that contracts with Blue Cross Blue Shield for their health care benefits. "},
+{ "code" : "1130", "description" : "Blues Self Insured Employer Groups" , "longDescription" : "An Employer Group that contracts with Blue Cross Blue Shield for their health care benefits. "},
+{ "code" : "1140", "description" : "Blues PPO" , "longDescription" : "A PPO plan that contracts with Blue Cross Blue Shield for their health care benefits."},
+{ "code" : "1210", "description" : "Claims Pprocessor" , "longDescription" : "A plan in which the Managed Care Provider provides pharmacy claims processing services only, not formulary management services. "},
+{ "code" : "1220", "description" : "Chain" , "longDescription" : "A chain pharmacy. "},
+{ "code" : "1230", "description" : "Clinic" , "longDescription" : "A medical clinic in which physicians provide health care services. "},
+{ "code" : "1310", "description" : "Employer Group" , "longDescription" : "A health plan where the risk for medical cost is assumed by the company rather than an insurance company or PMO. "},
+{ "code" : "1320", "description" : "Union Employees Group" , "longDescription" : "A health plan where the risk for medical cost of the union employees is assumed by the company rather than an insurance company or PMO. "},
+{ "code" : "1330", "description" : "Salaried Employee Group" , "longDescription" : "A health plan where the risk for medical cost of the salaried employees is assumed by the company rather than an insurance company or PMO. "},
+{ "code" : "1340", "description" : "Hourly Employees Group" , "longDescription" : "A health plan where the risk for medical cost of the hourly employees is assumed by the company rather than an insurance company or PMO. "},
+{ "code" : "1350", "description" : "Retired Employees Group" , "longDescription" : "A health plan where the risk for medical cost of the retired employees is assumed by the company rather than an insurance company or PMO. "},
+{ "code" : "1510", "description" : "Family Plan" , "longDescription" : "A health plan that augments the cardholders plan to include dependents. "},
+{ "code" : "1520", "description" : "Home Health" , "longDescription" : "Private or public agency that offers nursing, dietary, social, therapy and counseling services in the home of the patient. "},
+{ "code" : "1530", "description" : "Hospital" , "longDescription" : "Plan in which health care is provided to hospital agency."},
+{ "code" : "1600", "description" : "HMO" , "longDescription" : "A general classification of HMO plans; could be Group, IPA, Network, and/or Staff, etc. "},
+{ "code" : "1610", "description" : "HMO Group" , "longDescription" : "An HMO that contracts with one or more physician groups. The medical group is usually paid with a capitation fee. "},
+{ "code" : "1620", "description" : "HMO IPA" , "longDescription" : "A type of HMO that contracts with individual physicians to provide services to the HMO's enrollees. Doctors maintain their own private practices and thus can contract with other HMOs or see regular fee-for-service patients as well. "},
+{ "code" : "1630", "description" : "HMO Network" , "longDescription" : "An HMO that is a combination of Staff, IPA, and Group Model HMOs. The most typical arrangement is a combination of individual physicians in private practice and medical groups, with the predominant organization around medical groups. "},
+{ "code" : "1640", "description" : "HMO Staff" , "longDescription" : "An HMO in which health services are provided by physicians who are salaried employees of the HMO and who work in a building that is owned by the HMO. These physicians see only members of the HMO and have no private fee-for-service practices. "},
+{ "code" : "1650", "description" : "HMO Combo/Mixed" , "longDescription" : "An HMO that is a combination of Staff, IPA, and Group Model HMOs. "},
+{ "code" : "1710", "description" : "Indemnity Insurer" , "longDescription" : "A health insurance plan in which the insured person pays for health care services out-of-pocket and is later reimbursed for covered expenses. "},
+{ "code" : "1720", "description" : "Integrated Carve Out" , "longDescription" : "A plan that integrates different providers for varying services (i.e., psychiatric services, Medicaid, etc.). "},
+{ "code" : "1810", "description" : "Long Term Care Provider" , "longDescription" : "A pharmacy that provides long-term care coverage. "},
+{ "code" : "1820", "description" : "Long Term Care Facility" , "longDescription" : "A nursing home, hospice, or other institution that provides long-term care. "},
+{ "code" : "1910", "description" : "Government" , "longDescription" : "Combination of Medicaid and Medicare. "},
+{ "code" : "1920", "description" : "Medicaid" , "longDescription" : "A program, financed jointly by the federal government and the states, that provides health coverage for mostly low-income women and children as well as nursing-home care for low-income elderly. "},
+{ "code" : "1930", "description" : "Medicare" , "longDescription" : "The federal program providing health insurance for people aged 65 and older and for disabled people of all ages. "},
+{ "code" : "2010", "description" : "Mail Order" , "longDescription" : "A plan which receives pharmacy benefit services through the mail only. The plan type can vary. "},
+{ "code" : "2020", "description" : "Nursing Home" , "longDescription" : "A long-term care facility normally for the elderly. "},
+{ "code" : "2110", "description" : "Pharmacy Benefit Manager (PBM)" , "longDescription" : "An organization where pharmaceutical decisions are not left entirely to the physician. It attempts to control health care costs of member plans by instituting a variety of cost containment strategies such as drug formularies. "},
+{ "code" : "2200", "description" : "PPO" , "longDescription" : "A general classification of PPO plans; could be Full Service, General Medical/Surgical and/or Specialty, etc. "},
+{ "code" : "2210", "description" : "PPO Full Sservice" , "longDescription" : "An arrangement under which an insurance company or employer negotiates discounted fees for all services with networks of health care providers in return for guaranteeing a certain volume of patients. "},
+{ "code" : "2220", "description" : "PPO General Medical/Surgical" , "longDescription" : "An arrangement under which an insurance company or employer negotiates discounted fees for general medical and surgical services with networks of health care providers in return for guaranteeing a certain volume of patients. "},
+{ "code" : "2230", "description" : "PPO Specialty" , "longDescription" : "An arrangement under which an insurance company or employer negotiates discounted fees for specialty services with networks of health care providers in return for guaranteeing a certain volume of patients. "},
+{ "code" : "2240", "description" : "PPO Workers Comp" , "longDescription" : "An arrangement under which an insurance company or employer negotiates discounted fees for workers compensation services with networks of health care providers in return for guaranteeing a certain volume of patients."}
+]}
+
+{ "elementIds" : ["956-HS"],
+    "codes" :
+    [
+{ "code" : "99", "description" : "Most preferred" , "longDescription" : ""},
+{ "code" : "98-2", "description" : "Ordered preference between most to least" , "longDescription" : ""},
+{ "code" : "1", "description" : "Least preferred" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["335-2C"],
+    "codes" :
+    [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "1", "description" : "Not pregnant" , "longDescription" : ""},
+{ "code" : "2", "description" : "Pregnant" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["295"],
+    "codes" :
+    [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "1", "description" : "Active" , "longDescription" : "Prescriber has been certified as a participant"},
+{ "code" : "2", "description" : "Retired (Inactive)" , "longDescription" : "Prescriber that is no longer working."},
+{ "code" : "3", "description" : "Voluntary Inactive" , "longDescription" : "Prescriber that has given up their certification"},
+{ "code" : "4", "description" : "Deceased" , "longDescription" : "Prescriber that has died"},
+{ "code" : "5", "description" : "Pending health plan approval" , "longDescription" : "Prescriber has applied for certification and is awaiting finalization of approval process"},
+{ "code" : "6", "description" : "License Revoked" , "longDescription" : "Prescriber has had his license taken away"},
+{ "code" : "7", "description" : "Utilization Review Sanctioned" , "longDescription" : "Prescriber has been sanctioned due to prescribing habits"},
+{ "code" : "8", "description" : "Fraud Conviction (Inactive)" , "longDescription" : "Prescriber has been convicted by the courts of fraud"},
+{ "code" : "9", "description" : "Administration Action (Inactive)" , "longDescription" : "Prescriber’s license has been deactivated for administrative purposes"},
+{ "code" : "10", "description" :" Terminated" , "longDescription" : "Prescriber’s certification/license has been terminated"},
+{ "code" : "11", "description" :" Decertified" , "longDescription" : "Prescriber’s certification has been removed"},
+{ "code" : "12", "description" :" Reopened after Sanction or Decertification" , "longDescription" : "Prescriber’s certification process is reopened for review after having been revoked"},
+{ "code" : "13", "description" :" Federal Sanction" , "longDescription" : "Provider has been restricted by a federal certifying entity."},
+{ "code" : "14", "description" :" Out of Network: Participating" , "longDescription" : ""},
+{ "code" : "15", "description" :" Out of Network: Non-Participating" , "longDescription" : ""},
+{ "code" : "16", "description" :" In Network: Participating" , "longDescription" : "prescriber is a contracted plan physician"},
+{ "code" : "17", "description" :" In Network: Non-Participating" , "longDescription" : "prescriber is not a contracted plan physician"}
+]}
+
+{ "elementIds" : ["419-DJ"],
+    "codes" :
+    [ 
+
+{ "code" : "0", "description" : "Not Known" , "longDescription" : ""},
+{ "code" : "1", "description" : "Written" , "longDescription" : "Prescription obtained via paper."},
+{ "code" : "2", "description" : "Telephone" , "longDescription" : "Prescription obtained via oral instructions or interactive voice response using a phone."},
+{ "code" : "3", "description" : "Electronic" , "longDescription" : "Prescription obtained via SCRIPT or HL7 Standard transactions, or electronically within closed systems."},
+{ "code" : "4", "description" : "Facsimile" , "longDescription" : "Prescription obtained via transmission using a fax machine."},
+{ "code" : "5", "description" : "Pharmacy" , "longDescription" : "This value is used to cover any situation where a new Rx number needs to be created from an existing valid prescription such as traditional transfers, intrachain transfers, file buys, software upgrades/migrations, and any reason necessary to 'give it a new number'. This value is also the appropriate value for 'Pharmacy dispensing' when applicable such as BTC (behind the counter), Plan B, established protocols, pharmacists authority to prescribe, etc."}
+]}
+
+
+{ "elementIds" : ["297"],
+    "codes" :
+    [ 
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "O", "description" : "Over the counter (OTC)" , "longDescription" : "prescription not required to be dispensed"},
+{ "code" : "F", "description" : "Federal/Legend (Rx Prescription Only)" , "longDescription" : ""},
+{ "code" : "S", "description" : "State Restricted Medication" , "longDescription" : "Under federal law, the product as dispensed does not require a prescription, but is restricted to prescription sale at the state level."}
+]}
+
+{ "elementIds" : ["601-49"],
+    "codes" :
+    [ 
+{ "code" : "1b", "description" : "New/Refill" , "longDescription" : ""},
+{ "code" : "0b", "description" : "Adjustment" , "longDescription" : "a modification to a previously submitted prescription"},
+{ "code" : "1-", "description" : "Reversal" , "longDescription" : "a cancellation to a previously submitted prescription"}
+]}
+
+{ "elementIds" : ["964-JA"],
+    "codes" :
+    [ 
+{ "code" : "1", "description" : "Single source" , "longDescription" : "a clinical formulation that is only available from a single distributor."},
+{ "code" : "3", "description" : "Generic" , "longDescription" : "the pharmaceutically equivalent product of a branded product introduced by additional distributors after patient protection has expired on the brand product. Manufactured under an Abbreviated New Drug Application (ANDA)."},
+{ "code" : "6", "description" : "Supply" , "longDescription" : "consumable health care items, such as pledgets, syringes, test strips. Distinct from Durable Medical Equipment (DME) which is generally not consumed by its use."},
+{ "code" : "7", "description" : "Branded O.T.C. (over the counter)" , "longDescription" : "branded drugs and other pharmaceuticals that may be purchased without a prescription. These products do not carry the legend: 'Rx Only'"},
+{ "code" : "8", "description" : "Generic O.T.C. (over the counter)" , "longDescription" : "generic drugs and other pharmaceuticals that may be purchased without a prescription. These products do not carry the legend: 'Rx Only'"},
+{ "code" : "A", "description" : "Any" , "longDescription" : "Copay is consistent across all product types within a specific formulary status."}
+]}
+
+{ "elementIds" : ["361-2D"],
+    "codes" :
+    [ 
+{ "code" : "Y", "description" : "Assigned" , "longDescription" : "Provider accepts assignment"},
+{ "code" : "N", "description" : "Not Assigned" , "longDescription" : "Provider does not accept assignment"}
+]}
+
+{ "elementIds" : ["465-EY"],
+    "codes" :
+    [ 
+{ "code" : "01", "description" : "Drug Enforcement Administration (DEA)" , "longDescription" : "The number assigned by the DEA to all businesses that manufacturer or distribute controlled pharmaceuticals, all health professionals who dispense, administer, or prescribe controlled pharmaceuticals an all pharmacies that fill prescriptions."},
+{ "code" : "02", "description" : "State License" , "longDescription" : "The number assigned and required by a State Board or other State regulatory agency that uniquely identifies a pharmacy by category, as defined by each State or Territory or a prescriber by practice specialty for which they reside/practice."},
+{ "code" : "03", "description" : "Social Security Number (SSN)" , "longDescription" : "Code indicating that the information to follow is the 9-digit number assigned to an individual by the Social Security Administration for various purposes, including paying and reporting taxes."},
+{ "code" : "04", "description" : "Name" , "longDescription" : "Indicates the provider’s name is used as the ID for the provider."},
+{ "code" : "05", "description" : "National Provider Identifier (NPI)" , "longDescription" : "A HIPAA-mandated standard unique health identifier for health care providers"},
+{ "code" : "06", "description" : "Health Industry Number (HIN)" , "longDescription" : "a 9 digit alphanumeric number used to identify health care entities such as veterinarians, animal clinics, and health care provider facilities. The number is assigned by HIBCC."},
+{ "code" : "07", "description" : "State Issued" , "longDescription" : "a unique number issued by a state program or organization other than Medicaid, to a provider of service."},
+{ "code" : "99", "description" : "Other" , "longDescription" : "Different from those implied or specified."}
+]}
+
+{ "elementIds" : ["601-03"],
+    "codes" :
+    [ 
+{ "code" : "01.01", "description" : "Version 01.01" , "longDescription" : ""},
+{ "code" : "02.01", "description" : "Version 02.01" , "longDescription" : ""},
+{ "code" : "03.01", "description" : "Version 03.01" , "longDescription" : ""},
+{ "code" : "03.02", "description" : "Version 03.02" , "longDescription" : ""},
+{ "code" : "04.01", "description" : "Version 04.01" , "longDescription" : ""},
+{ "code" : "05.00", "description" : "Version 05.00" , "longDescription" : ""},
+{ "code" : "05.01", "description" : "Version 05.01" , "longDescription" : ""},
+{ "code" : "06.00", "description" : "Version 06.00" , "longDescription" : ""},
+{ "code" : "06.01", "description" : "Version 06.01" , "longDescription" : ""},
+{ "code" : "07.00", "description" : "Version 07.00" , "longDescription" : ""},
+{ "code" : "07.01", "description" : "Version 07.01" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["602-11"],
+    "codes" :
+    [ 
+{ "code" : "P", "description" : "Paid As Submitted" , "longDescription" : ""},
+{ "code" : "A", "description" : "Adjusted" , "longDescription" : "Submitted line was modified"},
+{ "code" : "R", "description" : "Rejected" , "longDescription" : "Submitted line was denied"}
+]}
+
+{ "elementIds" : ["398"],
+    "codes" :
+    [ 
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "0", "description" : "New record" , "longDescription" : ""},
+{ "code" : "1", "description" : "Overwrite existing record" , "longDescription" : ""},
+{ "code" : "2", "description" : "Delete existing record" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["601-53"],
+    "codes" :
+    [ 
+{ "code" : "M", "description" : "Submitted for market share calculation" , "longDescription" : ""},
+{ "code" : "O", "description" : "Other reported utilization" , "longDescription" : ""},
+{ "code" : "R", "description" : "Submitted for rebate utilization" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["399"],
+    "codes" :
+    [ 
+{ "code" : "1", "description" : "Paid" , "longDescription" : "Code indicating that the transaction was adjudicated using plan rules and was payable."},
+{ "code" : "2", "description" : "Rejected" , "longDescription" : "Code indicating that the transaction was denied/rejected"},
+{ "code" : "3", "description" : "Reversed" , "longDescription" : "Code indicating that the paid transaction was cancelled"},
+{ "code" : "4", "description" : "Adjusted" , "longDescription" : "Code indicating that the previous transaction was changed"},
+{ "code" : "5", "description" : "Captured" , "longDescription" : "Code indicating the receipt of the transaction but no judgment has been made regarding eligibility of the patient or payment."},
+{ "code" : "6", "description" : "Reverse – Captured" , "longDescription" : "Code indicating that the captured transaction was cancelled."}
+]}
+
+{ "elementIds" : ["601-48"],
+    "codes" :
+    [ 
+{ "code" : "1", "description" : "Includes dispensing fee" , "longDescription" : ""},
+{ "code" : "2", "description" : "Excludes dispensing fee Paid" , "longDescription" : ""}
+]}
+
+
+{ "elementIds" : ["878"],
+    "codes" :
+    [ 
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "0", "description" : "Claim Was Paid In Good Faith" , "longDescription" : ""},
+{ "code" : "1", "description" : "Member Was Ineligible On Rx Date" , "longDescription" : ""},
+{ "code" : "2", "description" : "Member Was Not Found On The Member Master On Rx Date" , "longDescription" : ""},
+{ "code" : "3", "description" : "Claim Was Filled For A Terminated Member" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["111-AM"],
+    "codes" :
+    [
+{ "code" : "01", "description" : "Patient" , "longDescription" : ""},
+{ "code" : "02", "description" : "Pharmacy Provider" , "longDescription" : ""},
+{ "code" : "03", "description" : "Prescriber" , "longDescription" : ""},
+{ "code" : "04", "description" : "Insurance" , "longDescription" : ""},
+{ "code" : "05", "description" : "Coordination of Benefits/Other Payments" , "longDescription" : ""},
+{ "code" : "06", "description" : "Worker’s Compensation" , "longDescription" : ""},
+{ "code" : "07", "description" : "Claim" , "longDescription" : ""},
+{ "code" : "08", "description" : "DUR/PPS" , "longDescription" : ""},
+{ "code" : "09", "description" : "Coupon" , "longDescription" : ""},
+{ "code" : "10", "description" : "Compound" , "longDescription" : ""},
+{ "code" : "11", "description" : "Pricing" , "longDescription" : ""},
+{ "code" : "12", "description" : "Prior Authorization" , "longDescription" : ""},
+{ "code" : "13", "description" : "Clinical" , "longDescription" : ""},
+{ "code" : "14", "description" : "Additional Documentation" , "longDescription" : ""},
+{ "code" : "15", "description" : "Facility" , "longDescription" : ""},
+{ "code" : "16", "description" : "Narrative" , "longDescription" : ""},
+{ "code" : "17", "description" : "Purchaser" , "longDescription" : ""},
+{ "code" : "18", "description" : "Service Provider" , "longDescription" : ""},
+{ "code" : "19", "description" : "Intermediary" , "longDescription" : ""},
+{ "code" : "20", "description" : "Response Message" , "longDescription" : ""},
+{ "code" : "21", "description" : "Response Status" , "longDescription" : ""},
+{ "code" : "22", "description" : "Response Claim" , "longDescription" : ""},
+{ "code" : "23", "description" : "Response Pricing" , "longDescription" : ""},
+{ "code" : "24", "description" : "Response DUR/PPS" , "longDescription" : ""},
+{ "code" : "25", "description" : "Response Insurance" , "longDescription" : ""},
+{ "code" : "26", "description" : "Response Prior Authorization" , "longDescription" : ""},
+{ "code" : "27", "description" : "Response Insurance Additional Information" , "longDescription" : ""},
+{ "code" : "28", "description" : "Response Coordination of Benefits/Other Payers" , "longDescription" : ""},
+{ "code" : "29", "description" : "Response Patient" , "longDescription" : ""},
+{ "code" : "36", "description" : "Response Intermediary" , "longDescription" : ""},
+{ "code" : "37", "description" : "Last Known 4Rx Segment" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["644-XR","645-XS","646-XT","647-XU","648-XV","649-XW"],
+    "codes" :
+    [
+{ "code" : "1", "description" : "Hierarchy Level 1" , "longDescription" : "Trading Partner Defined"},
+{ "code" : "2", "description" : "Hierarchy Level 2" , "longDescription" : "Trading Partner Defined"},
+{ "code" : "3", "description" : "Hierarchy Level 3" , "longDescription" : "Trading Partner Defined"},
+{ "code" : "4", "description" : "Hierarchy Level 4" , "longDescription" : "Trading Partner Defined"},
+{ "code" : "5", "description" : "Hierarchy Level 5" , "longDescription" : "Trading Partner Defined"},
+{ "code" : "6", "description" : "Hierarchy Level 6" , "longDescription" : "Trading Partner Defined"},
+{ "code" : "A", "description" : "Benefit Category" , "longDescription" : "Trading Partner Defined"},
+{ "code" : "B", "description" : "Benefit Tier" , "longDescription" : "Trading Partner Defined"},
+{ "code" : "D", "description" : "CMS assigned contract ID" , "longDescription" : "The contract number assigned by Centers for Medicare and Medicaid Services (CMS) for a Prescription Drug Plan (PDP) or Medicare Advantage Prescription Drug (MAPD) contract"},
+{ "code" : "E", "description" : "PBP Number" , "longDescription" : "The number used to identify the Primary benefit provider."},
+{ "code" : "F", "description" : "Formulary Control" , "longDescription" : "The level of formulary management occurring."},
+{ "code" : "L", "description" : "Line of Business" , "longDescription" : "The type of business segment represented for the client."},
+{ "code" : "LS", "description" : "Low income subsidy level (LICS)" , "longDescription" : "Indicator used by CMS to describe the PDP or MAPD plan benefit level for the patient."},
+{ "code" : "P", "description" : "Benefit Plan Level (BPL)" , "longDescription" : "Indicator used by Trading Partners to identity the coverage category the patient is eligible for when the prescription was filled."},
+{ "code" : "RD", "description" : "Rider" , "longDescription" : "Trading Partner Defined"},
+{ "code" : "RS", "description" : "Retiree Drug Sub plan" , "longDescription" : "Defined by CMS and agreed upon by Trading Partners"},
+{ "code" : "T", "description" : "Plan Type Category" , "longDescription" : "A type of plan segment designation within a client level."},
+{ "code" : "Z", "description" : "Trading Partner Mutually Defined" , "longDescription" : ""},
+{ "code" : "34", "description" : "340B" , "longDescription" : ""},
+{ "code" : "MM", "description" : "Medicaid Managed Care" , "longDescription" : ""},
+{ "code" : "CG", "description" : "Medicare Part D Coverage Gap Discount" , "longDescription" : ""},
+{ "code" : "PZ", "description" : "Prescriber’s Zip Code" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["334-1C"],
+    "codes" :
+    [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "1", "description" : "Non-Smoker" , "longDescription" : "a person who doesn’t smoke"},
+{ "code" : "2", "description" : "Smoker" , "longDescription" : "a person who smokes"}
+]}
+
+{ "elementIds" : ["429-DT"],
+    "codes" :
+    [
+{ "code" : "0", "description" : "Not Specified" , "longDescription" : ""},
+{ "code" : "1", "description" : "Not Unit Dose " , "longDescription" : "Indicates the product is not being dispensed in special unit dose packaging."},
+{ "code" : "2", "description" : "Manufacturer Unit Dose" , "longDescription" : "A code used to indicate a distinct dose as determined by the manufacturer."},
+{ "code" : "3", "description" : "Pharmacy Unit Dose" , "longDescription" : "Used to indicate when the pharmacy has dispensed the drug in a unit of use package which was “loaded” at the pharmacy – not purchased from the manufacturer as a unit dose."},
+{ "code" : "4", "description" : "Pharmacy Unit Dose Patient Compliance Packaging" , "longDescription" : "Unit dose blister, strip or other packaging designed in compliance-prompting formats that help people take their medications properly."},
+{ "code" : "5", "description" : "Pharmacy Multi-drug Patient Compliance Packaging" , "longDescription" : "Packaging that may contain drugs from multiple manufacturers combined to ensure compliance and safe administration."},
+{ "code" : "6", "description" : "Remote Device Unit Dose" , "longDescription" : "Drug is dispensed at the facility, via a remote device, in a unit of use package."},
+{ "code" : "7", "description" : "Remote Device Multi" , "longDescription" : "drug Compliance - Drug is dispensed at the facility, via a remote device, with packaging that may contain drugs from multiple manufacturers combined to ensure compliance and safe administration."},
+{ "code" : "8", "description" : "Manufacturer Unit of Use Package (not unit dose)" , "longDescription" : "Drug is dispensed by pharmacy in original manufacturer’s package and relabeled for use. Applicable in long term care claims only (as defined in Telecommunication Editorial Document)."}
+]}
+
+{ "elementIds" : ["974-JN"],
+    "codes" :
+    [
+{ "code" : "1", "description" : "First to be tried" , "longDescription" : ""},
+{ "code" : "2", "description" : "Second to be tried" , "longDescription" : ""},
+{ "code" : "3", "description" : "Third to be tried" , "longDescription" : ""},
+{ "code" : "4", "description" : "Fourth to be tried" , "longDescription" : ""},
+{ "code" : "5", "description" : "Fifth to be tried" , "longDescription" : ""},
+{ "code" : "6", "description" : "Sixth to be tried" , "longDescription" : ""},
+{ "code" : "7", "description" : "Seventh to be tried" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["888"],
+    "codes" :
+    [
+{ "code" : "Blank", "description" : "Not Specified", "longDescription" :""},
+{ "code" : "00", "description" : "Original Submission" , "longDescription" : ""},
+{ "code" : "01", "description" : "First resubmission" , "longDescription" : ""},
+{ "code" : "02", "description" : "Second resubmission" , "longDescription" : ""},
+{ "code" : "03-99", "description" : "Number of resubmission" , "longDescription" : ""}
+]}
+
+{ "elementIds" : ["601-36"],
+    "codes" :
+    [
+{ "code" : "00", "description" : "Original or initial submission of data" , "longDescription" : "Signifies the data submitted for rebate as being the original submission of the prescription for rebate, as opposed to an adjustment or reversal of an original submission."},
+{ "code" : "02", "description" : "Correction or Adjustment to previous submission rebate period" , "longDescription" : "Code submitted by PMO within Utilization Detail (UD) flat file to a PICO. Action Code 02 describes incremental or decremental adjustments where each UD Record nets with a corresponding previously submitted UD record. If a correction is being made to a signed Numeric Extended field, the sign of the number identifies the action (debit/credit). Alpha-numeric values replace previously submitted values."},
+{ "code" : "03", "description" : "Delete entire previous submission rebate period" , "longDescription" : "The code identifies transactions submitted by the PMO to the PICO for addition, deletion, or modification (based on the value of the Change Identifier field of the MP Record) of Market Basket Product (MP) Records for market basket records previously submitted."},
+{ "code" : "05", "description" : "Replace entire previously submitted rebate period" , "longDescription" : "An action code used to indicate the rebate records being submitted should be used in place of a batch of rebate records previously submitted."}
+]}
+
+{ "elementIds" : ["557-AV"],
+    "codes" :
+    [
+
+{ "code" : "1", "description" : "Payer/Plan is Tax Exempt" , "longDescription" : "The Payer/Plan is not responsible for tax. The patient may be charged tax."},
+{ "code" : "3", "description" : "Patient is Tax Exempt" , "longDescription" : "The patient cannot be charged tax."},
+{ "code" : "4", "description" : "Payer/Plan and Patient are Tax Exempt" , "longDescription" : "Neither the payer/plan nor the patient can be charged tax."}
+]}
+
