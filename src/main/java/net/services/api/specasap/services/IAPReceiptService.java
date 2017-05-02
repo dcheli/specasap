@@ -38,8 +38,6 @@ public class IAPReceiptService {
 	List<EnabledProduct> enabledProducts = new ArrayList<EnabledProduct>();
 	JsonArray eProducts;
 	
-
-
 	public IAPReceiptService(ServletContext servletContext) throws IOException {
 		//In sandbox https://sandbox.itunes.apple.com/verifyReceipt as the URL. 
 		//In production, use https://buy.itunes.apple.com/verifyReceipt as the URL.
@@ -47,7 +45,7 @@ public class IAPReceiptService {
 		productList.add("com.dataasap.hl7asap");
 		productList.add("com.dataasap.ncpdpasap");
 		productList.add("com.dataasap.x12asap");
-		productList.add("com.dataasap.ccdplussap");
+		productList.add("com.dataasap.ccdplusasap");
 		productList.add("com.dataasap.baiasap");
 	}
 	

@@ -24,7 +24,7 @@ import net.services.api.specasap.services.ProductService;
 @Path("/{version}/products")
 @Singleton // not sure if this should be a singleton vs. having a new instance per request; 
 public class ProductResource {
-	Logger logger = Logger.getLogger(ElementResource.class);	
+	Logger logger = Logger.getLogger(ProductResource.class);	
 	private @Context ServletContext servletContext; 
 
 	@GET

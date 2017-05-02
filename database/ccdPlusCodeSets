@@ -60,7 +60,7 @@
 { "code" : "TRC", "description" : "Check truncation Entry" , "longDescription" : ""},
 { "code" : "TRX", "description" : "Check Truncation Entries Exchange" , "longDescription" : ""},
 { "code" : "WEB", "description" : "Internet-Initiated/Mobile Entry" , "longDescription" : ""},
-{ "code" : "XCK", "description" : " = Destroyed Check Entry" , "longDescription" : ""},
+{ "code" : "XCK", "description" : " = Destroyed Check Entry" , "longDescription" : ""}
 ]}
 
 { "elementIds" : ["Addenda Record Indicator"],
